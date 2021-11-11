@@ -58,9 +58,11 @@ for(i in seq_along(rmdfiles)) {
         })
 }
 
+results <- map(rmdfiles, function(f) {
+        try(render(f))
+})
 
 
-out <- try(render(rmdfiles[i]))
 
 
 
