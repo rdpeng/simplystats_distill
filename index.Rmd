@@ -1,0 +1,5 @@
+---
+title: "Simply Statistics"
+site: distill::distill_website
+listing: posts
+---

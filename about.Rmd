@@ -1,0 +1,13 @@
+---
+title: "About this blog"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+We are three biostatistics professors ([Jeff Leek](http://www.biostat.jhsph.edu/~jleek/research.html), [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/), and [Rafa Irizarry](http://rafalab.dfci.harvard.edu)) who are fired up about the new era where data are abundant and statisticians are scientists. _The views represented here are our own and do not represent the views of Johns Hopkins University, Harvard University or Dana Farber Cancer Institute_.
+
+**About this blog**: We’ll be posting ideas we find interesting, contributing to discussion of science/popular writing, linking to articles that inspire us, and sharing advice with up-and-coming statisticians.
+
+**Why “Simply Statistics”**: We needed a title. Plus, we like the idea of using simple statistics to solve real, important problems. We aren’t fans of unnecessary complication -- that just leads to lies, damn lies and something else.
