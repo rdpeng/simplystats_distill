@@ -4,6 +4,7 @@ description: |
   A statistics blog by Rafa Irizarry, Roger Peng, and Jeff Leek
 output_dir: "docs"
 navbar:
+  logo: img/sslogo.png
   right:
     - text: "Home"
       href: index.html

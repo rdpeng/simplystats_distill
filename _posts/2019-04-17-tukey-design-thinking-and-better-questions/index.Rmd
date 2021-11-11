@@ -2,6 +2,7 @@
 title: Tukey, Design Thinking, and Better Questions
 author: Roger Peng
 date: '2019-04-17'
+preview: images/question_evidence.png
 output:
   distill::distill_article:
     self_contained: no
@@ -39,7 +40,7 @@ In other words, try one approach, then try a bunch of other approaches! You migh
 
 After thinking about all this I was inspired to draw the following diagram.
 
-![Strength of Evidence vs. Quality of Question](/post/2019-04-17-tukey-design-thinking-and-better-questions_files/question_evidence.png)
+![Strength of Evidence vs. Quality of Question](images/question_evidence.png)
 
 The goal in this picture is to get to the upper right corner, where you have a high quality question and very strong evidence. In my experience, most people assume that they are starting in the bottom right corner, where the quality of the question is at its highest. In that case, the only thing left to do is to choose the optimal procedure so that you can squeeze as much information out of your data. The reality is that we almost always start in the bottom left corner, with a vague and poorly defined question and a similarly vague sense of what procedure to use. In that case, what’s a data scientist to do?
 

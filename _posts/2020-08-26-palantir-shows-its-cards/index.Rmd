@@ -2,6 +2,7 @@
 title: Palantir Shows Its Cards
 author: Roger Peng
 date: '2020-08-26'
+preview: images/DS_Spectrum2.png
 output:
   distill::distill_article:
     self_contained: no
@@ -16,7 +17,7 @@ But the important thing is that Palantir itself summarized the question I asked 
 
 In my original post I wrote about the "Data Science Spectrum", which has consulting on one end and software on the other.
 
-![Data Science Spectrum](https://simplystatistics.org/post/2020-08-26-palantir-shows-its-cards_files/DS_Spectrum2.png)
+![Data Science Spectrum](images/DS_Spectrum2.png)
 
 The point of the diagram was that businesses on the right hand side have huge valuations while businesses on the left side have merely large valuations. The people running Palantir clearly understand this and are trying to push the company in a software-based productized direction. 
 

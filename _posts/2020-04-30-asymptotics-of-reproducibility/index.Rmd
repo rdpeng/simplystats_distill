@@ -1,6 +1,7 @@
 ---
 title: Asymptotics of Reproducibility
 author: Roger Peng
+preview: images/Drawings-1.jpg
 date: '2020-04-30'
 output:
   distill::distill_article:
@@ -29,7 +30,7 @@ Hilary Parker and I [recently discussed](http://nssdeviations.com/106-podcasts-a
 
 These two activities (maintenance and support) can continue to be necessary in perpetuity for *every study* that an investigator publishes. The mismatch between how the grant funding system works and the requirements of reproducible research is depicted in the diagram below.
 
-![Analysis Depreciation](/post/2020-04-30-asymptotics-of-reproducibility_files/Drawings-1.jpg)
+![Analysis Depreciation](images/Drawings-1.jpg)
 
 When I say “value” in the drawing above, what I really mean is the “reproducibility value”. In the old model of publishing science, there was no reproducibility value because the work was generally not reproducible in the sense that data and code were available. Hence, this whole discussion would be moot. 
 
