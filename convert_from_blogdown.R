@@ -3,6 +3,7 @@
 library(rmarkdown)
 library(yaml)
 library(tidyverse)
+library(lubridate)
 
 files <- dir("_posts", full.names = TRUE, recursive = TRUE)
 head(files)
@@ -22,24 +23,44 @@ strip_yml <- function(txt) {
         txt[-seq(1, mx)]
 }
 
-txt <- read_lines(rmdfiles[1])
-yml <- yaml.load(txt)
-str(yml$output)
-yml$output <- list("distill::distill_article" = list(self_contained = FALSE))
-str(yml$output)
-bod <- strip_yml(txt)
+get_yml_txt <- function(txt) { 
+        ind <- grep("^---", txt)
+        mx <- max(ind)
+        txt[seq(1, mx)]
+}
 
-outfile <- tempfile()
-con <- file(outfile, "wb")
-writeLines("---", con)
-write_yaml(yml, con)
-writeLines("---", con)
-writeLines(bod, con)
-close(con)
 
-file.show(outfile)
+rmdfiles <- dir("_posts", full.names = TRUE, recursive = TRUE,
+                pattern = "\\.Rmd$")
 
 for(i in seq_along(rmdfiles)) {
+        message(i)
         
-        out <- try(render(rmdfiles[i]))
+        try({
+                infile <- rmdfiles[i]
+                txt <- readLines(infile)
+                ymltxt <- get_yml_txt(txt)
+                yml <- yaml.load(ymltxt)
+                yml <- yml[c("title", "author")]
+                yml$date <- substr(basename(dirname(rmdfiles[i])), 1, 10)
+                yml$output <- list("distill::distill_article" = list(self_contained = FALSE))
+                bod <- strip_yml(txt)
+                
+                outfile <- tempfile()
+                con <- file(outfile, "wb")
+                writeLines("---", con)
+                write_yaml(yml, con)
+                writeLines("---", con)
+                writeLines("", con)
+                writeLines(bod, con)
+                close(con)
+                file.rename(outfile, rmdfiles[i])
+        })
 }
+
+
+
+out <- try(render(rmdfiles[i]))
+
+
+
