@@ -1,20 +1,13 @@
 ---
-id: 1847
-title: 'Announcing the Simply Statistics Unconference on the Future of Statistics #futureofstats'
-date: 2013-09-17T11:22:39+00:00
+title: 'Announcing the Simply Statistics Unconference on the Future of Statistics
+  #futureofstats'
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_543339652388562
-al2fb_facebook_link_time:
-  - 2013-09-17T15:22:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1770296204
-categories:
-  - Uncategorized
-slug: "announcing-the-simply-statistics-unconference-on-the-future-of-statistics-futureofstats"
+date: '2013-09-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [Sign up here!](https://plus.google.com/events/cd94ktf46i1hbi4mbqbbvvga358)
 
 <p dir="ltr">

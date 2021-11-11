@@ -1,20 +1,12 @@
 ---
-id: 3338
-title: "Data science can't be point and click"
-date: 2014-10-09T16:16:17+00:00
+title: Data science can't be point and click
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_709351905787335
-al2fb_facebook_link_time:
-  - 2014-10-09T20:16:24+00:00
-al2fb_facebook_link_picture:
-  - post=http://www.tylervigen.com/correlation_project/correlation_images/us-spending-on-science-space-and-technology_suicides-by-hanging-strangulation-and-suffocation.png
-dsq_thread_id:
-  - 3100769477
-categories:
-  - Uncategorized
-slug: "data-science-cant-be-point-and-click"
+date: '2014-10-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As data becomes cheaper and cheaper there are more people that want to be able to analyze and interpret that data.  I see more and more that people are creating tools to accommodate folks who aren't trained but who still want to look at data _right now. _While I admire the principle of this approach - we need to democratize access to data - I think it is the most dangerous way to solve the problem.
 
 The reason is that, especially with big data, it is very easy to find things like this with point and click tools:

@@ -2,12 +2,11 @@
 title: Data Science on a Chromebook
 author: Jeff Leek
 date: '2017-08-29'
-slug: data-science-on-a-chromebook
-categories:
-  - Education
-tags:
-  - chromebook
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 About nine months ago [I announced](https://simplystatistics.org/2016/11/08/chromebook-part2/) that I was attempting a Chromebook experiment for the 2nd time. At first I thought it was going to be a short term experiment just to see if it was possible to function with only a Chromebook. But in an interesting twist I got used to it and have been working exclusively on a Chromebook for the last few months since the experiment started. 

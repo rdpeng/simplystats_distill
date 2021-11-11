@@ -1,23 +1,12 @@
 ---
-id: 2628
 title: My Online Course Development Workflow
-date: 2014-02-04T09:30:00+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_603856829670177
-al2fb_facebook_link_time:
-  - 2014-02-04T14:30:05+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2219959907
-categories:
-  - Uncategorized
-tags:
-  - coursera
-  - data science
-slug: "my-online-course-development-workflow"
+date: '2014-02-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of the nice things about developing [9 new courses](http://jhudatascience.org) for the JHU Data Science Specialization in a short period of time is that you get to learn all kinds of cool and interesting tools. One of the ways that we were able to push out so much content in just a few months was that we did most of the work ourselves, rather than outsourcing things like video production and editing. You could argue that this results in a poorer quality final product but (a) I disagree; and (b) even if that were true, I think the content is still valuable.
 
 The advantage of learning all the tools was that it allowed for a quick turn-around from the creation of the lecture to the final exporting of the video (often within a single day). For a hectic schedule, it's nice to be able to write slides in the morning, record some video in between two meetings in the afternoon, and the combine/edit all the video in the evening. Then if you realize something doesn't work, you can start over the next day and have another version done in less than 24 hours.

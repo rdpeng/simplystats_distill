@@ -1,22 +1,12 @@
 ---
-id: 3889
 title: The trouble with evaluating anything
-date: 2015-02-09T19:24:22+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_766703000052225
-al2fb_facebook_link_time:
-  - 2015-02-10T00:24:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3501108926
-categories:
-  - Uncategorized
-slug: "the-trouble-with-evaluating-anything"
+date: '2015-02-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It is very hard to evaluate people's productivity or work in any meaningful way. This problem is the source of:
 
   1. [Consternation about peer review](http://simplystatistics.org/2013/09/26/how-could-code-review-discourage-code-disclosure-reviewers-with-motivation/)

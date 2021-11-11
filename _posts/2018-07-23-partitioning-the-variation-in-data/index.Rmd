@@ -2,8 +2,11 @@
 title: Partitioning the Variation in Data
 author: Roger Peng
 date: '2018-07-23'
-slug: partitioning-the-variation-in-data
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 One of the fundamental questions that we can ask in any data analysis is, "Why do things vary?" Although I think this is fundamental, I’ve found that it’s not explicitly asked as often as I might think. The problem with *not* asking this question is that it can often lead to a lot of pointless and time-consuming work. Taking a moment to ask yourself, “What do *I* know that can explain why this feature or variable varies?” can often make you realize that you actually know more than you think you do. Developing an understanding of the sources of variation in the data is a key goal of exploratory data analysis.
 

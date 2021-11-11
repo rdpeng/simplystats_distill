@@ -1,22 +1,12 @@
 ---
-id: 4602
-title: "On research parasites and internet mobs - let's try to solve the real problem."
-date: 2016-01-25T14:34:08+00:00
+title: On research parasites and internet mobs - let's try to solve the real problem.
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_914772731911917
-al2fb_facebook_link_time:
-  - 2016-01-25T19:34:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4522641108
-categories:
-  - Uncategorized
-slug: "on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem"
+date: '2016-01-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A couple of days ago one of the editors of the New England Journal of Medicine [posted an editorial](http://www.nejm.org/doi/full/10.1056/NEJMe1516564) showing some moderate level of support for data sharing but also introducing the term "research parasite":
 
 > A second concern held by some is that a new class of research person will emerge — people who had nothing to do with the design and execution of the study but use another group’s data for their own ends, possibly stealing from the research productivity planned by the data gatherers, or even use the data to try to disprove what the original investigators had posited. There is concern among some front-line researchers that the system will be taken over by what some researchers have characterized as “research parasites.”

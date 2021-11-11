@@ -2,8 +2,11 @@
 title: Optimizing for User Experience
 author: Roger Peng
 date: '2017-07-14'
-slug: optimizing-for-user-experience
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 I've [previously written](https://simplystatistics.org/2017/01/23/ux-value/) about how business (that are built by humans) can initially become successful by optimizing the user experience. That great user experience is what defines the value that their product provides. However, over time, companies have to find a way to provide value that is defined outside of the business-user relationship. The difficulty here is that this new definition of value is not within the control of the company--it is defined by the community via laws. 

@@ -1,20 +1,12 @@
 ---
-id: 3293
-title: "Applied Statisticians: people want to learn what we do. Let's teach them."
-date: 2014-09-15T10:00:04+00:00
+title: 'Applied Statisticians: people want to learn what we do. Let''s teach them.'
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_699015023487690
-al2fb_facebook_link_time:
-  - 2014-09-15T14:00:12+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3020149265
-categories:
-  - Education
-slug: "applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them"
+date: '2014-09-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In [this](http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/) recent opinion piece, [Hadley Wickham](http://had.co.nz/) explains how data science goes beyond Statistics and that data science is not promoted in academia. He defines data science as follows:
 
 > I think there are three main steps in a data science project: you _collect_ data (and questions), _analyze_ it (using visualization and models), then _communicate_ the results.

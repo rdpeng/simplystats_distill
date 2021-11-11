@@ -1,22 +1,12 @@
 ---
-id: 4445
 title: Some Links Related to Randomized Controlled Trials for Policymaking
-date: 2015-11-19T12:49:03+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_885095228213001
-al2fb_facebook_link_time:
-  - 2015-11-19T17:49:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4333587035
-categories:
-  - Uncategorized
-slug: "some-links-related-to-randomized-controlled-trials-for-policymaking"
+date: '2015-11-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   <p>
     In response to <a href="http://simplystatistics.org/2015/11/17/why-are-randomized-trials-not-used-by-policymakers/">my previous post</a>, <a href="https://gspp.berkeley.edu/directories/faculty/avi-feller">Avi Feller</a> sent me these links related to efforts promoting the use of RCTs  and evidence-based approaches for policymaking:

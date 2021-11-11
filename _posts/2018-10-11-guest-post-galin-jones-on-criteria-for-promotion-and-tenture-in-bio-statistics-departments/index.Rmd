@@ -1,11 +1,13 @@
 ---
-title: 'Guest Post: Galin Jones on criteria for promotion and tenture in (bio)statistics departments'
+title: 'Guest Post: Galin Jones on criteria for promotion and tenture in (bio)statistics
+  departments'
 author: Rafael Irizarry
 date: '2018-10-11'
-slug: guest-post-galin-jones-on-criteria-for-promotion-and-tenture-in-bio-statistics-departments
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 *Editor's Note: I attended an ASA Chair's meeting and spoke about ways we could support junior faculty in data science. After giving my talk [Galin Jones](http://users.stat.umn.edu/~galin/), Professor and Director of Statistics at University of Minnesota, and I had an interesting conversation about how they had changed their promotion criteria in response to a faculty candidate being unique. I asked him to write about his experience and he kindly contributed the following post.* 
 

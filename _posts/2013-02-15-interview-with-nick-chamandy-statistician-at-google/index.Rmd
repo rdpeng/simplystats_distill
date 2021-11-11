@@ -1,20 +1,12 @@
 ---
-id: 1025
 title: Interview with Nick Chamandy, statistician at Google
-date: 2013-02-15T12:09:01+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_462253027163892
-al2fb_facebook_link_time:
-  - 2013-02-15T17:09:07+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1085478767
-categories:
-  - Uncategorized
-slug: "interview-with-nick-chamandy-statistician-at-google"
+date: '2013-02-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div dir="ltr">
   <div>
     <strong>Nick Chamandy</strong>

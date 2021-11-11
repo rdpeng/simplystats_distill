@@ -1,20 +1,12 @@
 ---
-id: 3052
 title: 10 things statistics taught us about big data analysis
-date: 2014-05-22T11:37:41+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_648883391834187
-al2fb_facebook_link_time:
-  - 2014-05-22T15:37:48+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/05/loess.gif
-dsq_thread_id:
-  - 2704999761
-categories:
-  - Uncategorized
-slug: "10-things-statistics-taught-us-about-big-data-analysis"
+date: '2014-05-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In [my previous post](http://simplystatistics.org/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/) I pointed out a major problem with big data is that applied statistics have been left out. But many cool ideas in applied statistics are really relevant for big data analysis. So I thought I'd try to answer the second question in my previous post: _"When thinking about the big data era, what are some statistical ideas we've already figured out?"_ Because the internet loves top 10 lists I came up with 10, but there are more if people find this interesting. Obviously mileage may vary with these recommendations, but I think they are generally not a bad idea.
 
   1. **If the goal is prediction accuracy, average many prediction models together**. In general, the prediction algorithms that most frequently win Kaggle competitions or the Netflix prize [blend multiple models together](http://en.wikipedia.org/wiki/Ensemble_learning). The idea is that by averaging (or majority voting) multiple good prediction algorithms you can reduce variability without giving up bias. One of the earliest descriptions of this idea was of a much simplified version based on [bootstrapping samples](http://en.wikipedia.org/wiki/Bootstrapping_(statistics)) and building multiple prediction functions - a [process called bagging](http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf) (short for bootstrap aggregating). [Random forests](http://en.wikipedia.org/wiki/Random_forest), another incredibly successful prediction algorithm, is based on a similar idea with classification trees.

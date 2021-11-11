@@ -1,20 +1,13 @@
 ---
-id: 2657
-title: "On the scalability of statistical procedures: why the p-value bashers just don't get it."
-date: 2014-02-14T12:40:06+00:00
+title: 'On the scalability of statistical procedures: why the p-value bashers just
+  don''t get it.'
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_607993832589810
-al2fb_facebook_link_time:
-  - 2014-02-14T17:40:11+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2266743348
-categories:
-  - Uncategorized
-slug: "on-the-scalability-of-statistical-procedures-why-the-p-value-bashers-just-dont-get-it"
+date: '2014-02-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 **Executive Summary**
 
   1. The problem is not p-values it is a fundamental shortage of data analytic skill.

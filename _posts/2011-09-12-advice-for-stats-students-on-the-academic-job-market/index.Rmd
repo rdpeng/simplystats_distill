@@ -1,21 +1,12 @@
 ---
-id: 467
 title: Advice for stats students on the academic job market
-date: 2011-09-12T13:34:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/10124797490/advice-for-stats-students-on-the-academic-job-market
-tumblr_simplystatistics_id:
-  - 10124797490
-dsq_thread_id:
-  - 934052424
-categories:
-  - Uncategorized
-tags:
-  - advice
-  - Careers
-slug: "advice-for-stats-students-on-the-academic-job-market"
+date: '2011-09-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Job hunting season is upon us. Openings are already being posted <a href="http://www.stat.ufl.edu/vlib/Index.html" target="_blank">here</a>, <a href="http://www.stat.washington.edu/jobs/" target="_blank">here</a>, and <a href="http://jobs.amstat.org/" target="_blank">here</a>. So you should have your CV, research statement, and web page ready. I highly recommend having a web page.  It doesn&#8217;t have to be fancy. <a href="http://jkp-mac1.uchicago.edu/~pickrell/Site/Home.html" target="_blank">Here</a>, <a href="http://www.biostat.jhsph.edu/~khansen/" target="_blank">here</a>, and <a href="http://www.biostat.jhsph.edu/~jleek/research.html" target="_blank">here</a> are some good ones ranging from simple to a bit over the top. Minimum requirements are a list of publications and a link to a CV. If you have written software, link to that as well.
 
 The earlier you submit the better. Don&#8217;t wait for your letters. Keep in mind two things: 1) departments have a limit of how many people they can invite and 2) admissions committee members get tired after reading 200+ CVs. 

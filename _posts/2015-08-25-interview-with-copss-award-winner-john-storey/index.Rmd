@@ -1,22 +1,12 @@
 ---
-id: 4288
 title: Interview with COPSS award Winner John Storey
-date: 2015-08-25T09:25:28+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_849230085132849
-al2fb_facebook_link_time:
-  - 2015-08-25T13:25:35+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/08/jdstorey-198x300.jpg
-dsq_thread_id:
-  - 4065427255
-categories:
-  - Uncategorized
-slug: "interview-with-copss-award-winner-john-storey"
+date: '2015-08-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 ![John Storey Picture](https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/jdstorey.jpg)
 

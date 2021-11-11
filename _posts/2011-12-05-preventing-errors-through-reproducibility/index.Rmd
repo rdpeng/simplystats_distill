@@ -1,20 +1,12 @@
 ---
-id: 352
 title: Preventing Errors through Reproducibility
-date: 2011-12-05T15:15:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13780369155/preventing-errors-through-reproducibility
-tumblr_simplystatistics_id:
-  - 13780369155
-dsq_thread_id:
-  - 962975351
-categories:
-  - Uncategorized
-tags:
-  - reproducibility
-slug: "preventing-errors-through-reproducibility"
+date: '2011-12-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Checklist mania has hit clinical medicine thanks to people like Peter Pronovost and many others. The basic idea is that simple and short checklists along with changes to clinical culture can prevent major errors from occurring in medical practice. One particular success story is Pronovost&#8217;s central line checklist which <a href="http://www.ncbi.nlm.nih.gov/pubmed/15483409" target="_blank">dramatically reduced bloodstream infections</a> in hospital intensive care units.  
 
 There are three important points about the checklist. First, it neatly summarizes information, bringing the latest evidence directly to clinical practice. It is easy to follow because it is short. Second, it serves to slow you down from whatever you&#8217;re doing. Before you cut someone open for surgery, you stop for a second and run the checklist. Third, it is a kind of equalizer that subtly changes the culture: everyone has to follow the checklist, no exceptions. A number of studies have now shown that when clinical units follow checklists, infection rates go down and hospital stays are shorter compared to units using standard procedures. 

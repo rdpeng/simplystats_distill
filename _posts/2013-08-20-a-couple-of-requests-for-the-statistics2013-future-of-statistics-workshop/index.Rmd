@@ -1,20 +1,12 @@
 ---
-id: 1681
 title: A couple of requests for the @Statistics2013 future of statistics workshop
-date: 2013-08-20T10:22:50+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_532285690160625
-al2fb_facebook_link_time:
-  - 2013-08-20T14:22:55+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1620793374
-categories:
-  - Uncategorized
-slug: "a-couple-of-requests-for-the-statistics2013-future-of-statistics-workshop"
+date: '2013-08-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Statistics 2013 is hosting a workshop on the [future of statistics](http://www.statistics2013.org/about-the-future-of-the-statistical-sciences-workshop/). Given the timing and the increasing popularity of our discipline I think its a great idea to showcase the future of our field.
 
 I just have two requests:

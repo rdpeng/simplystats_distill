@@ -1,20 +1,12 @@
 ---
-id: 2120
 title: 'Simply Statistics Future of Statistics Speakers - Two Truths, One Lie #futureofstats'
-date: 2013-10-28T10:28:19+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_561897317199462
-al2fb_facebook_link_time:
-  - 2013-10-28T14:28:24+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1910620533
-categories:
-  - Uncategorized
-slug: "simply-statistics-future-of-statistics-speakers-two-truths-one-lie-futureofstats"
+date: '2013-10-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Our online conference live-streamed on Youtube is going to happen on October 30th 12PM-1PM Baltimore (UTC-4:00) time. You can find more information [here](http://simplystatistics.org/unconference) or sign up for email alerts [here](https://plus.google.com/events/cd94ktf46i1hbi4mbqbbvvga358). I get bored with the usual speaker bios at conferences so I am turning our speaker bios into a game. Below you will find three bullet pointed items of interest about each of our speakers. Two of them are truths and one is a lie. See if you can spot the lies and [sign up for the unconference](https://plus.google.com/events/cd94ktf46i1hbi4mbqbbvvga358)!
 
 **[Hadley Wickham](http://had.co.nz/)**

@@ -1,26 +1,13 @@
 ---
-id: 935
-title: "Why I disagree with Andrew Gelman's critique of my paper about the rate of false discoveries in the medical literature"
-date: 2013-01-24T14:55:17+00:00
+title: Why I disagree with Andrew Gelman's critique of my paper about the rate of
+  false discoveries in the medical literature
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_450828674972994
-al2fb_facebook_link_time:
-  - 2013-01-24T19:55:21+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/01/all-significant-300x228.jpg
-dsq_thread_id:
-  - 1044857889
-categories:
-  - Uncategorized
-tags:
-  - blog fight
-  - gelman
-  - Ioannidis
-  - rate of false positives
-  - swfdr
-slug: "why-i-disagree-with-andrew-gelmans-critique-of-my-paper-about-the-rate-of-false-discoveries-in-the-medical-literature"
+date: '2013-01-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 With a colleague, I wrote a paper titled, ["Empirical estimates suggest most published medical research is true"](http://arxiv.org/abs/1301.3718)  which we quietly posted to ArXiv a few days ago. I posted to the ArXiv in the interest of open science and because we didn't want to delay the dissemination of our approach during the long review process. I didn't email anyone about the paper or talk to anyone about it, except my friends here locally.
 
 I underestimated the internet. Yesterday, the paper was covered in [this piece](http://www.technologyreview.com/view/510126/the-statistical-puzzle-over-how-much-biomedical-research-is-wrong/) on the MIT Tech review. That exposure was enough for the paper to appear in a few different outlets. I'm totally comfortable with the paper, but was not anticipating all of the attention so quickly.

@@ -1,10 +1,12 @@
 ---
 title: Data scientist on a chromebook take two
 author: Jeff Leek
-comments: true
-slug: "chromebook-part2"
-date: 2016-11-08
+date: '2016-11-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 My friend Fernando showed me his collection of [old Apple dongles](https://twitter.com/jtleek/status/795749713966497793) that no longer work with the latest generation of Apple devices. This coupled with the announcement of the Macbook pro  that promises way more dongles and mostly the same computing, had me freaking out about my computing platform for the future. I've been using cloudy tools for more and more of what I do and so it had me wondering if it was time to go back and try my [Chromebook experiment](http://simplystatistics.org/2012/01/09/a-statistician-and-apple-fanboy-buys-a-chromebook-and/) again. Basically the question is whether I can do everything I need to do comfortably on a Chromebook. 
 

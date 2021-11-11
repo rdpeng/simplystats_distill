@@ -1,10 +1,12 @@
 ---
 title: A non-comprehensive list of awesome things other people did in 2016
 author: Jeff Leek
-comments: true
-slug: "noncomprehensive-list-of-awesome"
-date: 2016-12-20
+date: '2016-12-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note: For the last few years I have made a list of awesome things that other people did ([2015](http://simplystatistics.org/2015/12/21/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2015/), [2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/), [2013](http://simplystatistics.org/2013/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-this-year/)). Like in previous years I'm making a list, again right off the top of my head.  If you know of some, you should make your own list or add it to the comments! I have also avoided talking about stuff I worked on or that people here at Hopkins are doing because this post is supposed to be about other people’s awesome stuff. I write this post because a blog often feels like a place to complain, but we started Simply Stats as a place to be pumped up about the stuff people were doing with data._
 

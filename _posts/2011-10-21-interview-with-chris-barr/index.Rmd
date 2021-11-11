@@ -1,22 +1,12 @@
 ---
-id: 402
 title: Interview With Chris Barr
-date: 2011-10-21T11:13:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11729003971/interview-with-chris-barr
-tumblr_simplystatistics_id:
-  - 11729003971
-dsq_thread_id:
-  - 934180977
-categories:
-  - Uncategorized
-tags:
-  - Chris Barr
-  - interview
-  - OpenIntro
-slug: "interview-with-chris-barr"
+date: '2011-10-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p class="MsoNormal">
   <strong>Chris Barr</strong>
 </p>

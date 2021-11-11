@@ -1,20 +1,12 @@
 ---
-id: 1436
 title: Doing Statistical Research
-date: 2013-06-25T09:12:36+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_509797149076146
-al2fb_facebook_link_time:
-  - 2013-06-25T13:12:41+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1433843246
-categories:
-  - Uncategorized
-slug: "doing-statistical-research"
+date: '2013-06-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There's a wonderful article over at the STATtr@k web site by Terry Speed on [How to Do Statistical Research](http://stattrak.amstat.org/2013/06/01/how-to-do-statistical-research/). There is a lot of good advice there, but the column is most notable because it's pretty much the exact opposite of the advice that I got when I first started out.
 
 To quote the article:

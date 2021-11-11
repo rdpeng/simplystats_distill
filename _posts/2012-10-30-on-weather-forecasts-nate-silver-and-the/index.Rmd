@@ -1,23 +1,12 @@
 ---
-id: 20
 title: On weather forecasts, Nate Silver, and the politicization of statistical illiteracy
-date: 2012-10-30T14:00:35+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/34635539704/on-weather-forecasts-nate-silver-and-the
-tumblr_simplystatistics_id:
-  - 34635539704
-dsq_thread_id:
-  - 933633807
-categories:
-  - Uncategorized
-tags:
-  - five thirty eigh
-  - nate silver
-  - R
-  - simulation
-slug: "on-weather-forecasts-nate-silver-and-the"
+date: '2012-10-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As you know, <a href="http://simplystatistics.org/post/34483703514/sunday-data-statistics-link-roundup-10-28-12" target="_blank">we</a> <a href="http://simplystatistics.org/post/33564003058/sunday-data-statistics-link-roundup-10-14-12" target="_blank">have</a> a <a href="http://simplystatistics.org/post/29407938554/statistics-statisticians-need-better-marketing" target="_blank">thing</a> for <a href="http://simplystatistics.org/post/13684264380/citizen-science-makes-statistical-literacy-critical" target="_blank">statistical literacy</a> here at Simply Stats. So of course this <a href="http://www.politico.com/blogs/media/2012/10/nate-silver-romney-clearly-could-still-win-147618.html" target="_blank">column over at Politico</a> got our attention (via Chris V. and others). The column is an attack on Nate Silver, <a href="http://fivethirtyeight.blogs.nytimes.com/" target="_blank">who has a blog</a> where he tries to predict the outcome of elections in the U.S., you may have heard of it&#8230;
 
 The argument that Dylan Byers makes in the Politico column is that Nate Silver is likely to be embarrassed by the outcome of the election if Romney wins. The reason is that Silver&#8217;s predictions have suggested Obama has a 75% chance to win the election recently and that number has never dropped below 60% or so. 

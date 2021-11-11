@@ -1,18 +1,12 @@
 ---
-id: 98
 title: NSF recognizes math and statistics are not the same thing...kind of
-date: 2012-08-21T15:19:38+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/29899900125/nsf-recognizes-math-and-statistics-are-not-the-same
-tumblr_simplystatistics_id:
-  - 29899900125
-dsq_thread_id:
-  - 935449891
-categories:
-  - Uncategorized
-slug: "nsf-recognizes-math-and-statistics-are-not-the-same"
+date: '2012-08-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There&#8217;s controversy brewing over at the National Science Foundation over names. Back in October 2011, Sastry Pantula, the Director of the Division of Mathematical Sciences at NSF (formerly the Chair of NC State Statistics Department and President of the ASA), proposed that the name of the Division be changed to the &#8220;Division of Mathematical and Statistical Sciences&#8221;. Excerpting from his <a href="http://imstat.org/pantulaletter10_6_11.pdf" target="_blank">original proposal</a>, Pantula says
 
 > Extracting useful knowledge from the deluge of data is critical to the scientific successes of the future. Data-intensive research will drive many of the major scientific breakthroughs in the coming decades. There is a long-term need for research and workforce development in computational and data-enabled sciences. Statistics is broadly recognized as a data-centric discipline, thus having it in the Division&#8217;s name as proposed would be advantageous whenever &#8220;Big Data&#8221; and data-sciences investments are discussed internally and externally.

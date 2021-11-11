@@ -1,24 +1,12 @@
 ---
-id: 42
 title: Statistics project ideas for students (part 2)
-date: 2012-10-04T17:56:43+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/32881133740/statistics-project-ideas-for-students-part-2
-tumblr_simplystatistics_id:
-  - 32881133740
-dsq_thread_id:
-  - 933655847
-categories:
-  - Uncategorized
-tags:
-  - aggregator
-  - coursera
-  - Fitbit
-  - project ideas
-  - R package
-slug: "statistics-project-ideas-for-students-part-2"
+date: '2012-10-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A little while ago I wrote a post on <a href="http://simplystatistics.org/post/18493330661/statistics-project-ideas-for-students" target="_blank">statistics projects ideas for students</a>. In honor of the first Simply Statistics Coursera offering, <a href="https://www.coursera.org/course/compdata" target="_blank">Computing for Data Analysis</a>, here is a new list of student projects for folks excited about trying out those new R programming skills. Again we have rated each project with my best guess difficulty and effort required. Happy computing!
 
 **Data Analysis**

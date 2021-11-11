@@ -1,22 +1,12 @@
 ---
-id: 4014
 title: The tyranny of the idea in science
-date: 2015-05-08T11:58:51+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_804261699629688
-al2fb_facebook_link_time:
-  - 2015-05-08T15:58:58+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3747580159
-categories:
-  - Uncategorized
-slug: "the-tyranny-of-the-idea-in-science"
+date: '2015-05-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There are a lot of analogies between [startups and academic science labs](http://simplystatistics.org/2012/09/20/every-professor-is-a-startup/). One thing that is definitely very different is the relative value of ideas in the startup world and in the academic world. For example, [Paul Graham has said:](http://simplystatistics.org/2012/09/20/every-professor-is-a-startup/)
 
 > Actually, startup ideas are not million dollar ideas, and here's an experiment you can try to prove it: just try to sell one. Nothing evolves faster than markets. The fact that there's no market for startup ideas suggests there's no demand. Which means, in the narrow sense of the word, that startup ideas are worthless.

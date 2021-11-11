@@ -1,18 +1,12 @@
 ---
-id: 203
 title: How do you know if someone is great at data analysis?
-date: 2012-05-07T13:17:16+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/22585430491/how-do-you-know-if-someone-is-great-at-data-analysis
-tumblr_simplystatistics_id:
-  - 22585430491
-dsq_thread_id:
-  - 947912053
-categories:
-  - Uncategorized
-slug: "how-do-you-know-if-someone-is-great-at-data-analysis"
+date: '2012-05-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Consider this exercise. Come up with a list of the top 5 people that you think are really good at data analysis.
 
 There&#8217;s one catch: They have to be people that you&#8217;ve never met nor have had any sort of personal interaction with (e.g. email, chat, etc.). So basically people who have written papers/books you&#8217;ve read or have given talks you&#8217;ve seen or that you know through other publicly available information. Who comes to mind? It&#8217;s okay to include people who are no longer living.

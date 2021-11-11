@@ -1,21 +1,13 @@
 ---
-id: 3221
 title: |
   Stop saying "Scientists discover..." instead say, "Prof. Doe's team discovers..."
-date: 2014-08-11T12:54:53+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_684401218282404
-al2fb_facebook_link_time:
-  - 2014-08-11T16:54:58+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2918531194
-categories:
-  - Uncategorized
-slug: "stop-saying-scientists-discover-instead-say-prof-does-team-discovers"
+date: '2014-08-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I was just reading an [article about data science in the WSJ](http://online.wsj.com/articles/academic-researchers-find-lucrative-work-as-big-data-scientists-1407543088). They were talking about how data scientists with just 2 years experience can earn a whole boatload of money*. I noticed a description that seemed very familiar:
 
 > At e-commerce site operator Etsy Inc., for instance, a biostatistics Ph.D. who spent years mining medical records for early signs of breast cancer now writes statistical models to figure out the terms people use when they search Etsy for a new fashion they saw on the street.

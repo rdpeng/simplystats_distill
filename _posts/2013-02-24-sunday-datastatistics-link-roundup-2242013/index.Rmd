@@ -1,24 +1,12 @@
 ---
-id: 1046
 title: Sunday data/statistics link roundup (2/24/2013)
-date: 2013-02-24T10:00:00+00:00
 author: Jeff Leek
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_466040776785117
-al2fb_facebook_link_time:
-  - 2013-02-24T15:00:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1102297797
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-2242013"
+date: '2013-02-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. <span style="font-size: 16px">An attempt to create a version of </span><a style="font-size: 16px" href="https://github.com/amarder/stata-tutorial">knitr for stata</a><span style="font-size: 16px"> (via John M.)</span><span style="font-size: 16px">. I  like the direction that reproducible research is moving - toward easier use and wider spread adoption. The success of </span><a style="font-size: 16px" href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">iPython notebook</a><span style="font-size: 16px"> is another great sign for the whole research area.</span>
   2. Email is [always a problem](http://simplystatistics.org/2012/12/05/an-idea-for-killing-email/) for me. In the last week I've been introduced to a couple of really nice apps that give me insight into my email habits ([Gmail meter](http://www.gmailmeter.com/) - via John M.) and that help me to send reminders to myself with minimal hassle ([Boomerang](http://www.boomeranggmail.com/) - via Brian C.)
   3. Andrew Lo proposes a new model for [cancer research funding](http://www.businessinsider.com/qa-with-mit-finance-professor-andrew-lo-2013-2) based on his research in financial engineering. In light of the [impending sequester](http://simplystatistics.org/2013/02/13/im-a-young-scientist-and-sequestration-will-hurt-me/) I'm interested in alternative funding models for data science/statistics in biology. But the concerns I have about both crowd-funding and Lo's idea are whether the basic scientists get hosed and whether sustained funding at a level that will continue to attract top scientists is possible.

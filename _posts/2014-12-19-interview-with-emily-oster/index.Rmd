@@ -1,22 +1,12 @@
 ---
-id: 3711
 title: Interview with Emily Oster
-date: 2014-12-19T09:39:38+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_741073692615156
-al2fb_facebook_link_time:
-  - 2014-12-19T14:39:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/12/Emily_Oster_Photo-198x300.jpg
-dsq_thread_id:
-  - 3340159922
-categories:
-  - Uncategorized
-slug: "interview-with-emily-oster"
+date: '2014-12-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   <div class="nD">
     <div dir="ltr">

@@ -1,20 +1,12 @@
 ---
-id: 1672
 title: Embarrassing typos reveal the dangers of the lonely data analyst
-date: 2013-08-09T09:33:53+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_527271977328663
-al2fb_facebook_link_time:
-  - 2013-08-09T13:33:58+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1588872476
-categories:
-  - Uncategorized
-slug: "embarrassing-typos-reveal-the-dangers-of-the-lonely-data-analyst"
+date: '2013-08-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [A silly, but actually very serious, error](http://lifesciencephdadventures.wordpress.com/2013/08/07/a-failure-of-authorship-and-peer-review/) in the supplementary material of a recent paper in Organometallics is causing a stir on the internets (I saw it on [Andrew G.'s](http://andrewgelman.com/2013/08/08/for-chrissake-just-make-up-an-analysis-already-we-have-a-lab-here-to-run-yknow/) blog). The error in question is a comment in the [supplementary material](http://pubs.acs.org/doi/suppl/10.1021/om4000067/suppl_file/om4000067_si_002.pdf) of the paper:
 
 > Emma, please insert NMR data here! where are they? and for this compound, just make up an elemental analysis . . .

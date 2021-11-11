@@ -2,10 +2,11 @@
 title: Input on the Draft NIH Strategic Plan for Data Science
 author: Rafael Irizarry
 date: '2018-04-02'
-slug: input-on-the-draft-NIH-strategic-plan-for-data-science
-categories:
-  - NIH
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 The NIH is soliciting input for their [Strategic Plan for Data Science](https://grants.nih.gov/grants/rfi/NIH-Strategic-Plan-for-Data-Science.pdf). If you are interested, today, April 2, is the deadline. You can provide input [here](https://grants.nih.gov/grants/rfi/rfi.cfm?ID=73). Below is what I plan to  submit.
 

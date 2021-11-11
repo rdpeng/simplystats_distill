@@ -1,26 +1,12 @@
 ---
-id: 738
 title: The value of re-analysis
-date: 2012-12-18T11:58:28+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_435398679849327
-al2fb_facebook_link_time:
-  - 2012-12-18T16:58:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 981030074
-categories:
-  - Uncategorized
-tags:
-  - cook
-  - data analysis
-  - king
-  - reproducible research
-  - retyping
-slug: "the-value-of-re-analysis"
+date: '2012-12-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I just saw [this really nice post](http://www.johndcook.com/blog/2012/12/18/the-value-of-typing-code/) over on John Cook's blog. He talks about how it is a valuable exercise to re-type code for examples you find in a book or on a blog. I completely agree that this is a good way to learn through osmosis, learn about debugging, and often pick up the reasons for particular coding tricks (this is how I learned about vectorized calculations in Matlab, by re-typing and running my advisors code back in my youth).
 
 In a more statistical version of this idea, Gary King has proposed [reproducing the analysis](http://gking.harvard.edu/gking/papers) in a published paper as a way to get a paper of your own.  You can figure out the parts that a person did well and the parts that you would do differently, maybe finding enough insight to come up with your own new paper. But I think this level of replication involves actually two levels of thinking:

@@ -1,22 +1,12 @@
 ---
-id: 3729
 title: Sunday data/statistics link roundup (12/21/14)
-date: 2014-12-21T22:00:33+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_742371875818671
-al2fb_facebook_link_time:
-  - 2014-12-22T03:00:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3347747062
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-122114"
+date: '2014-12-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 James Stewart, author of the most popular Calculus textbook in the world, [passed away](http://classic.slashdot.org/story/14/12/20/0036210). In case you wonder if there is any money in textbooks, he had a $32 million house in Toronto. Maybe I should get out of MOOCs and into textbooks.
 
   1. [This post](https://medium.com/the-physics-arxiv-blog/cause-and-effect-the-revolutionary-new-statistical-test-that-can-tease-them-apart-ed84a988e) on medium about a new test for causality is making the rounds.  The authors [of the original paper](http://arxiv.org/pdf/1412.3773v1.pdf) make clear their assumptions make the results basically unrealistic for any real analysis for example:"[We simplify the causal discovery problem by assuming no confounding, selection bias and feedback.](http://arxiv.org/pdf/1412.3773v1.pdf)" The medium article is too bold and as I replied to an economist who tweeted there was a new test that could distinguish causality: "[Nope](https://twitter.com/simplystats/status/545769855564398593)".

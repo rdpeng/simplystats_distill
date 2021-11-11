@@ -1,20 +1,12 @@
 ---
-id: 1168
-title: "Data science only poses a threat to (bio)statistics if we don't adapt"
-date: 2013-04-15T15:19:16+00:00
+title: Data science only poses a threat to (bio)statistics if we don't adapt
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_483840105005184
-al2fb_facebook_link_time:
-  - 2013-04-15T19:19:21+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1213203404
-categories:
-  - Uncategorized
-slug: "data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt"
+date: '2013-04-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 We have previously mentioned on this blog how [statistics needs better marketing](http://simplystatistics.org/2012/08/14/statistics-statisticians-need-better-marketing/). Recently, Karl B. has suggested that "[Data science is statistics](http://kbroman.wordpress.com/2013/04/05/data-science-is-statistics/)" and Larry W. has wondered if "[Data science is the end of statistics?](http://normaldeviate.wordpress.com/2013/04/13/data-science-the-end-of-statistics/)" I think there are a couple of types of data science and that each has a different relationship to the discipline of academic statistics:
 
   1. **Data science as marketing tool**. Data analytics, data science, big data, etc. are terms that companies who already did something (IT infrastructure, consulting, database management, etc.) throw around to make them sound like they are doing the latest and greatest thing. These marketers are dabblers in what I would call the real "science of data" or maybe deal with just one part of the data pipeline. I think they pose no threat to the statistics community other than by generating backlash by over promising on the potential of data science or diluting the term to the point of being almost non-sensical.

@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 30 - Philately and Numismatology
-slug: "nssd-episode-30"
-date: 2017-01-09
+author: Roger Peng
+date: '2017-01-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and I follow up on open data and data sharing in government. They also discuss artificial intelligence, self-driving cars, and doing your taxes in R. 
 

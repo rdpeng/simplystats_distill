@@ -1,20 +1,12 @@
 ---
-id: 2140
 title: 'Tukey Talks Turkey #futureofstats'
-date: 2013-10-29T09:38:00+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_562303013825559
-al2fb_facebook_link_time:
-  - 2013-10-29T13:38:06+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1914663464
-categories:
-  - Uncategorized
-slug: "tukey-talks-turkey-futureofstats"
+date: '2013-10-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I've been digging up old "future of statistics" writings from the past in anticipation of our [Unconference on the Future of Statistics](http://simplystatistics.org/unconference) this Wednesday 12-1pm EDT. Last week I mentioned Daryl Pregibon's experience trying to [build statistical expertise into software](http://simplystatistics.org/2013/10/25/back-to-the-future-of-statistical-software-futureofstats/). One classic is ["The Future of Data Analysis"](http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.aoms/1177704711) by John Tukey published in the _Annals of Mathematical Statistics_ in 1962.
 
 Perhaps the most surprising aspect of this paper is how relevant it remains today. I think perhaps with just a few small revisions it could easily be published in a journal today and few people would find it out of place.

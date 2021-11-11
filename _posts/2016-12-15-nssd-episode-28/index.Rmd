@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 28 - Writing is a lot Harder than Just Talking
-slug: "nssd-episode-28"
-date: 2016-12-15
+author: Roger Peng
+date: '2016-12-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and I talk about building data science products that provide a good user experience while adhering to some kind of ground truth, whether it’s in medicine, education, news, or elsewhere. Also Gilmore Girls.
 

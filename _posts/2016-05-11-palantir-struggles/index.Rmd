@@ -1,10 +1,12 @@
 ---
 title: The Real Lesson for Data Science That is Demonstrated by Palantir's Struggles
 author: Roger Peng
-comments: true
-slug: "palantir-struggles"
-date: 2016-05-11
+date: '2016-05-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Buzzfeed recently published a [long article](https://www.buzzfeed.com/williamalden/inside-palantir-silicon-valleys-most-secretive-company?utm_term=.ko2PLKaMJ#.wiPxJERyA) on the struggles of the secretive data science company, Palantir. 
 

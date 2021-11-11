@@ -1,20 +1,12 @@
 ---
-id: 3227
-title: "swirl and the little data scientist's predicament"
-date: 2014-08-13T15:41:58+00:00
+title: swirl and the little data scientist's predicament
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_685288981526961
-al2fb_facebook_link_time:
-  - 2014-08-13T19:42:04+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2924535759
-categories:
-  - Uncategorized
-slug: "swirl-and-the-little-data-scientists-predicament"
+date: '2014-08-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p style="color: #333333;">
   <em>Editor's note: This is a repost of "<a href="http://simplystatistics.org/2012/03/26/r-and-the-little-data-scientists-predicament/">R and the little data scientist's predicament</a>". A brief idea for an update is presented at the end in italics. </em>
 </p>

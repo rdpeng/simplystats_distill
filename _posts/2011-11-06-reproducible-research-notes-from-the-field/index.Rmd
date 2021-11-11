@@ -1,20 +1,12 @@
 ---
-id: 385
 title: 'Reproducible research: Notes from the field'
-date: 2011-11-06T16:13:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12421558195/reproducible-research-notes-from-the-field
-tumblr_simplystatistics_id:
-  - 12421558195
-dsq_thread_id:
-  - 934683053
-categories:
-  - Uncategorized
-tags:
-  - reproducibility
-slug: "reproducible-research-notes-from-the-field"
+date: '2011-11-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Over the past year, I&#8217;ve been doing a lot of talking about reproducible research. Talking to people, talking on panel discussions, and talking about <a href="http://simplystatistics.tumblr.com/post/12243614318/i-gave-a-talk-on-reproducible-research-back-in" target="_blank">some of my own work</a>. It seems to me that interest in the topic has exploded recently, in part due to some recent scandals, such as the <a href="http://simplystatistics.tumblr.com/post/10068195751/the-duke-saga" target="_blank">Duke clinical trials fiasco</a>.
 
 If you are unfamiliar with the term &#8220;reproducible research&#8221;, the basic idea is that authors of published research should make available the necessary materials so that others may reproduce to a very high degree of similarity the published findings. If that definitions seems imprecise, well that&#8217;s because it is.

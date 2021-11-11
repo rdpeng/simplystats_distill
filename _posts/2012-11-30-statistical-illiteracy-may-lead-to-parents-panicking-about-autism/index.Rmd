@@ -1,18 +1,12 @@
 ---
-id: 648
 title: Statistical illiteracy may lead to parents panicking about Autism.
-date: 2012-11-30T13:09:01+00:00
 author: Jeff Leek
-dsq_thread_id:
-  - 951802366
-categories:
-  - Uncategorized
-tags:
-  - p-values
-  - Rant
-  - statistical literacy
-slug: "statistical-illiteracy-may-lead-to-parents-panicking-about-autism"
+date: '2012-11-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I just was doing my morning reading of a few news sources and stumbled across this [Huffington Post article](http://www.huffingtonpost.com/2012/11/29/autism-risk-babies-cries_n_2211729.html) talking about research correlating babies cries to autism. It suggests that the sound of a babies cries may predict their future risk for autism. As the parent of a young son, this obviously caught my attention in a very lizard-brain, caveman sort of way. I couldn't find a link to the research paper in the article so I did some searching and found out this result is also being covered by [Time](http://healthland.time.com/2012/11/28/can-a-babys-cry-be-a-clue-to-autism/), [Science Daily](http://www.sciencedaily.com/releases/2012/11/121127111352.htm), [Medical Daily](http://www.medicaldaily.com/articles/13324/20121129/baby-s-cry-reveal-autism-risk.htm), and a bunch of other news outlets.
 
 Now thoroughly freaked, I looked online and found the pdf of the [original research article](https://www.ewi-ssl.pitt.edu/psychology/admin/faculty-publications/201209041019040.Sheinkopf%20in%20press.pdf). I started looking at the statistics and took a deep breath. Based on the analysis they present in the article there is absolutely no statistical evidence that a babies' cries can predict autism. Here are the flaws with the study:

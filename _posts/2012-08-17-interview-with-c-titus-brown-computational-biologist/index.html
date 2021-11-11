@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Interview with C. Titus Brown - Computational biologist and open access champion</title>
+
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2012-08-17"/>
+  <meta property="article:created" itemprop="dateCreated" content="2012-08-17"/>
+  <meta name="article:author" content="Admin"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Interview with C. Titus Brown - Computational biologist and open access champion"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Interview with C. Titus Brown - Computational biologist and open access champion"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Interview with C. Titus Brown - Computational biologist and open access champion"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Admin"]}]}]},{"type":"character","attributes":{},"value":["2012-08-17"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"NULL"}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="index_files/popper-2.6.0/popper.min.js"></script>
+  <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="index_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="index_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="index_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="index_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="index_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="index_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Interview with C. Titus Brown - Computational biologist and open access champion","authors":[{"author":"Admin","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2012-08-17T00:00:00.000-04:00","citationText":"Admin, 2012"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Interview with C. Titus Brown - Computational biologist and open access champion</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+
+</div>
+
+<div class="d-byline">
+  
+  Admin
+  
+<br/>2012-08-17
+</div>
+
+<div class="d-article">
+<div class="im">
+<p><strong>C. Titus Brown </strong></p>
+</div>
+<div class="im">
+<p><strong><br /></strong></p>
+</div>
+<div class="im">
+<p><strong><br /></strong></p>
+</div>
+<div class="im">
+<p><img height="300" src="http://biostat.jhsph.edu/~jleek/titus.jpg" width="300" /></p>
+</div>
+<div class="im">
+
+</div>
+<div class="im">
+<p>C. Titus Brown is an assistant professor in the Department of Computer Science and Engineering at Michigan State University. He develops computational software for next generation sequencing and the author of the blog, <a href="http://ivory.idyll.org/blog/" target="_blank">“Living in an Ivory Basement”</a>. We talked to Titus about open access (he publishes his unfunded grants online!), improving the reputation of PLoS One, his research in computational software development, and work-life balance in academics. </p>
+</div>
+<!-- more -->
+<div class="im">
+
+</div>
+<div class="im">
+
+</div>
+<div class="im">
+<strong>Do you consider yourself a statistician, data scientist, computer scientist, or something else?</strong>
+</p>
+</div>
+<p><span>Good question.  Short answer: apparently somewhere along the way I</span><br />
+<span>became a biologist, but with a heavy dose of “computational scientist”</span><br />
+<span>in there.</span></p>
+<p><span>The longer answer?  Well, it’s a really long answer…</span></p>
+<p><span>My first research was on Avida, a bottom-up model for evolution that</span><br />
+<span>Chris Adami, Charles Ofria and I wrote together at Caltech in 1993:</span><br />
+<a href="http://en.wikipedia.org/wiki/Avida" target="_blank"><a href="http://en.wikipedia.org/wiki/Avida" target="_blank">http://en.wikipedia.org/wiki/Avida</a></a><span>.  (Fun fact: Chris, Charles and I</span><br />
+<span>are now all faculty at Michigan State!  Chris and I have offices one</span><br />
+<span>door apart, and Charles has an office one floor down.)  Avida got me</span><br />
+<span>very interested in biology, but not in the undergrad “memorize stuff”</span><br />
+<span>biology — more in research.  This was computational science: using</span><br />
+<span>simple models to study biological phenomena.</span></p>
+<p><span>While continuing evolution research, I did my undergrad in pure math at Reed</span><br />
+<span>College, which was pretty intense; I worked in the Software Development</span><br />
+<span>lab there, which connected me to a bunch of reasonably well known hackers</span><br />
+<span>including Keith Packard, Mark Galassi, and Nelson Minar.</span></p>
+<p><span>I also took a year off and worked on Earthshine:</span></p>
+<p><a href="http://en.wikipedia.org/wiki/Planetshine#Earthshine" target="_blank"><a href="http://en.wikipedia.org/wiki/Planetshine#Earthshine" target="_blank">http://en.wikipedia.org/wiki/Planetshine#Earthshine</a></a></p>
+<p><span>and then rebooted the project as an RA in 1997, the summer after</span><br />
+<span>graduation.  This was mostly data analysis, although it included a</span><br />
+<span>fair amount of hanging off of telescopes adjusting things as the</span><br />
+<span>freezing winter wind howled through the Big Bear Solar Observatory’s</span><br />
+<span>observing room, aka “data acquisition”.</span></p>
+<p><span>After Reed, I applied to a bunch of grad schools, including Princeton</span><br />
+<span>and Caltech in bio, UW in Math, and UT Austin and Ohio State in</span><br />
+<span>physics.  I ended up at Caltech, where I switched over to</span><br />
+<span>developmental biology and (eventually) regulatory genomics and genome</span><br />
+<span>biology in Eric Davidson’s lab.  My work there included quite a bit</span><br />
+<span>of wet bench biology, which is not something many people associate with me,</span><br />
+<span>but was nonetheless something I did!</span></p>
+<p><span>Genomics was really starting to hit the fan in the early 2000s, and I</span><br />
+<span>was appalled by how biologists were handling the data — as one</span><br />
+<span>example, we had about $500k worth of sequences sitting on a shared</span><br />
+<span>Windows server, with no metadata or anything — just the filenames.</span><br />
+<span>As another example, I watched a postdoc manually BLAST a few thousand</span><br />
+<span>ESTs against the NCBI nr database; he sat there and did them three by</span><br />
+<span>three, having figured out that he could concatenate three sequences</span><br />
+<span>together and then manually deconvolve the results.  As probably the</span><br />
+<span>most computationally experienced person in the lab, I quickly got</span><br />
+<span>involved in data analysis and Web site stuff, and ended up writing</span><br />
+<span>some comparative sequence analysis software that was mildly popular</span><br />
+<span>for a while.</span></p>
+<p><span>As part of the sequence analysis Web site I wrote, I became aware that</span><br />
+<span>maintaining software was a <em>really</em> hard problem.  So, towards the end</span><br />
+<span>of my 9 year stint in grad school, I spent a few years getting into</span><br />
+<span>testing, both Web testing and more generally automated software</span><br />
+<span>testing.  This led to perhaps my most used piece of software, twill, a</span><br />
+<span>scripting language for Web testing.  It also ended up being one of the</span><br />
+<span>things that got me elected into the Python Software Foundation,</span><br />
+<span>because I was doing everything in Python (which is a really great</span><br />
+<span>language, incidentally).</span></p>
+<p><span>I also did some microbial genome analysis (which led to my first</span><br />
+<span>completely reproducible paper (</span><span class="il">Brown</span><span> and Callan, 2004;</span><br />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/14983022" target="_blank"><a href="http://www.ncbi.nlm.nih.gov/pubmed/14983022" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/14983022</a></a><span>) and collaborated with the</span><br />
+<span>Orphan lab on some metagenomics:</span><br />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed?term=18467493" target="_blank"><a href="http://www.ncbi.nlm.nih.gov/pubmed?term=18467493" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed?term=18467493</a></a><span>.  This led to a</span><br />
+<span>fascination with the biological “dark matter” in nature that is the</span><br />
+<span>subject of some of my current work on metagenomics.</span></p>
+<p><span>I landed my faculty position at MSU right out of grad school, because</span><br />
+<span>bioinformatics is sexy and CS departments are OK with hiring grad</span><br />
+<span>students as faculty.  However, I deferred for two years to do a</span><br />
+<span>postdoc in Marianne Bronner-Fraser’s lab because I wanted to switch to</span><br />
+<span>the chick as a model organism, and so I ended up arriving at MSU in</span><br />
+<span>2009.  I had planned to focus a lot on development gene regulatory</span><br />
+<span>networks, but 2009 was when Illumina sequencing hit, and as one of the</span><br />
+<span>few people around who wasn’t visibly frightened by the term “gigabyte”</span><br />
+<span>I got inextricably involved in a lot of different sequence analysis</span><br />
+<span>projects.  These all converged on assembly, and, well, that seems to</span><br />
+<span>be what I work on now :).</span></p>
+<p><span>The two strongest threads that run through my research are these:</span></p>
+<p><span>1. “better science through superior software” — so much of science</span><br />
+<span>depends on computational inference these days, and so little of the</span><br />
+<span>underlying software is “good”.  Scientists <em>really</em> suck at software</span><br />
+<span>development (for both good and bad reasons) and I worry that a lot of</span><br />
+<span>our current science is on a really shaky foundation.  This is one</span><br />
+<span>reason I’m invested in Software Carpentry</span><br />
+<span>(</span><a href="http://software-carpentry.org/" target="_blank"><a href="http://software-carpentry.org" target="_blank">http://software-carpentry.org</a></a><span>), a training program that Greg Wilson</span><br />
+<span>has been developing — he and I agree that science is our best hope</span><br />
+<span>for a positive future, and good software skills are going to be</span><br />
+<span>essential for a lot of that science.  More generally I hope to turn</span><br />
+<span>good software development into a competitive advantage for my lab</span><br />
+<span>and my students.</span></p>
+<p><span>2. “better hypothesis generation is needed” — biologists, in</span><br />
+<span>particular, tend to leap towards the first testable hypothesis they</span><br />
+<span>find.  This is a cultural thing stemming (I think) from a lot of</span><br />
+<span>really bad interactions with theory: the way physicists and</span><br />
+<span>mathematicians think about the world simply doesn’t fit with the Rube</span><br />
+<span>Goldberg-esque features of biology (see</span><br />
+<a href="http://ivory.idyll.org/blog/is-discovery-science-really-bogus.html" target="_blank"><a href="http://ivory.idyll.org/blog/is-discovery-science-really-bogus.html" target="_blank">http://ivory.idyll.org/blog/is-discovery-science-really-bogus.html</a></a><span>).</span></p>
+<p><span>So getting back to the question, uh, yeah, I think I’m a computational</span><br />
+<span>scientist who is working on biology?  And if I need to write a little</span><br />
+<span>(or a lot) of software to solve my problems, I’ll do that, and I’ll</span><br />
+<span>try to do it with some attention to good software development</span><br />
+<span>practice — not just out of ethical concern for correctness, but</span><br />
+<span>because it makes our research move faster.</span></p>
+<p><span>One thing I’m definitely <em>not</em> is a statistician.  I have friends who</span><br />
+<span>are statisticians, though, and they seem like perfectly nice people.</span></p>
+<div class="im">
+<strong>You have a pretty radical approach to open access, can you tell us a little bit about that?</strong>
+</p>
+</div>
+<p><span>Ever since Mark Galassi introduced me to open source, I thought it</span><br />
+<span>made sense.  So I’ve been an open source-nik since … 1988?</span></p>
+<p><span>From there it’s just a short step to thinking that open science makes</span><br />
+<span>a lot of sense, too.  When you’re a grad student or a postdoc, you</span><br />
+<span>don’t get to make those decisions, though; it took until I was a PI</span><br />
+<span>for me to start thinking about how to do it.  I’m still conflicted</span><br />
+<span>about <em>how</em> open to be, but I’ve come to the conclusion that posting</span><br />
+<span>preprints is obvious</span><br />
+<span>(</span><a href="http://ivory.idyll.org/blog/blog-practicing-open-science.html" target="_blank"><a href="http://ivory.idyll.org/blog/blog-practicing-open-science.html" target="_blank">http://ivory.idyll.org/blog/blog-practicing-open-science.html</a></a><span>).</span></p>
+<p><span>The “radical” aspect that you’re referring to is probably my posting</span><br />
+<span>of grants (</span><a href="http://ivory.idyll.org/blog/grants-posted.html" target="_blank"><a href="http://ivory.idyll.org/blog/grants-posted.html" target="_blank">http://ivory.idyll.org/blog/grants-posted.html</a></a><span>).  There are</span><br />
+<span>two reasons I ended up posting all of my single-PI grants.  Both have</span><br />
+<span>their genesis in this past summer, when I spent about 5 months writing</span><br />
+<span>6 different grants — 4 of which were written entirely by me.  Ugh.</span></p>
+<p><span>First, I was really miserable one day and joked on Twitter that “all</span><br />
+<span>this grant writing is really cutting into my blogging” — a mocking</span><br />
+<span>reference to the fact that grant writing (to get $$) is considered</span><br />
+<span>academically worthwhile, while blogging (which communicates with the</span><br />
+<span>public and is objectively quite valuable) counts for naught with my</span><br />
+<span>employer.  Jonathan Eisen responded by suggesting that I post all of</span><br />
+<span>the grants and I thought, what a great idea!</span></p>
+<p><span>Second, I’m sure it’s escaped most people (hah!), but grant funding</span><br />
+<span>rates are in the toilet — I spent all summer writing grants while</span><br />
+<span>expecting most of them to be rejected.  That’s just flat-out</span><br />
+<span>depressing!  So it behooves me to figure out how to make them serve</span><br />
+<span>multiple duties.  One way to do that is to attract collaborators;</span><br />
+<span>another is to serve as google bait for my lab; a third is to provide</span><br />
+<span>my grad students with well-laid-out PhD projects.  A fourth duty they</span><br />
+<span>serve (and I swear this was unintentional) is to point out to people</span><br />
+<span>that this is MY turf and I’m already solving these problems, so maybe</span><br />
+<span>they should go play in less occupied territory.  I know, very passive</span><br />
+<span>aggressive…</span></p>
+<p><span>So I posted the grants, and unknowingly joined a really awesome cadre</span><br />
+<span>of folk who had already done the same</span><br />
+<span>(</span><a href="http://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/" target="_blank"><a href="http://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/" target="_blank">http://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/</a></a><span>).</span><br />
+<span>Most feedback I’ve gotten has been from grad students and undergrads</span><br />
+<span>who really appreciate the chance to look at grants; some people told</span><br />
+<span>me that they’d been refused the chance to look at grants from their</span><br />
+<span>own PIs!</span></p>
+<p><span>At the end of the day, I’d be lucky to be relevant enough that people</span><br />
+<span>want to steal my grants or my software (which, by the way, is under a</span><br />
+<span>BSD license — free for the taking, no “theft” required…).  My</span><br />
+<span>observation over the years is that most people will do just about</span><br />
+<span>anything to avoid using other people’s software.</span></p>
+<div class="im">
+<strong>In theoretical statistics, there is a tradition of publishing pre-prints while papers are submitted. Why do you think biology is lagging behind?</strong>
+</p>
+</div>
+<p><span>I wish I knew!  There’s clearly a tradition of secrecy in biology;</span><br />
+<span>just look at the Cold Spring Harbor rules re tweeting and blogging</span><br />
+<span>(</span><a href="http://meetings.cshl.edu/report.html" target="_blank"><a href="http://meetings.cshl.edu/report.html" target="_blank">http://meetings.cshl.edu/report.html</a></a><span>) - this is a conference, for</span><br />
+<span>chrissakes, where you go to present and communicate!  I think it’s</span><br />
+<span>self-destructive and leads to an insider culture where only those who</span><br />
+<span>attend meetings and chat informally get to be members of the club,</span><br />
+<span>which frankly slows down research. Given the societal and medical</span><br />
+<span>challenges we face, this seems like a really bad way to continue doing</span><br />
+<span>research.</span></p>
+<p><span>One of the things I’m proudest of is our effort on the cephalopod</span><br />
+<span>genome consortium’s white paper,</span><br />
+<a href="http://ivory.idyll.org/blog/cephseq-cephalopod-genomics.html" target="_blank"><a href="http://ivory.idyll.org/blog/cephseq-cephalopod-genomics.html" target="_blank">http://ivory.idyll.org/blog/cephseq-cephalopod-genomics.html</a></a><span>, where a</span><br />
+<span>group of bioinformaticians at the meeting pushed really hard to walk</span><br />
+<span>the line between secrecy and openness.  I came away from that effort</span><br />
+<span>thinking two things: first, that biologists were erring on the side of</span><br />
+<span>risk aversity; and second, that genome database folk were smoking</span><br />
+<span>crack when they pushed for complete openness of data.  (I have a blog</span><br />
+<span>post on that last statement coming up at some point.)</span></p>
+<p><span>The bottom line is that the incentives in academic biology are aligned</span><br />
+<span>against openness.  In particular, you are often rewarded for the first</span><br />
+<span>observation, not for the most useful one; if your data is used to do</span><br />
+<span>cool stuff, you don’t get much if any credit; and it’s all about</span><br />
+<span>first/last authorship and who is PI on the grants.  All too often this</span><br />
+<span>means that people sit on their data endlessly.</span></p>
+<p><span>This is getting particularly bad with next-gen data sets, because</span><br />
+<span>anyone can generate them but most people have no idea how to analyze</span><br />
+<span>their data, and so they just sit on it forever…</span></p>
+<div class="im">
+<strong>Do you think the ArXiv model will catch on in biology or just within the bioinformatics community?</strong>
+</p>
+</div>
+<p><span>One of my favorite quotes is: “Making predictions is hard, especially</span><br />
+<span>when they’re about the future.” I attribute it to Niels Bohr.</span></p>
+<p><span>It’ll take a bunch of big, important scientists to lead the way. We</span><br />
+<span>need key members of each subcommunity of biology to decide to do it on</span><br />
+<span>a regular basis. (At this point I will take the obligatory cheap shot</span><br />
+<span>and point out that Jonathan Eisen, noted open access fan, doesn’t post</span><br />
+<span>his stuff to preprint servers very often.  What’s up with that?)  It’s</span><br />
+<span>going to be a long road.</span></p>
+<div class="im">
+<strong>What is the reaction you most commonly get when you tell people you have posted your un-funded grants online?</strong>
+</p>
+</div>
+<p><span>“Ohmigod what if someone steals them?”</span></p>
+<p><span>Nobody has come up with a really convincing model for why posting</span><br />
+<span>grants is a bad thing.  They’re just worried that it <em>might</em> be.  I</span><br />
+<span>get the vague concerns about theft, but I have a hard time figuring</span><br />
+<span>out exactly how it would work out well for the thief — reputation is</span><br />
+<span>a big deal in science, and gossip would inevitably happen.  And at</span><br />
+<span>least in bioinformatics I’m aiming to be well enough known that</span><br />
+<span>straight up ripping me off would be suicidal.  Plus, if reviewers</span><br />
+<span>do/did google searches on key concepts then my grants would pop up,</span><br />
+<span>right?  I just don’t see it being a path to fame and glory for anyone.</span></p>
+<p><span>Revisiting the passive-aggressive nature of my grant posting, I’d like</span><br />
+<span>to point out that most of my grants depend on preliminary results from</span><br />
+<span>our own algorithms.  So even if they want to compete on my turf, it’ll</span><br />
+<span>be on a foundation I laid.  I’m fine with that — more citations for</span><br />
+<span>me, either way :).</span></p>
+<p><span>More optimistically, I really hope that people read my grants and then</span><br />
+<span>find new (and better!) ways of solving the problems posed in them.  My</span><br />
+<span>goal is to enable better science, not to hunker down in a tenured job</span><br />
+<span>and engage in irrelevant science; if someone else can use my grants as</span><br />
+<span>a positive or negative signpost to make progress, then broadly</span><br />
+<span>speaking, my job is done.</span></p>
+<p><span>Or, to look at it another way: I don’t have a good model for either</span><br />
+<span>the possible risks OR the possible rewards of posting the grants, and</span><br />
+<span>my inclinations are towards openness, so I thought I’d see what</span><br />
+<span>happens.</span></p>
+<div class="im">
+<strong>How can junior researchers correct misunderstandings about open access/journals like PLoS One that separate correctness from impact? Do you have any concrete ideas for changing minds of senior folks who aren’t convinced?</strong>
+</p>
+</div>
+<p><span>Render them irrelevant by becoming senior researchers who supplant them</span><br />
+<span>when they retire.  It’s the academic tradition, after all!  And it’s</span><br />
+<span>really the only way within the current academic system, which — for</span><br />
+<span>better or for worse — isn’t going anywhere.</span></p>
+<p><span>Honestly, we need fewer people yammering on about open access and more</span><br />
+<span>people simply doing awesome science and submitting it to OA journals.</span><br />
+<span>Conveniently, many of the high impact journals are shooting themselves</span><br />
+<span>in the foot and encouraging this by rejecting good science that then</span><br />
+<span>ends up in an OA journal; that wonderful ecology oped on PLoS One</span><br />
+<span>citation rates shows this well</span><br />
+<span>(</span><a href="http://library.queensu.ca/ojs/index.php/IEE/article/view/4351" target="_blank"><a href="http://library.queensu.ca/ojs/index.php/IEE/article/view/4351" target="_blank">http://library.queensu.ca/ojs/index.php/IEE/article/view/4351</a></a><span>).</span></p>
+<div class="im">
+<strong>Do you have any advice on what computing skills/courses statistics students interested in next generation sequencing should take?</strong>
+</p>
+</div>
+<p><span>For courses, no — in my opinion 80% of what any good researcher</span><br />
+<span>learns is self-motivated and often self-taught, and so it’s almost</span><br />
+<span>silly to pretend that any particular course or set of skills is</span><br />
+<span>sufficient or even useful enough to warrant a whole course.  I’m not a</span><br />
+<span>big fan of our current undergrad educational system <img src="http://simplystatistics.org/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></span></p>
+<p><span>For skills?  You need critical thinking coupled with an awareness that</span><br />
+<span>a lot of smart people have worked in science, and odds are that there</span><br />
+<span>are useful tricks and approaches that you can use.  So talk to other</span><br />
+<span>people, a lot!  My lab has a mix of biologists, computer scientists,</span><br />
+<span>graph theorists, bioinformaticians, and physicists; more labs should</span><br />
+<span>be like that.</span></p>
+<p><span>Good programming skills are going to serve you well no matter what, of</span><br />
+<span>course.  But I know plenty of good programmers who aren’t very</span><br />
+<span>knowledgeable about biology, and who run into problems doing actual</span><br />
+<span>science.  So it’s not a panacea.</span></p>
+<p><strong><span>How does replicable or reproducible research fit into your interests?</span></strong></p>
+<p><span>I’ve wasted <em>so much time</em> reproducing other people’s work that when</span><br />
+<span>the opportunity came up to put down a marker, I took it.</span></p>
+<p><a href="http://ivory.idyll.org/blog/replication-i.html" target="_blank"><a href="http://ivory.idyll.org/blog/replication-i.html" target="_blank">http://ivory.idyll.org/blog/replication-i.html</a></a></p>
+<p><span>The digital normalization paper shouldn’t have been particularly</span><br />
+<span>radical; that it is tells you all you need to know about replication</span><br />
+<span>in computational biology.</span></p>
+<p><span>This is actually something I first did a long time ago, with what was</span><br />
+<span>perhaps my favorite pre-faculty-job paper: if you look at the methods</span><br />
+<span>for </span><span class="il">Brown</span><span> &amp; Callan (2004) you’ll find a downloadable package that</span><br />
+<span>contains all of the source code for the paper itself and the analysis</span><br />
+<span>scripts.  But back then I didn’t blog :).</span></p>
+<p><span>Lack of reproducibility and openness in methods has serious</span><br />
+<span>consequences — how much of cancer research has been useless, for</span><br />
+<span>example?  See <code>this horrific report&lt;/span&gt;   &lt;span&gt;&lt;&lt;/span&gt;&lt;a href="http://online.wsj.com/article/SB10001424052970203764804577059841672541590.html" target="_blank"&gt;&lt;a href="http://online.wsj.com/article/SB10001424052970203764804577059841672541590.html" target="_blank"&gt;http://online.wsj.com/article/SB10001424052970203764804577059841672541590.html&lt;/a&gt;&lt;/a&gt;&lt;span&gt;&gt;</code>__.)</span><br />
+<span>Again, the incentives are all wrong: you get grant money for</span><br />
+<span>publishing, not for being useful.  The two are not necessarily the</span><br />
+<span>same…</span></p>
+<p><strong><span>Do you have a family, and how do you balance work life and home life?</span></strong></p>
+<p><span>Why, thank you for asking!  I do have a family — my wife, Tracy Teal,</span><br />
+<span>is a bioinformatician and microbial ecologist, and we have two</span><br />
+<span>wonderful daughters, Amarie (4) and Jessie (1).  It’s not easy being a</span><br />
+<span>junior professor and a parent at the same time, and I keep on trying</span><br />
+<span>to figure out how to balance the needs of travel with the need to be a</span><br />
+<span>parent (hint: I’m not good at it).  I’m increasingly leaning towards</span><br />
+<span>blogging as being a good way to have an impact while being around</span><br />
+<span>more; we’ll see how that goes.</span></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

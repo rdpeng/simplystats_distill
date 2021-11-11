@@ -2,8 +2,11 @@
 title: Relationships in Data Analysis
 author: Roger Peng
 date: '2018-04-30'
-slug: relationships-in-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I recently finished reading Steve Coll’s book [*Directorate S*](https://www.penguinrandomhouse.com/books/529288/directorate-s-by-steve-coll/9781594204586/), which is a chronicle of the U.S. war in Afghanistan post 9-11. It’s a good book, and one line stuck out for me as I thought it had relevance for data analysis. In one chapter, Coll writes about Lieutenant Colonel John Loftis, who helped run a training program for U.S. military officials who were preparing to go serve in Afghanistan. In reference to Afghan society, he says, "Everything over there is about relationships." At the time, Afghanistan had few independent institutions and accomplishing certain tasks depended on knowing certain people and having a good relationship with them. 
 

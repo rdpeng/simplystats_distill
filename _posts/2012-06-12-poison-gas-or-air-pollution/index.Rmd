@@ -1,18 +1,12 @@
 ---
-id: 177
 title: Poison gas or...air pollution?
-date: 2012-06-12T15:07:33+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/24955281162/poison-gas-or-air-pollution
-tumblr_simplystatistics_id:
-  - 24955281162
-dsq_thread_id:
-  - 935022785
-categories:
-  - Uncategorized
-slug: "poison-gas-or-air-pollution"
+date: '2012-06-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 From our Beijing bureau, we have the following message from the U.S. embassy that was recently issued to U.S. citizens in China:
 
 > <span>The Embassy has received reports from U.S. citizens living and </span><span>traveling in Wuhan that the air quality in the city has been </span><span>particularly poor since yesterday morning.  On June 11 at 16:20, the </span><span>Wuhan Environmental Protection Administrative Bureau posted information </span><span>about this on its website.  Below is a translation of that information:</span>

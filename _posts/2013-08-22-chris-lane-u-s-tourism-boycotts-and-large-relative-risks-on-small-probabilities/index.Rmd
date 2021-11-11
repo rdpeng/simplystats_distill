@@ -1,20 +1,12 @@
 ---
-id: 1720
 title: Chris Lane, U.S. tourism boycotts, and large relative risks on small probabilities
-date: 2013-08-22T09:45:57+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_533066330082561
-al2fb_facebook_link_time:
-  - 2013-08-22T13:46:03+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1628699367
-categories:
-  - Uncategorized
-slug: "chris-lane-u-s-tourism-boycotts-and-large-relative-risks-on-small-probabilities"
+date: '2013-08-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Chris Lane [was tragically killed](http://www.cnn.com/2013/08/21/justice/australia-student-killed-oklahoma/index.html?hpt=hp_t2) (link via Leah J.) in a shooting in Duncan, Oklahoma. According to the reports, it sounds like it was apparently a random and completely senseless act of violence. It is horrifying to think that those kids were just looking around for someone to kill because they were bored.
 
 Gun violence in the U.S. is way too common and I'm happy about efforts to reduce the chance of this type of event. But I noticed this quote in the above linked CNN article from the former prime minister of Australia, Tim Fischer:

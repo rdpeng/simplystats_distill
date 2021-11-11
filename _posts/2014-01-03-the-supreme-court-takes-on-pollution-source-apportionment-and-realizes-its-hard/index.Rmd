@@ -1,20 +1,13 @@
 ---
-id: 2304
-title: "The Supreme Court takes on Pollution Source Apportionment...and Realizes It's Hard"
-date: 2014-01-03T09:00:43+00:00
+title: The Supreme Court takes on Pollution Source Apportionment...and Realizes It's
+  Hard
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_590568164332377
-al2fb_facebook_link_time:
-  - 2014-01-03T14:00:48+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2089478056
-categories:
-  - Uncategorized
-slug: "the-supreme-court-takes-on-pollution-source-apportionment-and-realizes-its-hard"
+date: '2014-01-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Recently, the U.S. Supreme Court heard arguments in the cases _[EPA v. EME Homer City](http://www.scotusblog.com/case-files/cases/environmental-protection-agency-v-eme-homer-city-generation/) [Generation](http://www.scotusblog.com/case-files/cases/environmental-protection-agency-v-eme-homer-city-generation/)_ and _[American Lung Association v EME Homer City Generation](http://www.scotusblog.com/case-files/cases/american-lung-association-v-eme-homer-city-generation/). _SCOTUSblog has a nice [summary of the legal arguments](http://www.scotusblog.com/2013/12/argument-recap-a-good-day-for-epa/#more-201950), for the law buffs out there.
 
 The basic problem is that the way air pollution is regulated, the EPA and state and local agencies monitor the air pollution in each state. When the levels of pollution are above the national ambient air quality standards at the monitors in that state, the state is considered in "non-attainment" (i.e. they have not attained the standard). Otherwise, they are in attainment.

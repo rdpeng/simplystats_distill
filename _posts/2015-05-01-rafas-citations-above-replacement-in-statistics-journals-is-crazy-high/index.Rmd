@@ -1,22 +1,12 @@
 ---
-id: 3989
-title: "Rafa's citations above replacement in statistics journals is crazy high."
-date: 2015-05-01T11:18:47+00:00
+title: Rafa's citations above replacement in statistics journals is crazy high.
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_801785686543956
-al2fb_facebook_link_time:
-  - 2015-05-01T15:18:54+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/05/journals-300x300.png
-dsq_thread_id:
-  - 3728261472
-categories:
-  - Uncategorized
-slug: "rafas-citations-above-replacement-in-statistics-journals-is-crazy-high"
+date: '2015-05-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note:  I thought it would be fun to do some bibliometrics on a Friday. This is super hacky and the CAR/Y stat should not be taken seriously. _
 
 I downloaded data on the 400 most cited papers between 2000-2010 in some statistical journals from [Web of Science](webofscience.com/). Here is a boxplot of the average number of citations per year (from publication date - 2015) to these papers in the journals Annals of Statistics, Biometrics, Biometrika, Biostatistics, JASA, Journal of Computational and Graphical Statistics, Journal of Machine Learning Research, and Journal of the Royal Statistical Society Series B.

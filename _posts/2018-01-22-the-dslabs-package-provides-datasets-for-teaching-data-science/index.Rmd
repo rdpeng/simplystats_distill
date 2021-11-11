@@ -2,11 +2,11 @@
 title: Some datasets for teaching data science
 author: Rafael Irizarry
 date: '2018-01-22'
-slug: the-dslabs-package-provides-datasets-for-teaching-data-science
-categories:
-  - Education
-  - rstats
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 In this post I describe the  [dslabs package](https://cran.r-project.org/web/packages/dslabs/index.html), which contains some datasets that I use in my data science courses.
 

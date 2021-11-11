@@ -1,20 +1,12 @@
 ---
-id: 142
 title: Johns Hopkins Coursera Statistics Courses
-date: 2012-07-18T13:51:07+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27481030592/johns-hopkins-coursera-statistics-courses
-tumblr_simplystatistics_id:
-  - 27481030592
-dsq_thread_id:
-  - 942699152
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "johns-hopkins-coursera-statistics-courses"
+date: '2012-07-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <a href="https://www.coursera.org/course/compdata" target="_blank">Computing for Data Analysis</a>
 
 [youtube http://www.youtube.com/watch?v=gk6E57H6mTs]

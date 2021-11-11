@@ -1,20 +1,12 @@
 ---
-id: 1011
-title: "I'm a young scientist and sequestration will hurt me"
-date: 2013-02-13T14:07:13+00:00
+title: I'm a young scientist and sequestration will hurt me
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_461451790577349
-al2fb_facebook_link_time:
-  - 2013-02-13T19:07:19+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1081699366
-categories:
-  - Uncategorized
-slug: "im-a-young-scientist-and-sequestration-will-hurt-me"
+date: '2013-02-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I'm a biostatistician. That means that I help scientists and doctors analyze their medical data to try to figure out new screening tools, new therapies, and new ways to improve patients' health. I'm also a professor. I  spend a good fraction of my time teaching students about analyzing data in classes here at my university and [online](https://www.coursera.org/course/dataanalysis). Big data/data analysis is an area of growth for the U.S. economy and some have even suggested that there will be a [critical shortage](http://online.wsj.com/article/SB10001424052702304723304577365700368073674.html) of trained data analysts.
 
 I have other responsibilities but these are the two biggies - teaching and research. I work really hard to be good at them because I'm passionate about education and I'm passionate about helping people. I'm by no means the only (relatively) young person with this same drive. I would guess this is a big reason why a lot of people become scientists. They want to contribute to both our current knowledge (research) and the future of knowledge (teaching).

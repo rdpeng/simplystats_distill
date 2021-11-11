@@ -1,21 +1,12 @@
 ---
-id: 381
 title: Expected Salary by Major
-date: 2011-11-10T15:04:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12599452125/expected-salary-by-major
-tumblr_simplystatistics_id:
-  - 12599452125
-dsq_thread_id:
-  - 933818990
-categories:
-  - Uncategorized
-tags:
-  - advice
-  - R
-slug: "expected-salary-by-major"
+date: '2011-11-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In this<a href="http://www.thenation.com/article/164348/audacity-occupy-wall-street" target="_blank">recent editorial</a>about the Occupy Wall Street movement, Richard Kim profiles a protestor that despite having a master&#8217;s degree can&#8217;t find a job. This particular protestorquit his job as a school teacher three years ago and took out a $35K student loan to obtain a master&#8217;s degree in puppetry from the University of Connecticut. I wonder if, before taking his money, UConn showed this person data on job prospects for their puppetry graduates. More generally,I wonder if any university shows their idealist 18 year old freshmen such data.
 
 <img height="600" width="480" src="http://rafalab.jhsph.edu/images/salaryvsrank.png" />

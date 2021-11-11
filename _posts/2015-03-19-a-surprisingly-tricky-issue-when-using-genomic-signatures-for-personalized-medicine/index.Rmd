@@ -1,22 +1,13 @@
 ---
-id: 3946
-title: A surprisingly tricky issue when using genomic signatures for personalized medicine
-date: 2015-03-19T13:06:32+00:00
+title: A surprisingly tricky issue when using genomic signatures for personalized
+  medicine
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_783775878344937
-al2fb_facebook_link_time:
-  - 2015-03-19T17:06:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/03/Screen-Shot-2015-03-19-at-12.58.03-PM-300x227.png
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3609457811
-categories:
-  - Uncategorized
-slug: "a-surprisingly-tricky-issue-when-using-genomic-signatures-for-personalized-medicine"
+date: '2015-03-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 My student Prasad Patil has a really nice paper that [just came out in Bioinformatics](http://bioinformatics.oxfordjournals.org/content/early/2015/03/18/bioinformatics.btv157.full.pdf?keytype=ref&ijkey=loVpUJfJxG2QjoE) ([preprint](http://biorxiv.org/content/early/2014/06/06/005983) in case paywalled). The paper is about a surprisingly tricky normalization issue with genomic signatures. Genomic signatures are basically statistical/machine learning functions applied to the measurements for a set of genes to predict how long patients will survive, or how they will respond to therapy. The issue is that usually when building and applying these signatures, people normalize across samples in the training and testing set.
 
 An example of this normalization is to mean-center the measurements for each gene in the testing/application stage, then apply the prediction rule. The problem is that if you use a different set of samples when calculating the mean you can get a totally different prediction function. The basic problem is illustrated in this graphic.

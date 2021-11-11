@@ -1,22 +1,12 @@
 ---
-id: 364
 title: Reproducible Research and Turkey
-date: 2011-11-28T14:50:41+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13454027393/reproducible-research-and-turkey
-tumblr_simplystatistics_id:
-  - 13454027393
-dsq_thread_id:
-  - 947914452
-categories:
-  - Uncategorized
-tags:
-  - reproducibility
-  - reproducible research
-  - turkey
-slug: "reproducible-research-and-turkey"
+date: '2011-11-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Over the Thanksgiving recent break I naturally started thinking about reproducible research in between salting the turkey and making the turkey stock. Clearly, these things are all related. 
 
 <!-- more -->I sometimes get the sense that many people see reproducibility as essentially binary. A published paper is either reproducible, as in you can compute every single last numerical result to within epsilon precision, or it&#8217;s not. My feeling is that there is a spectrum of reproducibility when it comes to published scientific findings. Some papers are more reproducible than others. And that&#8217;s where cooking comes in.

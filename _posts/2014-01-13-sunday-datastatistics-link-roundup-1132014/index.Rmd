@@ -1,20 +1,12 @@
 ---
-id: 2422
 title: Sunday data/statistics link roundup (1/12/2014)
-date: 2014-01-13T04:59:04+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_594789947243532
-al2fb_facebook_link_time:
-  - 2014-01-13T09:59:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2116111174
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-1132014"
+date: '2014-01-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Well it technically is Monday, but I never went to sleep so that still counts as Sunday right?
 
   1. As a person who has taught a couple of MOOCs I'm used to getting some pushback from people who don't like the whole concept. But I'm still happy that I'm not the only one who thinks they are a [pretty good idea](http://www.eduwire.com/technology/more-not-or-fear-and-loathing-the-world-of-moocs/) and still worth doing. I think that both the hype and the backlash are too much. They hype claimed it would completely end the university as we know it. The backlash says it will have no impact. I think more likely it will have a major impact on people who traditionally don't attend colleges. That's ok with me. I think [this post](http://science-and-food.blogspot.com/2013/06/on-super-professors-and-mooc-pushback.html) gets it about right.

@@ -1,22 +1,12 @@
 ---
-id: 259
 title: Characteristics of my favorite statistics talks
-date: 2012-03-05T16:02:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/18792698723/characteristics-of-my-favorite-statistics-talks
-tumblr_simplystatistics_id:
-  - 18792698723
-dsq_thread_id:
-  - 962729997
-categories:
-  - Uncategorized
-tags:
-  - opinion
-  - seminars
-  - Talks
-slug: "characteristics-of-my-favorite-statistics-talks"
+date: '2012-03-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I&#8217;ve been going to/giving statistics talks for a few years now. I think everyone in our field has an opinion on the best structure/content/delivery of a talk. I am one of those people that has a pretty specific idea of what makes an amazing talk. Here are a few of the things I think are key, I try to do them and have learned many of these things from other people who I&#8217;ve seen speak. I&#8217;d love to hear what other people think. 
 
 **Structure**

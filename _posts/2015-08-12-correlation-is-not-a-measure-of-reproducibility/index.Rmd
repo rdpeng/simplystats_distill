@@ -1,22 +1,12 @@
 ---
-id: 4192
 title: Correlation is not a measure of reproducibility
-date: 2015-08-12T10:33:25+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_843690649020126
-al2fb_facebook_link_time:
-  - 2015-08-12T14:33:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/08/pearsonformula-300x55.png
-dsq_thread_id:
-  - 4025996562
-categories:
-  - Uncategorized
-slug: "correlation-is-not-a-measure-of-reproducibility"
+date: '2015-08-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Biologists make wide use of correlation as a measure of reproducibility. Specifically, they quantify reproducibility with the correlation between measurements obtained from replicated experiments. For example, [the ENCODE data standards document](https://genome.ucsc.edu/ENCODE/protocols/dataStandards/ENCODE_RNAseq_Standards_V1.0.pdf) states
 
 > A typical R<sup>2</sup> (Pearson) correlation of gene expression (RPKM) between two biological replicates, for RNAs that are detected in both samples using RPKM or read counts, should be between 0.92 to 0.98. Experiments with biological correlations that fall below 0.9 should be either be repeated or explained.

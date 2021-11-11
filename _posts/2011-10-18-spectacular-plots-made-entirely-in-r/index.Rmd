@@ -1,20 +1,12 @@
 ---
-id: 407
 title: Spectacular Plots Made Entirely in R
-date: 2011-10-18T16:05:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11614784508/spectacular-plots-made-entirely-in-r
-tumblr_simplystatistics_id:
-  - 11614784508
-dsq_thread_id:
-  - 953435380
-categories:
-  - Uncategorized
-tags:
-  - visualization
-slug: "spectacular-plots-made-entirely-in-r"
+date: '2011-10-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 When doing data analysis, I often create a set of plots quickly just to explore the data and see what the general trends are. Later I go back and fiddle with the plots to make them look pretty for publication. But some people have taken this to the next level. Here are two plots made entirely in R:
 
 <img align="middle" height="280" width="500" src="http://nzprimarysectortrade.files.wordpress.com/2011/10/weapon-export-2010.png" />

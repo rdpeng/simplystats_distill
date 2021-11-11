@@ -1,22 +1,12 @@
 ---
-id: 3078
 title: The Big in Big Data relates to importance not size
-date: 2014-05-28T11:31:15+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_651866284869231
-al2fb_facebook_link_time:
-  - 2014-05-28T15:31:21+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/05/Screen-Shot-2014-05-28-at-10.14.53-AM.png
-dsq_thread_id:
-  - 2718959181
-categories:
-  - Uncategorized
-tags:
-  - big data
-slug: "the-big-in-big-data-relates-to-importance-not-size"
+date: '2014-05-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In the past couple of years several non-statisticians have asked me "what is Big Data exactly?" or "How big is Big Data?". My answer has been "I think Big Data is much more about "data" than "big". I explain below.
 
 <table border="1" align="center">

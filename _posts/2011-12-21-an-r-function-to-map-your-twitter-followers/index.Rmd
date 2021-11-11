@@ -1,23 +1,12 @@
 ---
-id: 338
 title: An R function to map your Twitter Followers
-date: 2011-12-21T17:11:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14568185310/an-r-function-to-map-your-twitter-followers
-tumblr_simplystatistics_id:
-  - 14568185310
-dsq_thread_id:
-  - 933697945
-categories:
-  - Uncategorized
-tags:
-  - diy
-  - R
-  - Twitter
-  - visualization
-slug: "an-r-function-to-map-your-twitter-followers"
+date: '2011-12-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I wrote a little function to make a personalized map of who follows you or who you follow on Twitter. The idea for this function was inspired by some plots I discussed in a <a href="http://simplystatistics.tumblr.com/post/11614784508/spectacular-plots-made-entirely-in-r" target="_blank">previous post</a>. I also found a lot of really useful code over at flowing data <a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/" target="_blank">here</a>. 
 
 The function uses the packages twitteR, maps, geosphere, and RColorBrewer. If you don&#8217;t have the packages installed, when you source the twitterMap code, it will try to install them for you. The code also requires you to have a working internet connection. 

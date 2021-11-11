@@ -1,23 +1,12 @@
 ---
-id: 1328
 title: The bright future of applied statistics
-date: 2013-05-15T10:00:33+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_493965533992641
-al2fb_facebook_link_time:
-  - 2013-05-15T14:00:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/05/expression.jpg
-dsq_thread_id:
-  - 1290299516
-categories:
-  - Uncategorized
-tags:
-  - applied statistics
-  - future of statistics
-slug: "the-bright-future-of-applied-statistics"
+date: '2013-05-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 In 2013, the Committee of Presidents of Statistical Societies (COPSS) celebrates its 50th Anniversary. As part of its celebration, COPSS will publish a book, with contributions from past recipients of its awards, titled “Past, Present and Future of Statistical Science". Below is my contribution titled _The bright future of applied statistics_.
 

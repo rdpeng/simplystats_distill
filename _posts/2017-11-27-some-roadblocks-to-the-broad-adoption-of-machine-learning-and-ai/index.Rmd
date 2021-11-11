@@ -2,10 +2,11 @@
 title: 'Some roadblocks to the broad adoption of machine learning and AI '
 author: ''
 date: '2017-11-27'
-slug: some-roadblocks-to-the-broad-adoption-of-machine-learning-and-ai
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I read two blog posts on AI over the Thanksgiving break. One was a nice post discussing the challenges for AI in medicine by [Luke Oakden-Rayder](https://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/) and the other was about the need for increased focus on basic research in AI motivated by AlphaGo by [Tim Harford](http://timharford.com/2017/11/what-alphago-zero-teaches-us-about-whats-going-wrong-with-innovation/). 
 

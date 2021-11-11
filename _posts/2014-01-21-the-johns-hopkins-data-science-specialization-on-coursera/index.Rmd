@@ -1,20 +1,12 @@
 ---
-id: 2526
 title: The Johns Hopkins Data Science Specialization on Coursera
-date: 2014-01-21T11:06:47+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_598353906887136
-al2fb_facebook_link_time:
-  - 2014-01-21T16:07:02+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2154091795
-categories:
-  - Uncategorized
-slug: "the-johns-hopkins-data-science-specialization-on-coursera"
+date: '2014-01-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 We are very proud to announce the the Johns Hopkins Data Science Specialization on Coursera. You can see the official announcement from the Coursera folks [here](http://blog.coursera.org/post/73994272513/coursera-specializations-focused-programs-in-popular). This is the main reason Simply Statistics has been a little quiet lately.
 
 The three of us (Brian Caffo, Roger Peng, and Jeff Leek) along with a couple of incredibly hard working graduate students (Nick Carchedi of [swirl](http://swirlstats.com/) fame and Sean Kross) have put together _nine_ new one-month classes to run on the Coursera platform. The classes are:

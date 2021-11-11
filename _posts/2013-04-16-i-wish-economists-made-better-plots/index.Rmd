@@ -1,20 +1,12 @@
 ---
-id: 1172
 title: I wish economists made better plots
-date: 2013-04-16T18:14:59+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_484228664966328
-al2fb_facebook_link_time:
-  - 2013-04-16T22:15:04+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-5.48.06-PM.png
-dsq_thread_id:
-  - 1216473026
-categories:
-  - Uncategorized
-slug: "i-wish-economists-made-better-plots"
+date: '2013-04-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I'm seeing lots of traffic on a big-time economics article by that failed to reproduce and here are my quick thoughts. You can read a pretty good summary here by [Mike Konczal](http://www.nextnewdeal.net/rortybomb/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems).
 
 Quick background: Carmen Reinhart and Kenneth Rogoff wrote an [influential paper](http://www.nber.org/papers/w15639.pdf) that was used by many to justify the need for austerity measures taken by governments to reduce debts relative to GDP. Yesterday, Thomas Herndon, Michael Ash, and Robert Pollin (HAP) [released a paper](http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/) where they reproduced the Reinhart-Rogoff (RR) analysis and noted a few irregularities or errors. In their abstract, HAP claim that they "find that coding errors, selective exclusion of available data, and unconventional weighting of summary statistics [in the RR analysis] lead to serious errors that inaccurately represent the relationship between public debt and GDP growth among 20 advanced economies in the post-war period.

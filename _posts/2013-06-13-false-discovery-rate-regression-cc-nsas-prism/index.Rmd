@@ -1,20 +1,12 @@
 ---
-id: 1277
-title: "False discovery rate regression (cc NSA's PRISM)"
-date: 2013-06-13T10:36:43+00:00
+title: False discovery rate regression (cc NSA's PRISM)
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_505385366183991
-al2fb_facebook_link_time:
-  - 2013-06-13T14:36:51+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/05/pi0.png
-dsq_thread_id:
-  - 1398731781
-categories:
-  - Uncategorized
-slug: "false-discovery-rate-regression-cc-nsas-prism"
+date: '2013-06-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _There is an idea I have been thinking about for a while now. It re-emerged at the top of my list after seeing this [really awesome post](http://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/) on using metadata to identify "conspirators" in the American revolution. My first thought was: but how do you know that you aren't just [making lots of false discoveries](http://www.statsblogs.com/2013/06/07/how-likely-is-the-nsa-prism-program-to-catch-a-terrorist/)?_
 
 Hypothesis testing and significance analysis were originally developed to make decisions for single hypotheses. In many modern applications, it is more common to test hundreds or thousands of hypotheses. In the standard multiple testing framework, you perform a hypothesis test for each of the "features" you are studying (these are typically genes or voxels in high-dimensional problems in biology, but can be other things as well). Then the following outcomes are possible:

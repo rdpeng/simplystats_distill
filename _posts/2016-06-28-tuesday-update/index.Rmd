@@ -1,10 +1,12 @@
 ---
 title: Tuesday Update
 author: Roger Peng
-comments: true
-slug: "tuesday-update"
-date: 2016-06-28
+date: '2016-06-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 ## If you weren't sick of Theranos yet....
 

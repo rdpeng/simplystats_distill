@@ -1,22 +1,13 @@
 ---
-id: 4054
-title: Science is a calling and a career, here is a career planning guide for students and postdocs
-date: 2015-05-28T10:16:47+00:00
+title: Science is a calling and a career, here is a career planning guide for students
+  and postdocs
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_811598392229352
-al2fb_facebook_link_time:
-  - 2015-05-28T14:16:54+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3801119283
-categories:
-  - Uncategorized
-slug: "science-is-a-calling-and-a-career-here-is-a-career-planning-guide-for-students-and-postdocs"
+date: '2015-05-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor’s note: This post was inspired by a really awesome career planning guide that Ben Langmead_ [_Editor’s note: This post was inspired by a really awesome career planning guide that Ben Langmead_](https://github.com/BenLangmead/langmead-lab/blob/master/postdoc_questionnaire.md) _which you should go check out right now. You can also find the slightly adapted_ [_Leek group career planning guide_](https://github.com/jtleek/careerplanning) _here._ 
 
 The most common reason that people go into science is altruistic. They loved dinosaurs and spaceships when they were a kid and that never wore off. On some level this is one of the reasons I love this field so much, it is an area where if you can get past all the hard parts can really keep introducing wonder into what you work on every day.

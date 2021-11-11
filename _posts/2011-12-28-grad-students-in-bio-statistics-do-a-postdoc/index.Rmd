@@ -1,23 +1,12 @@
 ---
-id: 337
-title: 'Grad students in (bio)statistics - do a postdoc!'
-date: 2011-12-28T19:25:00+00:00
+title: Grad students in (bio)statistics - do a postdoc!
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14929329755/grad-students-in-bio-statistics-do-a-postdoc
-tumblr_simplystatistics_id:
-  - 14929329755
-dsq_thread_id:
-  - 933697936
-categories:
-  - Uncategorized
-tags:
-  - education
-  - jobs
-  - Postdocs
-  - Speed
-slug: "grad-students-in-bio-statistics-do-a-postdoc"
+date: '2011-12-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Up until about 20 years ago, postdocs were scarce in Statistics. In contrast, during the same time period, it was rare for a Biology PhD to go straight into a tenure track position.
 
 Driven mostly by the availability of research funding for those working in applied areas,  postdocs are becoming much more common in our field and I think this is great. It is great for PhD students to expand their horizons during two years in which they don&#8217;t have to worry about teaching, committee meetings, or grant writing. It is also great for those of us fortunate enough to work with well-trained, independent, energetic, bright, and motivated fresh PhDs. Many of our best graduates are electing to postpone their entry into tenure track jobs in favor of postdocs. Also students from other fields, computer science and engineering in particular, are taking postdocs with statisticians. I think these are both good trends. If they continue, the result will be that, as a field, we will become more well-rounded and productive. 

@@ -1,20 +1,12 @@
 ---
-id: 2369
 title: Some things R can do you might not be aware of
-date: 2013-12-30T16:04:24+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_588575537864973
-al2fb_facebook_link_time:
-  - 2013-12-30T21:04:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2082484824
-categories:
-  - Uncategorized
-slug: "some-things-r-can-do-you-might-not-be-aware-of"
+date: '2013-12-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There is a lot of noise around the "R versus Contender X" for Data Science. I think the two main competitors right now that I hear about are Python and Julia. I'm not going to weigh into the debates because I go by the motto: "Why not just use something that works?"
 
 R offers a lot of benefits if you are interested in statistical or predictive modeling. It is basically unrivaled in terms of the breadth of packages for applied statistics.  But I think sometimes it isn't obvious that R can handle some tasks that you used to have to do with other languages. This misconception is particularly common among people who regularly code in a different language and are moving to R. So I thought I'd point out a few cool things that R can do. Please add to the list in the comments if I've missed things that R can do people don't expect.

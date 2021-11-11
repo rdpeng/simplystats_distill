@@ -1,20 +1,12 @@
 ---
-id: 2200
-title: "What's the future of inference?"
-date: 2013-11-15T09:56:27+00:00
+title: What's the future of inference?
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_569798609742666
-al2fb_facebook_link_time:
-  - 2013-11-15T14:56:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1968525880
-categories:
-  - Uncategorized
-slug: "whats-the-future-of-inference"
+date: '2013-11-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Rob Gould reports on what appears to have been interesting [panel discussion on the future of statistics](http://citizen-statistician.org/2013/11/14/the-future-of-inference/) hosted by the UCLA Statistics Department. The panelists were Songchun Zhu (UCLA Statistics), Susan Paddock (RAND Corp.), and Jan de Leeuw (UCLA Statistics).
 
 He describes Jan's thoughts on the future of inference in the field of statistics:

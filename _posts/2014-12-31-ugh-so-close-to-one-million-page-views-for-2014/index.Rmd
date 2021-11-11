@@ -1,22 +1,12 @@
 ---
-id: 3751
 title: Ugh ... so close to one million page views for 2014
-date: 2014-12-31T13:16:14+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_747406095315249
-al2fb_facebook_link_time:
-  - 2014-12-31T18:16:20+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/12/soclose-1024x1024.png
-dsq_thread_id:
-  - 3377687427
-categories:
-  - Uncategorized
-slug: "ugh-so-close-to-one-million-page-views-for-2014"
+date: '2014-12-31'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In my [last Sunday Links roundup](http://simplystatistics.org/2014/12/21/sunday-datastatistics-link-roundup-122114/) I mentioned we were going to be really close to 1 million page views this year. Chris V. tried to rally the troops:
 
 &nbsp;

@@ -1,22 +1,12 @@
 ---
-id: 4307
 title: The Leek group guide to writing your first paper
-date: 2015-09-18T10:57:26+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_860613673994490
-al2fb_facebook_link_time:
-  - 2015-09-18T14:57:33+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4141966787
-categories:
-  - Uncategorized
-slug: "the-leek-group-guide-to-writing-your-first-paper"
+date: '2015-09-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <blockquote class="twitter-tweet" width="550">
   <p lang="en" dir="ltr">
     The <a href="https://twitter.com/jtleek">@jtleek</a> guide to writing your first academic paper <a href="https://t.co/APLrEXAS46">https://t.co/APLrEXAS46</a>

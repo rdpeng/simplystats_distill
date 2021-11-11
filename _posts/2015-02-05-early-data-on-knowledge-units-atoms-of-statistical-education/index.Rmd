@@ -1,22 +1,12 @@
 ---
-id: 3862
-title: 'Early data on knowledge units - atoms of statistical education'
-date: 2015-02-05T09:44:49+00:00
+title: Early data on knowledge units - atoms of statistical education
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_764825380239987
-al2fb_facebook_link_time:
-  - 2015-02-05T14:44:55+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/02/Screen-Shot-2015-02-05-at-9.34.51-AM.png
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3488145377
-categories:
-  - Uncategorized
-slug: "early-data-on-knowledge-units-atoms-of-statistical-education"
+date: '2015-02-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Yesterday I posted [about atomizing statistical education into knowledge units](http://simplystatistics.org/2015/02/04/knowledge-units-the-atoms-of-statistical-education/). You can try out the first knowledge unit here: <https://jtleek.typeform.com/to/jMPZQe>. The early data is in and it is consistent with many of our hypotheses about the future of online education.
 
 Namely:

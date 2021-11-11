@@ -1,20 +1,13 @@
 ---
-id: 2907
-title: Writing good software can have more impact than publishing in high impact journals for genomic statisticians
-date: 2014-04-07T10:46:16+00:00
+title: Writing good software can have more impact than publishing in high impact journals
+  for genomic statisticians
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_628913690497824
-al2fb_facebook_link_time:
-  - 2014-04-07T14:46:21+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2593451060
-categories:
-  - Uncategorized
-slug: "writing-good-software-can-have-more-impact-than-publishing-in-high-impact-journals-for-genomic-statisticians"
+date: '2014-04-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <!-- html table generated in R 3.0.3 by xtable 1.7-1 package -->Every once in a while we see computational papers published in science journals with high impact factors.  Genomics related methods appear quite often in these journals. Several of my junior colleagues express frustration that all their papers get rejected from these journals. I tell them that the same is true for most of my papers and remind them of these examples: 
 
 <!-- Sat Apr  5 22:41:28 2014 -->

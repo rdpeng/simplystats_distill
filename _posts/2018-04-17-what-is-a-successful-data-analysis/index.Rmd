@@ -2,8 +2,11 @@
 title: What is a Successful Data Analysis?
 author: Roger Peng
 date: '2018-04-17'
-slug: what-is-a-successful-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Defining success in data analysis has eluded me for quite some time now. About two years ago I tried to explore this question in my [Dean’s Lecture](https://youtu.be/qFtJaq4TlqE), but ultimately I think I missed the mark. In that talk I tried to identify standards (I called them "aesthetics") by which we could universally evaluate the quality of a data analysis and tried to make an analogy with music theory. It was a fun talk, in part because I got to play the end of Charles Ives’ Second Symphony.
 

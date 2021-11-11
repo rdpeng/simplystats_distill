@@ -1,24 +1,12 @@
 ---
-id: 583
 title: 'Reproducible Research: With Us or Against Us?'
-date: 2012-11-15T16:33:55+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_424647540924441
-al2fb_facebook_link_time:
-  - 2012-11-19T14:50:14+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/35778860973/reproducible-research-with-us-or-against-us
-tumblr_simplystatistics_id:
-  - 35778860973
-dsq_thread_id:
-  - 934609933
-categories:
-  - Uncategorized
-slug: "reproducible-research-with-us-or-against-us-3"
+date: '2012-11-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Last night this <a href="http://cogprints.org/8675/" target="_blank">article by Chris Drummond</a> of the Canadian National Research Council (Conseil national de recherches Canada) popped up in my Google Scholar alert. The title of the article, “Reproducible Research: a Dissenting Opinion” would seem to indicate that he disagrees with much that has been circulating out there about reproducible research.
 
 Drummond singles out the <a href="http://www.stanford.edu/~vcs/papers/RoundtableDeclaration2010.pdf" target="_blank">Declaration published by a Yale Law School Roundtable on Data and Code Sharing</a> (I was not part of the roundtable) as an example of the main arguments in favor of reproducibility and has four main objections. What I found interesting about his piece is that I think I more or less agree with all his objections and yet draw the exact opposite conclusion from him. In his abstract, he concludes that “I would also contend that the effort necessary to meet the [reproducible research] movement’s aims, and the general attitude it engenders, would not serve any of the research disciplines well.”

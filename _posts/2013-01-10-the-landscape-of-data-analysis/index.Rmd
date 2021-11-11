@@ -1,24 +1,12 @@
 ---
-id: 839
 title: The landscape of data analysis
-date: 2013-01-10T09:11:26+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_444958492226679
-al2fb_facebook_link_time:
-  - 2013-01-10T14:11:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1018192159
-categories:
-  - Uncategorized
-tags:
-  - coursera
-  - data analysis
-  - Video
-slug: "the-landscape-of-data-analysis"
+date: '2013-01-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I have been getting some questions via email, LinkedIn, and Twitter about the content of the Data Analysis class I will be teaching for Coursera. Data Analysis and Data Science mean different things to different people. So I made a video describing how Data Analysis fits into the landscape of other quantitative classes here:
 
 

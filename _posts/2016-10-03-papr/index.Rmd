@@ -1,10 +1,12 @@
 ---
 title: papr - it's like tinder, but for academic preprints
 author: Jeff Leek
-comments: true
-slug: "papr"
-date: 2016-10-03
+date: '2016-10-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 As part of the [Johns Hopkins Data Science Lab](http://jhudatascience.org/) we are setting up a web and mobile [data product prototyping shop](http://jhudatascience.org/prototyping/). As part of that process I've been working on different types of very cheap and easy to prototype apps. A few days ago I posted about creating a [distributed data collection app with Google Sheets](http://simplystatistics.org/2016/08/26/googlesheets/). 
 

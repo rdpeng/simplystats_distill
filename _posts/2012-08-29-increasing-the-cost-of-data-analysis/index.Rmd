@@ -1,18 +1,12 @@
 ---
-id: 87
 title: Increasing the cost of data analysis
-date: 2012-08-29T14:00:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/30452945357/increasing-the-cost-of-data-analysis
-tumblr_simplystatistics_id:
-  - 30452945357
-dsq_thread_id:
-  - 934074613
-categories:
-  - Uncategorized
-slug: "increasing-the-cost-of-data-analysis"
+date: '2012-08-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Jeff&#8217;s post about the <a href="http://simplystatistics.org/post/30315018436/a-deterministic-statistical-machine" target="_blank">deterministic statistical machine</a> got me thinking a bit about the cost of data analysis. The cost of data analysis these day is in many ways going up. The data being collected are getting bigger and more complex. Analyzing these data require more expertise, more storage hardware, and more computing power. In fact the analysis in some fields like genomics is now more expensive than the collection of the data [There&#8217;s a graph that shows this but I can&#8217;t seem to find it anywhere; I&#8217;ll keep looking and post later. For now <a href="http://www.nytimes.com/2011/12/01/business/dna-sequencing-caught-in-deluge-of-data.html" target="_blank">see here</a>.].
 
 However, that&#8217;s really about the dollars and cents kind of cost. The cost of data analysis has gone very far down in a different sense. For the vast majority of applications that look at moderate to large datasets, many many statistical analyses can be conducted essentially at the push of a button. And so there&#8217;s not cost in continuing to analyze data until a desirable result is obtained. Correcting for multiple testing is one way to &#8220;fix&#8221; this problem. But I personally don&#8217;t find multiple testing corrections to be all that helpful because ultimately they still try to boil down a complex analysis into a simple yes/no answer.

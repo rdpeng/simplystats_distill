@@ -1,20 +1,13 @@
 ---
-id: 1985
-title: A general audience friendly explanation for why Lars Peter Hansen won the Nobel Prize
-date: 2013-10-14T10:54:33+00:00
+title: A general audience friendly explanation for why Lars Peter Hansen won the Nobel
+  Prize
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_555196061202921
-al2fb_facebook_link_time:
-  - 2013-10-14T18:28:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/10/weights1.png
-dsq_thread_id:
-  - 1856789134
-categories:
-  - Uncategorized
-slug: "why-did-lars-peter-hansen-win-the-nobel-prize-generalized-method-of-moments-explained"
+date: '2013-10-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Lars Peter Hansen won the Nobel Prize in economics for creating the generalized method of moments. [A rather technical](http://en.wikipedia.org/wiki/Generalized_method_of_moments) explanation of the idea appears on Wikipedia. [These](http://lipas.uwasa.fi/~sjp/Teaching/gmm/lectures/gmmc3.pdf) are a good set of lecture notes on gmms if you like math. I went over to Marginal Revolution to see what was being written about the Nobel Prize winners. Clearly a bunch of other people were doing the same thing as the site was pretty slow to load. [Here is what Tyler C. says about Hansen](http://marginalrevolution.com/marginalrevolution/2013/10/lars-peter-hansen-nobel-laureate.html). In describing Hansen's work he says:_
 
 > For years now journalists have asked me if Hansen might win, and if so, how they might explain his work to the general reading public.  Good luck with that one.

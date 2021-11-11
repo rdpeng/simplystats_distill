@@ -1,20 +1,12 @@
 ---
-id: 2807
-title: "ENAR is in Baltimore - Here's What To Do"
-date: 2014-03-14T14:18:20+00:00
+title: ENAR is in Baltimore - Here's What To Do
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_10201784310469074
-al2fb_facebook_link_time:
-  - 2014-03-14T18:18:26+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2431150104
-categories:
-  - Uncategorized
-slug: "enar-is-in-baltimore-heres-what-to-do"
+date: '2014-03-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This year's meeting of the Eastern North American Region of the International Biometric Society (ENAR) is in lovely Baltimore, Maryland. As local residents Jeff and I thought we'd put down a few suggestions for what to do during your stay here in case you're not familiar with the area.
 
 **Venue**

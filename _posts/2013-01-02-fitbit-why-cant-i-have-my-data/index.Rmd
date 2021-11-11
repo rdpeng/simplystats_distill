@@ -1,24 +1,12 @@
 ---
-id: 801
-title: "Fitbit, why can't I have my data?"
-date: 2013-01-02T20:16:26+00:00
+title: Fitbit, why can't I have my data?
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_441947005861161
-al2fb_facebook_link_time:
-  - 2013-01-03T01:16:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1005253374
-categories:
-  - Uncategorized
-tags:
-  - Fitbit
-  - open data
-  - quantified self
-slug: "fitbit-why-cant-i-have-my-data"
+date: '2013-01-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I have a [Fitbit](http://www.fitbit.com/). I got it because I wanted to collect some data about myself and I liked the simplicity of the set-up. I also asked around and Fitbit seemed like the most "open" platform for collecting one's own data. You have to pay $50 for a premium account, but after that, they allow you to download your data.
 
 Or do they?

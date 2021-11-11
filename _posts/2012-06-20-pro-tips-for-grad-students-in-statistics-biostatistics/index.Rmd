@@ -1,22 +1,12 @@
 ---
-id: 172
 title: Pro Tips for Grad Students in Statistics/Biostatistics (Part 2)
-date: 2012-06-20T15:44:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/25507941642/pro-tips-for-grad-students-in-statistics-biostatistics
-tumblr_simplystatistics_id:
-  - 25507941642
-dsq_thread_id:
-  - 934680996
-categories:
-  - Uncategorized
-tags:
-  - go getter
-  - pro tips
-  - seminars
-slug: "pro-tips-for-grad-students-in-statistics-biostatistics"
+date: '2012-06-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This is the second in my series on pro tips for graduate students in statistics/biostatistics. For more tips, see <a href="http://simplystatistics.tumblr.com/post/25368234643/pro-tips-for-grad-students-in-statistics-biostatistics" target="_blank">part 1</a>. 
 
   1. Meet with seminar speakers. When you go on the job market face recognition is priceless. I met Scott Zeger at UW when I was a student. When I came for an interview I already knew him (and Ingo, and Rafa, and &#8230;.). An even better idea&#8230;_ask a question during the seminar_.

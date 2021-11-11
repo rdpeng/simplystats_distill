@@ -1,10 +1,12 @@
 ---
 title: The relativity of raw data
 author: Jeff Leek
-comments: true
-slug: "relativity-raw-data"
-date: 2016-07-20
+date: '2016-07-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 "Raw data" is one of those terms that everyone in statistics and data science uses but no one defines. For example, we all agree that we should be able to recreate results in scientific papers from the raw data and the code for that paper. 
 

@@ -1,22 +1,12 @@
 ---
-id: 4177
 title: Statistical Theory is our "Write Once, Run Anywhere"
-date: 2015-08-09T11:19:53+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_842402855815572
-al2fb_facebook_link_time:
-  - 2015-08-09T15:20:00+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4017219676
-categories:
-  - Uncategorized
-slug: "statistical-theory-is-our-write-once-run-anywhere"
+date: '2015-08-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Having followed the software industry as a casual bystander, I periodically see the tension flare up between the idea of writing "native apps", software that is tuned to a particular platform (Windows, Mac, etc.) and more cross-platform apps, which run on many platforms without too much modification. Over the years it has come up in many different forms, but they fundamentals are the same. Back in the day, there was Java, which was supposed to be the platform that ran on any computing device. Sun Microsystems originated the phrase "[Write Once, Run Anywhere](https://en.wikipedia.org/wiki/Write_once,_run_anywhere)" to illustrate the cross-platform strengths of Java. More recently, Steve Jobs famously [banned Flash](https://www.apple.com/hotnews/thoughts-on-flash/) from any iOS device. Apple is also moving away from standards like OpenGL and towards its own Metal platform.
 
 What's the problem with "write once, run anywhere", or of cross-platform development more generally, assuming it's possible? Well, there are a [number of issues](https://en.wikipedia.org/wiki/Cross-platform#Challenges_to_cross-platform_development): often there are performance penalties, it may be difficult to use the native look and feel of a platform, and you may be reduced to using the "lowest common denominator" of feature sets. It seems to me that anytime a new meta-platform comes out that promises to relieve programmers of the burden of having to write for multiple platforms, it eventually gets modified or subsumed by the need to optimize apps for a given platform as much as possible. The need to squeeze as much juice out of an app seems to be too important an opportunity to pass up.

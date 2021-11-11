@@ -1,9 +1,12 @@
 ---
-title: 'Hurricane María official death count in conflict with mortality data'
+title: Hurricane María official death count in conflict with mortality data
 author: Rafael Irizarry
 date: '2017-12-03'
-slug: data-do-not-agree-with-hurricane-official-death-count
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A recent [preprint](https://osf.io/preprints/socarxiv/s7dmu) by Alexis R. Santos-Lozada and Jeffrey T. Howard concludes that
 

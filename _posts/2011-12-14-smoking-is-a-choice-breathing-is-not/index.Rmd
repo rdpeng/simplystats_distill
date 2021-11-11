@@ -1,23 +1,12 @@
 ---
-id: 344
 title: Smoking is a choice, breathing is not.
-date: 2011-12-14T13:58:52+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14214147778/smoking-is-a-choice-breathing-is-not
-tumblr_simplystatistics_id:
-  - 14214147778
-dsq_thread_id:
-  - 934594142
-categories:
-  - Uncategorized
-tags:
-  - Beijing
-  - china
-  - pollution
-  - smoking
-slug: "smoking-is-a-choice-breathing-is-not"
+date: '2011-12-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Over the last week or so I&#8217;ve been posting about the air pollution levels in Beijing, China. The twitter feed from the US Embassy there makes it easy to track the hourly levels of fine particulate matter (PM2.5) and you can use <a href="http://www.biostat.jhsph.edu/~rpeng/makeBeijingAirGraph.R" target="_blank">this R code</a> to make a graph of the data.
 
 One problem with talking about particulate matter levels is that the units are a bit abstract. We usually talk in terms of micrograms per cubic meter (mcg/m^3), which is a certain mass of particles per volume of air. The 24-hour national ambient air quality standard for fine PM in the US is 35 mcg/m^3. But what does that mean in reality?

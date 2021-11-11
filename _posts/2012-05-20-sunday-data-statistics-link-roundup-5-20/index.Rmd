@@ -1,24 +1,12 @@
 ---
-id: 192
 title: Sunday data/statistics link roundup (5/20)
-date: 2012-05-20T15:43:19+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/23417495940/sunday-data-statistics-link-roundup-5-20
-tumblr_simplystatistics_id:
-  - 23417495940
-dsq_thread_id:
-  - 936257719
-categories:
-  - Uncategorized
-tags:
-  - data analysis
-  - image
-  - Raw data is important
-  - Statistics is not math
-  - sunday links
-slug: "sunday-data-statistics-link-roundup-5-20"
+date: '2012-05-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   It&#8217;s grant season around here so I&#8217;ll be brief:
 </div>

@@ -1,20 +1,12 @@
 ---
-id: 1081
 title: Send me student/postdoc blogs in statistics and computational biology
-date: 2013-03-08T10:15:23+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_470839866305208
-al2fb_facebook_link_time:
-  - 2013-03-08T15:15:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1125175379
-categories:
-  - Uncategorized
-slug: "send-me-studentpostdoc-blogs-in-statistics-and-computational-biology"
+date: '2013-03-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I've been writing a blog for a few years now, but it started after I was already comfortably settled in a tenure track job. There have been some huge benefits of writing a scientific blog. It has certainly raised my visibility and given me opportunities to talk about issues that are a little outside of my usual research agenda. It has also inspired more than one research project that has ended up in a full blown peer-reviewed publication. I also frequently look to blogs/twitter accounts to see "what's happening" in the world of statistics/data science.
 
 One thing that gets me incredibly fired up are student blogs. A [I've been writing a blog for a few years now, but it started after I was already comfortably settled in a tenure track job. There have been some huge benefits of writing a scientific blog. It has certainly raised my visibility and given me opportunities to talk about issues that are a little outside of my usual research agenda. It has also inspired more than one research project that has ended up in a full blown peer-reviewed publication. I also frequently look to blogs/twitter accounts to see "what's happening" in the world of statistics/data science.

@@ -1,22 +1,12 @@
 ---
-id: 3738
 title: On how meetings and conference calls are disruptive to a data scientist
-date: 2014-12-22T10:00:51+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_742660949123097
-al2fb_facebook_link_time:
-  - 2014-12-22T15:00:22+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3349257468
-categories:
-  - Uncategorized
-slug: "meetings-2"
+date: '2014-12-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: The week of Xmas eve is usually my most productive of the year. This is because there is reduced emails and 0 meetings (I do take a break, but after this great week for work). Here is a repost of one of our first entries explaining how meetings and conference calls are particularly disruptive in data science. _
 
 In <a href="http://www.ted.com/talks/jason_fried_why_work_doesn_t_happen_at_work.html" target="_blank">this</a> TED talk Jason Fried explains why work doesn't happen at work. He describes the evils of meetings. Meetings are particularly disruptive for applied statisticians, especially for those of us that hack data files, explore data for systematic errors, get inspiration from visual inspection, and thoroughly test our code. Why? Before I become productive I go through a ramp-up/boot-up stage. Scripts need to be found, data loaded into memory, and most importantly, my brains needs to re-familiarize itself with the data and the essence of the problem at hand. I need a similar ramp up for writing as well. It usually takes me between 15 to 60 minutes before I am in full-productivity mode. But once I am in “the zone”, I become very focused and I can stay in this mode for hours. There is nothing worse than interrupting this state of mind to go to a meeting. I lose much more than the hour I spend at the meeting. A short way to explain this is that having 10 separate hours to work is basically nothing, while having 10 hours in the zone is when I get stuff done.

@@ -1,27 +1,13 @@
 ---
-id: 3811
 title: |
   Gorging ourselves on "free" health care: Harvard's dilemma
-date: 2015-01-20T09:00:56+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3435923820
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_757773770945148
-al2fb_facebook_link_time:
-  - 2015-01-20T14:01:00+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/01/spending_distribution.jpg
-categories:
-  - Uncategorized
-slug: "gorging-ourselves-on-free-health-care-harvards-dilemma"
+date: '2015-01-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a guest post by [Laura Hatfield](http://www.hcp.med.harvard.edu/faculty/core/laura-hatfield-phd). Laura is an Assistant Professor of Health Care Policy at Harvard Medical School, with a specialty in Biostatistics. Her work focuses on understanding trade-offs and relationships among health outcomes. Dr. Hatfield received her BS in genetics from Iowa State University and her PhD in biostatistics from the University of Minnesota. She tweets [@bioannie](https://twitter.com/bioannie)_
 
 I didn’t imagine when I joined Harvard’s Department of Health Care Policy that the New York Times would be [writing about my benefits package](http://www.nytimes.com/2015/01/06/us/health-care-fixes-backed-by-harvards-experts-now-roil-its-faculty.html). Then a vocal and aggrieved group of faculty [rebelled against health benefits changes](http://www.thecrimson.com/article/2014/11/12/harvards-health-benefits-unfairness/) for 2015, and commentators responded by gleefully [skewering](http://www.thefiscaltimes.com/2015/01/07/Harvards-Whiny-Profs-Could-Get-Obamacare-Bonus) entitled-sounding Harvard professors. But I’m a statistician, so I want to talk data.

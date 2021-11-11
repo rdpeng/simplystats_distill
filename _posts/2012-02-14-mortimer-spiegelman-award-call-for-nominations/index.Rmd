@@ -1,18 +1,12 @@
 ---
-id: 287
 title: 'Mortimer Spiegelman Award: Call for Nominations. Deadline is April 1, 2012'
-date: 2012-02-14T14:02:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/17606356307/mortimer-spiegelman-award-call-for-nominations
-tumblr_simplystatistics_id:
-  - 17606356307
-dsq_thread_id:
-  - 950625256
-categories:
-  - Uncategorized
-slug: "mortimer-spiegelman-award-call-for-nominations"
+date: '2012-02-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <span>The Statistics Section of the American Public Health Association</span>  
 <span>invites nominations for the 2012 Mortimer </span><span class="il">Spiegelman</span><span> Award honoring a</span>  
 <span>statistician aged 40 or younger who has made outstanding contributions</span>  

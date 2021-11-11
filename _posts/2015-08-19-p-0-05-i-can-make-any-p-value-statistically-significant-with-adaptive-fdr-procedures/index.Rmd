@@ -1,22 +1,13 @@
 ---
-id: 4236
-title: 'P > 0.05? I can make any p-value statistically significant with adaptive FDR procedures'
-date: 2015-08-19T10:38:31+00:00
+title: P > 0.05? I can make any p-value statistically significant with adaptive FDR
+  procedures
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_846665948722596
-al2fb_facebook_link_time:
-  - 2015-08-19T14:38:38+00:00
-al2fb_facebook_link_picture:
-  - post= http://imgs.xkcd.com/comics/significant.png
-dsq_thread_id:
-  - 4047423523
-categories:
-  - Uncategorized
-slug: "p-0-05-i-can-make-any-p-value-statistically-significant-with-adaptive-fdr-procedures"
+date: '2015-08-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Everyone knows now that you have to correct for multiple testing when you calculate many p-values otherwise this can happen:
 
 <div style="width: 550px" class="wp-caption aligncenter">

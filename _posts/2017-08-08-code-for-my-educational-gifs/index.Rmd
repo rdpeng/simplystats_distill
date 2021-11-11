@@ -2,10 +2,11 @@
 title: Code for my educational gifs
 author: Rafael Irizarry
 date: '2017-08-08'
-slug: code-for-my-educational-gifs
-categories:
-  - Education
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
  
 During preparation for class I sometimes think up of animations that will explain the concept I am teaching. I sometimes share the resulting animations on social media via [\@rafalab](https://twitter.com/rafalab). 
 

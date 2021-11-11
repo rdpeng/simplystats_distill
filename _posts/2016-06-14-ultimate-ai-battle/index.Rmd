@@ -1,10 +1,12 @@
 ---
-author: Roger Peng
-comments: true
 title: Ultimate AI battle - Apple vs. Google
-slug: "ultimate-ai-battle"
-date: 2016-06-14
+author: Roger Peng
+date: '2016-06-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Yesterday, Apple launched its Worldwide Developer's Conference (WWDC) and had its public keynote address. While many new things were announced, the one thing that caught my eye was the [dramatic expansion](http://go.theinformation.com/HnOAdA6DQ7g) of Apple's use of artificial intelligence (AI) tools. I talked a bit about AI with Hilary Parker on the latest [*Not So Standard Deviations*](http://simplystatistics.org/2016/06/09/nssd-episode-17/), particularly in the context of Amazon's Echo/Alexa, and I think it's definitely going to be an area of intense competition between the major tech companies.
 

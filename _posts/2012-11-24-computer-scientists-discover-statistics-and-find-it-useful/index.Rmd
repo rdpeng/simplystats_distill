@@ -1,20 +1,12 @@
 ---
-id: 613
 title: Computer scientists discover statistics and find it useful
-date: 2012-11-24T15:53:34+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_426568187399043
-al2fb_facebook_link_time:
-  - 2012-11-24T20:53:38+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 942477065
-categories:
-  - Uncategorized
-slug: "computer-scientists-discover-statistics-and-find-it-useful"
+date: '2012-11-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This [article in the New York Times today](http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html?smid=pl-share) describes some of the advances that computer scientists have made in recent years.
 
 > The technology, called deep learning, has already been put to use in services like Apple’s Siri virtual personal assistant, which is based on Nuance Communications’ speech recognition service, and in Google’s Street View, which uses machine vision to identify specific addresses.

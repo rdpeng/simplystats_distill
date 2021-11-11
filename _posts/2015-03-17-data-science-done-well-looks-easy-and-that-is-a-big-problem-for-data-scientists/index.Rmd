@@ -1,22 +1,12 @@
 ---
-id: 3923
-title: 'Data science done well looks easy - and that is a big problem for data scientists'
-date: 2015-03-17T10:47:12+00:00
+title: Data science done well looks easy - and that is a big problem for data scientists
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_782867448435780
-al2fb_facebook_link_time:
-  - 2015-03-17T14:47:19+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3602973282
-categories:
-  - Uncategorized
-slug: "data-science-done-well-looks-easy-and-that-is-a-big-problem-for-data-scientists"
+date: '2015-03-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Data science has a ton of different definitions. For the purposes of this post I'm going to use the definition of data science we used when creating our Data Science program online. Data science is:
 
 > Data science is the process of formulating a quantitative question that can be answered with data, collecting and cleaning the data, analyzing the data, and communicating the answer to the question to a relevant audience.

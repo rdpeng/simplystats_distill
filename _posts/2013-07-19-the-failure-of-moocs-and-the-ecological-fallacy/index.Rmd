@@ -1,20 +1,12 @@
 ---
-id: 1521
 title: The "failure" of MOOCs and the ecological fallacy
-date: 2013-07-19T10:52:41+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_518712938184567
-al2fb_facebook_link_time:
-  - 2013-07-19T14:52:49+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1512266524
-categories:
-  - Uncategorized
-slug: "the-failure-of-moocs-and-the-ecological-fallacy"
+date: '2013-07-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 At first blush [the news out of San Jose State](http://www.sfgate.com/news/article/San-Jose-State-suspends-online-courses-4672870.php) that the partnership with Udacity is being temporarily suspended is bad news for MOOCs. It is particularly bad news since the main reason for the suspension is poor student performance on exams. I think in the PR game there is certainly some reason to be disappointed in the failure of this first big experiment, but as someone who loves the idea of high-throughput education, I think that this is primarily a good learning experience.
 
 The money quote in my mind is:

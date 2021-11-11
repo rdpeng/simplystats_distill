@@ -1,20 +1,12 @@
 ---
-id: 2647
 title: The 80/20 rule of statistical methods development
-date: 2014-03-20T11:10:33+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_10201814344259900
-al2fb_facebook_link_time:
-  - 2014-03-20T15:10:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/03/relpower2.png
-dsq_thread_id:
-  - 2469595685
-categories:
-  - Uncategorized
-slug: "the-8020-rule-of-statistical-methods-development"
+date: '2014-03-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Developing statistical methods is hard and often frustrating work. One of the under appreciated rules in statistical methods development is what I call the 80/20 rule (maybe could even by the 90/10 rule). The basic idea is that the first _reasonable_ thing you can do to a set of data often is 80% of the way to the optimal solution. Everything after that is working on getting the last 20%. (_Edit: Rafa points out that once again I've [reverse-scooped](http://simplystatistics.org/2011/12/03/reverse-scooping/) a bunch of people and this is already a thing that has been pointed out many times. See for example the [Pareto principle](http://en.wikipedia.org/wiki/Pareto_principle) and [this post](http://c2.com/cgi/wiki?EightyTwentyRule) also called the 80:20 rule_)
 
 Sometimes that extra 20% is really important and sometimes it isn't. In a clinical trial, where each additional patient may cost a large amount of money to recruit and enroll, it is definitely worth the effort. For more exploratory techniques like those often used when analyzing high-dimensional data it may not. This is particularly true because the extra 20% usually comes at a cost of additional assumptions about the way the world works. If your assumptions are right, you get the 20%, if they are wrong, you may lose and it isn't always clear how much.

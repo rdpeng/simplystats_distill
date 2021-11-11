@@ -1,22 +1,12 @@
 ---
-id: 4588
-title: 'Not So Standard Deviations Episode 7 - Statistical Royalty'
-date: 2016-01-12T08:45:24+00:00
+title: Not So Standard Deviations Episode 7 - Statistical Royalty
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_908523872536803
-al2fb_facebook_link_time:
-  - 2016-01-12T13:45:42+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4484432470
-categories:
-  - Podcast
-slug: "not-so-standard-deviations-episode-7-statistical-royalty"
+date: '2016-01-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The latest episode of Not So Standard Deviations is out, and boy does Hilary have a story to tell.
 
 We also talk about Theranos and the pitfalls of diagnostic testing, Spotify's Discover Weekly playlist generation algorithm (and the need for human product managers), and of course, a little Star Wars. Also, Hilary and I start a new segment where we each give some "free advertising" to something interesting that they think other people should know about.

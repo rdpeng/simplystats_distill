@@ -1,10 +1,12 @@
 ---
 title: New class - Data App Prototyping for Public Health and Beyond
 author: Jeff Leek
-comments: true
-slug: "new-prototyping-class"
-date: 2017-01-26
+date: '2017-01-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 Are you interested in building data apps to help save the world, start the next big business, or just to see if you can? We are running a data app prototyping class for people interested in creating these apps. 

@@ -1,21 +1,12 @@
 ---
-id: 129
 title: Proof by example and letters of recommendation
-date: 2012-07-24T13:58:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27907991790/proof-by-example-and-letters-of-recommendation
-tumblr_simplystatistics_id:
-  - 27907991790
-dsq_thread_id:
-  - 934412781
-categories:
-  - Uncategorized
-tags:
-  - letters of recommendation
-  - proofs
-slug: "proof-by-example-and-letters-of-recommendation"
+date: '2012-07-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In math or statistics, proof by example does not work. One example of a phenomenon does not prove anything. For example, because 2 is prime doesn&#8217;t mean that all even numbers are prime. In fact, no even numbers other than 2 are prime. 
 
 But in other areas proof by example is the best way to demonstrate something. One example is writing letters of recommendation. It is way more convincing when I get one example of something a person has achieved:

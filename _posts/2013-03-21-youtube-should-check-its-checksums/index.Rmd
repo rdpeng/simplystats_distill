@@ -1,20 +1,12 @@
 ---
-id: 1113
 title: Youtube should check its checksums
-date: 2013-03-21T22:37:35+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_475550335834161
-al2fb_facebook_link_time:
-  - 2013-03-22T02:37:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1155835173
-categories:
-  - Uncategorized
-slug: "youtube-should-check-its-checksums"
+date: '2013-03-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I am in the process of uploading the video lectures for [Data Analysis](https://www.coursera.org/course/dataanalysis). I am getting ready to send out the course wrap-up email and I wanted to include the link to the Youtube playlist as well.
 
 Unfortunately, Youtube keeps reporting that a pair of the videos in week 2 are duplicates. This is true despite them being different lengths (12:15 vs. 16:58), having different titles, and having dramatically different content. I [I am in the process of uploading the video lectures for [Data Analysis](https://www.coursera.org/course/dataanalysis). I am getting ready to send out the course wrap-up email and I wanted to include the link to the Youtube playlist as well.

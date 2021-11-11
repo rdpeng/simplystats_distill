@@ -1,20 +1,12 @@
 ---
-id: 3241
 title: SwiftKey and Johns Hopkins partner for Data Science Specialization Capstone
-date: 2014-08-19T12:18:05+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_687598111296048
-al2fb_facebook_link_time:
-  - 2014-08-19T16:18:11+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2940911217
-categories:
-  - Uncategorized
-slug: "swiftkey-and-johns-hopkins-partner-for-data-science-specialization-capstone"
+date: '2014-08-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I use [SwiftKey](http://swiftkey.com/en/) on my Android phone all the time. So I was super pumped up [I use [SwiftKey](http://swiftkey.com/en/) on my Android phone all the time. So I was super pumped up](http://www.jhsph.edu/news/news-releases/2014/johns-hopkins-bloomberg-school-of-public-healths-data-science-specialization-mooc-series-launches-industry-collaboration-with-swiftkey.html) to run in October 2014. To enroll in the course you have to pass the other 9 courses in the [Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1).
 
 The 9 courses have only been running for 4 months but already 200+ people have finished all 9! It has been unbelievable to see the response to the specialization and we are exited about taking it to the next level.

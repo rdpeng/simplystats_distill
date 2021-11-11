@@ -2,11 +2,11 @@
 title: Palantir Shows Its Cards
 author: Roger Peng
 date: '2020-08-26'
-slug: palantir-shows-its-cards
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: no
 ---
+
 
 File this under long-term followup, but just about four years ago [I wrote about Palantir](https://simplystatistics.org/2016/05/11/palantir-struggles/), the previously secretive but now soon to be public data science company, and how its valuation was a commentary on the value of data science more generally. Well, just recently Palantir filed to go public and therefore submitted a [registration statement (S-1)](https://www.sec.gov/Archives/edgar/data/1321655/000119312520230013/d904406ds1.htm#rom904406_9) describing its business. It's a fascinating read, if you're into that kind of stuff.
 

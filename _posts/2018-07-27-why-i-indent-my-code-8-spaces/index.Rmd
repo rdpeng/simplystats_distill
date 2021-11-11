@@ -2,8 +2,11 @@
 title: Why I Indent My Code 8 Spaces
 author: Roger Peng
 date: '2018-07-27'
-slug: why-i-indent-my-code-8-spaces
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Jenny Bryan recently gave a wonderful talk at the Use R! 2018 meeting in Brisbane about “Code Smells and Feels” (I recommend you [watch a video of that talk](https://youtu.be/7oyiPBjLAWY)). Her talk covers various ways to detect when your code “smells” and how to fix those smells through refactoring. While there is quite a bit of literature on this with respect to other programming languages, it’s not well-covered with respect to R. 
 

@@ -1,18 +1,13 @@
 ---
-id: 323
-title: Academics are partly to blame for supporting the closed and expensive access system of publishing
-date: 2012-01-13T02:54:25+00:00
+title: Academics are partly to blame for supporting the closed and expensive access
+  system of publishing
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15756182268/academics-are-partly-to-blame-for-supporting-the-closed
-tumblr_simplystatistics_id:
-  - 15756182268
-dsq_thread_id:
-  - 1050461554
-categories:
-  - Uncategorized
-slug: "academics-are-partly-to-blame-for-supporting-the-closed"
+date: '2012-01-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Michael Eisen recently published a <a href="http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html?_r=1" target="_blank">New York Times op-ed</a> arguing that a bill meant to protect publishers, <span>introduced in the House of Representatives, will result in tax payers paying twice for scientific research. According to Eisen</span>
 
 > <span>If the bill passes, to read the results of federally funded research, most Americans would have to buy access to individual articles at a cost of $15 or $30 apiece. In other words, taxpayers who already paid for the research would have to pay again to read the results.</span>

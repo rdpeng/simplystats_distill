@@ -1,22 +1,12 @@
 ---
-id: 900
 title: Review of R Graphics Cookbook by Winston Chang
-date: 2013-01-16T09:47:04+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_447292525326609
-al2fb_facebook_link_time:
-  - 2013-01-16T14:47:08+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1029149123
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "review-of-r-graphics-cookbook-by-winston-chang"
+date: '2013-01-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I just got a copy of Winston Chang's book _R Graphics Cookbook_, published by O'Reilly Media. This book follows now a series of O'Reilly books on R, including an _R Cookbook._ Winston Chang is a graduate student at Northwestern University but is probably better known to R users as an active member of the ggplot2 mailing list and an active contributor to the ggplot2 source code.
 
 The book has a typical cookbook format. After some preliminaries about how to install R packages and how to read data into R (Chapter 1), he quickly launches into exploratory data analysis and graphing. The basic outline of each section is:

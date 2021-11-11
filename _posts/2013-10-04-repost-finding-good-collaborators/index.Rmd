@@ -1,20 +1,12 @@
 ---
-id: 1932
 title: 'Repost: Finding good collaborators'
-date: 2013-10-04T14:02:39+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_550396938349500
-al2fb_facebook_link_time:
-  - 2013-10-04T18:02:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1824708493
-categories:
-  - Uncategorized
-slug: "repost-finding-good-collaborators"
+date: '2013-10-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: Simply Statistics is still freaking out about the government shut down and potential impending economic catastrophe if the debt ceiling isn't raised. Since anything new we might write seems trivial compared to what is going on in Washington, we are reposting an awesome old piece by Roger on finding good collaborators. _
 
 The job of the statistician is almost entirely about collaboration. Sure, there’s theoretical work that we can do by ourselves, but most of the impact that we have on science comes from our work with scientists in other fields. Collaboration is also what makes the field of statistics so much fun.

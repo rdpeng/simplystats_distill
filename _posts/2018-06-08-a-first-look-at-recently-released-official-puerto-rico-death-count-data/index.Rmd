@@ -1,9 +1,13 @@
 ---
-title: Estimating mortality rates in Puerto Rico after hurricane María using newly released official death counts
+title: Estimating mortality rates in Puerto Rico after hurricane María using newly
+  released official death counts
 author: Rafael Irizarry
 date: '2018-06-08'
-slug: a-first-look-at-recently-released-official-puerto-rico-death-count-data
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 ```{r official-data-wrangle,message=FALSE,echo=FALSE}
 library(pdftools)

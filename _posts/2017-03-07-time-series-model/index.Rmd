@@ -1,9 +1,12 @@
 ---
 title: Model building with time series data
 author: Roger Peng
-slug: "time-series-model"
-date: 2017-03-07
+date: '2017-03-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A nice post by Alex Smolyanskaya over the [Stitch Fix blog](http://multithreaded.stitchfix.com/blog/2017/02/28/whats-wrong-with-my-time-series/) about some of the unique challenges of model building in a time series context:
 

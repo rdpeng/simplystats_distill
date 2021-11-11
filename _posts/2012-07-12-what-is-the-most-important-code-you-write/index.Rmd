@@ -1,18 +1,12 @@
 ---
-id: 151
 title: What is the most important code you write?
-date: 2012-07-12T13:50:40+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27049611121/what-is-the-most-important-code-you-write
-tumblr_simplystatistics_id:
-  - 27049611121
-dsq_thread_id:
-  - 933844444
-categories:
-  - Uncategorized
-slug: "what-is-the-most-important-code-you-write"
+date: '2012-07-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 These days, like most people, the research I do involves writing a lot of code. A lot of it. Usually, you need some code to
 
   1. Process the data to take it from its original format to the format that&#8217;s convenient for you

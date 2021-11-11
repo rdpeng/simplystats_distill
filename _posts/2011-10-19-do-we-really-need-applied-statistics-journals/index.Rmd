@@ -1,22 +1,12 @@
 ---
-id: 406
 title: Do we really need applied statistics journals?
-date: 2011-10-19T16:05:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11655593971/do-we-really-need-applied-statistics-journals
-tumblr_simplystatistics_id:
-  - 11655593971
-dsq_thread_id:
-  - 935084612
-categories:
-  - Uncategorized
-tags:
-  - academics
-  - peer review
-  - statistics
-slug: "do-we-really-need-applied-statistics-journals"
+date: '2011-10-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 All statisticians in academia are constantly confronted with the question of where to publish their papers. Sometimes it&#8217;s obvious: A theoretical paper might go to the _Annals of Statistics_ or_JASA Theory & Methods_ or _Biometrika_. A more &#8220;methods-y&#8221; paper might go to _JASA_ or _JRSS-B_ or_Biometrics_ or maybe even _Biostatistics_ (where all three of us are or have been associate editors).
 
 But where should the applied papers go? I think this is an increasingly large category of papers being produced by statisticians. These are papers that do not necessarily develop a brand new method or uncover any new theory, but apply statistical methods to an interesting dataset in a not-so-obvious way. Some papers might combine a set of existing methods that have never been combined before in order to solve an important _scientific_ problem.

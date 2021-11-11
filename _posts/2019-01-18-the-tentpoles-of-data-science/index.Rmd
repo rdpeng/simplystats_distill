@@ -2,8 +2,11 @@
 title: The Tentpoles of Data Science
 author: Roger Peng
 date: '2019-01-18'
-slug: the-tentpoles-of-data-science
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 What makes for a good data scientist? This is a question I asked [a long time ago](https://simplystatistics.org/2012/05/07/how-do-you-know-if-someone-is-great-at-data-analysis/) and am still trying to figure out the answer. Seven years ago, I wrote:
 

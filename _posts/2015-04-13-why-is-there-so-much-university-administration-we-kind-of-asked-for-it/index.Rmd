@@ -1,22 +1,12 @@
 ---
-id: 3985
 title: Why is there so much university administration? We kind of asked for it.
-date: 2015-04-13T17:13:16+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_794567837265741
-al2fb_facebook_link_time:
-  - 2015-04-13T21:13:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3679070745
-categories:
-  - Uncategorized
-slug: "why-is-there-so-much-university-administration-we-kind-of-asked-for-it"
+date: '2015-04-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The latest commentary on the rising cost of college tuition is by Paul F. Campos and is titled [The Real Reason College Tuition Costs So Much](http://www.nytimes.com/2015/04/05/opinion/sunday/the-real-reason-college-tuition-costs-so-much.html). There has been much debate about this article and whether Campos is right or wrong...and I don't plan to add to that. However, I wanted to pick up on a major point of the article that I felt got left hanging out there: The rising levels of administrative personnel at universities.
 
 Campos argues that the reason college tuition is on the rise is not that colleges get less and less money from the government (mostly state government for state schools), but rather that there is an increasing number of administrators at universities that need to be paid in dollars and cents. He cites a study that shows that for the California State University system, in a 34 year period, the number of of faculty rose by about 3% whereas the number of administrators rose by 221%.

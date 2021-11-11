@@ -2,8 +2,11 @@
 title: Divergent and Convergent Phases of Data Analysis
 author: Roger Peng
 date: '2018-09-14'
-slug: divergent-and-convergent-phases-of-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 There are often discussions within the data science community about which tools are best for doing data science. The most recent iteration of this discussion is the so-called [“First Notebook War”](https://yihui.name/en/2018/09/notebook-war/), which is well-summarized by Yihui Xie in his blog post (it is a great read). 

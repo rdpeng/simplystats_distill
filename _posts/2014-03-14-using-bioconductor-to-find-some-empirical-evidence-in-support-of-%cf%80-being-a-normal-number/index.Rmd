@@ -1,22 +1,13 @@
 ---
-id: 2769
-title: How to use Bioconductor to find empirical evidence in support of π being a normal number
-date: 2014-03-14T10:00:19+00:00
+title: How to use Bioconductor to find empirical evidence in support of π being a
+  normal number
 author: Rafael Irizarry
-dsq_thread_id:
-  - 2411168109
-al2fb_facebook_link_id:
-  - 136171103105421_10201783300043814
-al2fb_facebook_link_time:
-  - 2014-03-14T14:00:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/03/pi2.png
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "using-bioconductor-to-find-some-empirical-evidence-in-support-of-%cf%80-being-a-normal-number"
+date: '2014-03-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Happy π day everybody!
 
 I wanted to write some simple code (included below) to the test parallelization capabilities of my  new cluster. So, in honor of  π day, I decided to check for [evidence that π is a normal number](http://www.davidhbailey.com/dhbpapers/normality.pdf). A [normal number](http://en.wikipedia.org/wiki/Normal_number) is a real number whose infinite sequence of digits has the property that picking any given random m digit pattern is 10<sup>−m</sup>. For example, using the Poisson approximation, we can predict that the pattern "123456789" should show up between 0 and 3 times in the [first billion digits of π](http://stuff.mit.edu/afs/sipb/contrib/pi/) (it actually shows up twice starting, at the 523,551,502-th and  773,349,079-th decimal places).

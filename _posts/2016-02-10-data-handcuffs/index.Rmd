@@ -1,22 +1,12 @@
 ---
-id: 4643
 title: Data handcuffs
-date: 2016-02-10T15:38:37+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_922229204499603
-al2fb_facebook_link_time:
-  - 2016-02-10T20:38:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4568535533
-categories:
-  - Uncategorized
-slug: "data-handcuffs"
+date: '2016-02-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A few years ago, if you asked me what the top skills I got asked about for students going into industry, I'd definitely have said things like data cleaning, data transformation, database pulls, and other non-traditional statistical tasks. But as companies have progressed from the point of storing data to actually wanting to do something with it, I would say one of the hottest skills is understanding and dealing with data from randomized trials.
 
 In particular I see data scientists talking more about [A/B testing](https://medium.com/@InVisionApp/a-b-and-see-a-beginner-s-guide-to-a-b-testing-a16406f1a239#.p7hoxirwo), [sequential stopping rules](http://varianceexplained.org/r/bayesian-ab-testing/), [hazard regression](https://twitter.com/hspter/status/696820603945414656) and other ideas  that are really common in Biostatistics, which has traditionally focused on the analysis of data from designed experiments in biology.

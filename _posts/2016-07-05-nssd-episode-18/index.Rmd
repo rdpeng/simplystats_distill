@@ -1,10 +1,12 @@
 ---
-author: Roger Peng
-comments: true
 title: Not So Standard Deviations Episode 18 - Back on Planet Earth
-slug: "nssd-episode-18"
-date: 2016-07-05
+author: Roger Peng
+date: '2016-07-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 With Hilary fresh from Use R! 2016, Hilary and I discuss some of the highlights from the conference. Also, some followup about a previous Free Advertising and the NSSD drinking game.
 

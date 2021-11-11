@@ -1,20 +1,12 @@
 ---
-id: 1643
 title: 'Simply Statistics #JSM2013 Picks for Monday'
-date: 2013-08-05T07:55:48+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_525515144171013
-al2fb_facebook_link_time:
-  - 2013-08-05T11:55:52+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1571858165
-categories:
-  - Uncategorized
-slug: "simply-statistics-jsm2013-picks-for-monday"
+date: '2013-08-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I'm sadly not able to attend the Joint Statistical Meetings this year (where Nate Silver is the keynote speaker!) in the great city of Montreal. I'm looking forward to checking out the chatter on #JSM2013 but in the meantime, here are the sessions I would have attended if I'd been there. If I pick more than one session for a given time slot, I assume you can run back and forth between the two.
 
   * 8:30-10:20am: Kasper Hansen is presenting in **Statistical Methods for High-Dimensional Data: Presentations by Junior Researchers** (CC-515c) and there are some great people in **The Profession of Statistics and Its Impact on the Media** (CC-516d)

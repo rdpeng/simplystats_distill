@@ -1,20 +1,12 @@
 ---
-id: 2307
 title: A summary of the evidence that most published research is false
-date: 2013-12-16T09:50:58+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_582464968476030
-al2fb_facebook_link_time:
-  - 2013-12-16T14:51:01+00:00
-al2fb_facebook_link_picture:
-  - post=http://2.bp.blogspot.com/-iEeV4FlwKsE/UpdaFts3fzI/AAAAAAAAAqw/OJjvoXG2e6g/s1600/Picture+73.png
-dsq_thread_id:
-  - 2054110590
-categories:
-  - Uncategorized
-slug: "a-summary-of-the-evidence-that-most-published-research-is-false"
+date: '2013-12-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of the hottest topics in science has two main conclusions:
 
   * Most published research is false

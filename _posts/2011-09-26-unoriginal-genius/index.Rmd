@@ -1,21 +1,12 @@
 ---
-id: 445
-title: "Unoriginal genius"
-date: 2011-09-26T16:11:00+00:00
+title: Unoriginal genius
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/10689363695/unoriginal-genius
-tumblr_simplystatistics_id:
-  - 10689363695
-dsq_thread_id:
-  - 933942877
-categories:
-  - Uncategorized
-tags:
-  - literature
-  - proposal
-slug: "unoriginal-genius"
+date: '2011-09-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 > <span>&#8220;The world is full of texts, more or less interesting; I do not wish to add any more&#8221;</span>
 
 <span>This quote is from an <a href="http://chronicle.com/article/Uncreative-Writing/128908/" target="_blank">article</a> in the Chronicle Review. </span><span>I highly recommend reading the article, particularly check out the section on the author&#8217;s &#8220;Uncreative writing&#8221; class at UPenn. </span><span>The article is about how there is a trend in literature toward combining/using other people&#8217;s words to create new content. </span>

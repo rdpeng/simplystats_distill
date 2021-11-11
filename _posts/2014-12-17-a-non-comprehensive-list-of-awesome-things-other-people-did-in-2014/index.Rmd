@@ -1,22 +1,12 @@
 ---
-id: 3696
 title: A non-comprehensive list of awesome things other people did in 2014
-date: 2014-12-17T13:08:43+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_740368672685658
-al2fb_facebook_link_time:
-  - 2014-12-17T18:08:49+00:00
-al2fb_facebook_link_picture:
-  - post=https://pbs.twimg.com/media/B2NC5c7IYAAt_j-.jpg
-dsq_thread_id:
-  - 3334042318
-categories:
-  - Uncategorized
-slug: "a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014"
+date: '2014-12-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note: Last year_ _[_Editor's Note: Last year_ _](http://simplystatistics.org/2013/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-this-year/) off the top of my head of awesome things other people did. I loved doing it so much that I'm doing it again for 2014. Like last year, I have surely missed awesome things people have done. If you know of some, you should make your own list or add it to the comments! The rules remain the same. I have avoided talking about stuff I worked on or that people here at Hopkins are doing because this post is supposed to be about other people's awesome stuff. I wrote this post because a blog often feels like a place to complain, but we started Simply Stats as a place to be pumped up about the stuff people were doing with data. Update: I missed pipes in R, now added!_
 
 &nbsp;

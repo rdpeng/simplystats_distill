@@ -1,20 +1,12 @@
 ---
-id: 4654
-title: 'Not So Standard Deviations Episode 9 - Spreadsheet Drama'
-date: 2016-02-12T11:24:04+00:00
+title: Not So Standard Deviations Episode 9 - Spreadsheet Drama
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_923195934402930
-al2fb_facebook_link_time:
-  - 2016-02-12T16:24:12+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-categories:
-  - Podcast
-slug: "not-so-standard-deviations-episode-9-spreadsheet-drama"
+date: '2016-02-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 For this episode, special guest Jenny Bryan (@jennybryan) joins us from the University of British Columbia! Jenny, Hilary, and I talk about spreadsheets and why some people love them and some people despise them. We also discuss blogging as part of scientific discourse.
 
 [Subscribe to the podcast on iTunes](https://itunes.apple.com/us/podcast/not-so-standard-deviations/id1040614570).

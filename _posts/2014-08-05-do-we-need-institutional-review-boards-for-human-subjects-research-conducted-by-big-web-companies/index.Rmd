@@ -1,20 +1,13 @@
 ---
-id: 3206
-title: Do we need institutional review boards for human subjects research conducted by big web companies?
-date: 2014-08-05T12:34:28+00:00
+title: Do we need institutional review boards for human subjects research conducted
+  by big web companies?
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_681779005211292
-al2fb_facebook_link_time:
-  - 2014-08-05T16:34:33+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2902932155
-categories:
-  - Uncategorized
-slug: "do-we-need-institutional-review-boards-for-human-subjects-research-conducted-by-big-web-companies"
+date: '2014-08-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Web companies have been doing human subjects research for a while now. Companies like Facebook and Google have employed statisticians for almost a decade (or more) and part of the culture they have introduced is the idea of randomized experiments to identify ideas that work and that don't. They have figured out that experimentation and statistical analysis often beat out the opinion of the highest paid person at the company for identifying features that "work". Here "work" may mean features that cause people to [read advertising](https://www.youtube.com/watch?v=E_F5GxCwizc), or [click on ads](http://www.cnet.com/news/google-starts-placing-ads-directly-in-gmail-inboxes/), or [match up with more people](http://blog.okcupid.com/index.php/we-experiment-on-human-beings/).
 
 This has created a huge amount of value and definitely a big interest in the statistical community. For example, today's session on "Statistics: The Secret Weapon of Successful Web Giants" was standing room only.

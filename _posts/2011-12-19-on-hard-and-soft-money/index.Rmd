@@ -1,18 +1,12 @@
 ---
-id: 339
 title: On Hard and Soft Money
-date: 2011-12-19T13:10:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14454324191/on-hard-and-soft-money
-tumblr_simplystatistics_id:
-  - 14454324191
-dsq_thread_id:
-  - 934623406
-categories:
-  - Uncategorized
-slug: "on-hard-and-soft-money"
+date: '2011-12-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As the academic job hunting season goes into effect many will be applying to a variety of different types of departments. In statistics, there is a pretty big separation between statistics departments, which tend to be in arts & sciences colleges, and biostatistics departments, which tend to be in medical or public health institutions. A key difference between these two types of departments is the funding model.
 
 <!-- more -->Statistics department faculty tend to be on 9- or 10-month salaries with funding primarily coming from teaching classes (research funding can be obtained for the summer months). Biostatistics departments faculty tend to have 12-month salaries with a large chunk of funding coming from research grants. Statistics departments are sometimes called &#8220;hard money&#8221; departments (i.e. tuition money is &#8220;hard&#8221;) while biostatistics departments are &#8220;soft money&#8221;. Grant money is considered &#8220;soft&#8221; because it has a tendency to go away a bit more easily. As long as students want to attend a university, there will always be tuition.

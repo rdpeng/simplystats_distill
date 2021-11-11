@@ -1,23 +1,13 @@
 ---
-id: 345
-title: "The Supreme Court's interpretation of statistical correlation may determine the future of personalized medicine"
-date: 2011-12-12T23:02:40+00:00
+title: The Supreme Court's interpretation of statistical correlation may determine
+  the future of personalized medicine
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14135999782/the-supreme-courts-interpretation-of-statistical
-tumblr_simplystatistics_id:
-  - 14135999782
-dsq_thread_id:
-  - 943881053
-categories:
-  - Uncategorized
-tags:
-  - Editorial
-  - personalized medicine
-  - statistical literacy
-  - supreme court
-slug: "the-supreme-courts-interpretation-of-statistical"
+date: '2011-12-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 **Summary/Background**
 
 The Supreme Court heard <a href="http://www.supremecourt.gov/oral_arguments/argument_transcripts/10-1150.pdf" target="_blank">oral arguments</a> last week in the case Mayo Collaborative Services vs. Prometheus Laboratories (<a href="http://www.supremecourt.gov/Search.aspx?FileName=/docketfiles/10-1150.htm" target="_blank">No 10-1150</a>). At issue is a patent Prometheus Laboratories holds for making decisions about the treatment of disease on the basis of a measurement of a specific, naturally occurring molecule and a corresponding calculation. The specific language at issue is a little technical, but the key claim from the patent under dispute is:

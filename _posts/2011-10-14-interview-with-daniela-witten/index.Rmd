@@ -1,20 +1,12 @@
 ---
-id: 412
 title: Interview With Daniela Witten
-date: 2011-10-14T14:37:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11436138110/interview-with-daniela-witten
-tumblr_simplystatistics_id:
-  - 11436138110
-dsq_thread_id:
-  - 935398943
-categories:
-  - Uncategorized
-tags:
-  - interview
-slug: "interview-with-daniela-witten"
+date: '2011-10-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 **Note**: This is the first in a series of posts where we will be interviewing junior, up-and-coming statisticians/data scientists. Our goal is to build visibility for people who are at the early stages of their careers.
 
 **Daniela Witten**

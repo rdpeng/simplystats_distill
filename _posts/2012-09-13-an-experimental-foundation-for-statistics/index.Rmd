@@ -1,23 +1,12 @@
 ---
-id: 67
 title: An experimental foundation for statistics
-date: 2012-09-13T13:55:16+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/31460959187/an-experimental-foundation-for-statistics
-tumblr_simplystatistics_id:
-  - 31460959187
-dsq_thread_id:
-  - 935153732
-categories:
-  - Uncategorized
-tags:
-  - abstraction
-  - experiments
-  - nsf
-  - proposal
-slug: "an-experimental-foundation-for-statistics"
+date: '2012-09-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In a recent conversation with Brian (<a href="http://simplystatistics.org/post/28840726358/in-which-brian-debates-abstraction-with-t-bone" target="_blank">of abstraction fame</a>) about the relationship between mathematics and statistics. Statistics, for historical reasons, has been treated as a mathematical sub-discipline (this is the <a href="http://simplystatistics.org/post/29899900125/nsf-recognizes-math-and-statistics-are-not-the-same" target="_blank">NSF&#8217;s view</a>).
 
 One reason statistics is viewed as a sub-discipline of math is because the foundations of statistics are built on the basis of <a href="http://en.wikipedia.org/wiki/Deductive_reasoning" target="_blank">deductive reasoning</a>, where you start with a few general propositions or foundations that you assume to be true and then systematically prove more specific results. A similar approach is taken in most mathematical disciplines. 

@@ -1,20 +1,12 @@
 ---
-id: 3260
 title: A non-comprehensive list of awesome female data people on Twitter
-date: 2014-09-09T09:59:39+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_696712333717959
-al2fb_facebook_link_time:
-  - 2014-09-09T13:59:46+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3002079276
-categories:
-  - Uncategorized
-slug: "a-non-comprehensive-list-of-awesome-female-data-people-on-twitter"
+date: '2014-09-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I was just talking to a student who mentioned she didn't know Jenny Bryan was on Twitter. She is and she is an awesome person to follow. I also realized that I hadn't seen a good list of women on Twitter who do stats/data. So I thought I'd make one. This list is what I could make in 15 minutes based on my own feed and will, with 100% certainty, miss really people. Can you please add them in the comments and I'll update the list?
 
   * [@JennyBryan](https://twitter.com/JennyBryan) (Jenny Bryan) statistics professor at UBC, teaching a great [intro to data science class](http://stat545-ubc.github.io/) right now.

@@ -1,22 +1,12 @@
 ---
-id: 3858
-title: 'Knowledge units - the atoms of statistical education'
-date: 2015-02-04T16:45:21+00:00
+title: Knowledge units - the atoms of statistical education
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_764583030264222
-al2fb_facebook_link_time:
-  - 2015-02-04T21:45:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3486018479
-categories:
-  - Uncategorized
-slug: "knowledge-units-the-atoms-of-statistical-education"
+date: '2015-02-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This idea is [Brian's idea](http://www.bcaffo.com/) and based on conversations with him and Roger, but I just executed it._
 
 The length of academic courses has traditionally ranged between a few days for a short course to a few months for a semester-long course.  Lectures are typically either 30 minutes or one hour. Term and lecture lengths have been dictated by tradition and the relative inconvenience of coordinating schedules of the instructors and students for shorter periods of time. As classes have moved online the barrier of inconvenience to varying the length of an academic course has been removed. Despite this flexibilty, most academic online courses adhere to the traditional semester-long format. For example, the first massive online open courses were simply semester-long courses directly recorded and offered online.

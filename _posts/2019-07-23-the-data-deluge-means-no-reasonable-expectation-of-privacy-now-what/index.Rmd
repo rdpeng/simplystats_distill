@@ -1,9 +1,12 @@
 ---
 title: The data deluge means no reasonable expectation of privacy - now what?
-date: '2019-07-23'
 author: Jeff Leek
-slug: the-data-deluge-means-no-reasonable-expectation-of-privacy-no-what
+date: '2019-07-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Today a couple of different things reminded me about something that I suppose [many](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815) [people](https://www.nytimes.com/2019/04/28/opinion/fourth-amendment-privacy.html) [are talking about](https://www.sciencenews.org/article/family-tree-dna-sharing-genetic-data-police-privacy) but has been on my mind as well. 
 

@@ -1,24 +1,12 @@
 ---
-id: 256
 title: A plot of my citations in Google Scholar vs. Web of Science
-date: 2012-03-08T16:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/18950350459/a-plot-of-my-citations-in-google-scholar-vs-web-of
-tumblr_simplystatistics_id:
-  - 18950350459
-dsq_thread_id:
-  - 936757498
-categories:
-  - Uncategorized
-tags:
-  - Citations
-  - data
-  - Google Scholar
-  - R
-  - Web of Knowledge
-slug: "a-plot-of-my-citations-in-google-scholar-vs-web-of"
+date: '2012-03-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There has <a href="http://www.functionalneurogenesis.com/blog/2012/02/google-scholar-vs-scopus-web-of-science/" target="_blank">been</a> <a href="http://www.nature.com/nature/journal/v483/n7387/full/483036c.html" target="_blank">some</a> <a href="http://www.nature.com/nature/journal/v483/n7387/full/483036d.html" target="_blank">discussion </a>about whether Google Scholar or one of the proprietary software companies numbers are better for citation counts. I personally think Google Scholar is better for a number of reasons:
 
   1. Higher numbers, but consistently/adjustably higher <img src="http://simplystatistics.org/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" />

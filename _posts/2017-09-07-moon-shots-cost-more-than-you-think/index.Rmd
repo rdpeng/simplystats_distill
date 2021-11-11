@@ -2,8 +2,11 @@
 title: Moon Shots Cost More Than You Think
 author: Roger Peng
 date: '2017-09-07'
-slug: moon-shots-cost-more-than-you-think
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 In a deeply reported article, Casey Ross and Ike Swetlitz report that [IBM's Watson isn't living up to its hype when it comes to cancer care](https://www.statnews.com/2017/09/05/watson-ibm-cancer/): 
 

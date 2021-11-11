@@ -1,20 +1,12 @@
 ---
-id: 1794
 title: 'Repost: A proposal for a really fast statistics journal'
-date: 2013-09-04T14:54:13+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_537945906261270
-al2fb_facebook_link_time:
-  - 2013-09-04T18:54:18+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1711129958
-categories:
-  - Uncategorized
-slug: "repost-a-proposal-for-a-really-fast-statistics-journal"
+date: '2013-09-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a repost of a previous Simply Statistics column that seems to be relevant again in light of Marie Davidian's [really important column](http://magazine.amstat.org/blog/2013/09/01/peerreview/) on the peer review process. You should also check out [Yihui's thoughts on this](http://yihui.name/en/2012/03/a-really-fast-statistics-journal/), which verge on the creation of a very fast/dynamic stats journal.  _
 
 I know we need a new journal like we need a good poke in the eye. But I got fired up by the recent discussion of open science (by <a href="http://krugman.blogs.nytimes.com/2012/01/17/open-science-and-the-econoblogosphere/" target="_blank">Paul Krugman</a> and others) and the seriously misguided <a href="http://en.wikipedia.org/wiki/Research_Works_Act" target="_blank">Research Works Act</a>- that aimed to make it illegal to deposit published papers funded by the government in Pubmed central or other open access databases.

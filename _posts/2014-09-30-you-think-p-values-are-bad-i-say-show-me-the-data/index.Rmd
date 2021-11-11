@@ -1,20 +1,12 @@
 ---
-id: 3314
 title: You think P-values are bad? I say show me the data.
-date: 2014-09-30T12:00:44+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_705053372883855
-al2fb_facebook_link_time:
-  - 2014-09-30T16:00:51+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3069286421
-categories:
-  - Uncategorized
-slug: "you-think-p-values-are-bad-i-say-show-me-the-data"
+date: '2014-09-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div class="page" title="Page 1">
   <div class="layoutArea">
     <div class="column">

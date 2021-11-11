@@ -1,22 +1,12 @@
 ---
-id: 438
 title: Kindle Fire and Machine Learning
-date: 2011-09-29T14:05:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/10806006878/kindle-fire-and-machine-learning
-tumblr_simplystatistics_id:
-  - 10806006878
-dsq_thread_id:
-  - 934741764
-categories:
-  - Uncategorized
-tags:
-  - ec2
-  - kindle
-  - Machine Learning
-slug: "kindle-fire-and-machine-learning"
+date: '2011-09-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Amazon released it&#8217;s new iPad competitor, the <a href="http://www.amazon.com/gp/product/B0051VVOB2" target="_blank">Kindle Fire</a>, today. A quick read through the description shows it has some interesting features, including a custom-built web browser called Silk. One innovation that they claim is that the browser works in conjunction with Amazon&#8217;s EC2 cloud computing platform to speed up the web-surfing experience by doing some computing on your end and some on their end. Seems cool, if it really does make things faster.
 
 Also there&#8217;s this interesting bit:

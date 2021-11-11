@@ -1,20 +1,12 @@
 ---
-id: 1542
 title: The ROC curves of science
-date: 2013-08-01T10:21:33+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_524103960978798
-al2fb_facebook_link_time:
-  - 2013-08-01T14:21:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/07/Slide11.png
-dsq_thread_id:
-  - 1555935388
-categories:
-  - Uncategorized
-slug: "the-roc-curves-of-science"
+date: '2013-08-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Andrew Gelman's [recent post](http://andrewgelman.com/2013/07/24/too-good-to-be-true-the-scientific-mass-production-of-spurious-statistical-significance/) on what he calls the "scientific mass production of spurious statistical significance" reminded me of a thought I had back when I read John Ioannidis' paper claiming that [most published research finding are false](http://simplystatistics.org/2013/05/06/why-the-current-over-pessimism-about-science-is-the-perfect-confirmation-bias-vehicle-and-we-should-proceed-rationally/). Many authors, which I will refer to as _the pessimists_, have joined Ioannidis in making similar claims and repeatedly blaming the current state of affairs on the mindless use of frequentist inference. The gist of my thought is that, for some scientific fields, the pessimist's criticism is missing a critical point: that in practice, there is an inverse relationship between increasing rates of true discoveries and decreasing rates of false discoveries and that true discoveries from fields such as the biomedical sciences provide an enormous benefit to society. Before I explain this in more detail, I want to be very clear that I do think that reducing false discoveries is an important endeavor and that some of these false discoveries are completely avoidable. But, as I describe below, a general solution that improves the current situation is much more complicated than simply abandoning the frequentist inference that currently dominates.
 
 Few will deny that our current system, with all its flaws, still produces important discoveries. Many of the pessimists' proposals for reducing false positives seem to be, in one way or another, a call for being more conservative in reporting findings. Example of recommendations include that we require larger effect sizes or smaller p-values, that we correct for the "[researcher degrees of freedom](http://www.slate.com/articles/health_and_science/science/2013/07/statistics_and_psychology_multiple_comparisons_give_spurious_results.html)", and that we use Bayesian analyses with pessimistic priors. I tend to agree with many of these recommendations but I have yet to see a specific proposal on exactly how conservative we should be. Note that we could easily bring the false positives all the way down to 0 by simply taking this recommendation to its extreme and stop publishing biomedical research results all together. This absurd proposal brings me to receiver operating characteristic (ROC) curves.

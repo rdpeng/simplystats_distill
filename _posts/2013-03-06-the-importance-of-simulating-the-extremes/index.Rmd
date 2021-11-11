@@ -1,24 +1,12 @@
 ---
-id: 1078
 title: The importance of simulating the extremes
-date: 2013-03-06T12:35:04+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_470118469710681
-al2fb_facebook_link_time:
-  - 2013-03-06T17:35:09+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1121473950
-categories:
-  - Uncategorized
-tags:
-  - cook
-  - opinion
-  - simulation
-slug: "the-importance-of-simulating-the-extremes"
+date: '2013-03-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Simulation is commonly used by statisticians/data analysts to: (1) [estimate variability/improve predictors](http://en.wikipedia.org/wiki/Bootstrapping_(statistics)), (2) [to evaluate the space of potential outcomes](http://en.wikipedia.org/wiki/Monte_Carlo_method), and (3) to evaluate the properties of new algorithms or procedures. Over the last couple of days, discussions of simulation have popped up in a couple of different places.
 
 First, the reviewers of a paper that my student is working on had asked a question about the behavior of the method in different conditions. I mentioned in passing, that I thought it was a good idea to simulate some cases where our method will definitely break down.

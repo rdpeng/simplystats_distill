@@ -1,22 +1,12 @@
 ---
-id: 4102
 title: Johns Hopkins Data Science Specialization Captsone 2 Top Performers
-date: 2015-06-10T14:33:09+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_818010234921501
-al2fb_facebook_link_time:
-  - 2015-06-10T18:33:17+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/06/Ben_Apple-300x285.jpg
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3837929088
-categories:
-  - Uncategorized
-slug: "johns-hopkins-data-science-specialization-captsone-2-top-performers"
+date: '2015-06-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _The second capstone session of the [Johns Hopkins Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage) concluded recently. This time, we had 1,040 learners sign up to participate in the session, which again featured a project developed in collaboration with the amazingly innovative folks at [SwiftKey](http://swiftkey.com/en/). _
 
 _We've identified the learners listed below as the top performers in this capstone session. This is an incredibly talented group of people who have worked very hard throughout the entire nine-course specialization.  Please take some time to read their stories and look at their work. _

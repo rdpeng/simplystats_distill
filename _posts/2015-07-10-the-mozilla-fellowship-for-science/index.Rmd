@@ -1,22 +1,12 @@
 ---
-id: 4139
 title: The Mozilla Fellowship for Science
-date: 2015-07-10T11:10:26+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_830527943669730
-al2fb_facebook_link_time:
-  - 2015-07-10T15:10:32+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3921832625
-categories:
-  - Uncategorized
-slug: "the-mozilla-fellowship-for-science"
+date: '2015-07-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This looks like an [interesting opportunity](https://www.mozillascience.org/fellows) for grad students, postdocs, and early career researchers:
 
 > We're looking for researchers with a passion for open source and data sharing, already working to shift research practice to be more collaborative, iterative and open. Fellows will spend 10 months starting September 2015 as community catalysts at their institutions, mentoring the next generation of open data practitioners and researchers and building lasting change in the global open science community.

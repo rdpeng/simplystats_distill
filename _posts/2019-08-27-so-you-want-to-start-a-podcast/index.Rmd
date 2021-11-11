@@ -2,8 +2,11 @@
 title: So You Want to Start a Podcast
 author: Roger Peng
 date: '2019-08-27'
-slug: so-you-want-to-start-a-podcast
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Podcasting has gotten quite a bit easier over the past 10 years, due in part to improvements to hardware and software. I wrote about both how I [edit](https://simplystatistics.org/2017/09/18/editing-podcasts-logic-pro-x/) and [record](https://simplystatistics.org/2017/09/20/recording-podcasts-with-a-remote-cohost/) both of my podcasts about 2 years ago and, while not much has changed since then, I thought it might be helpful if I organized the information in a better way for people just starting out with a new podcast.
 

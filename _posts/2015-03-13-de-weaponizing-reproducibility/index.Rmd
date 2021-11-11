@@ -1,22 +1,12 @@
 ---
-id: 3925
 title: De-weaponizing reproducibility
-date: 2015-03-13T10:24:05+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_780905105298681
-al2fb_facebook_link_time:
-  - 2015-03-13T14:24:13+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3592233663
-categories:
-  - Uncategorized
-slug: "de-weaponizing-reproducibility"
+date: '2015-03-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   A couple of weeks ago Roger and I went to a <a href="http://sites.nationalacademies.org/DEPS/BMSA/DEPS_153236">conference on statistical reproducibility </a>held at the National Academy of Sciences. The discussion was pretty wide ranging and I love that the thinking about reproducibility is coming back to statistics. There was pretty widespread support for the idea that prevention is the <a href="http://arxiv.org/abs/1502.03169">right way to approach reproducibility</a>.
 </div>

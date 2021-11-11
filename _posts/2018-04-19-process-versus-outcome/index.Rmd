@@ -2,10 +2,11 @@
 title: Process versus outcome productivity
 author: Jeff Leek
 date: '2018-04-19'
-slug: process-versus-outcome
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Several times over the last few weeks my hatred of [Doodle polls](https://doodle.com/) has come up in meetings. I think the polling technology is great, but I'm still frustrated by the polls. Someone asked what I'd rather have happen and I said:
 

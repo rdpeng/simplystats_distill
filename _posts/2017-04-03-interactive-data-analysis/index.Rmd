@@ -1,10 +1,12 @@
 ---
 title: The Importance of Interactive Data Analysis for Data-Driven Discovery
-date: 2017-04-03
 author: Rafael Irizarry
-comments: true
-slug: "interactive-data-analysis"
+date: '2017-04-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Data analysis workflows and recipes are commonly used in science. They
 are actually indispensable since reinventing the wheel for each

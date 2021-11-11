@@ -1,10 +1,12 @@
 ---
 title: Information and VC Investing
 author: Roger Peng
-comments: true
-slug: "the-information-vc"
-date: 2016-10-03
+date: '2016-10-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Sam Lessin at The Information has a [nice post](http://go.theinformation.com/xXfQ5plmVMI) (sorry, paywall, but it's a great publication) about how increased measurement and analysis is changing the nature of venture capital investing.
 

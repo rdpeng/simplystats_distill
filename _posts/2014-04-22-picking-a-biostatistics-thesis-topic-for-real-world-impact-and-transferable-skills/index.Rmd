@@ -1,20 +1,13 @@
 ---
-id: 2979
-title: Picking a (bio)statistics thesis topic for real world impact and transferable skills
-date: 2014-04-22T14:39:27+00:00
+title: Picking a (bio)statistics thesis topic for real world impact and transferable
+  skills
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_635974499791743
-al2fb_facebook_link_time:
-  - 2014-04-22T18:39:35+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2631107333
-categories:
-  - Uncategorized
-slug: "picking-a-biostatistics-thesis-topic-for-real-world-impact-and-transferable-skills"
+date: '2014-04-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of the things that was hardest for me in graduate school was starting to think about my own research projects and not just the ideas my advisor fed me. I remember that it was stressful because I didn't quite know where to start. After having done this for a while and particularly after having read a bunch of papers by people who are way more successful than I am, I have come to the following algorithm as a means for finding a topic that will have real world impact and also give you skills to take on new problems in a flexible way.
 
   1.  Find a scientific problem that hasn't been solved with data (by far hardest part)

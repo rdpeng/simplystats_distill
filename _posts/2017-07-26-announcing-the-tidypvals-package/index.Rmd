@@ -2,12 +2,11 @@
 title: Announcing the tidypvals package
 author: Jeff Leek
 date: '2017-07-26'
-slug: announcing-the-tidypvals-package
-categories: []
-tags:
-  - pvalues
-  - rpackage
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A few years ago I helped write a paper where we proposed scraping p-values from the medical literature to try to estimate [the science-wise false discovery rate](https://academic.oup.com/biostatistics/article/15/1/1/244509/An-estimate-of-the-science-wise-false-discovery). The paper generated a ton of [interesting discussion](https://simplystatistics.org/2013/09/25/is-most-science-false-the-titans-weigh-in/) and inspired other groups to start collecting p-values from the literature. 
 

@@ -1,20 +1,12 @@
 ---
-id: 396
 title: Computing on the Language
-date: 2011-10-27T12:17:24+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11988685443/computing-on-the-language
-tumblr_simplystatistics_id:
-  - 11988685443
-dsq_thread_id:
-  - 933692814
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "computing-on-the-language"
+date: '2011-10-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 And now for something a bit more esoteric&#8230;.
 
 I recently wrote a function to deal with a strange problem. Writing the function ended up being a fun challenge related to computing on the R language itself.

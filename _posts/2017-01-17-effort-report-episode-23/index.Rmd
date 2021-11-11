@@ -1,9 +1,12 @@
 ---
 title: Interview with Al Sommer - Effort Report Episode 23
 author: Roger Peng
-slug: "effort-report-episode-23"
-date: 2017-01-17
+date: '2017-01-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 My colleage [Elizabeth Matsui](https://twitter.com/elizabethmatsui) and I had a great opportunity to talk with Al Sommer on the [latest episode](http://effortreport.libsyn.com/23-special-guest-al-sommer) of our podcast [The Effort Report](http://effortreport.libsyn.com). Al is the former Dean of the Johns Hopkins Bloomberg School of Public Health and is Professor of Epidemiology and International Health at the School. He is (among other things) world reknown for his pioneering research in vitamin A deficiency and mortality in children.
 

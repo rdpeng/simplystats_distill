@@ -1,20 +1,13 @@
 ---
-id: 1799
-title: 'Implementing Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 3)'
-date: 2013-09-05T16:30:47+00:00
+title: 'Implementing Evidence-based Data Analysis: Treading a New Path for Reproducible
+  Research (Part 3)'
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_538407589548435
-al2fb_facebook_link_time:
-  - 2013-09-05T20:30:53+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/09/dsmpic-1024x608.png
-dsq_thread_id:
-  - 1719388958
-categories:
-  - Uncategorized
-slug: "implementing-evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-3"
+date: '2013-09-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [Last week](http://simplystatistics.org/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/) I talked about how we might be able to improve data analyses by moving towards "evidence-based" data analysis and to use data analytic techniques that are proven to be useful based on statistical research rather. My feeling was this approach attacks the most "upstream" aspect of data analysis before problems have the chance to filter down into things like publications, or even worse, clinical decision-making.
 
 In this third (and final!) post on this topic I wanted to describe a little how we could implement evidence-based data analytic pipelines. Depending on your favorite  software system you could imagine a number of ways to do this. If the pipeline were implemented in R, you could imagine it as an R package. The precise platform is not critical at this point; I would imagine most complex pipelines would involve multiple different software systems tied together.

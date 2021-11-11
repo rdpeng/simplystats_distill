@@ -1,20 +1,12 @@
 ---
-id: 3194
 title: Jan de Leeuw owns the Internet
-date: 2014-07-16T11:22:51+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_673425296046663
-al2fb_facebook_link_time:
-  - 2014-07-16T15:22:59+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2848639464
-categories:
-  - Uncategorized
-slug: "jan-de-leeuw-owns-the-internet"
+date: '2014-07-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of the best things to happen on the Internet recently is that [Jan de Leeuw](http://gifi.stat.ucla.edu) has decided to own the Twitter/Facebook universe. If you do not already, you should be [following him](https://twitter.com/deleeuw_jan). Among his many accomplishments, he founded the Department of Statistics at UCLA (my _alma mater_), which is currently thriving. On the occasion of the Department's 10th birthday, there was a small celebration, and I recall Don Ylvisaker mentioning that the reason they invited Jan to UCLA way back when was because he "knew everyone and knew everything". Pretty accurate description, in my opinion.
 
 Jan's been tweeting quite a bit of late, but recently had this gem:

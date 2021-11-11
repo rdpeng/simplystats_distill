@@ -1,10 +1,12 @@
 ---
-title: "Some default and debt restructuring data"
-date: 2017-05-04
+title: Some default and debt restructuring data
 author: Rafael Irizarry
-comments: true
-slug: debt-haircuts
+date: '2017-05-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Yesterday the government of Puerto Rico [asked for bankruptcy relief in federal court](https://www.nytimes.com/2017/05/03/business/dealbook/puerto-rico-debt.html). Puerto Rico owes about \$70 billion to bondholders and  about $50 billion in pension obligations. Before asking for protection the government offered to pay back some of the debt (50% according to some news reports) but bondholders refused. Bondholders will now fight in court to recover as much of what is owed as possible while the government and a federal oversight board will try to lower this amount. What can we expect to happen? 
 

@@ -1,20 +1,12 @@
 ---
-id: 1916
 title: Announcing Statistics with Interactive R Learning Software Environment
-date: 2013-09-27T11:26:31+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_547336861988841
-al2fb_facebook_link_time:
-  - 2013-09-27T15:26:36+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1802501999
-categories:
-  - Uncategorized
-slug: "announcing-statistics-with-interactive-r-learning-software-environment"
+date: '2013-09-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   <em>Editor's note: This post was written by Nick Carchedi, a Master's degree student in the Department of Biostatistics at Johns Hopkins. He is working with us to develop software for interactive learning of R and statistics. </em>
 </p>

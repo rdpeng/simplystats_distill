@@ -2,8 +2,11 @@
 title: Is Artificial Intelligence Revolutionizing Environmental Health?
 author: Roger Peng
 date: '2019-12-04'
-slug: is-artificial-intelligence-revolutionizing-environmental-health
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 *NOTE: This post was written by Kevin Elliott, Michigan State University; Nicole Kleinstreuer, National Institutes of Health; Patrick McMullen, ScitoVation; Gary Miller, Columbia University; Bhramar Mukherjee, University of Michigan; Roger D. Peng, Johns Hopkins University; Melissa Perry, The George Washington University; Reza Rasoulpour, Corteva Agriscience, and Elizabeth Boyle, National Academies of Sciences, Engineering, and Medicine. The full summary for the workshop on which this post is based can be obtained [here](https://www.nap.edu/catalog/25520/leveraging-artificial-intelligence-and-machine-learning-to-advance-environmental-health-research-and-decisions).*
 

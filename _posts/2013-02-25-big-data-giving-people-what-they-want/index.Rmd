@@ -1,20 +1,12 @@
 ---
-id: 1059
 title: 'Big data: Giving people what they want'
-date: 2013-02-25T08:22:33+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_466401106749084
-al2fb_facebook_link_time:
-  - 2013-02-25T13:22:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1104037177
-categories:
-  - Uncategorized
-slug: "big-data-giving-people-what-they-want"
+date: '2013-02-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Netflix is [using data to create original content for its subscribers](http://www.nytimes.com/2013/02/25/business/media/for-house-of-cards-using-big-data-to-guarantee-its-popularity.html?smid=pl-share), the first example of which was [House of Cards](http://en.wikipedia.org/wiki/House_of_Cards_(U.S._TV_series)). Three main data points for this show were that (1) People like David Fincher (because they watch The Social Network, like, all the time); (2) People like Kevin Spacey; and (3) People liked the British version of House of Cards. Netflix obviously has tons of other data, including when you stop, pause, rewind certain scenes in a movie or TV show.
 
 > Netflix has always used data to decide which shows to license, and now that expertise is extended to the first-run. And there was not one trailer for “House of Cards,” there were many. Fans of Mr. Spacey saw trailers featuring him, women watching “Thelma and Louise” saw trailers featuring the show’s female characters and serious film buffs saw trailers that reflected Mr. Fincher’s touch.

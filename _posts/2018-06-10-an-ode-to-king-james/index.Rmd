@@ -2,8 +2,11 @@
 title: An ode to King James
 author: Rafael Irizarry
 date: '2018-06-10'
-slug: an-ode-to-king-james
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 The NBA season is over and, once again, what I will most remember are King James' heroics.
 As a lifelong Boston Celtics fan, I am supposed to hate LeBron James. But I don't. As a fan of the game of basketball, and a statistician, I just can't help but be in awe of the best player ever to play the game. Also how can you hate this guy (don't miss the wrist watch)?

@@ -1,21 +1,12 @@
 ---
-id: 343
 title: Dear editors/associate editors/referees, Please reject my papers quickly
-date: 2011-12-14T16:36:41+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/14218411483/dear-editors-associate-editors-referees-please-reject
-tumblr_simplystatistics_id:
-  - 14218411483
-dsq_thread_id:
-  - 933679497
-categories:
-  - Uncategorized
-tags:
-  - humor
-  - Rant
-slug: "dear-editors-associate-editors-referees-please-reject"
+date: '2011-12-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The review times for most journals in our field are ridiculous. Check out Figure 1&#160;<a href="http://www.stat.tamu.edu/~carroll/ftp/2001.papers.directory/times.pdf" target="_blank">here</a>. A careful review takes time, but not six months. Let&#8217;s be honest, those papers are sitting on desks for the great majority of those six months. But here is what really kills me: waiting six months for a review basically saying the paper is not of sufficient interest to the readership of the journal. That decision you can come to in half a day. If you don&#8217;t have time, don&#8217;t accept the responsibility to review a paper.
 
 I like sharing my work with my statistician colleagues, but the Biology journals never  do this to me. When my paper is not of sufficient interest, these journals reject me in days not months. I sometimes work on topics that are fast pace and many of my competitors are not statisticians. If I have to wait six months for each rejection, I can&#8217;t compete. By the time the top three applied statistics journals reject the paper, more than a year goes by and the paper is no longer novel. Meanwhile I can go through Nature Methods, Genome Research, and Bioinformatics in less than 3 months.

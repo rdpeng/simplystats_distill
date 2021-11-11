@@ -1,22 +1,12 @@
 ---
-id: 4400
 title: Faculty/postdoc job opportunities in genomics across Johns Hopkins
-date: 2015-10-30T10:33:06+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_877676655621525
-al2fb_facebook_link_time:
-  - 2015-10-30T14:33:17+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4274319763
-categories:
-  - Uncategorized
-slug: "facultypostdoc-job-opportunities-in-genomics-across-johns-hopkins"
+date: '2015-10-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It's pretty exciting to be in genomics at Hopkins right now with three new Bloomberg professors in genomics areas, a ton of stellar junior faculty, and a really fun group of students/postdocs. If you want to get in on the action here is a non-comprehensive list of great opportunities.
 
 ## <span style="text-decoration: underline;"><strong>Faculty Jobs</strong></span>

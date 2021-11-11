@@ -1,18 +1,12 @@
 ---
-id: 38
 title: Why we should continue publishing peer-reviewed papers
-date: 2012-10-08T14:29:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/33159695574/why-we-should-continue-publishing-peer-reviewed-papers
-tumblr_simplystatistics_id:
-  - 33159695574
-dsq_thread_id:
-  - 933675508
-categories:
-  - Uncategorized
-slug: "why-we-should-continue-publishing-peer-reviewed-papers"
+date: '2012-10-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <span>Several bloggers are calling for the end of peer-reviewed journals as we know them. <a href="http://simplystatistics.org/post/32871552079/should-we-stop-publishing-peer-reviewed-papers" target="_blank">Jeff suggest</a><span class="apple-converted-space"> </span>that we replace them with a system in which everyone posts their papers on their blog, pubmed aggregates the feeds, and peer-review happens post publication via, for example, counting up like and dislike votes. In my view, many of these critiques seem to conflate problems from different aspects of the process. Here I try to break down the current system into its key components and defend the one aspect I think we should preserve (at least for now): pre-publication peer-review.</span>
 
 To avoid confusion let me start by enumerating some of the components for which I agree change is needed.

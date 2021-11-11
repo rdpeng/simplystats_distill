@@ -1,18 +1,12 @@
 ---
-id: 159
 title: 'Computing and Sustainability: What Can Be Done?'
-date: 2012-07-02T14:20:25+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/26345934797/computing-and-sustainability-what-can-be-done
-tumblr_simplystatistics_id:
-  - 26345934797
-dsq_thread_id:
-  - 933834644
-categories:
-  - Uncategorized
-slug: "computing-and-sustainability-what-can-be-done"
+date: '2012-07-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Last Friday, the National Research Council released a report titled _<a href="http://www.nap.edu/catalog.php?record_id=13415" target="_blank">Computing Research for Sustainability</a>_, written by the NRC&#8217;s Committee on Computing Research for Environmental and Societal Sustainability, on which I served (<a href="http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=13415" target="_blank">press release</a>). This was a novel experience for me given that I was the only non-computer scientist on the committee. That said, I think the report is quite interesting for a number of reasons. As a statistician, I took away a few lessons.
 
   * **Sustainability presents many opportunities for CS**. One of the first things the committee did was hold a workshop where researchers from all over presented their work on CS and sustainability&#8212;-and it was impressive. Everything from Shwetak Patel&#8217;s clever use of data analysis to monitor home power usage to Bill Tomlinson&#8217;s work in human computer interaction. Very educational for me. One thing I remember is that towards the end of the workshop <a href="http://www.cms.caltech.edu/people/2994/profile" target="_blank">John Doyle</a> made some comment about IPv6 and everyone laughed and&#8230;I didn&#8217;t get it. I still don&#8217;t get it.

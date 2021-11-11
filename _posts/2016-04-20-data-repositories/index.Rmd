@@ -1,10 +1,12 @@
 ---
 title: As a data analyst the best data repositories are the ones with the least features
 author: Jeff Leek
-comments: true
-slug: "data-repositories"
-date: 2016-04-20
+date: '2016-04-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Lately, for a range of projects I have been working on I have needed to obtain data from previous publications. There is a growing list of data repositories where data is made available. General purpose data sharing sites include:
 

@@ -2,10 +2,11 @@
 title: 10 things R can do that might surprise you
 author: ~
 date: '2019-03-13'
-slug: 10-things-r-can-do-that-might-surprise-you
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Over the last few weeks I've had a couple of interactions with folks from the computer science world who were pretty disparaging of the R programming language. A lot of the critism focused on perceived limitations of R to statistical analysis. 
 

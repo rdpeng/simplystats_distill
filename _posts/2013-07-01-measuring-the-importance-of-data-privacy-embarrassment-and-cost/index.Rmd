@@ -1,20 +1,12 @@
 ---
-id: 1459
 title: 'Measuring the importance of data privacy: embarrassment and cost'
-date: 2013-07-01T15:52:38+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_512160042173190
-al2fb_facebook_link_time:
-  - 2013-07-01T19:52:45+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1455888713
-categories:
-  - Uncategorized
-slug: "measuring-the-importance-of-data-privacy-embarrassment-and-cost"
+date: '2013-07-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 We [We](http://simplystatistics.org/2013/06/14/the-vast-majority-of-statistical-analysis-is-not-performed-by-statisticians/) when it is inexpensive and easy to collect data about ourselves or about other people. These data can take the form of health information - like medical records, or they could be financial data - like your online bank statements, or they could be social data - like your friends on Facebook. We can also easily collect information about our [genetic makeup](https://www.23andme.com/) or our [fitness](http://www.fitbit.com/) (although it can be [hard to get](http://simplystatistics.org/2013/01/02/fitbit-why-cant-i-have-my-data/)).
 
 All of these data types are now stored electronically. There are obvious reasons why this is both economical and convenient. The downside, of course, is that the data can be [used by the government](http://en.wikipedia.org/wiki/PRISM_(surveillance_program)) or [other entities](http://junkcharts.typepad.com/numbersruleyourworld/2013/07/know-your-data-11-facebook-and-you.html) in ways that you may not like. Whether it is to track your habits to sell you new products or to use your affiliations to make predictions about your political leanings, these data are not just "numbers".

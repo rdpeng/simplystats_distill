@@ -1,22 +1,12 @@
 ---
-id: 3992
 title: Data analysis subcultures
-date: 2015-04-29T10:23:57+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_801032276619297
-al2fb_facebook_link_time:
-  - 2015-04-29T14:24:07+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3722634369
-categories:
-  - Uncategorized
-slug: "data-analysis-subcultures"
+date: '2015-04-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Roger and I responded to the controversy around the journal that banned p-values today [in Nature.](http://www.nature.com/news/statistics-p-values-are-just-the-tip-of-the-iceberg-1.17412) A piece like this requires a lot of information packed into very little space but I thought one idea that deserved to be talked about more was the idea of data analysis subcultures. From the paper:
 
 > Data analysis is taught through an apprenticeship model, and different disciplines develop their own analysis subcultures. Decisions are based on cultural conventions in specific communities rather than on empirical evidence. For example, economists call data measured over time 'panel data', to which they frequently apply mixed-effects models. Biomedical scientists refer to the same type of data structure as 'longitudinal data', and often go at it with generalized estimating equations.

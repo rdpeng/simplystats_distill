@@ -1,20 +1,12 @@
 ---
-id: 2896
 title: This is how an important scientific debate is being used to stop EPA regulation
-date: 2014-04-01T09:13:08+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_10201880202226308
-al2fb_facebook_link_time:
-  - 2014-04-01T13:13:14+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2573625116
-categories:
-  - Uncategorized
-slug: "this-is-how-an-important-scientific-debate-is-being-used-to-stop-epa-regulation"
+date: '2014-04-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   Environmental regulation in the United States has protected human health for over 40 years. Since the Clean Air Act was enacted in 1970, levels of outdoor air pollution have dropped dramatically, changing the landscape of once heavily-polluted cities like Los Angeles and Pittsburgh. A 2011 <a href="http://www.epa.gov/air/sect812/prospective2.html">cost-benefit analysis</a> conducted by the U.S. Environmental Protection Agency estimated that the 1990 amendments to the CAA prevented 160,000 deaths and 13 million lost work days in the year 2010 alone. They estimated that the monetary benefits of the CAA were 30 times greater than the costs of implementing the regulations.
 </p>

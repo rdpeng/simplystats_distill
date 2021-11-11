@@ -1,22 +1,13 @@
 ---
-id: 4159
-title: "Autonomous killing machines won't look like the Terminator...and that is why they are so scary"
-date: 2015-07-30T11:09:22+00:00
+title: Autonomous killing machines won't look like the Terminator...and that is why
+  they are so scary
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_838624786193379
-al2fb_facebook_link_time:
-  - 2015-07-30T15:09:29+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/07/terminator-300x180.jpeg
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3986791999
-categories:
-  - Uncategorized
-slug: "autonomous-killing-machines-wont-look-like-the-terminator-and-that-is-why-they-are-so-scary"
+date: '2015-07-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Just a few days ago many of the most incredible minds in science and technology [urged governments to avoid using artificial intelligence](http://www.theguardian.com/technology/2015/jul/27/musk-wozniak-hawking-ban-ai-autonomous-weapons) to create autonomous killing machines. One thing that always happens when such a warning is put into place is you see the inevitable Terminator picture:
 
 &nbsp;

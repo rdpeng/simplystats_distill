@@ -1,22 +1,13 @@
 ---
-id: 4429
-title: Given the history of medicine, why are randomized trials not used for social policy?
-date: 2015-11-17T10:42:24+00:00
+title: Given the history of medicine, why are randomized trials not used for social
+  policy?
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4322497486
-al2fb_facebook_link_id:
-  - 136171103105421_884302531625604
-al2fb_facebook_link_time:
-  - 2015-11-17T15:42:35+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "why-are-randomized-trials-not-used-by-policymakers"
+date: '2015-11-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Policy changes can have substantial societal effects. For example, clean water and  hygiene policies have saved millions, if not billions, of lives. But effects are not always positive. For example, [prohibition](https://en.wikipedia.org/wiki/Prohibition_in_the_United_States), or the "noble experiment", boosted organized crime, slowed economic growth and increased deaths caused by tainted liquor. Good intentions do not guarantee desirable outcomes.
 
 The medical establishment is well aware of the danger of basing decisions on the good intentions of doctors or biomedical researchers. For this reason, randomized controlled trials (RCTs) are the standard approach to determining if a new treatment is safe and effective. In these trials an objective assessment is achieved by assigning patients at random to a treatment or control group, and then comparing the outcomes in these two groups. Probability calculations are used to summarize the evidence in favor or against the new treatment. Modern RCTs are considered [one of the greatest medical advances of the 20th century](http://abcnews.go.com/Health/TenWays/story?id=3605442&page=1).

@@ -1,22 +1,12 @@
 ---
-id: 3623
 title: Interview with Cole Trapnell of UW Genome Sciences
-date: 2014-12-05T12:06:57+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_734232783299247
-al2fb_facebook_link_time:
-  - 2014-12-05T17:07:02+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/12/cole_cropped-278x300.jpg
-dsq_thread_id:
-  - 3294008607
-categories:
-  - Uncategorized
-slug: "interview-with-cole-trapnell-of-uw-genome-sciences"
+date: '2014-12-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div id="mO" class="">
   <div class="tNsA5e-nUpftc nUpftc ja xpv2f">
     <div class="pf">

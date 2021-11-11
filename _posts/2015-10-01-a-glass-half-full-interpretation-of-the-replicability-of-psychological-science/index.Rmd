@@ -1,22 +1,12 @@
 ---
-id: 4336
 title: A glass half full interpretation of the replicability of psychological science
-date: 2015-10-01T10:00:53+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_866632043392653
-al2fb_facebook_link_time:
-  - 2015-10-01T14:00:59+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/10/pi_figure_nofilter-300x300.png
-dsq_thread_id:
-  - 4183632772
-categories:
-  - Uncategorized
-slug: "a-glass-half-full-interpretation-of-the-replicability-of-psychological-science"
+date: '2015-10-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p style="line-height: 18.0pt;">
   <em>tl;dr: 77% of replication effects from the psychology replication study were in (or above) the 95% prediction interval based on the original effect size. This isn't perfect and suggests (a) there is still room for improvement, (b) the scientists who did the replication study are pretty awesome at replicating, (c) we need a better definition of replication that respects uncertainty but (d) the scientific sky isn't falling. We wrote this up in a <a href="http://arxiv.org/abs/1509.08968">paper on arxiv</a>; <a href="https://github.com/jtleek/replication_paper">the code is here.</a> </em>
 </p>

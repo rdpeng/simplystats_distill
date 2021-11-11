@@ -1,25 +1,12 @@
 ---
-id: 336
-title: 'List of cities/states with open data - help me find more!'
-date: 2012-01-02T14:30:00+00:00
+title: List of cities/states with open data - help me find more!
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15182715327/list-of-cities-states-with-open-data-help-me-find
-tumblr_simplystatistics_id:
-  - 15182715327
-dsq_thread_id:
-  - 933662726
-categories:
-  - Uncategorized
-tags:
-  - 2012
-  - APIs
-  - civic data
-  - data
-  - Link
-  - List
-slug: "list-of-cities-states-with-open-data-help-me-find"
+date: '2012-01-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It&#8217;s the beginning of 2012 and statistics/data science has never been hotter. Some of the most important data is data collected about civic organizations. If you haven&#8217;t seen Bill Gate&#8217;s <a href="http://www.ted.com/talks/bill_gates_how_state_budgets_are_breaking_us_schools.html" target="_blank">TED Talk</a> about the importance of state budgets, you should watch it now. A major key to solving a lot of our economic problems lies in understanding and using data collected about cites and states. 
 
 U.S. cities and states are jumping on this idea and our own Baltimore was one of the <a href="http://www.americanprogress.org/issues/2007/04/citistat.html" target="_blank">earliest adopters</a>. I thought I&#8217;d make a list of all the cities that have made an effort to make civic data public. Here are a few I&#8217;ve found:

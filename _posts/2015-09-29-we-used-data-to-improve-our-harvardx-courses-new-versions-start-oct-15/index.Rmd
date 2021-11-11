@@ -1,22 +1,12 @@
 ---
-id: 4323
 title: 'We Used Data to Improve our HarvardX Courses: New Versions Start Oct 15'
-date: 2015-09-29T09:53:31+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_865851573470700
-al2fb_facebook_link_time:
-  - 2015-09-29T13:53:59+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4176983436
-categories:
-  - Uncategorized
-slug: "we-used-data-to-improve-our-harvardx-courses-new-versions-start-oct-15"
+date: '2015-09-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 You can sign up following links [here](http://genomicsclass.github.io/book/pages/classes.html)
 
 Last semester we successfully [You can sign up following links [here](http://genomicsclass.github.io/book/pages/classes.html)

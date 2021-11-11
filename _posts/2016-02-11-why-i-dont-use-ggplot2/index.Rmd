@@ -1,22 +1,12 @@
 ---
-id: 4645
-title: "Why I don't use ggplot2"
-date: 2016-02-11T13:25:38+00:00
+title: Why I don't use ggplot2
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_922697247786132
-al2fb_facebook_link_time:
-  - 2016-02-11T18:25:49+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_data_uri=4645
-dsq_thread_id:
-  - 4571154006
-categories:
-  - Uncategorized
-slug: "why-i-dont-use-ggplot2"
+date: '2016-02-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Some of my colleagues think of me as super data-sciencey compared to other academic statisticians. But one place I lose tons of street cred in the data science community is when I talk about ggplot2. For the 3 data type people on the planet who still don't know what that is, [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) is an R package/phenomenon for data visualization. It was created by Hadley Wickham, who is (in my opinion) perhaps the most important statistician/data scientist on the planet. It is one of the best maintained, most important, and really well done R packages. Hadley also supports R software like few other people on the planet.
 
 But I don't use ggplot2 and I get nervous when other people do.

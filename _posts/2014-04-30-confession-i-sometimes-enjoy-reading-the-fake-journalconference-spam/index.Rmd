@@ -1,26 +1,12 @@
 ---
-id: 2993
 title: 'Confession: I sometimes enjoy reading the fake journal/conference spam'
-date: 2014-04-30T10:00:06+00:00
 author: Rafael Irizarry
-dsq_thread_id:
-  - 2648904584
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_639511659438027
-al2fb_facebook_link_time:
-  - 2014-04-30T14:00:15+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-tags:
-  - humor
-slug: "confession-i-sometimes-enjoy-reading-the-fake-journalconference-spam"
+date: '2014-04-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p style="text-align: left">
   I've spent a considerable amount of time setting up filters to avoid getting spam from fake <a href="http://www.nytimes.com/2013/04/08/health/for-scientists-an-exploding-world-of-pseudo-academia.html?pagewanted=all">journals and conferences. </a>Unfortunately, they are exceptionally good at thwarting my defenses. This does not annoy me as much as I pretend because, secretly, I enjoy reading some of these emails. Here are three of my favorites.
 </p>

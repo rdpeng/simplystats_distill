@@ -1,22 +1,12 @@
 ---
-id: 4229
 title: UCLA Statistics 2015 Commencement Address
-date: 2015-08-12T10:34:03+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_843690832353441
-al2fb_facebook_link_time:
-  - 2015-08-12T14:34:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4025997237
-categories:
-  - Uncategorized
-slug: "ucla-statistics-2015-commencement-address"
+date: '2015-08-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I was asked to speak at the [UCLA Department of Statistics](http://www.stat.ucla.edu) Commencement Ceremony this past June. As one of the first graduates of that department back in 2003, I was tremendously honored to be invited to speak to the graduates. When I arrived I was just shocked at how much the department had grown. When I graduated I think there were no more than 10 of us between the PhD and Master's programs. Now they have ~90 graduates per year with undergrad, Master's and PhD. It was just stunning.
 
 Here's the text of what I said, which I think I mostly stuck to in the actual speech.

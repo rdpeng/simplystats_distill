@@ -1,20 +1,12 @@
 ---
-id: 1166
 title: Sunday data/statistics link roundup (4/14/2013)
-date: 2013-04-14T10:36:29+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_483386858383842
-al2fb_facebook_link_time:
-  - 2013-04-14T14:36:34+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1210309831
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-4142013"
+date: '2013-04-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. [The most influential data scientists on Twitter](http://storify.com/Kalido/most-influential-data-scientists-on-twitter), featuring Amy Heineike, Hilary Mason, and a few other familiar names to readers of this blog. In other news, I love reading list of the "Top K \_____" as much as the next person. I love them even more when they are quantitative (the list above isn't) - even when the quantification is totally bogus. (via John M.)
   2. Rod Little and our own Tom Louis [over at the Huffingtonpost](http://www.huffingtonpost.com/rod-little/decennial-census_b_3046611.html?utm_hp_ref=science) talking about the ways in which the U.S. Census supports our democracy. It is a very good piece and I think highlights the critical importance that statistics and data play in keeping government open and honest.
   3. [An article](http://www.nytimes.com/2013/04/08/health/for-scientists-an-exploding-world-of-pseudo-academia.html?src=me&ref=general&_r=1&) about the growing number of fake academic journals and their potential predatory practices. I think I've been able to filter out the fake journals/conferences pretty well (if they've invited 30 Nobel Laureates - probably fake). But this poses big societal problems; how do we tell what is real science from what is fake if you don't have inside knowledge about which journals are real? (via John H.)

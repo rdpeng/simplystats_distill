@@ -1,20 +1,12 @@
 ---
-id: 2320
 title: A non-comprehensive list of awesome things other people did this year.
-date: 2013-12-20T10:46:28+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_584006588321868
-al2fb_facebook_link_time:
-  - 2013-12-20T15:46:34+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2063187044
-categories:
-  - Uncategorized
-slug: "a-non-comprehensive-list-of-awesome-things-other-people-did-this-year"
+date: '2013-12-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note:_ _I made this list off the top of my head and have surely missed awesome things people have done this year. If you know of some, you should make your own list or add it to the comments! I have also avoided talking about stuff I worked on or that people here at Hopkins are doing because this post is supposed to be about other people's awesome stuff. I wrote this post because a blog often feels like a place to complain, but we started Simply Stats as a place to be pumped up about the stuff people were doing with data. _
 
   * I emailed Hadley Wickham about some trouble we were having memory profiling. He wrote back immediately, [then wrote an R package](https://github.com/hadley/lineprof), then wrote [this awesome guide](http://adv-r.had.co.nz/memory.html). That guy is ridiculous.

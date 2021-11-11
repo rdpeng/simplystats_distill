@@ -1,22 +1,12 @@
 ---
-id: 3552
 title: Data Science Students Predict the Midterm Election Results
-date: 2014-11-12T13:37:36+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_724474887608370
-al2fb_facebook_link_time:
-  - 2014-11-12T18:37:44+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png
-dsq_thread_id:
-  - 3218197866
-categories:
-  - Uncategorized
-slug: "data-science-students-predict-the-midterm-election-results"
+date: '2014-11-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As explained in an [earlier post](http://simplystatistics.org/2014/11/04/538-election-forecasts-made-simple/), one of the homework assignments of my [CS109](http://cs109.github.io/2014/) class was to predict the results of the midterm election. We created a competition in which 49 students entered. The most interesting challenge was to provide intervals for the republican - democrat difference in each of the 35 senate races. Anybody missing more than 2 was eliminated. The average size of the intervals was the tie breaker.
 
 The main teaching objective here was to get students thinking about how to evaluate prediction strategies when chance is involved. To a naive observer, a biased strategy that favored democrats and correctly called, say, Virginia may look good in comparison to strategies that called it a toss-up.  However, a look at the other 34 states would reveal the weakness of this biased strategy. I wanted students to think of procedures that can help distinguish lucky guesses from strategies that universally perform well.

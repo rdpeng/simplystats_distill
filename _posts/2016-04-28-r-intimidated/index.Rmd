@@ -1,10 +1,13 @@
 ---
-title: High school student builds interactive R class for the intimidated with the JHU DSL
+title: High school student builds interactive R class for the intimidated with the
+  JHU DSL
 author: Jeff Leek
-date: 2016-04-27
-comments: true
-slug: "r-intimidated"
+date: '2016-04-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Annika Salzberg is currently a biology undergraduate at Haverford College majoring in biology. While in high-school here in Baltimore she developed and taught an R class to her classmates at the [Park School](http://www.parkschool.net/). Her interest in R grew out of a project where she and her fellow students and teachers went to the Canadian sub-Arctic to collect data on permafrost depth and polar bears. When analyzing the data she learned R (with the help of a teacher) to be able to do the analyses, some of which she did on her laptop while out in the field. 
 

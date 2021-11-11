@@ -1,22 +1,12 @@
 ---
-id: 4612
 title: A menagerie of messed up data analyses and how to avoid them
-date: 2016-02-01T13:39:57+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_917945058261351
-al2fb_facebook_link_time:
-  - 2016-02-01T18:40:06+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2016/02/direction411.png
-dsq_thread_id:
-  - 4542608532
-categories:
-  - Uncategorized
-slug: "a-menagerie-of-messed-up-data-analyses-and-how-to-avoid-them"
+date: '2016-02-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Update: I realize this may seem like I'm picking on people. I really don't mean to, I have for sure made all of these mistakes and many more. I can give many examples, but the one I always remember is the time Rafa saved me from "I got a big one here" when I made a huge mistake as a first year assistant professor._
 
 In any introductory statistics or data analysis class they might teach you the basics, how to load a data set, how to munge it, how to do t-tests, maybe how to write a report. But there are a whole bunch of ways that a data analysis can be screwed up that often get skipped over. Here is my first crack at creating a "menagerie" of messed up data analyses and how you can avoid them. Depending on interest I could probably list a ton more, but as always I'm doing the non-comprehensive list :).

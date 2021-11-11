@@ -1,20 +1,12 @@
 ---
-id: 1354
 title: When does replication reveal fraud?
-date: 2013-05-17T09:32:01+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_494614010594460
-al2fb_facebook_link_time:
-  - 2013-05-17T13:32:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1294506093
-categories:
-  - Uncategorized
-slug: "when-does-replication-reveal-fraud"
+date: '2013-05-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Here's a little thought experiment for your weekend pleasure. Consider the following:
 
 Joe Scientist decides to conduct a study (call it Study A) to test the hypothesis that a parameter _D_ > 0 vs. the null hypothesis that _D_ = 0. He designs a study, collects some data, conducts an appropriate statistical analysis and concludes that _D_ > 0. This result is published in the Journal of Awesome Results along with all the details of how the study was done.

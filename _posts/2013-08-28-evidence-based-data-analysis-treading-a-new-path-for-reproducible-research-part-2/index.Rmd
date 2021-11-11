@@ -1,20 +1,13 @@
 ---
-id: 1771
-title: 'Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 2)'
-date: 2013-08-28T10:14:32+00:00
+title: 'Evidence-based Data Analysis: Treading a New Path for Reproducible Research
+  (Part 2)'
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_535305943191933
-al2fb_facebook_link_time:
-  - 2013-08-28T14:14:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/08/hist-1024x703.png
-dsq_thread_id:
-  - 1659791254
-categories:
-  - Uncategorized
-slug: "evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2"
+date: '2013-08-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   Last week I <a href="http://simplystatistics.org/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/">posted</a> about how I thought the notion of reproducible research did not go far enough to address the question of whether you could trust that a given data analysis was conducted appropriately. From some of the discussion on the post, it seems some of you thought I believed therefore that reproducibility had no value. That’s definitely not true and I’m hoping I can clarify my thinking in this followup post.
 </p>

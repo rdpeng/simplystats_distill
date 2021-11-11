@@ -1,18 +1,12 @@
 ---
-id: 112
 title: Samuel Kou wins COPSS Award
-date: 2012-08-06T13:55:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/28835564137/samuel-kou-wins-copss-award
-tumblr_simplystatistics_id:
-  - 28835564137
-dsq_thread_id:
-  - 935738548
-categories:
-  - Uncategorized
-slug: "samuel-kou-wins-copss-award"
+date: '2012-08-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 At JSM this year we learned that <a href="http://www.people.fas.harvard.edu/~skou/" target="_blank">Samuel Kou</a> of Harvard&#8217;s Department of Statistics won the Committee of Presidents of Statistical Societies (<a href="http://nisla05.niss.org/copss/?q=copss" target="_blank">COPSS</a>) President&#8217;s award. The award is given annually to
 
 > <span>a young member of the statistical community in recognition of an outstanding contribution to the profession of statistics. </span><span>The recipient of the Presidents&#8217; Award must be a member of at least one of the participating societies. The candidate may be chosen for a single contribution of extraordinary merit, or an outstanding aggregate of contributions, to the profession of statistics.</span><span> </span>

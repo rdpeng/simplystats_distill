@@ -1,18 +1,12 @@
 ---
-id: 350
-title: "Beijing Air (cont'd)"
-date: 2011-12-06T13:49:00+00:00
+title: Beijing Air (cont'd)
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13825457957/beijing-air-contd
-tumblr_simplystatistics_id:
-  - 13825457957
-dsq_thread_id:
-  - 979768987
-categories:
-  - Uncategorized
-slug: "beijing-air-contd"
+date: '2011-12-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Following up a bit on my previous post on <a href="http://simplystatistics.tumblr.com/post/13601935082/beijing-air" target="_blank">air pollution in Beijing, China</a>, my brother forwarded me a link to some <a href="http://www.chinadialogue.net/article/show/single/en/4661-Beijing-s-hazardous-blue-sky" target="_blank">work conducted by Steven Q. Andrews</a> on comparing particulate matter (PM) air pollution in China versus Europe and the US. China does not officially release fine PM measurements (PM2.5) and furthermore does not have an official standard for that metric. In the US, PM standards are generally focused on PM2.5 now as opposed to PM10 (which includes coarse thoracic particles). Apparently, China is proposing a standard for PM2.5 but it has not yet been implemented.
 
 The main issue seems to be that China has a somewhat different opinion about what it means to be a &#8220;bad&#8221; pollution day. In the US, the daily average <a href="http://www.epa.gov/air/criteria.html" target="_blank">national ambient air quality standard for PM2.5</a> is 35 mcg/m^3, whereas the proposed standard in China is 75 mcg/m^3. <a href="http://www.who.int/phe/health_topics/outdoorair_aqg/en/" target="_blank">The WHO recommends PM2.5 levels be below 25 mcg/m^3</a>. In China, days under 35 would be considered &#8220;excellent&#8221; and days under 75 would be considered &#8220;good&#8221;.

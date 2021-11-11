@@ -2,11 +2,11 @@
 title: The Four Jobs of the Data Scientist
 author: Roger Peng
 date: '2020-11-24'
-slug: the-four-jobs-of-the-data-scientist
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: no
 ---
+
 
 In 2019 I wrote a post about [The Tentpoles of Data Science](https://simplystatistics.org/2019/01/18/the-tentpoles-of-data-science/) that tried to distill the key skills of the data scientist. In the post I wrote:
 

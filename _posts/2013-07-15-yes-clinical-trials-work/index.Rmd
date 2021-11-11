@@ -1,20 +1,12 @@
 ---
-id: 1495
 title: Yes, Clinical Trials Work
-date: 2013-07-15T11:20:06+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_517271764995351
-al2fb_facebook_link_time:
-  - 2013-07-15T15:20:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1502171687
-categories:
-  - Uncategorized
-slug: "yes-clinical-trials-work"
+date: '2013-07-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This saturday the New York Times published an opinion pieces wondering "<a style="font-size: 16px;" href="http://www.nytimes.com/2013/07/14/opinion/sunday/do-clinical-trials-work.html?pagewanted=all&_r=0">do clinical trials work?</a>". The answer, of course, is: absolutely. For those that don't know the history, randomized control trials (RCTs) are one of the reasons why life spans skyrocketed in the 20th century. Before RCTs wishful thinking and arrogance lead numerous well-meaning scientist and doctors to incorrectly believe their treatments worked. They are so successful that they have been adopted with much fanfare in far flung arenas like poverty alleviation (see e.g.,this discussion by <a style="font-size: 16px;" href="http://www.effectivephilanthropy.org/blog/2011/06/esther-duflo-explains-why-she-believes-randomized-controlled-trials-are-so-vital/">Esther Duflo</a>); where wishful thinking also lead many to incorrectly believe their interventions helped.
 
 The first chapter of[ this book](http://www.amazon.com/Statistics-4th-Edition-David-Freedman/dp/0393929728) contains several examples and [this is a really nice introduction](http://clinicaltrials.gov/ct2/about-studies/learn) to clinical studies. A very common problem was that the developers of the treatment would create treatment groups that were healthier to start with. Randomization takes care of this. To understand the importance of controls I quote the opinion piece to demonstrate a common mistake we humans make: "Some patients did do better on the drug, and indeed, doctors and patients insist that some who take Avastin significantly beat the average." The problem is that the fact that Avastin did not do better on average means that the exact same statement can be made about the control group! It also means that some patient did worse than average too. The use of a control points to the possibility that Avastin has nothing to do with the observed improvements.

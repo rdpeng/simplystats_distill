@@ -1,25 +1,12 @@
 ---
-id: 224
 title: Statistics is not math...
-date: 2012-04-11T13:52:42+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/20902656344/statistics-is-not-math
-tumblr_simplystatistics_id:
-  - 20902656344
-dsq_thread_id:
-  - 934870177
-categories:
-  - Uncategorized
-tags:
-  - headlines
-  - mathematics
-  - public relations
-  - statistical literacy
-  - statistics
-  - statistics is awesome
-slug: "statistics-is-not-math"
+date: '2012-04-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Statistics depends on math, like a lot of other disciplines (physics, engineering, chemistry, computer science). But just like those other disciplines, statistics is not math; math is just a tool used to solve statistical problems. Unlike those other disciplines, statistics gets lumped in with math in headlines. Whenever people use statistical analysis to solve an interesting problem, the headline reads:
 
 &#8220;Math can be used to solve amazing problem X&#8221;

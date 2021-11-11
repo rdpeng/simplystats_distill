@@ -1,13 +1,12 @@
 ---
 title: Example post
-date: '2011-09-01'
 author: Jeff Leek
-comments: true
-slug: "examplepost"
+date: '2011-09-01'
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: no
 ---
+
 
 Write your text here in Markdown. Be aware that our blog runs with [Jekyll](https://jekyllrb.com/)
 

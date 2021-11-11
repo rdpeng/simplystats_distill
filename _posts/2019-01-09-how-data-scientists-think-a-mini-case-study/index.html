@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>How Data Scientists Think - A Mini Case Study</title>
+
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2019-01-09"/>
+  <meta property="article:created" itemprop="dateCreated" content="2019-01-09"/>
+  <meta name="article:author" content="Roger Peng"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="How Data Scientists Think - A Mini Case Study"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="How Data Scientists Think - A Mini Case Study"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["How Data Scientists Think - A Mini Case Study"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Roger Peng"]}]}]},{"type":"character","attributes":{},"value":["2019-01-09"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"NULL"}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="index_files/popper-2.6.0/popper.min.js"></script>
+  <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="index_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="index_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="index_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="index_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="index_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="index_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"How Data Scientists Think - A Mini Case Study","authors":[{"author":"Roger Peng","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2019-01-09T00:00:00.000-05:00","citationText":"Peng, 2019"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>How Data Scientists Think - A Mini Case Study</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+
+</div>
+
+<div class="d-byline">
+  
+  Roger Peng
+  
+<br/>2019-01-09
+</div>
+
+<div class="d-article">
+<p>In episode 71 of <a href="http://nssdeviations.com/">Not So Standard Deviations</a>, Hilary Parker and I inaugurated our first “Data Science Design Challenge” segment where we discussed how we would solve a given problem using data science. The idea with calling it a “design challenge” was to contrast it with common “hackathon” type models where you are presented with an already-collected dataset and then challenged to find something interesting in the data. Here, we wanted to start with a problem and then talk about how data might be collected and analyzed to address the problem. While both approaches might result in the same end-product, they address the various problems you encounter in a data analysis in a different order.</p>
+<p>In this post, I want to break down our discussion of the challenge and highlight some of the issues that were discussed in framing the problem and in designing the data collection and analysis. I’ll end with some thoughts about generalizing this approach to other problems.</p>
+<p>You can <a href="https://www.dropbox.com/s/yajgbr25dbh20i0/NSSD%20Episode%2071%20Design%20Challenge.mp3?dl=0">download an MP3 of this segment of the episode</a> (it is about 45 minutes long) or you can <a href="https://drive.google.com/open?id=11dEhj-eoh8w13dS-mWvDMv7NKWXZcXMr">read the transcript of the segment</a>. If you’d prefer to stream the segment you can <a href="https://overcast.fm/+FMBuKdMEI/00:30">start listening here</a>.</p>
+<h2 id="the-brief">The Brief</h2>
+<p>The general goal was to learn more about the time it takes for each of us to commute to work. Hilary lives in San Francisco and I live in Baltimore, so the characteristics of our commutes are very different. She walks and takes public transit; I drive most days. We also wanted to discuss how we might collect data on our commute times in a systematic, but not intrusive, manner. When we originally discussed having this segment, this vague description was about the level of specification that we started with, so an initial major task was to</p>
+<ol type="1">
+<li>Develop a better understanding of what question each of us was trying to answer;</li>
+<li>Frame the problem in a manner that could be translated into a data collection task; and</li>
+<li>Sketch out a feasible statistical analysis.</li>
+</ol>
+<h2 id="framing-the-problem">Framing the Problem</h2>
+<p>Hilary and I go through a few rounds of discussion on the topic of how to think about this problem and the questions that we’re trying to answer. Early in the discussion Hilary mentions that this problem was “pressing on my mind” and that she took a particular interest in seeing the data and acting on it. Her intense interest in the problem potentially drove part of her creativity in developing solutions.</p>
+<p>Hilary initially mentions that the goal is to understand the variation in commute times (i.e. estimate the variance), but then quickly shifts to the problem of estimating average commute times for the two different commute methods that she uses.</p>
+<blockquote>
+<p>HILARY: you…maybe only have one commute method and you want to understand the variance of that. So…what range of times does it usually take for me to get to work, or…I have two alternatives for my commute methods. So it might be like how long does it take me in this way versus that way? And for me the motivation is that I want to make sure I know when to leave so that I make it to meetings on time….</p>
+</blockquote>
+<p>In her mind, the question being answered by this data collection is, “When should I leave home to get to meetings on time?” At this point she mentions two possible ways to think about addressing this question.</p>
+<ol type="1">
+<li>Estimate the variability of commute times and leave the house accordingly; or</li>
+<li>Compare two different commute methods and then <em>choose</em> a method on any given day.</li>
+</ol>
+<p>Right off the bat, Hilary notes that she doesn’t actually do this commute as often as she’d thought. Between working from home, taking care of chores in the morning, making stops on the way, and walking/talking with friends, a lot of variation can be introduced in to the data.</p>
+<p>I mention that “going to work” and “going home”, while both can be thought of as commutes, are not the same thing and that we might be interested in one more than the other. Hilary agrees that they are different problems but they are both potentially of interest.</p>
+<h3 id="questionintervention-duality">Question/Intervention Duality</h3>
+<p>At this point I mention that my commuting is also affected by various other factors and that on different days of the week, I have a different commute pattern. On days where I drop my son off at school, I have less control over when I leave compared to days when I drive straight to work. Here, we realize a fundamental issue, which is that different days of the week indicate somewhat different interventions to take:</p>
+<ul>
+<li>On days where I drive straight to work, the question is “When should I leave to arrive on time for the first meeting?”</li>
+<li>On days where I drop my son off at school, the question is “When is the earliest time that I can schedule the first meeting of the day?”</li>
+</ul>
+<p>In the former situation I have control over, and could potentially intervene on, when I leave the house, whereas in the latter situation I have control over when I schedule the first meeting. While these are distinct questions with different implications, at this point they may both require collecting travel time data in the same manner.</p>
+<p>Earlier in this section I mention that on days when I drop my son off at school it can take 45 minutes to get to work. Hilary challenges this observation and mentions that “Baltimore is not that big”. She makes use of her knowledge of Baltimore geography to suggest that this is unexpected. However, I mention that the need to use local roads exclusively for this particular commute route makes it indeed take longer than one might expect.</p>
+<h2 id="designing-the-data-collection-system">Designing the Data Collection System</h2>
+<p>In discussing the design of her data collection system, Hilary first mentions that a podcast listener had emailed in and mentioned his use of Google Maps to predict travel times based on phone location data. While this seemed like a reasonable idea, it ultimately was not the direction she took.</p>
+<blockquote>
+<p>HILARY: At first I was thinking about that because I have location history on and I look at it a lot, but there’s also a fair degree of uncertainty there. Like sometimes it just puts me in these really weird spots or…I lose GPS signal when I go underground and also I do not know how to get data in an API sense from that. So I knew it would be manual data. In order to analyze the data, I would have to go back and be like let me go and collect the data from this measurement device. So I was trying to figure out what I could use instead.</p>
+</blockquote>
+<p>Then she describes how she can use Wi-Fi connections (and dis-connections) to serve as surrogates for leaving and arriving.</p>
+<blockquote>
+<p>And at some point I realized that two things that reliably happen every time I do a commute is that my phone disconnects from my home Wi-Fi. And then it reconnects to my work Wi-Fi. And so I spent some time trying to figure out if I could log that information, like if there’s an app that logged that, and there is not. But, there is a program called If This, Then That, or an app. And so with that you can say “when my phone disconnects from Wi-Fi do something”, and you can set it to a specific Wi-Fi. So that was exciting.</p>
+</blockquote>
+<p>Other problems that needed solving were:</p>
+<ul>
+<li><em>Where to store the data</em>. Hilary mentions that a colleague was using <a href="https://airtable.com">Airtable</a> (a kind of cloud-based spreadsheet/database) and decided to give it a try.</li>
+<li><em>Indicating commute method</em>. Hilary created a system where she could send a text message containing a keyword about her commute method to a service that would then log the information to the table collecting the travel time data.</li>
+<li><em>Multiple Wi-Fi connects</em>. Because her phone was constantly connecting and disconnecting from Wi-Fi at work, she had to define the “first connection to Wi-Fi at work” as meaning that she had arrived at work.</li>
+<li><em>Sensing a Wi-Fi disconnect</em>. Hilary’s phone had to be “awake” in order to sense a Wi-Fi disconnect, which was generally the case, but not always. There was no way to force her phone to always be awake, but she knew that the system would send her a push notification when it had been triggered. Therefore, she would at least know that if she didn’t receive a push notification, then something had gone wrong.</li>
+</ul>
+<p>Hilary mentions that much of the up front effort is important in order to avoid messy data manipulations later on.</p>
+<blockquote>
+<p>HILARY: I think I’ll end up—I did not do the analysis yet but I’ll end up having to scrub the data. So I was trying to avoid manual data scrubbing, but I think I’m going to have to do it anyway.</p>
+</blockquote>
+<p>Ultimately, it is impossible to avoid all data manipulation problems.</p>
+<h2 id="specifying-the-data">Specifying the Data</h2>
+<p>What exactly are the data that we will be collecting? What are the covariates that we need to help us understand and model the commute times? Obvious candidates are</p>
+<ul>
+<li>The start time for the commute (date/time format, but see below)</li>
+<li>The end time for the commute (date/time)</li>
+<li>Indicator of whether we are going to work or going home (categorical)</li>
+<li>Commute method (categorical)</li>
+</ul>
+<p>Hilary notes that from the start/end times we can get things like day of the week and time of day (e.g. via the <a href="https://cran.r-project.org/web/packages/lubridate/index.html">lubridate</a> package). She also notes that her system doesn’t exactly produce date/time data, but rather a text sentence that includes the date/time embedded within. Thankfully, that can be systematically dealt with using simple string processing functions.</p>
+<p>A question arises about whether a separate variable should be created to capture “special circumstances” while commuting. In the data analysis, we may want to exclude days where we know something special happened to make the commute much longer than we might have expected (e.g. we happened to see a friend along the way or we decided to stop at Walgreens). The question here is</p>
+<blockquote>
+<p>Are these special circumstances part of the natural variation in the commute time that we want to capture, or are they “one-time events” that are in some sense predictable?</p>
+</blockquote>
+<p>A more statistical way of asking the question might be, do these special circumstances represent <a href="https://simplystatistics.org/2018/07/23/partitioning-the-variation-in-data/"><em>fixed or random variation</em></a>? If they are random and essentially uncontrollable events, then we would want to include that in the random portion of any model. However, if they are predictable (and perhaps controllable) events, then we might want to think of them as another covariate.</p>
+<p>While Hilary believes that she ultimately <em>does</em> have control over whether these time-consuming detours occur or not, she decides to model them as essentially random variation and that these events should be lumped in with the natural variation in the data.</p>
+<h2 id="specifying-the-treatment">Specifying the Treatment</h2>
+<p>At this point in the discussion there is a question regarding what <em>effect</em> we are trying to learn about. The issue is that sometimes changes to a commute have to be made on the fly to respond to unexpected events. For example, if the public transportation system breaks down, you might have to go on foot.</p>
+<blockquote>
+<p>ROGER: Well it becomes like a compliance situation, right? Like you can say, do you want to know how long does it take when you take MUNI or how long does it take when you intend to take MUNI?</p>
+</blockquote>
+<p>In this section I mention that it’s like a “compliance problem”. In clinical trials, for example when testing a new drug versus a placebo, it is possible to have a situation where people in the treatment group of the study are given the new drug but do not actually take it. Maybe the drug has side effects or is inconvenient to take. Whatever the reason, they are not complying with the protocol of the study, which states that everyone in the treatment group takes the new drug. The question then is whether you want to use the data from the clinical trial to understand the actual effect of the drug or if you want to understand the effect of telling someone to take the drug. The latter effect is often referred to as the <em>intention to treat</em> effect while the former is sometimes called the <em>complier average effect</em>. Both are valid effects to estimate and have different implications in terms of next steps.</p>
+<p>In the context of Hilary’s problem, we want to estimate the average commute time for each commute method. However, what happens if Muni experiences some failure that requires altering the commute method? The potential “compliance issue” here is whether Muni works properly or not. If it does not, then Hilary may take some alternate route to work, even though she <em>intended</em> to take Muni. Whether Muni works properly or not is a kind of “post-treatment variable” because it’s not under the direct control of Hilary and its outcome is only known <em>after</em> she decides on which commute method she is going to take (i.e. the “treatment”). Now a choice must be made: Do we estimate the average commute time when taking Muni or the average commute time when she <em>intends</em> to take Muni, even if she has to divert to an alternate route?</p>
+<p>Hilary and I both seem to agree that the intention to treat effect is the one we want to estimate in the commute time problem. The reason is that the estimation of this effect has direct implications for the thing that we have control over: choosing which commute method to use. While it might be interesting from a scientific perspective to know the average commute time when taking Muni, regardless of whether we intended to take it or now, we have no control over the operation of Muni on any given day.</p>
+<h2 id="starting-from-the-end">Starting from the End</h2>
+<p>I ask Hilary, suppose we have the data, what might we do with it? Specifically, suppose that we estimate for a given commute method that the average time is 20 minutes and the standard deviation is 5 minutes. What “intervention” would that lead us to take? What might we do differently from before when we had no systematically collected data?</p>
+<p>Hilary answers by saying that we can designate a time to leave work based on the mean and standard deviation. For example, if we have to be at work at 9am we might leave at 8:35am (mean + 1 standard deviation) to ensure we’ll be arrive at 9am most of the time. In her answer, Hilary raises an important, but perhaps uncomfortable, consideration:</p>
+<blockquote>
+<p>HILARY: I think in a completely crass world for example, I would choose different cutoffs based on the importance of a meeting. And I think people do this. So if you have a super important meeting, this is like a career-making meeting, you leave like an hour early…. And so, there you’re like “I am going to do three standard deviations above the mean” so…it’s very unlikely that I’ll show up outside of the time I predicted. But then if it’s like a touch-base with someone where you have a really strong relationship and they know that you value their time, then maybe you only do like one standard deviation.</p>
+</blockquote>
+<p>Later I mention one implication for statistical modeling:</p>
+<blockquote>
+<p>Roger: Well and I feel like…the discussion of the distribution is interesting because it might come down to like, what do you think the tail of the distribution looks like? So what’s the worst case? Because if you want to minimize the worst case scenario, then you really, really need to know like what that tail looks like.</p>
+</blockquote>
+<p>Thinking about what the data will ultimately be used for raises two important statistical considerations:</p>
+<ul>
+<li>We should think about the extremes/tails of the distribution and develop cutoffs that determine what time we should leave for work.</li>
+<li>The cutoffs at the tail of the distribution might be dependent on the “importance” of the first meeting of the day, suggesting the existence of a cost function that quantifies the importance of arriving on time.</li>
+</ul>
+<p>Hilary raises a hard truth, which is that not everyone gets the same consideration when it comes to showing up on time. For an important meeting, we might allow for “three standard deviations” more than the mean travel time to ensure some margin of safety for arriving on time. However, for a more routine meeting, we might just provide for one standard deviation of travel time and let natural variation take its course for better or for worse.</p>
+<h2 id="statistical-modeling-considerations">Statistical Modeling Considerations</h2>
+<p>I mention that thinking about our imaginary data in terms of “mean” and “standard deviation” implies that the data have a distribution that is akin to a Normal distribution. However, given that the data will consist of travel times, which are always positive, a Normal distribution (which allows positive and negative numbers) may not be the most appropriate. Alternatives are the Gamma or the log-Normal distribution which are strictly positive. I mention that the log-Normal distribution allows for some fairly extreme events, to which Hilary responds that such behavior may in fact be appropriate for these data due to the near-catastrophic nature of Muni failures (San Francisco residents can feel free to chime in here).</p>
+<p>From the previous discussion on what we might do with this data, it’s clear that the right tail of the distribution will be important in this analysis. We want to know what the “worst case scenario” might be in terms of total commute time. However, by its very nature, extreme data are rare, and so there will be very few data points that can be used to inform the shape of the distribution in this area (as opposed to the middle of the distribution where we will have many observations). Therefore, it’s likely that our choice of model (Gamma, log-Normal, etc.) will have a big influence on the predictions that we make about commute times in the future.</p>
+<h2 id="study-design-considerations">Study Design Considerations</h2>
+<p>Towards the end I ask Hilary how much data is needed for this project? However, before asking I should have discussed the nature of the study itself:</p>
+<ul>
+<li>Is it a fixed study designed to answer a specific question (i.e. what is the mean commute time?) within some bound of uncertainty? Or</li>
+<li>Is it an ongoing study where data will be continuously collected and actions will be continuously adapted as new data are collected</li>
+</ul>
+<p>Hilary suggests that it is the latter and that she will simply collect data and make decisions as she goes. However, it’s clear that the time frame is not “forever” because the method of data collection is not zero cost. Therefore, at some point the costs of collecting data will likely be too great in light of any perceived benefit.</p>
+<h2 id="discussion">Discussion</h2>
+<p>What have we learned from all of this? Most likely, the problem of estimating commute times is <em>not</em> relevant to everybody. But I think there are aspects of the process described above that illustrate how the data analytic process works before data collection begins (yes, data analysis includes parts where there are no data). These aspects can be lifted from this particular example and generalized to other data analyses. In this section I will discuss some of these aspects and describe why they may be relevant to other analyses.</p>
+<h3 id="personal-interest-and-knowledge">Personal Interest and Knowledge</h3>
+<p>Hilary makes clear that she is very personally interested in this problem and in developing a solution. She wants to apply any knowledge learned from the data to her everyday life. In addition, she used her knowledge of Baltimore geography (from having lived there previously) to challenge my “mental data analysis”.</p>
+<p>Taking a strong personal interest in a problem is not always an option, but it can be very useful. Part of the reason is that it can allow you to see the “whole problem” and all of its facets without much additional effort. An uninterested person can certainly learn all the facets of a problem, but it will seem more laborious. If you are genuinely interested in the subject of a problem, then you will be highly motivated to learn everything about that problem, which will likely benefit you in the data analysis. To the extent that data analysis is a <em>systems problem</em> with many interacting parts, it helps to learn as much as possible about the system. Being <em>interested</em> in knowing how the system works is a key advantage you can bring to any problem.</p>
+<p>In my own teaching, I have found that students who are keenly interested in the problems they’re working on often do well in the data analysis. Partly, this is because they are more willing to dig into the nitty gritty of the data and modeling and to uncover small details that others may not find. Also, students with a strong interest often have strong expectations about what the data should show. If the data turn out to be different from what they are expecting, that surprise is often an important experience, sometimes even delightful. Students with a more distant relationship with the topic or the data can never be surprised because they have little in the way of expectations.</p>
+<h3 id="problem-framing">Problem Framing</h3>
+<p>From the discussion it seems clear that we are interested in both the characteristics of different commute methods and the variability associated with individual commute methods. Statistically, these are two separate problems that can be addressed through data collection and analysis. As part of trying to frame the problem, we iterate through a few different scenarios and questions.</p>
+<p>One concept that we return to periodically in the discussion is the idea that every question has associated with it a potential intervention. So when I ask “What is the variability in my commute time”, a potential intervention is changing the time when I leave home. Another potential intervention is rescheduling my first meeting of the day. Thinking about questions in terms of their potential interventions can be very useful in prioritizing which questions are most interesting to ask. If the potential intervention associated with a question is something you do not have any control over, then maybe that question is not so interesting for you to ask. For example, if you do not control your own schedule at work, then “rescheduling the first meeting of the day” is not an option for you. However, you may still be able to control when you leave home.</p>
+<p>With the question “How long does it take to commute by Muni?” one might characterize the potential intervention as “Taking Muni to work or not”. However, if Muni breaks down, then that is out of your control and you simply cannot take that choice. A more useful question then is “How long does it take to commute when I <em>choose</em> to take Muni?” This difference may seem subtle, but it does imply a different analysis and is associated with a potential intervention that is completely controllable. I may not be able to take Muni everyday, but I can definitely <em>choose</em> to take it everyday.</p>
+<p>The last point I want to make here is related to the concept of taking a personal interest in a problem. If a data analysis problem can be framed in such a manner that it becomes more personally interesting, then perhaps that’s the route that should be taken, if at all possible. Often, we think that there is “one true way” to approach a problem or ask a question. But usually, there are a variety of different approaches and you should try to take the one that seems most interesting <em>you</em>.</p>
+<h3 id="fixed-and-random-variation">Fixed and Random Variation</h3>
+<p>Deciding what is fixed variation and what is random is important at the design stage because it can have implications for data collection, data analysis, and the usefulness of the results. Sometimes this discussion can get very abstract, resulting in questions like “What is the meaning of ‘random’?”. It’s important not to get too bogged down in philosophical discussions (although the occasional one is fine). But it’s nevertheless useful to have such a discussion so that you can properly model the data later.</p>
+<p>Classifying everything as “random” is a common crutch that people use because it gives you an excuse to not really collect much data. This is a cheap way to do things, but it also leads to data with a lot of variability, possibility to the point of not even being useful. For example, if we only collect data on commute times, and ignored the fact that we have multiple commute methods, then we might see a bimodal distribution in the commute time data. But that mysterious bi-modality could be explained by the different commute methods, a <em>fixed</em> effect that is easily controlled. Taking the extra effort to track the commute method (for example, via Hilary’s text message approach) along with the commute time could dramatically reduce the residual variance in the data, making for more precise predictions.</p>
+<p>That said, capturing every variable is often not feasible and so choices have to made. In this example, Hilary decided not to track whether she wandered into Walgreens or not because that event did have a random flavor to it. Practically speaking, it would be better to account for the fact that there may be an occasional random excursion into Walgreens rather than to attempt to control it every single time. This choice also simplifies the data collection system.</p>
+<h3 id="sketch-models">Sketch Models</h3>
+<p>When considering what to do with the data once we had it, it turned out that mitigating the worst case scenario was a key consideration. This translated directly into a statistical model that potentially had heavy tails. At this point, it wasn’t clear what that distribution would be, and it isn’t clear whether the data would be able to accurately inform the shape of the tail’s distribution. That said, with this statistical model in mind we can keep an eye on the data as they come in and see how they shape up. Further, although we didn’t got through the exercise, it could be useful to estimate how many observations you might need in order to get a decent estimate of any model parameters. Such an exercise cannot really be done if you don’t have a specific model in mind.</p>
+<p>In general, having a specific statistical model in mind is useful because it gives you a sense of <em>what to expect</em>. If the data come in and look substantially different from the distribution that you originally considered, then that should lead you to ask <em>why do the data look different</em>? Asking such a question may lead to interesting new details or uncover aspects of the data that hadn’t been considered before. For example, I originally thought the data could be modeled with a Gamma distribution. However, if the data came in and there were many long delays in Hilary’s commute, then her log-Normal distribution might seem more sensible. Her choice of that distribution from the beginning was informed by her knowledge of public transport in San Francisco, about which I know nothing.</p>
+<h2 id="summary">Summary</h2>
+<p>I have spoken with people who argue that are little in the way of generalizable concepts in data analysis because every data analysis is uniquely different from every other. However, I think this experience of observing myself talk with Hilary about this small example suggests to me that there are some general concepts. Things like gauging your personal interest in the problem could be useful in managing potential resources dedicated to an analysis, and I think considering fixed and random variation is important aspect of any data analytic design or analysis. Finally, developing a sketch (statistical) model before the data are in hand can be useful for setting expectations and for setting a benchmark for when to be surprised or skeptical.</p>
+<p>One problem with learning data analysis is that we rarely, as students, get to observe the thought process that occurs at the early stages. In part, that is why I think many call for more experiential learning in data analysis, because the only way to see the process is to do the process. But I think we could invest more time and effort into recording some of these processes, even in somewhat artificial situations like this one, in order to abstract out any generalizable concepts and advice. Such summaries and abstractions could serve as useful data analysis texts, allowing people to grasp the general concepts of analysis while using the time dedicated to experiential learning for studying the unique details of their problem.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

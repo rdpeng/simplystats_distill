@@ -1,22 +1,12 @@
 ---
-id: 3922
 title: The statistics department Moneyball opportunity
-date: 2015-07-17T09:21:16+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_833218883400636
-al2fb_facebook_link_time:
-  - 2015-07-17T13:21:22+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/07/oakland-1024x818.png
-dsq_thread_id:
-  - 3943321237
-categories:
-  - Uncategorized
-slug: "the-statistics-department-moneyball-opportunity"
+date: '2015-07-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [Moneyball](https://en.wikipedia.org/wiki/Moneyball) is a book and a movie about Billy Bean.It makes statisticians look awesome and I loved the movie. I loved it so much I'm putting the movie trailer right here:
 
 

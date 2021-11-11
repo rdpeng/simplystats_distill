@@ -1,23 +1,12 @@
 ---
-id: 382
 title: Statisticians on Twitter...help me find more!
-date: 2011-11-09T17:10:06+00:00
 author: Admin
-tumblr_simplystatistics_id:
-  - 12560072373
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12560072373/statisticians-on-twitter-help-me-find-more
-dsq_thread_id:
-  - 936154460
-categories:
-  - Uncategorized
-tags:
-  - bleg
-  - List
-  - statisticians
-  - Twitter
-slug: "statisticians-on-twitter-help-me-find-more"
+date: '2011-11-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In honor of our blog finally dragging itself into the 21st century and jumping onto Twitter/Facebook, I have been compiling a list of statistical people on Twitter. I couldn&#8217;t figure out an easy way to find statisticians in one go (which could be because I don&#8217;t have Twitter skills). 
 
 So here is my very informal list of statisticians I found in a half hour of searching. I know I missed a ton of people; let me know who I missed so I can update!

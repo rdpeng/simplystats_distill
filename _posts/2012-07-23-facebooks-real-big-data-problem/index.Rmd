@@ -1,18 +1,12 @@
 ---
-id: 131
-title: "Facebook's Real Big Data Problem"
-date: 2012-07-23T18:00:38+00:00
+title: Facebook's Real Big Data Problem
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27845304458/facebooks-real-big-data-problem
-tumblr_simplystatistics_id:
-  - 27845304458
-dsq_thread_id:
-  - 939234344
-categories:
-  - Uncategorized
-slug: "facebooks-real-big-data-problem"
+date: '2012-07-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Facebook&#8217;s first quarterly earnings report as a public company is coming out this Thursday and <a href="http://www.nytimes.com/2012/07/23/technology/facebook-advertising-efforts-face-a-day-of-judgment.html" target="_blank">everyone&#8217;s wondering what will be in it</a>. One question is whether advertisers are going to Facebook over other sites like Google.
 
 > <span>“Advertisers need more proof that actual advertising on Facebook offers a return on investment,” said Debra Aho Williamson, an analyst with </span>the market research firm eMarketer<span>. “There is such disagreement over whether Facebook is the next big thing on the Internet or whether it’s going to fail miserably.”</span>

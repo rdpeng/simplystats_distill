@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
-date: 2016-08-24
 title: A Simple Explanation for the Replication Crisis in Science
-slug: "replication-crisis"
+author: Roger Peng
+date: '2016-08-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 By now, you've probably heard of the [replication crisis in science](https://en.wikipedia.org/wiki/Replication_crisis). In summary, many conclusions from experiments done in a variety of fields have been found to not hold water when followed up in subsequent experiments. There are now any number of famous examples now, particularly from the fields of [psychology](http://science.sciencemag.org/content/349/6251/aac4716) and [clinical medicine](http://biorxiv.org/content/early/2016/04/27/050575) that show that the rate of replication of findings is less than the the expected rate. 
 

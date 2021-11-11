@@ -1,20 +1,12 @@
 ---
-id: 127
 title: Really Big Objects Coming to R
-date: 2012-07-25T13:56:55+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27980822670/really-big-objects-coming-to-r
-tumblr_simplystatistics_id:
-  - 27980822670
-dsq_thread_id:
-  - 937235391
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "really-big-objects-coming-to-r"
+date: '2012-07-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I noticed in the development version of R the following note in the NEWS file:
 
 > There is a subtle change in behaviour for numeric index values 2^31 and larger.  These used never to be legitimate and so were treated as NA, sometimes with a warning.  They are now legal for long vectors so there is no longer a warning, and x[2^31] <- y will now extend the vector on a 64-bit platform and give an error on a 32-bit one.

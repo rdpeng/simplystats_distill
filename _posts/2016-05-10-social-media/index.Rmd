@@ -1,10 +1,12 @@
 ---
 title: A means not an end - building a social media presence as a junior scientist
 author: Jeff Leek
-comments: true
-slug: "social-media"
-date: 2016-05-10
+date: '2016-05-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note - This is a chapter from my book [How to be a modern scientist](https://leanpub.com/modernscientist) where I talk about some of the tools and techniques that scientists have available to them now that they didn't before. 50% of all royalties from the book go to support [Data Carpentry](http://www.datacarpentry.org/) to promote data science education._
 

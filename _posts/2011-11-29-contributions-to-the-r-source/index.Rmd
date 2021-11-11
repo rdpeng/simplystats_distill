@@ -1,20 +1,12 @@
 ---
-id: 363
 title: Contributions to the R source
-date: 2011-11-29T14:10:03+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13499734759/contributions-to-the-r-source
-tumblr_simplystatistics_id:
-  - 13499734759
-dsq_thread_id:
-  - 933699088
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "contributions-to-the-r-source"
+date: '2011-11-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of the nice things about tracking the R subversion repository using git instead of subversion is you can do
 
 <pre>git shortlog -s -n</pre>

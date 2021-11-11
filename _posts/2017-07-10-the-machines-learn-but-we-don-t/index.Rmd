@@ -2,12 +2,11 @@
 title: The Machines Learn But We Don't
 author: Roger Peng
 date: '2017-07-10'
-slug: the-machines-learn-but-we-don-t
-categories:
-  - AI
-tags:
-  - ai
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I was genuinely amazed at this article by George Nott published in Computerworld quoting Peter Norvig on explainable artificial intelligence. From the article:
 

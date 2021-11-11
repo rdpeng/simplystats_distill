@@ -1,20 +1,12 @@
 ---
-id: 1157
-title: 'Great scientist - statistics = lots of failed experiments'
-date: 2013-04-12T15:25:44+00:00
+title: Great scientist - statistics = lots of failed experiments
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_482745138448014
-al2fb_facebook_link_time:
-  - 2013-04-12T19:25:51+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1206493401
-categories:
-  - Uncategorized
-slug: "great-scientist-statistics-lots-of-failed-experiments"
+date: '2013-04-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [E.O. Wilson](http://en.wikipedia.org/wiki/E._O._Wilson) is a famous evolutionary biologist. He is currently an emeritus professor at Harvard and just this last week dropped [this little gem](http://online.wsj.com/article/SB10001424127887323611604578398943650327184.html) in the Wall Street Journal. In the piece, he suggests that knowing mathematics is not important for becoming a great scientist. Wilson goes even further, suggesting that you can be mathematically semi-literate and still be an amazing scientist. There are two key quotes in the piece that I think deserve special attention:
 
 > Fortunately, exceptional mathematical fluency is required in only a few disciplines, such as particle physics, astrophysics and information theory. Far more important throughout the rest of science is the ability to form concepts, during which the researcher conjures images and processes by intuition.

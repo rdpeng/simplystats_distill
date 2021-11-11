@@ -1,22 +1,13 @@
 ---
-id: 4268
-title: "If you ask different questions you get different answers - one more way science isn't broken it is just really hard"
-date: 2015-08-20T14:52:34+00:00
+title: If you ask different questions you get different answers - one more way science
+  isn't broken it is just really hard
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_847194008669790
-al2fb_facebook_link_time:
-  - 2015-08-20T18:52:43+00:00
-al2fb_facebook_link_picture:
-  - 'post=https://espnfivethirtyeight.files.wordpress.com/2015/08/truth-vigilantes-soccer-calls2.png?w=1024&amp;h=597'
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4051283401
-categories:
-  - Uncategorized
-slug: "if-you-ask-different-quetions-you-get-different-asnwers-one-more-way-science-isnt-broken-it-is-just-really-hard"
+date: '2015-08-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 If you haven't already read the amazing piece by Christie Aschwanden on why [Science isn't Broken](http://fivethirtyeight.com/features/science-isnt-broken/) you should do so immediately. It does an amazing job of capturing the nuance of statistics as applied to real data sets and how that can be misconstrued as science being "broken" without falling for the easy "everything is wrong" meme.
 
 One thing that caught my eye was how the piece highlighted a crowd-sourced data analysis of soccer red cards. The key figure for that analysis is this one:

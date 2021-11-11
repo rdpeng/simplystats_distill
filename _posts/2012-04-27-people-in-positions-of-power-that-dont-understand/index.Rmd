@@ -1,23 +1,13 @@
 ---
-id: 214
-title: "People in positions of power that don't understand statistics are a big problem for genomics"
-date: 2012-04-27T15:16:29+00:00
+title: People in positions of power that don't understand statistics are a big problem
+  for genomics
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/21914291274/people-in-positions-of-power-that-dont-understand
-tumblr_simplystatistics_id:
-  - 21914291274
-dsq_thread_id:
-  - 933698662
-categories:
-  - Uncategorized
-tags:
-  - data revolution
-  - genomics
-  - reproducibility
-  - statistical literacy
-slug: "people-in-positions-of-power-that-dont-understand"
+date: '2012-04-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p class="p1">
   I finally got around to reading the <a href="http://www.iom.edu/Reports/2012/Evolution-of-Translational-Omics.aspx" target="_blank">IOM report on translational omics</a> and it is very good. The report lays out problems with current practices and how these led to undesired results such as the now infamous <a href="https://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/" target="_blank">Duke trials</a> and the <a href="http://online.wsj.com/article/SB10001424052702303627104576411850666582080.html" target="_blank">growth in retractions</a> in the scientific literature. Specific recommendations are provided related to reproducibility and validation. I expect the report will improve things. Although I think bigger improvements will come as a result of retirements.
 </p>

@@ -1,12 +1,13 @@
 ---
-title: 'Thinking like a statistician: this is not the election for progressives to vote third party'
-date: 2016-09-27
+title: 'Thinking like a statistician: this is not the election for progressives to
+  vote third party'
 author: Rafael Irizarry
-comments: true
-categories:
-  - elections
-slug: "thinking-like-statistician-election-2016"
+date: '2016-09-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Democratic elections permit us to vote for whomever we perceive has
 the highest expectation to do better with the issues we care about. Let's

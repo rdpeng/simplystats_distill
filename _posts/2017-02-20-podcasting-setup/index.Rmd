@@ -1,9 +1,12 @@
 ---
 title: My Podcasting Setup
 author: Roger Peng
-slug: "podcasting-setup"
-date: 2017-02-20
+date: '2017-02-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I've gotten a number of inquiries over the last 2 years about my podcasting setup and I've been meaning to write about it but....
 

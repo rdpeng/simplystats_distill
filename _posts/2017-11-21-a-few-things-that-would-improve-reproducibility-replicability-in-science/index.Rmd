@@ -1,11 +1,13 @@
 ---
-title: A few things that would reduce stress around reproducibility/replicability in science
+title: A few things that would reduce stress around reproducibility/replicability
+  in science
 author: Jeff Leek
 date: '2017-11-21'
-slug: rr-sress
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I was listening to the Effort Report Episode on [The Messy Execution of Reproducible Research](https://effortreport.libsyn.com/59-the-messy-execution-of-research-reproducibility) where they were discussing the piece about [Amy Cuddy in the New York Times](https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html?_r=1). I think both the article and the podcast did a good job of discussing the nuances of the importance of reproducibility and the challenges of the social interactions around this topic. After listening to the podcast I realized that I see a lot of posts about reproducibility/replicability, but many of them are focused on the technical side. So I started to think about compiling a list of more cultural things we can do to reduce the stress/pressure around the reproducibility crisis. 
  

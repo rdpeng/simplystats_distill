@@ -1,20 +1,12 @@
 ---
-id: 1919
 title: Sunday data/statistics link roundup (9/29/13)
-date: 2013-09-29T13:19:26+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_548350431887484
-al2fb_facebook_link_time:
-  - 2013-09-29T17:19:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1808533294
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-92913"
+date: '2013-09-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The links are back! Read on.
 
   1. <span style="line-height: 15.994318008422852px;">Susan Murphy - a statistician - <a href="http://ns.umich.edu/new/multimedia/videos/21711-u-m-professor-susan-murphy-earns-prestigious-macarthur-fellowship">wins a Macarthur Award</a>. Great for the field of statistics (via Dan S. and Simina B., among others).</span>

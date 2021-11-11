@@ -1,27 +1,12 @@
 ---
-id: 960
 title: Sunday data/statistics link roundup (1/27/2013)
-date: 2013-01-27T10:26:20+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_451986298190565
-al2fb_facebook_link_time:
-  - 2013-01-27T15:26:24+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1049607380
-categories:
-  - Uncategorized
-tags:
-  - D3.js
-  - moocs
-  - sports
-  - statschat
-  - visualization
-  - volinsky
-slug: "sunday-datastatistics-link-roundup-1272013"
+date: '2013-01-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. Wisconsin is d[ecoupling the education and degree granting components](http://marginalrevolution.com/marginalrevolution/2013/01/the-wisconsin-revolution.html) of education. This means if you take a MOOC like [mine](https://www.coursera.org/course/dataanalysis), [Brian's](https://www.coursera.org/course/biostats) or [Roger's](https://www.coursera.org/course/compdata) and there is an equivalent class to pass at Wisconsin, you can take the exam and get credit. This is big. (via Rafa)
   2. [  1. Wisconsin is d[ecoupling the education and degree granting components](http://marginalrevolution.com/marginalrevolution/2013/01/the-wisconsin-revolution.html) of education. This means if you take a MOOC like [mine](https://www.coursera.org/course/dataanalysis), [Brian's](https://www.coursera.org/course/biostats) or [Roger's](https://www.coursera.org/course/compdata) and there is an equivalent class to pass at Wisconsin, you can take the exam and get credit. This is big. (via Rafa)
   2.](http://cscheid.net/static/mlb-hall-of-fame-voting/#state=state%5Bshown_histograms%5D%5B%5D=-1&state%5Bshown_histograms%5D%5B%5D=2&state%5Bshown_histograms%5D%5B%5D=14&state%5Bshown_histograms%5D%5B%5D=12&state%5Bshown_histograms%5D%5B%5D=4&state%5Bshown_histograms%5D%5B%5D=11&state%5Bshown_histograms%5D%5B%5D=18)  is a really cool MLB visualisation done with d3.js and Crossfilter. It was also prototyped in R, which makes it even cooler. (via Rafa via Chris V.)

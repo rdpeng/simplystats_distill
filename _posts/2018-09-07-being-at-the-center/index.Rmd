@@ -1,9 +1,12 @@
 ---
-title: 'Being at the Center'
+title: Being at the Center
 author: Roger Peng
 date: '2018-09-07'
-slug: being-at-the-center
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 Hilary Parker and I just released [part 2 of our book club discussion](http://nssdeviations.com/64-book-club-part-2) of Nigel Cross’s book *Design Thinking* and it centers around a profile of designer Gordan Murray, who spent his career designing Formula One race cars. One of the aspects of his job as a designer is taking a "systems approach" to solving problems. Coupled with that approach is his role in balancing the various priorities of members of his team. He describes himself as both dictator and diplomat in doing this aspect of the job. 

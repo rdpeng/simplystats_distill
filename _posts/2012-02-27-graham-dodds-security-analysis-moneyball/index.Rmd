@@ -1,18 +1,12 @@
 ---
-id: 271
-title: "Graham &#038; Dodd's Security Analysis: Moneyball for...Money"
-date: 2012-02-27T01:51:40+00:00
+title: 'Graham &#038; Dodd''s Security Analysis: Moneyball for...Money'
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/18354897367/graham-dodds-security-analysis-moneyball
-tumblr_simplystatistics_id:
-  - 18354897367
-dsq_thread_id:
-  - 933630173
-categories:
-  - Uncategorized
-slug: "graham-dodds-security-analysis-moneyball"
+date: '2012-02-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The last time I <a href="http://simplystatistics.tumblr.com/post/17152281502/an-r-script-for-estimating-future-inflation-via-the" target="_blank">posted something about finance</a> I got schooled by people who actually know stuff. So let me just say that I don&#8217;t claim to be an expert in this area, but I do have an interest in it and try to keep up the best I can.
 
 One book I picked up a little while ago was _Security Analysis_ by Benjamin Graham and David Dodd. This is the &#8220;bible of value investing&#8221; and so I mostly wanted to see what all the hubbub was about. In my mind, the hubbub is well-deserved. Given that it was originally written in 1934, the book has stood the test of time (the book has been updated a number of times since then). It&#8217;s quite readable and, I guess, still relevant to modern-day investing. In the 6th edition the out-of-date stuff has been relegated to an appendix. It also contains little essays (of varying quality) by modern-day value investing heros like Seth Klarman and Glenn Greenberg. It&#8217;s a heavy book though and I&#8217;m wishing I&#8217;d got it on the Kindle.

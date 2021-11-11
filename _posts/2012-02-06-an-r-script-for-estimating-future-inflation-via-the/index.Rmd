@@ -1,21 +1,12 @@
 ---
-id: 301
 title: An R script for estimating future inflation via the Treasury market
-date: 2012-02-06T13:34:04+00:00
 author: Admin
-tumblr_simplystatistics_id:
-  - 17152281502
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/17152281502/an-r-script-for-estimating-future-inflation-via-the
-dsq_thread_id:
-  - 951578087
-categories:
-  - Uncategorized
-tags:
-  - finance
-  - R
-slug: "an-r-script-for-estimating-future-inflation-via-the"
+date: '2012-02-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One factor that is critical for any financial planning is estimating what future inflation will be. For example, if you&#8217;re saving money in an instrument that gains 3% per year, and inflation is estimated to be 4% per year, well then you&#8217;re losing money in real terms.
 
 There are a variety of ways to estimate the rate of future inflation. You could, for example, use past rates as an estimate of future rates. However, the Treasury market provides an estimate of what the market thinks annual inflation will be over the next 5, 10, 20, and 30 years.

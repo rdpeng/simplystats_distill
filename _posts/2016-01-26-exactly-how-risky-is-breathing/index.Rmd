@@ -1,22 +1,12 @@
 ---
-id: 4607
 title: Exactly how risky is breathing?
-date: 2016-01-26T09:58:23+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_915101831879007
-al2fb_facebook_link_time:
-  - 2016-01-26T14:58:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4524906433
-categories:
-  - Uncategorized
-slug: "exactly-how-risky-is-breathing"
+date: '2016-01-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This [article by by George Johnson](http://nyti.ms/23nysp5) in the NYT describes a study by Kamen P. Simonov​​ and Daniel S. Himmelstein​ that examines the hypothesis that people living at higher altitudes experience lower rates of lung cancer than people living at lower altitudes.
 
 > All of the usual caveats apply. Studies like this, which compare whole populations, can be used only to suggest possibilities to be explored in future research. But the hypothesis is not as crazy as it may sound. Oxygen is what energizes the cells of our bodies. Like any fuel, it inevitably spews out waste — a corrosive exhaust of substances called “free radicals,” or “reactive oxygen species,” that can mutate DNA and nudge a cell closer to malignancy.

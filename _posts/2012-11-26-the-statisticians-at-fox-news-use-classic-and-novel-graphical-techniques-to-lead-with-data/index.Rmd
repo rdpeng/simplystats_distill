@@ -1,18 +1,13 @@
 ---
-id: 623
-title: The statisticians at Fox News use classic and novel graphical techniques to lead with data
-date: 2012-11-26T10:04:47+00:00
+title: The statisticians at Fox News use classic and novel graphical techniques to
+  lead with data
 author: Jeff Leek
-dsq_thread_id:
-  - 944786318
-categories:
-  - Uncategorized
-tags:
-  - data visualization
-  - fox news
-  - graphs
-slug: "the-statisticians-at-fox-news-use-classic-and-novel-graphical-techniques-to-lead-with-data"
+date: '2012-11-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Depending on where you land in the political spectrum you may either love or despise Fox News. But regardless of your political affiliation, you have to recognize that their statisticians are well-trained in the art of using graphics to persuade folks of a particular viewpoint. I'm not the first to recognize that the graphics department uses some clever tricks to make certain points. But when flipping through the graphs I thought it was interesting to highlight some of the techniques they use to persuade. Some are clearly classics from the literature, but some are (as far as I can tell) newly developed graphical "persuasion" techniques.
 
 **Truncating the y-axis**

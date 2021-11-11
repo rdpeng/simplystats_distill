@@ -1,20 +1,12 @@
 ---
-id: 2636
-title: "Just a thought on peer reviewing - I can't help myself."
-date: 2014-02-05T20:47:09+00:00
+title: Just a thought on peer reviewing - I can't help myself.
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_604477596274767
-al2fb_facebook_link_time:
-  - 2014-02-06T01:47:15+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2227329582
-categories:
-  - Uncategorized
-slug: "just-a-thought-on-peer-reviewing-i-cant-help-myself"
+date: '2014-02-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Today I was thinking about reviewing, probably because I was handling a couple of papers as AE and doing tasks associated with reviewing several other papers. I know that this is idle thinking, but suppose peer review was just a drop down ranking with these 6 questions.
 
   1. How close is this paper to your area of expertise?

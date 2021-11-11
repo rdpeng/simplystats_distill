@@ -1,22 +1,12 @@
 ---
-id: 358
 title: Reproducible Research in Computational Science
-date: 2011-12-02T14:12:59+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13633695297/reproducible-research-in-computational-science
-tumblr_simplystatistics_id:
-  - 13633695297
-dsq_thread_id:
-  - 951344688
-categories:
-  - Uncategorized
-tags:
-  - computational science
-  - reproducibility
-  - reproducible research
-slug: "reproducible-research-in-computational-science"
+date: '2011-12-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 First of all, thanks to Rafa for <a href="http://simplystatistics.tumblr.com/post/13602648384/rogers-perspective-on-reproducible-research-published" target="_blank">scooping me with my own article</a>. Not sure if that&#8217;s reverse scooping or recursive scooping or&#8230;.
 
 The latest issue of _Science_ has a special section on <a href="http://www.sciencemag.org/content/334/6060/1225.full" target="_blank">Data Replication and Reproducibility</a>. As part of the section I wrote a brief commentary on the need for <a href="http://www.sciencemag.org/content/334/6060/1226.full" target="_blank">reproducible research in computational science</a>. _Science_ has a pretty tight word limit for it&#8217;s commentaries and so it was unfortunately necessary to omit a number of relevant topics.

@@ -1,22 +1,12 @@
 ---
-id: 141
 title: 'A closer look at data suggests Johns Hopkins is still the #1 US hospital'
-date: 2012-07-18T17:31:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27491255261/a-closer-look-at-data-suggests-johns-hopkins-is-still
-tumblr_simplystatistics_id:
-  - 27491255261
-dsq_thread_id:
-  - 937991037
-categories:
-  - Uncategorized
-tags:
-  - Johns Hopkins
-  - R
-  - Rankings
-slug: "a-closer-look-at-data-suggests-johns-hopkins-is-still"
+date: '2012-07-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The <a href="http://health.usnews.com/health-news/best-hospitals/articles/2012/07/16/best-hospitals-2012-13-the-honor-roll" target="_blank">US News best hospital 2012-2013<strike>2</strike> rankings</a> are out. The big news is that Johns Hopkins has lost its throne. For 21 consecutive years Hopkins was ranked #1, but this year Mass General Hospital (MGH) took the top spot displacing Hopkins to #2. However, <a href="http://www.linkedin.com/pub/elisabet-pujadas/46/320/722" target="_blank">Elisabet Pujadas</a>, an MD-PhD student here at Hopkins, took a close look at the data used for the rankings and made <a href="http://rafalab.jhsph.edu/simplystats/pujadasversion.JPG" target="_blank">this plot</a> (by hand!). The plot shows histograms of the rankings by speciality and shows Hopkins outperforming MGH.
 
 <a href="http://rafalab.jhsph.edu/simplystats/hospitalrankings.png" target="_blank"><img height="263" src="http://rafalab.jhsph.edu/simplystats/hospitalrankings.png" width="525" /></a>

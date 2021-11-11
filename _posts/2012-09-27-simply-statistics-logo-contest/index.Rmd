@@ -1,20 +1,12 @@
 ---
-id: 51
 title: Simply statistics logo contest
-date: 2012-09-27T13:52:02+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/32393283732/simply-statistics-logo-contest
-tumblr_simplystatistics_id:
-  - 32393283732
-dsq_thread_id:
-  - 934049647
-categories:
-  - Uncategorized
-tags:
-  - logo
-slug: "simply-statistics-logo-contest"
+date: '2012-09-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Simply Statistics has had the same logo since Roger grabbed the first picture in his results folder that looked &#8220;statistics related&#8221;. While we do have some affection for the logo, we would like something a little more catchy.
 
 So we would like to announce a contest to create our **new** logo. Here are the rules:

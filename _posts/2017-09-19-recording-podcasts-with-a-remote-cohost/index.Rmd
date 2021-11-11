@@ -1,9 +1,12 @@
 ---
 title: Recording Podcasts with a Remote Co-Host
 author: Roger Peng
-date: 2017-09-20
-slug: recording-podcasts-with-a-remote-cohost
+date: '2017-09-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I previously wrote about [my editing workflow for podcasts](https://simplystatistics.org/2017/09/18/editing-podcasts-logic-pro-x/) and I thought I'd follow up with some details on how I record both [Not So Standard Deviations](http://nssdeviations.com) and [The Effort Report](http://effortreport.libsyn.com). This post is again going to be a bit Mac-specific because, well, that's what I do.
 

@@ -1,20 +1,13 @@
 ---
-id: 1261
-title: Why the current over-pessimism about science is the perfect confirmation bias vehicle and we should proceed rationally
-date: 2013-05-06T14:30:41+00:00
+title: Why the current over-pessimism about science is the perfect confirmation bias
+  vehicle and we should proceed rationally
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_490939137628614
-al2fb_facebook_link_time:
-  - 2013-05-06T18:30:46+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1267164392
-categories:
-  - Uncategorized
-slug: "why-the-current-over-pessimism-about-science-is-the-perfect-confirmation-bias-vehicle-and-we-should-proceed-rationally"
+date: '2013-05-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Recently there have been some high profile flameouts in scientific research. A couple examples include [the Duke saga](http://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/), [the replication issues in social sciences](http://simplystatistics.org/2012/07/03/replication-and-validation-in-omics-studies-just-as/), [p-value hacking](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1850704), [fabricated data](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2114571&http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2114571), [not enough open-access publication](http://www.michaeleisen.org/blog/?p=1312), and on and on.
 
 Some of these results have had major non-scientific consequences, which is the reason they have drawn so much attention both inside and outside of the academic community. For example, the Duke saga [Recently there have been some high profile flameouts in scientific research. A couple examples include [the Duke saga](http://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/), [the replication issues in social sciences](http://simplystatistics.org/2012/07/03/replication-and-validation-in-omics-studies-just-as/), [p-value hacking](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1850704), [fabricated data](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2114571&http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2114571), [not enough open-access publication](http://www.michaeleisen.org/blog/?p=1312), and on and on.

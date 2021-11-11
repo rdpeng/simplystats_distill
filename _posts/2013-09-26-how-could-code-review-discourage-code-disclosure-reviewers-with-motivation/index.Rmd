@@ -1,22 +1,12 @@
 ---
-id: 1901
 title: How could code review discourage code disclosure? Reviewers with motivation.
-date: 2013-09-26T11:08:00+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_546971815358679
-al2fb_facebook_link_time:
-  - 2013-09-26T15:08:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1799220606
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-categories:
-  - Uncategorized
-slug: "how-could-code-review-discourage-code-disclosure-reviewers-with-motivation"
+date: '2013-09-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [](http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812) appeared a couple of days ago in Nature describing Mozilla's efforts to implement code review for scientific papers. As anyone who follows our blog knows, we are in favor of reproducible research, in favor of disclosing code, and in favor of open science.
 
 So people were surprised when they saw this quote from Roger at the end of the Nature piece:

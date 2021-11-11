@@ -1,20 +1,12 @@
 ---
-id: 2063
-title: 'Blog posts that impact real science - software review and GTEX'
-date: 2013-10-22T11:53:56+00:00
+title: Blog posts that impact real science - software review and GTEX
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_559496830772844
-al2fb_facebook_link_time:
-  - 2013-10-22T15:54:01+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1887292085
-categories:
-  - Uncategorized
-slug: "blog-posts-that-impact-real-science-software-review-and-gtex"
+date: '2013-10-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There was a flurry of activity on social media yesterday surrounding a blog post by [Lior Pachter](http://liorpachter.wordpress.com/2013/10/21/gtex/). He was speaking about the [GTEX project](http://commonfund.nih.gov/GTEx/) - a large NIH funded project that has the goal of understanding expression variation within and among human beings. The project has measured gene expression in multiple tissues of over 900 individuals.
 
 In the post, the author claims that the GTEX project is "throwing away" 90% of its data. The basis for this claim is a simulation study using the parameters from one of the author's papers. The claim of 90% is based on the fact that  increasing the number of mRNA fragments leads to increasing correlation in abundance measurements in the simulation study. In order to get the same Spearman correlation as other methodologies have at 10M fragments, the software being used by GTEX needs 100M fragments.

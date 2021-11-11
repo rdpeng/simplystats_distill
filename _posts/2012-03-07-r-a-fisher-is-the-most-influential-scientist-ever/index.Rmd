@@ -1,23 +1,12 @@
 ---
-id: 257
 title: R.A. Fisher is the most influential scientist ever
-date: 2012-03-07T16:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/18903448428/r-a-fisher-is-the-most-influential-scientist-ever
-tumblr_simplystatistics_id:
-  - 18903448428
-dsq_thread_id:
-  - 936985501
-categories:
-  - Uncategorized
-tags:
-  - ANOVA
-  - Citations
-  - Fisher
-  - p-value
-slug: "r-a-fisher-is-the-most-influential-scientist-ever"
+date: '2012-03-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 You can now see profiles of famous scientists on Google Scholar citations. Here are links to a few of them (via Ben L.). <a href="http://scholar.google.com/citations?user=6kEXBa0AAAAJ&hl=en" target="_blank">Von Neumann</a>, <a href="http://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en" target="_blank">Einstein</a>, <a href="http://scholar.google.com/citations?user=xJaxiEEAAAAJ&hl=en" target="_blank">Newton</a>, <a href="http://scholar.google.com/citations?user=B7vSqZsAAAAJ&hl=en" target="_blank">Feynman</a>
 
 But their impact on science pales in comparison (with the possible exception of Newton) to the impact of one statistician: <a href="http://en.wikipedia.org/wiki/Ronald_Fisher" target="_blank">R.A. Fisher</a>. Many of the concepts he developed are so common and are considered so standard, that he is never cited/credited. Here are some examples of things he invented along with a conservative number of citations they would have received calculated via Google Scholar*. 

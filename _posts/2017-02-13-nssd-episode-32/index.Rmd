@@ -1,9 +1,13 @@
 ---
+title: Not So Standard Deviations Episode 32 - You Have to Reinvent the Wheel a Few
+  Times
 author: Roger Peng
-title: Not So Standard Deviations Episode 32 - You Have to Reinvent the Wheel a Few Times
-slug: "nssd-episode-32"
-date: 2017-02-13
+date: '2017-02-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and I discuss training in PhD programs, estimating the variance vs. the standard deviation, the bias variance tradeoff, and explainable machine learning. 
 

@@ -1,10 +1,12 @@
 ---
 title: The four eras of data
 author: Jeff Leek
-comments: true
-slug: "the-four-eras-of-data"
-date: 2016-12-16
+date: '2016-12-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I'm teaching [a class in data science](http://jtleek.com/advdatasci16/) for our masters and PhD students here at Hopkins. I've been teaching a variation on this class since 2011 and over time I've introduced a number of new components to the class: high-dimensional data methods (2011), data manipulation and cleaning (2012), real, possibly not doable data analyses (2012,2013), peer reviews (2014), building [swirl tutorials](http://swirlstats.com/) for data analysis techniques (2015), and this year building data analytic web apps/R packages.
 

@@ -1,20 +1,12 @@
 ---
-id: 996
 title: Issues with reproducibility at scale on Coursera
-date: 2013-02-06T10:11:20+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_458559904199871
-al2fb_facebook_link_time:
-  - 2013-02-06T15:11:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1068686839
-categories:
-  - Uncategorized
-slug: "issues-with-reproducibility-at-scale-on-coursera"
+date: '2013-02-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As you know, we are [big fans of reproducible research](http://simplystatistics.org/?s=reproducible+research) here at Simply Statistics. [As you know, we are [big fans of reproducible research](http://simplystatistics.org/?s=reproducible+research) here at Simply Statistics.](http://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/) around the lack of reproducibility in the analyses performed by Anil Potti and subsequent fallout drove the importance of this topic home.
 
 So when I started teaching a course on [Data Analysis for Coursera](https://www.coursera.org/course/dataanalysis), of course I wanted to focus on reproducible research. The students in the class will be performing two data analyses during the course. They will be peer evaluated using a rubric specifically designed for evaluating data analyses at scale. One of the components of the rubric was to evaluate whether the code people submitted with their assignments reproduced all the numbers in the assignment.

@@ -1,20 +1,12 @@
 ---
-id: 2235
 title: Statistical zealots
-date: 2013-11-26T10:51:21+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_574329242622936
-al2fb_facebook_link_time:
-  - 2013-11-26T15:51:27+00:00
-al2fb_facebook_link_picture:
-  - post=http://imgs.xkcd.com/comics/frequentists_vs_bayesians.png
-dsq_thread_id:
-  - 2001461561
-categories:
-  - Uncategorized
-slug: "statistical-zealots"
+date: '2013-11-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Yesterday [my data sharing policy](https://github.com/jtleek/datasharing) went a little bit viral. It hit the front page of Hacker News and was a trending repo on Github. I was [reading the comments on Hacker News](https://news.ycombinator.com/item?id=6793291) and came across this gem:
 
 > So, while I can imagine there are good Frequentists Statisticians out there, I insist that frequentism itself is bogus.

@@ -2,10 +2,11 @@
 title: Awesome postdoc opportunities in computational genomics at JHU
 author: Jeff Leek
 date: '2018-05-17'
-slug: awesome-postdoc-opportunities-in-computational-genomics-at-jhu
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Johns Hopkins is a pretty amazing place to do computational genomics right now. My colleagues are really impressive, for example [five of our faculty are part of the Chan Zuckerberg Initiative](https://www.hopkinsmedicine.org/news/media/releases/five_johns_hopkins_scientists_among_83_who_will_share_in_15_million_award_from_chan_zuckerberg_initiative_to_fund_computer_based_research_on_human_cells) and we have faculty across a range of departments including Biostatistics, Computer Science, Biology, Biomedical Engineering, Human Genetics. A number of my colleagues are activitely looking for postdocs and in an effort to make the postdoc job market a little less opaque I'm listing this non-comprehensive list of opportunities I know about here. 
 

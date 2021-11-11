@@ -1,11 +1,13 @@
 ---
-title: Chromebook Data Science - a free online data science program for anyone with a web browser.
+title: Chromebook Data Science - a free online data science program for anyone with
+  a web browser.
 author: Jeff Leek
 date: '2018-10-01'
-slug: chromebook-data-science-an-online-data-science-program-for-anyone-with-a-web-browser
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 The [Johns Hopkins Data Science Lab](http://jhudatascience.org/) has been teaching massive online open courses for more than 5 years now. During that time we've reached more than 5 million learners who want to break into the [number one rated job in America](https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm). 
 

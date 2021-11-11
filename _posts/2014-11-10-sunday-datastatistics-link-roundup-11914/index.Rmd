@@ -1,22 +1,12 @@
 ---
-id: 3548
 title: Sunday data/statistics link roundup (11/9/14)
-date: 2014-11-10T01:30:00+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_723671527688706
-al2fb_facebook_link_time:
-  - 2014-11-10T18:50:26+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3211407270
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-11914"
+date: '2014-11-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 So I'm a day late, but you know, I got a new kid and stuff...
 
   1. [The New Yorker hating on MOOCs](http://www.newyorker.com/science/maria-konnikova/moocs-failure-solutions), they mention all the usual stuff. Including the [really poorly designed San Jose State experiment](http://simplystatistics.org/2013/07/19/the-failure-of-moocs-and-the-ecological-fallacy/). I think this deserves a longer post, but this is definitely a case where people are looking at MOOCs on the [wrong part of the hype curve](http://en.wikipedia.org/wiki/Hype_cycle). MOOCs won't solve all possible education problems, but they are hugely helpful to many people and writing them off is a little silly (via Rafa).

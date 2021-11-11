@@ -1,20 +1,12 @@
 ---
-id: 1205
 title: Nevins-Potti, Reinhart-Rogoff
-date: 2013-04-21T21:35:41+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_485877911468070
-al2fb_facebook_link_time:
-  - 2013-04-22T01:35:46+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1227334942
-categories:
-  - Uncategorized
-slug: "nevins-potti-reinhart-rogoff"
+date: '2013-04-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There's an interesting parallel between the [Nevins-Potti debacle](http://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/) (a true debacle, in my mind) and the recent [Reinhart-Rogoff kerfuffle](http://simplystatistics.org/2013/04/19/podcast-7-reinhart-rogoff-reproducibility/). Both were exposed via some essentially small detail that had nothing to do with the real problem.
 
 In the case of Reinhart-Rogoff, the Excel error was what made them look ridiculous, but it was in fact the "unconventional weighting" of the data that had the most dramatic effect. Furthermore, ever since the paper had come out, academic economists were debating and challenging its conclusions from the get go. Even when legitimate scientific concerns were raised, policy-makers and other academics were not convinced. As soon as the Excel error was revealed, everything needed to be re-examined.

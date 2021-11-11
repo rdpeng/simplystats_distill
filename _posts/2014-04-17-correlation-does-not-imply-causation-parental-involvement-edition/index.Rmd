@@ -1,20 +1,12 @@
 ---
-id: 2946
 title: Correlation does not imply causation (parental involvement edition)
-date: 2014-04-17T10:00:24+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_633700596685800
-al2fb_facebook_link_time:
-  - 2014-04-17T14:00:34+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2618944755
-categories:
-  - Uncategorized
-slug: "correlation-does-not-imply-causation-parental-involvement-edition"
+date: '2014-04-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The New York Times recently published [an article](http://opinionator.blogs.nytimes.com/2014/04/12/parental-involvement-is-overrated/?rref=opinion&module=ArrowsNav&contentCollection=Opinion&action=keypress&region=FixedLeft&pgtype=Blogs) on education titled "Parental Involvement Is Overrated". Most research in this area supports the opposite view, but the authors claim that "evidence from our research suggests otherwise".  Before you stop helping your children understand long division or correcting their grammar, you should learn about one of the most basic statistical concepts: correlation does not imply causation. The first two chapters of this [very popular text book](http://www.amazon.com/Statistics-4th-Edition-David-Freedman/dp/0393929728) describes the problem and even [Khan Academy](https://www.khanacademy.org/math/probability/regression/regression-correlation/v/correlation-and-causality) has a class on it. As several of the commenters in the  NYT article point out, the authors fail to make this distinction.
 
 To illustrate the problem, imagine you want to know how effective tutoring is for students in a math class you are teaching.  So you compare the test scores of students that received tutoring to those that don't. You find that receiving tutoring is correlated with lower test scores. So do you conclude that tutoring causes lower grades? Of course not!  In this particular case we are confusing cause and effect: students that have trouble with math are much more likely to seek out tutoring and this is what drives the observed correlation. With that example in mind,  consider this quote from the New York Times article:

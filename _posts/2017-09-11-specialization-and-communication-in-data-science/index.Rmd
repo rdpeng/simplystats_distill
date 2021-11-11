@@ -2,8 +2,11 @@
 title: Specialization and Communication in Data Science
 author: Roger Peng
 date: '2017-09-11'
-slug: specialization-and-communication-in-data-science
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I have been interested for a while now in how data scientists can better communicate data analysis activities to each other and to people outside the field. I believe that our current methods are inadequate because they have mostly been borrowed from other areas (notably, computer science). Many of those tools are useful, but they were not developed to communicate data analysis concepts specifically and often fall short. I talked about this problem in my [Dean's Lecture](https://youtu.be/qFtJaq4TlqE) earlier this year and how the field of data science could benefit from developing its own theories, to simplify communication as other fields have done. 
 

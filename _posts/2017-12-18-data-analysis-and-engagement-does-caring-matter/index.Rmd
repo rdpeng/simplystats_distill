@@ -2,8 +2,11 @@
 title: Data Analysis and Engagement - Does Caring About the Analysis Matter?
 author: Roger Peng
 date: '2017-12-18'
-slug: data-analysis-and-engagement-does-caring-matter
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Sometimes, when you’re recording a podcast, it’s actually difficult to listen. That’s because while you’re recording you’re monitoring the network lag, the sound levels, the show notes, and the outline. On some episodes I’m just barely hanging on by a thread.
 

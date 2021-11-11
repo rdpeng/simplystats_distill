@@ -1,10 +1,12 @@
 ---
 title: A meta list of what to do at JSM 2016
 author: Jeff Leek
-comments: true
-slug: "jsm2016"
-date: 2016-07-30
+date: '2016-07-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I'm going to be heading out tomorrow for JSM 2016. If you want to catch up I'll be presenting in the 6-8PM poster session on [The Extraordinary Power of Data](https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=213079) on Sunday and on [data visualization (and other things) in MOOCs](https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212543) at 8:30am on Monday. Here is a little sneak preview, the first slide from my talk:
 

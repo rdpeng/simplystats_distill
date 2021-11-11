@@ -1,20 +1,12 @@
 ---
-id: 2739
 title: 'PLoS One, I have an idea for what to do with all your profits: buy hard drives'
-date: 2014-03-05T11:07:03+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_10201724729099577
-al2fb_facebook_link_time:
-  - 2014-03-05T16:07:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2365726134
-categories:
-  - Uncategorized
-slug: "plos-one-i-have-an-idea-for-what-to-do-with-all-your-profits-buy-hard-drives"
+date: '2014-03-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I've been closely following the fallout from PLoS One's [new policy for data sharing](http://www.plos.org/data-access-for-the-open-access-literature-ploss-data-policy/). The policy says, basically, that if you publish a paper, all data and code to go with that paper should be made publicly available at the time of publishing and include an explicit data sharing policy in the paper they submit.
 
 I think the reproducibility debate is over. Data should be made available when papers are published. The [Potti scandal ](http://simplystatistics.org/2012/02/27/the-duke-saga-starter-set/)and the [Reinhart/Rogoff scandal](http://simplystatistics.org/2013/04/19/podcast-7-reinhart-rogoff-reproducibility/) have demonstrated the extreme consequences of lack of reproducibility and the reproducibility advocates have taken this one home. The question with reproducibility isn't "if" anymore it is "how".

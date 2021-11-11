@@ -1,11 +1,12 @@
 ---
 title: Thinking About Failure in Data Analysis
-date: '2021-11-10'
 author: Roger Peng
+date: '2021-11-10'
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: no
 ---
+
 
 
 What does it mean for a data analysis to fail? I’ve come to feel that this is an important question because considering the ways that data analyses can fail is a good way to prevent an analysis from actually failing. However, thinking about the ways an analysis can fail is easier said than done. It requires an active imagination, an ability to think about what *might* happen or what *might have* happened. It requires thinking about what was *not* observed rather than what was observed.

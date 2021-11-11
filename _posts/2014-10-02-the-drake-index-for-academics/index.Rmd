@@ -1,20 +1,12 @@
 ---
-id: 3322
 title: The Drake index for academics
-date: 2014-10-02T13:30:52+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_705905642798628
-al2fb_facebook_link_time:
-  - 2014-10-02T17:30:59+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3076470000
-categories:
-  - Uncategorized
-slug: "the-drake-index-for-academics"
+date: '2014-10-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I think academic indices are pretty silly; maybe we should introduce so many academic indices that people can't even remember which one is which. There are pretty serious flaws with both citation indices and social media indices that I think render them pretty meaningless in a lot of ways.
 
 Regardless of these obvious flaws I want in the game. Instead of the [K-index](http://genomebiology.com/2014/15/7/424) for academics I propose the [Drake](http://www.drakeofficial.com/) index. Drake has achieved [both critical and popular success](http://en.wikipedia.org/wiki/Drake_(rapper)). His song "Honorable Mentions" from the ESPYs (especially the first verse) reminds me of the motivation of the K-index paper.

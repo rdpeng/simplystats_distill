@@ -1,20 +1,13 @@
 ---
-id: 2241
-title: Academics should not feel guilty for maximizing their potential by leaving their homeland
-date: 2013-12-02T10:07:32+00:00
+title: Academics should not feel guilty for maximizing their potential by leaving
+  their homeland
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_576715389050988
-al2fb_facebook_link_time:
-  - 2013-12-02T15:07:36+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2017467094
-categories:
-  - Uncategorized
-slug: "academics-should-not-feel-guilty-for-maximizing-their-potential-by-leaving-their-homeland"
+date: '2013-12-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In a New York Times op-ed titled [Migration Hurts the Homeland](http://www.nytimes.com/2013/11/30/opinion/migration-hurts-the-homeland.html), Paul Collier tells us that
 
 > <p dir="ltr">

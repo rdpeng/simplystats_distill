@@ -1,9 +1,12 @@
 ---
-title: "Tukey, Design Thinking, and Better Questions"
-author: "Roger Peng"
+title: Tukey, Design Thinking, and Better Questions
+author: Roger Peng
 date: '2019-04-17'
-slug: tukey-design-thinking-and-better-questions
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Roughly once a year, I read John Tukey’s paper [“The Future of Data Analysis”](https://projecteuclid.org/euclid.aoms/1177704711), originally published in 1962 in the *Annals of Mathematical Statistics*. I’ve been doing this for the past 17 years, each time hoping to really understand what it was he was talking about. Thankfully, each time I read it I seem to get *something* new out of it. For example, in 2017 I wrote [a whole talk](https://youtu.be/qFtJaq4TlqE) around some of the basic ideas.
 

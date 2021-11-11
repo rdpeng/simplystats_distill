@@ -1,9 +1,12 @@
 ---
 title: User Experience and Value in Products
 author: Roger Peng
-slug: "ux-value"
-date: 2017-01-23
+date: '2017-01-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Over the past year, there have been a number of recurring topics in my global news feed that have a shared theme to them. Some examples of these topics are:
 

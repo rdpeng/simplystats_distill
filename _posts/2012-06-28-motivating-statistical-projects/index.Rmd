@@ -1,24 +1,12 @@
 ---
-id: 163
 title: Motivating statistical projects
-date: 2012-06-28T12:33:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/26068033590/motivating-statistical-projects
-tumblr_simplystatistics_id:
-  - 26068033590
-dsq_thread_id:
-  - 933793814
-categories:
-  - Uncategorized
-tags:
-  - big data
-  - data
-  - future of statistics
-  - projects
-  - statistical methods
-slug: "motivating-statistical-projects"
+date: '2012-06-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It seems like half of the battle in statistics is <a href="http://normaldeviate.wordpress.com/2012/06/21/90/" target="_blank">identifying an important/unsolved problem</a>. In math, this is easy, <a href="http://www.claymath.org/millennium/" target="_blank">they have a list</a>. So why is it harder for statistics? Since I have to <a href="http://simplystatistics.org/post/18493330661/statistics-project-ideas-for-students" target="_blank">think up projects to work on</a> for my research group, for classes I teach, and for exams we give, I have spent some time thinking about ways that research problems in statistics arise.
 
 <img height="517" src="http://biostat.jhsph.edu/~jleek/stat-projects.jpg" width="400" />

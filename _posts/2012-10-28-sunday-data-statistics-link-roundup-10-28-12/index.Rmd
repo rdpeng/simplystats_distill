@@ -1,26 +1,12 @@
 ---
-id: 22
 title: Sunday Data/Statistics Link Roundup (10/28/12)
-date: 2012-10-28T13:39:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/34483703514/sunday-data-statistics-link-roundup-10-28-12
-tumblr_simplystatistics_id:
-  - 34483703514
-dsq_thread_id:
-  - 933752708
-categories:
-  - Uncategorized
-tags:
-  - github
-  - links
-  - science
-  - screening
-  - sentiment analysis
-  - statistical literacy
-  - sunday links
-slug: "sunday-data-statistics-link-roundup-10-28-12"
+date: '2012-10-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. An important article about <a href="http://www.scientificamerican.com/article.cfm?id=antiscience-beliefs-jeopardize-us-democracy" target="_blank">anti-science sentiment</a> in the U.S. (via David S.). The politicization of scientific issues such as global warming, evolution, and healthcare (think vaccination) makes the U.S. less competitive. I think the lack of statistical literacy and training in the U.S. is one of the sources of the problem. People use/skew/mangle statistical analyses and experiments to support their view and without a statistically well trained public, it all looks &#8220;reasonable and scientific&#8221;. But when science seems to contradict itself, it loses credibility. Another reason to <a href="http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html" target="_blank">teach statistics to everyone in high school.</a>
   2. Scientific American was loaded this last week, here is another <a href="http://blogs.scientificamerican.com/guest-blog/2012/10/18/nihmim12-the-spreading-shadow-of-cancer-angst-3-things-you-need-to-know-to-meet-it-rationally/" target="_blank">article on cancer screening</a>.  The article covers several of the issues that make it hard to convince people that screening isn&#8217;t always good. The predictive value of the positive confusion is a huge one in cancer screening right now. The author of the piece is someone worth following on Twitter <a href="https://twitter.com/hildabast" target="_blank">@</a><span><a href="https://twitter.com/hildabast" target="_blank">hildabast</a>.</span>
   3. <span><a href="http://www.githubarchive.org/" target="_blank">A bunch of data</a> on the use of Github. Always cool to see new data sets that are worth playing with for student projects, etc. (via Hilary M.). </span>

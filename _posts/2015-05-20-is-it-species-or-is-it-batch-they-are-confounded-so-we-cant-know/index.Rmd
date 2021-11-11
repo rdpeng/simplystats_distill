@@ -1,22 +1,12 @@
 ---
-id: 4031
-title: "Is it species or is it batch? They are confounded, so we can't know"
-date: 2015-05-20T11:11:18+00:00
+title: Is it species or is it batch? They are confounded, so we can't know
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_808574365865088
-al2fb_facebook_link_time:
-  - 2015-05-20T15:11:35+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3779889310
-categories:
-  - Uncategorized
-slug: "is-it-species-or-is-it-batch-they-are-confounded-so-we-cant-know"
+date: '2015-05-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In a 2005 OMICS <a href="http://online.liebertpub.com/doi/abs/10.1089/153623104773547462" target="_blank">paper</a>, an analysis of human and mouse gene expression microarray measurements from several tissues led the authors to conclude that "any tissue is more similar to any other human tissue examined than to its corresponding mouse tissue". Note that this was a rather surprising result given how similar tissues are between species. For example, both mice and humans see with their eyes, breathe with their lungs, pump blood with their hearts, etc... Two follow-up papers (<a href="http://mbe.oxfordjournals.org/content/23/3/530.abstract?ijkey=2c3d98666afbc99949fdcf514f10e3fedadee259&keytype2=tf_ipsecsha" target="_blank">here</a> and <a href="http://mbe.oxfordjournals.org/content/24/6/1283.abstract?ijkey=366fdf09da56a5dd0cfdc5f74082d9c098ae7801&keytype2=tf_ipsecsha" target="_blank">here</a>) demonstrated that platform-specific technical variability was the cause of this apparent dissimilarity. The arrays used for the two species were different and thus measurement platform and species were completely **confounded**. In a 2010 paper, we confirmed that once this technical variability  was accounted for, the number of genes expressed in common  between the same tissue across the two species was much higher than the those expressed in common  between two species across the different tissues (see Figure 2 <a href="http://nar.oxfordjournals.org/content/39/suppl_1/D1011.full" target="_blank">here</a>).
 
 So [what is confounding](http://genomicsclass.github.io/book/pages/confounding.html) and [why is it a problem](http://www.nature.com/ng/journal/v39/n7/full/ng0707-807.html)? This topic has been discussed broadly. We wrote a [review](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html) some time ago. But based on recent discussions I've participated in, it seems that there is still some confusion. Here I explain, aided by some math, how confounding leads to problems in the context of estimating species effects in genomics. We will use

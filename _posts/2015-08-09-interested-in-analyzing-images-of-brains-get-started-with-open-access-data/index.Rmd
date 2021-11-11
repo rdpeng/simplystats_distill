@@ -1,22 +1,12 @@
 ---
-id: 4185
 title: Interested in analyzing images of brains? Get started with open access data.
-date: 2015-08-09T21:29:17+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_842599829129208
-al2fb_facebook_link_time:
-  - 2015-08-10T01:29:27+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4018346421
-categories:
-  - Uncategorized
-slug: "interested-in-analyzing-images-of-brains-get-started-with-open-access-data"
+date: '2015-08-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   <i>Editor's note: This is a guest post by <a href="http://www.anieloyan.com/" target="_blank"><span class="lG">Ani</span> Eloyan</a>. She is an Assistant Professor of Biostatistics at Brown University. Dr. Eloyan’s work focuses on</i> <i>semi-parametric likelihood based methods for matrix decompositions, statistical analyses of brain images, and the integration of various types of complex data structures for analyzing health care data</i><i>. She received her PhD in statistics from North Carolina State University and subsequently completed a postdoctoral fellowship in the <a href="http://www.biostat.jhsph.edu/">Department of Biostatistics at Johns Hopkins University</a>. Dr. Eloyan and her team won the <a>ADHD200 Competition</a></i> <i>discussed in <a href="http://journal.frontiersin.org/article/10.3389/fnsys.2012.00061/abstract" target="_blank">this</a> article. She tweets <a href="https://twitter.com/eloyan_ani">@eloyan_ani</a>.</i>
 </div>

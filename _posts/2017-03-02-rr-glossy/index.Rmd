@@ -1,10 +1,13 @@
 ---
-title: Reproducibility and replicability is a glossy science now so watch out for the hype
+title: Reproducibility and replicability is a glossy science now so watch out for
+  the hype
 author: Jeff Leek
-comments: true
-slug: "rr-glossy"
-date: 2017-03-02
+date: '2017-03-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 [Reproducibility](http://biorxiv.org/content/early/2016/07/29/066803) is the ability to take the code and data from a previous publication, rerun the code and get the same results. [Replicability](http://biorxiv.org/content/early/2016/07/29/066803) is the ability to rerun an experiment and get "consistent" results with the original study using new data. Results that are not reproducible are hard to verify and results that do not replicate in new studies are harder to trust. It is important that we aim for reproducibility and replicability in science. 
 

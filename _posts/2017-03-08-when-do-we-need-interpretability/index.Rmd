@@ -1,9 +1,12 @@
 ---
 title: When do we need interpretability?
 author: Roger Peng
-slug: "when-do-we-need-interpretability"
-date: 2017-03-08
+date: '2017-03-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I just saw a link to an [interesting article](https://arxiv.org/abs/1702.08608) by Finale Doshi-Velez and Been Kim titled "Towards A Rigorous Science of Interpretable Machine Learning". From the abstract:
 

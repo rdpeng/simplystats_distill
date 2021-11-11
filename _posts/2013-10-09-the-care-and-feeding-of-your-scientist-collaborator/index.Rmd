@@ -1,20 +1,12 @@
 ---
-id: 1957
 title: The Care and Feeding of Your Scientist Collaborator
-date: 2013-10-09T08:55:52+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_552423801480147
-al2fb_facebook_link_time:
-  - 2013-10-09T12:55:58+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1839483569
-categories:
-  - Uncategorized
-slug: "the-care-and-feeding-of-your-scientist-collaborator"
+date: '2013-10-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   
 *Editor’s Note: This post written by Roger Peng is part of a two-part series on Scientist-Statistician interactions. The [first post](http://simplystatistics.org/2013/10/08/the-care-and-feeding-of-the-biostatistician/) was written by <a href="http://www.hopkinschildrens.org/elizabeth-matsui-md.aspx">Elizabeth C. Matsui</a>, an Associate Professor in the Division of Allergy and Immunology at the Johns Hopkins School of Medicine.*
 

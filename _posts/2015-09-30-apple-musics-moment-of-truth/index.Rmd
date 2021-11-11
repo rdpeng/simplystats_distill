@@ -1,26 +1,12 @@
 ---
-id: 4332
-title: "Apple Music's Moment of Truth"
-date: 2015-09-30T07:38:08+00:00
+title: Apple Music's Moment of Truth
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4178749331
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_866218166767374
-al2fb_facebook_link_time:
-  - 2015-09-30T11:40:17+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "apple-musics-moment-of-truth"
+date: '2015-09-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Today is the day when Apple, Inc. learns whether it's brand new streaming music service, Apple Music, is going to be a major contributor to the bottom line or just another streaming service (JASS?). Apple Music launched 3 months ago and all new users are offered a 3-month free trial. Today, that free trial ends and the big question is how many people will start to **pay** for their subscription, as opposed to simply canceling it. My guess is that most people (> 50%) will opt to pay, but that's a complete guess. For what it's worth, I'll be paying for my subscription. After adding all this music to my library, I'd hate to see it all go away.
 
 Back on August 18, 2015, consumer market research firm MusicWatch [released a study](http://www.businesswire.com/news/home/20150818005755/en#.VddbR7Scy6F) that claimed, among other things, that

@@ -1,10 +1,12 @@
 ---
 title: 'Not all forecasters got it wrong: Nate Silver does it again (again)'
-date: 2016-11-09
 author: Rafael Irizarry
-comments: true
-slug: "not-all-forecasters-got-it-wrong"
+date: '2016-11-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Four years ago we
 [posted](http://simplystatistics.org/2012/11/07/nate-silver-does-it-again-will-pundits-finally-accept/)

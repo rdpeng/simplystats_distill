@@ -1,25 +1,12 @@
 ---
-id: 100
-title: 'Interview with C. Titus Brown - Computational biologist and open access champion'
-date: 2012-08-17T13:45:57+00:00
+title: Interview with C. Titus Brown - Computational biologist and open access champion
 author: Admin
-tumblr_simplystatistics_id:
-  - 29620679415
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/29620679415/interview-with-c-titus-brown-computational-biologist
-dsq_thread_id:
-  - 933907762
-categories:
-  - Uncategorized
-tags:
-  - bioinformatics
-  - data
-  - interview
-  - open access
-  - software
-  - titus brown
-slug: "interview-with-c-titus-brown-computational-biologist"
+date: '2012-08-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div class="im">
   <strong>C. Titus Brown </strong>
 </div>

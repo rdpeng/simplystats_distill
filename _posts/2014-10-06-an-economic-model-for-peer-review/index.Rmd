@@ -1,24 +1,12 @@
 ---
-id: 3329
 title: An economic model for peer review
-date: 2014-10-06T10:00:36+00:00
 author: Jeff Leek
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_707763982612794
-al2fb_facebook_link_time:
-  - 2014-10-06T14:00:43+00:00
-al2fb_facebook_link_picture:
-  - 'post=http://www.plosone.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0026895.g005&amp;representation=PNG_M'
-dsq_thread_id:
-  - 3088550779
-categories:
-  - Uncategorized
-slug: "an-economic-model-for-peer-review"
+date: '2014-10-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I saw this tweet the other day:
 
 <blockquote class="twitter-tweet" width="550">

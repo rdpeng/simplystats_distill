@@ -1,18 +1,12 @@
 ---
-id: 378
 title: The Cost of a U.S. College Education
-date: 2011-11-14T19:44:40+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12798800763/the-cost-of-a-u-s-college-education
-tumblr_simplystatistics_id:
-  - 12798800763
-dsq_thread_id:
-  - 953651491
-categories:
-  - Uncategorized
-slug: "the-cost-of-a-u-s-college-education"
+date: '2011-11-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As a follow up to my previous post on <a href="http://simplystatistics.tumblr.com/post/12599452125/expected-salary-by-major" target="_blank">expected salaries by majors</a> I want to share the following graph:
 
 ![](http://www.tonybates.ca/wp-content/uploads/Tuition-costs-USA.jpg)

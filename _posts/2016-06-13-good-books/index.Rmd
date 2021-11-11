@@ -1,10 +1,12 @@
 ---
 title: Good list of good books
 author: Roger Peng
-comments: true
-slug: "good-books"
-date: 2016-06-13
+date: '2016-06-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 The MultiThreaded blog over at Stitch Fix (hat tip to Hilary Parker)
 has posted a [really nice list of data science books](http://multithreaded.stitchfix.com/blog/2016/06/09/ds-books/) (disclosure: one

@@ -2,8 +2,11 @@
 title: Simple Queue Package for R
 author: Roger Peng
 date: '2017-08-28'
-slug: simple-queue-package-for-r
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 I recently coded up a simple package that implements a file-based queue abstract data type. This package was needed for a different package that I'm working on involving parallel processing (more on that in the near future). Actually, this othe package is [a project that I started almost nine years ago](https://twitter.com/rdpeng/status/900699027108282368) but was never able to get off the ground. I tried to implement a queue interface in the [filehash](https://github.com/rdpeng/filehash) package but it never served the purpose that I needed.

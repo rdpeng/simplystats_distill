@@ -1,18 +1,12 @@
 ---
-id: 242
 title: More commentary on Mayo v. Prometheus
-date: 2012-03-21T15:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/19680414431/more-commentary-on-mayo-v-prometheus
-tumblr_simplystatistics_id:
-  - 19680414431
-dsq_thread_id:
-  - 948403434
-categories:
-  - Uncategorized
-slug: "more-commentary-on-mayo-v-prometheus"
+date: '2012-03-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Some more <a href="http://www.patentlyo.com/patent/2012/03/mayo-v-prometheus-natural-process-known-elements-normally-no-patent.html" target="_blank">commentary on Mayo v. Prometheus</a> via the Patently-O blog.
 
 A summary of the <a href="http://www.scotusblog.com/case-files/cases/mayo-collaborative-services-v-prometheus-laboratories-inc/" target="_blank">various briefs and history of the case</a> can be found at the SCOTUS blog.

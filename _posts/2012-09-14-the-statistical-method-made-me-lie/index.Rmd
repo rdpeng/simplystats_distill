@@ -1,18 +1,12 @@
 ---
-id: 63
 title: The statistical method made me lie
-date: 2012-09-14T13:58:31+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/31521890605/the-statistical-method-made-me-lie
-tumblr_simplystatistics_id:
-  - 31521890605
-dsq_thread_id:
-  - 935969961
-categories:
-  - Uncategorized
-slug: "the-statistical-method-made-me-lie"
+date: '2012-09-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There&#8217;s a hubbub brewing over a recent study published in the Annals of Internal Medicine that compares organic food (as in &#8216;USDA Organic&#8217;) to non-organic food. The study, titled &#8220;<span>Are Organic Foods Safer or Healthier Than Conventional Alternatives?</span><span class="titleSeparator">: </span><span class="subTitle">A Systematic Review&#8221; is a meta-analysis of about 200 previous studies. Their conclusion, which I have cut-and-pasted below, is</span>
 
 > <span>The published literature lacks strong evidence that organic foods are significantly more nutritious than conventional foods. Consumption of organic foods may reduce exposure to pesticide residues and antibiotic-resistant bacteria.</span>

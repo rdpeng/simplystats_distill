@@ -1,20 +1,12 @@
 ---
-id: 1896
 title: Is most science false? The titans weigh in.
-date: 2013-09-25T11:06:11+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_546578622064665
-al2fb_facebook_link_time:
-  - 2013-09-25T15:06:17+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1795992267
-categories:
-  - Uncategorized
-slug: "is-most-science-false-the-titans-weigh-in"
+date: '2013-09-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Some of you may recall that a few months ago my colleague and I posted a [paper](http://arxiv.org/pdf/1301.3718.pdf) to the ArXiv on estimating the rate of false discoveries in the scientific literature. The paper was picked up by the [Tech Review](http://m.technologyreview.com/view/510126/the-statistical-puzzle-over-how-much-biomedical-research-is-wrong/) and led to a post on [Andrew G.'s blog](http://andrewgelman.com/2013/01/24/i-dont-believe-the-paper-empirical-estimates-suggest-most-published-medical-research-is-true-that-is-the-claim-may-very-well-be-true-but-im-not-at-all-convinced-by-the-analysis-being-used/), [on Discover blogs](http://blogs.discovermagazine.com/neuroskeptic/2013/01/24/is-medical-science-really-86-true/#.UkLqWWTXis0), and [on our blog](http://simplystatistics.org/2013/01/24/why-i-disagree-with-andrew-gelmans-critique-of-my-paper-about-the-rate-of-false-discoveries-in-the-medical-literature/). One other interesting feature of our paper was that we put all the [code/data we collected on Github](https://github.com/jtleek/swfdr).
 
 At the time this whole thing blew up our paper still wasn't published. After the explosion of interest we submitted the paper to Biostatistics. They liked the paper and actually solicited formal discussion of our approach by other statisticians. We were then allowed to respond to the discussions.

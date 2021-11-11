@@ -1,9 +1,12 @@
 ---
 title: Teaching R to New Users - From tapply to the Tidyverse
-date: '2018-07-12'
-slug: use-r-keynote-2018
 author: Roger Peng
+date: '2018-07-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 ## Abstract

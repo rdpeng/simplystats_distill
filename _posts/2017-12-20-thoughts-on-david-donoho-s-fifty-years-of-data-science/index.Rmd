@@ -2,8 +2,11 @@
 title: Thoughts on David Donoho’s "Fifty Years of Data Science"
 author: Roger Peng
 date: '2017-12-20'
-slug: thoughts-on-david-donoho-s-fifty-years-of-data-science
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 *Note: This post was originally published as part of a collection of discussion pieces on David Donoho's paper. The [original paper](http://www.tandfonline.com/doi/full/10.1080/10618600.2017.1384734) and collection of discussions can be found at the [JCGS web site](http://www.tandfonline.com/toc/ucgs20/26/4).*
 

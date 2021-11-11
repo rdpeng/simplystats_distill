@@ -1,21 +1,12 @@
 ---
-id: 4664
 title: Non-tidy data
-date: 2016-02-17T15:47:23+00:00
 author: Jeff Leek
-comments: true
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_925678457488011
-al2fb_facebook_link_time:
-  - 2016-02-17T20:47:46+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "non-tidy-data"
+date: '2016-02-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 During the discussion that followed the ggplot2 posts from David and I last week we started talking about tidy data and the man himself noted that matrices are often useful instead of ["tidy data"](http://vita.had.co.nz/papers/tidy-data.pdf) and I mentioned there might be other data that are usefully "non tidy". Here I will be using tidy/non-tidy according to Hadley's definition. So tidy data have:
 
   * One variable per column

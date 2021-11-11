@@ -1,20 +1,12 @@
 ---
-id: 427
 title: Prezi
-date: 2011-10-06T11:09:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11097338962/prezi
-tumblr_simplystatistics_id:
-  - 11097338962
-dsq_thread_id:
-  - 936071455
-categories:
-  - Uncategorized
-tags:
-  - tools
-slug: "prezi"
+date: '2011-10-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <a href="http://www.biostat.jhsph.edu/~ajaffe/" target="_blank">Andrew Jaffe</a> pointed me to <a href="http://prezi.com/" target="_blank">prezi.com</a>. It looks like a new way of making presentations. Andrew made an example <a href="http://prezi.com/ft-_thkdllaf/dna-methylation/?auth_key=d9ae396295709050aa1bcb5f40b1665483f9c414" target="_blank">here</a> in just a couple of minutes. <a href="http://prezi.com/ftv9hvziwqi2/coca-cola-company/" target="_blank">Here</a> is one about Coca-Cola.
 
 Things I like: 

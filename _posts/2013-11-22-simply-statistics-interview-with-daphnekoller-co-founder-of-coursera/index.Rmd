@@ -1,20 +1,12 @@
 ---
-id: 2226
 title: Simply Statistics interview with Daphne Koller, Co-Founder of Coursera
-date: 2013-11-22T10:13:49+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_572608646128329
-al2fb_facebook_link_time:
-  - 2013-11-22T15:13:54+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1989205994
-categories:
-  - Uncategorized
-slug: "simply-statistics-interview-with-daphnekoller-co-founder-of-coursera"
+date: '2013-11-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Jeff and I had an opportunity to sit down with Daphne Koller, Co-Founder of [Coursera](http://coursera.org) and Rajeev Motwani Professor of Computer Science at Stanford University. Jeff and I both teach massive open online courses using the Coursera platform and it was great to be able to talk with Professor Koller about the changing nature of education today.
 

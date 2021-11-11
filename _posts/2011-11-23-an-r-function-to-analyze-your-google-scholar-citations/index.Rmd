@@ -1,23 +1,12 @@
 ---
-id: 366
 title: An R function to analyze your Google Scholar Citations page
-date: 2011-11-23T14:07:53+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13203811645/an-r-function-to-analyze-your-google-scholar-citations
-tumblr_simplystatistics_id:
-  - 13203811645
-dsq_thread_id:
-  - 934281952
-categories:
-  - Uncategorized
-tags:
-  - diy
-  - Google Scholar Citations
-  - R
-  - web scraping
-slug: "an-r-function-to-analyze-your-google-scholar-citations"
+date: '2011-11-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Google scholar has now made Google Scholar Citations profiles available to anyone. You can read about these profiles and set one up for yourself <a href="http://scholar.google.com/intl/en/scholar/citations.html" target="_blank">here</a>.
 
 I asked <a href="http://www.jhsph.edu/faculty/directory/profile/5110/Muschelli/John" target="_blank">John Muschelli</a> and <a href="http://www.biostat.jhsph.edu/~ajaffe/" target="_blank">Andrew Jaffe</a>to write me a function that would download my Google Scholar Citations data so I could play with it. Then they got all crazy on it and wrote a couple of really neat functions. All cool/interesting components of these functions are their ideas and any bugs were introduced by me when I was trying to fiddle with the code at the end. 

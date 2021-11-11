@@ -1,30 +1,12 @@
 ---
-id: 1130
-title: 'Introducing the healthvis R package  - one line D3 graphics with R'
-date: 2013-04-02T10:00:39+00:00
+title: Introducing the healthvis R package  - one line D3 graphics with R
 author: Jeff Leek
-dsq_thread_id:
-  - 1180666441
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_479433478779180
-al2fb_facebook_link_time:
-  - 2013-04-02T14:00:49+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-tags:
-  - healthvis
-  - interactive visualization
-  - R
-  - shiny
-  - visualization
-slug: "introducing-the-healthvis-r-package-one-line-d3-graphics-with-r"
+date: '2013-04-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   We have been a little slow on the posting for the last couple of months here at Simply Stats. That’s bad news for the blog, but good news for our research programs!
 </p>

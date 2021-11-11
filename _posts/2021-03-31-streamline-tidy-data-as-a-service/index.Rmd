@@ -2,11 +2,11 @@
 title: Streamline - tidy data as a service
 author: Jeff Leek
 date: '2021-03-31'
-slug: streamline-data-science
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: no
 ---
+
 
 
 _Tldr: We started a company called Streamline Data Science https://streamlinedatascience.io/ that offers tidy data as a service. We are looking for customers, partnerships and employees as we scale up after closing our funding round!_ 

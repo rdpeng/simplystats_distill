@@ -2,10 +2,11 @@
 title: The economic consequences of MOOCs
 author: Jeff Leek
 date: '2018-10-08'
-slug: the-economic-consequences-of-moocs
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 *tl;dr check out [our new paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3260695) on the relationship between MOOC completion and economic outcomes!*
 

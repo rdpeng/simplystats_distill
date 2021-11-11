@@ -1,22 +1,12 @@
 ---
-id: 4409
 title: How I decide when to trust an R package
-date: 2015-11-06T13:41:02+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_880286288693895
-al2fb_facebook_link_time:
-  - 2015-11-06T18:41:11+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/11/Screen-Shot-2015-11-06-at-1.25.01-PM.png
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4295874972
-categories:
-  - Uncategorized
-slug: "how-i-decide-when-to-trust-an-r-package"
+date: '2015-11-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One thing that I've given a lot of thought to recently is the process that I use to decide whether I trust an R package or not. Kasper Hansen took a break from [trolling me](https://twitter.com/KasperDHansen/status/657589509975076864) [on Twitter](https://twitter.com/KasperDHansen/status/621315346633519104) to talk about how he trusts packages on Github less than packages that are on CRAN and particularly Bioconductor.  A couple of points he makes that I think are very relevant. First, that having a package on CRAN/Bioconductor raises trust in that package:
 
 <blockquote class="twitter-tweet" width="550">

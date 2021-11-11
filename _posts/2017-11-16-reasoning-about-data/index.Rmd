@@ -2,8 +2,11 @@
 title: Reasoning About Data
 author: Roger Peng
 date: '2017-11-16'
-slug: reasoning-about-data
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 In my ongoing discussion in my mind about [what makes for a good data analysis](https://youtu.be/qFtJaq4TlqE), one of the ideas that keeps coming back to me is this notion of being able to "reason about the data". The idea here is that it's important that a data analysis allow you to understand how the **data**, as opposed to other aspects of an analysis like assumptions or models, played a role in producing the outputs. I think for a given problems, some kinds of analysis do a better job of that than others.
 

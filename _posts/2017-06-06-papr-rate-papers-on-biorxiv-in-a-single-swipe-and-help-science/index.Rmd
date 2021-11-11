@@ -2,12 +2,11 @@
 title: papr - rate papers on biorxiv in a single swipe and help science!
 author: Jeff Leek
 date: '2017-06-06'
-slug: papr-rate-papers-on-biorxiv-in-a-single-swipe-and-help-science
-categories: []
-tags:
-  - papr
-  - shiny
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Like a lot of modern scientists I now find papers to read to a large extent based on what I see on social media. It is a great way to find out what my colleagues are reading and keep up with the newest cool research. 
 

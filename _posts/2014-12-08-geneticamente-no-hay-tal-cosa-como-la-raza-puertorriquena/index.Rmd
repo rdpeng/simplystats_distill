@@ -1,22 +1,12 @@
 ---
-id: 3633
 title: Genéticamente, no hay tal cosa como la raza puertorriqueña
-date: 2014-12-08T09:09:59+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_736162466439612
-al2fb_facebook_link_time:
-  - 2014-12-08T14:10:06+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/12/PCAfinal-914x1024.png
-dsq_thread_id:
-  - 3302547883
-categories:
-  - Uncategorized
-slug: "geneticamente-no-hay-tal-cosa-como-la-raza-puertorriquena"
+date: '2014-12-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: Last week the Latin American media picked up a blog post with the eye-catching title "[The perfect human is Puerto Rican](http://liorpachter.wordpress.com/2014/12/02/the-perfect-human-is-puerto-rican/)". More attention appears to have been given to the title than the post itself. The coverage and comments on social media have demonstrated the need for scientific education on the topic of genetics and race. Here I will try to explain, in layman's terms, why the interpretations I read in the main Puerto Rican paper is scientifically incorrect and somewhat concerning. The post is in Spanish._
 
 En un artículo reciente titulado “[Ser humano perfecto sería puertorriqueño]([http://www.elnuevodia.com/serhumanoperfectoseriapuertorriqueno-1903858.html)", El Nuevo Día resumió una entrada en el blog (erróneamente llamado un estudio) del matemático Lior Pachter. El autor del blog, intentando ridiculizar comentarios racistas que escuchó decir a James Watson, describe un experimento mental en el cual encuentra que el humano “perfecto” (las comilla son importantes), de existir, pertenecería a un grupo genéticamente mezclado. De las personas estudiadas,  la más genéticamente cercana a su humano “perfecto” resultó ser una mujer puertorriqueña. La motivación de este ejercicio era ridiculizar la idea de que una raza puede ser superior a otra. El Nuevo Día parece no captar este punto y nos dice que “el experto concluyó que en todo caso no es de sorprenderse que la persona más cercana a tal perfección sería una puertorriqueña, debido a la combinación de buenos genes que tiene la raza puertorriqueña.” Aquí describo por qué esta interpretación es científicamente errada.

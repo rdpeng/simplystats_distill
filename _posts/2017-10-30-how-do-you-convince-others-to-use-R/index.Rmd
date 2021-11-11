@@ -1,9 +1,12 @@
 ---
-title: "How do you convince other people to use R?"
+title: How do you convince other people to use R?
 author: Roger Peng
 date: '2017-10-30'
-slug: how-do-you-convince-others-to-use-r
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I just got back from the [rOpenSci OzUnconf](http://ozunconf17.ropensci.org) that was run in Melbourne last week. I’d like to give a big thanks to the organizers (Nick Tierney, Di Cook, Rob Hyndman and others) for putting on a great unconference. These events are always a great opportunity to meet people just getting started in the R community and to get them involved. 
 

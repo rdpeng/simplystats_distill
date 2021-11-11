@@ -1,26 +1,13 @@
 ---
-id: 4365
-title: We need a statistically rigorous and scientifically meaningful definition of replication
-date: 2015-10-20T10:05:22+00:00
+title: We need a statistically rigorous and scientifically meaningful definition of
+  replication
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_873965342659323
-al2fb_facebook_link_time:
-  - 2015-10-20T14:05:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/10/replication.png
-dsq_thread_id:
-  - 4242580028
-categories:
-  - Uncategorized
-slug: "we-need-a-statistically-rigorous-and-scientifically-meaningful-definition-of-replication"
+date: '2015-10-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Replication and confirmation are indispensable concepts that help define scientific facts.  However, the way in which we reach scientific consensus on a given finding is rather complex. Although [some press releases try to convince us otherwise](http://simplystatistics.org/2015/06/24/how-public-relations-and-the-media-are-distorting-science/), rarely is one publication enough. In fact, most published results go unnoticed and no attempts to replicate them are made.  These are not debunked either; they simply get discarded to the dustbin of history. The very few results that garner enough attention for others to spend time and energy on them are assessed by an ad-hoc process involving a community of peers. The assessments are usually a combination of deductive reasoning, direct attempts at replication, and indirect checks obtained by attempting to build on the result in question.  This process eventually leads to a result either being accepted by consensus or not. For particularly important cases, an official scientific consensus report may be commissioned by a national academy or an established scientific society. Examples of results that have become part of the scientific consensus in this way include smoking causing lung cancer, HIV causing AIDS, and climate change being caused by humans.  In contrast, the published result that vaccines cause autism has been thoroughly debunked by several follow up studies. In none of these four cases a simple definition of replication was used to confirm or falsify a result. The same is true for most results for which there is consensus. Yet science moves on, and continues to be an incomparable force at improving our quality of life.
 
 Regulatory agencies, such as the FDA, are an exception since they clearly spell out a [definition](http://www.fda.gov/downloads/Drugs/.../Guidances/ucm078749.pdf) of replication. For example, to approve a drug they may require two independent clinical trials, adequately powered, to show statistical significance at some predetermined level. They also require a large enough effect size to justify the cost and potential risks associated with treatment. This is not to say that FDA approval is equivalent to scientific consensus, but they do provide a clearcut definition of replication.

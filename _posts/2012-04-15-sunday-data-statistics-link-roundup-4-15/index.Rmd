@@ -1,24 +1,12 @@
 ---
-id: 221
 title: Sunday data/statistics link roundup (4/15)
-date: 2012-04-15T17:30:14+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/21155948750/sunday-data-statistics-link-roundup-4-15
-tumblr_simplystatistics_id:
-  - 21155948750
-dsq_thread_id:
-  - 961923651
-categories:
-  - Uncategorized
-tags:
-  - D3
-  - everybeat
-  - netflix
-  - prizes
-  - visualization
-slug: "sunday-data-statistics-link-roundup-4-15"
+date: '2012-04-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. Incredibly cook, dynamic real-time maps of <a href="http://hint.fm/wind/" target="_blank">wind patterns</a> in the United States. (Via Flowing Data)
   2. A d3.js <a href="http://gabrielflor.it/water" target="_blank">coding tool</a> that updates automatically as you update the code. This is going to be really useful for beginners trying to learn about D3. <a href="http://gabrielflor.it/water" target="_blank">Real time coding</a> (Via Flowing Data)
   3. An interesting <a href="http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html" target="_blank">blog post </a>describing why the winning algorithm in the Netflix prize hasn&#8217;t actually been implemented! It looks like it was too much of an engineering hassle. I wonder if this will make others think twice before offering big sums for prizes like this. Unless the real value is advertising&#8230;(via Chris V.)

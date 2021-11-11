@@ -1,9 +1,12 @@
 ---
 title: Facebook and left censoring
 author: Roger Peng
-slug: "facebook-left-censoring"
-date: 2016-09-26
+date: '2016-09-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 From the [Wall Street Journal](http://www.wsj.com/articles/facebook-overestimated-key-video-metric-for-two-years-1474586951): 
 

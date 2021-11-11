@@ -1,23 +1,12 @@
 ---
-id: 37
-title: "What's wrong with the predicting h-index paper."
-date: 2012-10-10T13:47:04+00:00
+title: What's wrong with the predicting h-index paper.
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/33297620511/whats-wrong-with-the-predicting-h-index-paper
-tumblr_simplystatistics_id:
-  - 33297620511
-dsq_thread_id:
-  - 934559059
-categories:
-  - Uncategorized
-tags:
-  - h-index
-  - nature
-  - review
-  - statistcs
-slug: "whats-wrong-with-the-predicting-h-index-paper"
+date: '2012-10-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor&#8217;s Note: I recently posted about <a href="http://simplystatistics.org/post/31990205510/prediction-contest" target="_blank">a paper</a> in Nature that purported to predict the H-index. The authors contacted me to get my criticisms, then responded to those criticisms. They have requested the opportunity to respond publicly, and I think it is a totally reasonable request. Until there is a better comment generating mechanism at the journal level, this seems like as good a forum as any to discuss statistical papers. I will post an extended version of my criticisms here and give them the opportunity to respond publicly in the comments. _
 
 <span>The paper in question is a clearly a clever idea and the kind that would get people fired up. Quantifying researchers output is all the rage and being able to predict this quantity in the future would obviously make a lot of evaluators happy. I think it was, in that sense, a really good idea to chase down these data, since it was clear that if they found anything at all it would be very widely covered in the scientific/popular press. </span>

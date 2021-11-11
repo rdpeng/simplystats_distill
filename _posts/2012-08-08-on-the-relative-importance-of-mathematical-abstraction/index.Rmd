@@ -1,24 +1,13 @@
 ---
-id: 109
-title: On the relative importance of mathematical abstraction in graduate statistical education
-date: 2012-08-08T15:40:15+00:00
+title: On the relative importance of mathematical abstraction in graduate statistical
+  education
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/28984279863/on-the-relative-importance-of-mathematical-abstraction
-tumblr_simplystatistics_id:
-  - 28984279863
-dsq_thread_id:
-  - 933995768
-categories:
-  - Uncategorized
-tags:
-  - abstraction
-  - caffo
-  - education
-  - mathematics
-  - point counterpoint
-slug: "on-the-relative-importance-of-mathematical-abstraction"
+date: '2012-08-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor’s Note: This is the counterpoint in our series of posts on the value of abstraction in graduate education. See Brian’s <a href="http://simplystatistics.org/post/28840726358/in-which-brian-debates-abstraction-with-t-bone" target="_blank">defense of abstraction</a> on Monday and the comments on his post, as well as the comments on our <a href="http://simplystatistics.org/post/28125455811/how-important-is-abstract-thinking-for-graduate" target="_blank">original teaser post</a> for more. See below for a full description of the T-bone inside joke*._**</p> 
 
 </strong>Brian did a good job at defining abstraction. In a cagey debater’s move, he provided an incredibly broad definition of abstraction that includes the reason we call a  <img src="http://simplystatistics.org/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" />a smiley face, the reason why we can apply least squares to a variety of data types, and the reason we write functions when programming. At this very broad level, it is clear that abstract thinking is necessary for graduate students or any other data professional. 

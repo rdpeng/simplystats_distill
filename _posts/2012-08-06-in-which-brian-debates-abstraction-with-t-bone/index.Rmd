@@ -1,23 +1,12 @@
 ---
-id: 111
 title: In which Brian debates abstraction with T-Bone
-date: 2012-08-06T16:09:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/28840726358/in-which-brian-debates-abstraction-with-t-bone
-tumblr_simplystatistics_id:
-  - 28840726358
-dsq_thread_id:
-  - 938517244
-categories:
-  - Uncategorized
-tags:
-  - abstract thinking
-  - caffo
-  - graduate education
-  - point counterpoint
-slug: "in-which-brian-debates-abstraction-with-t-bone"
+date: '2012-08-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor&#8217;s Note: This is the first in a set of point-counterpoint posts related to the value of abstract thinking in graduate education that <a href="http://simplystatistics.org/post/28125455811/how-important-is-abstract-thinking-for-graduate" target="_blank">we teased</a> a few days ago. <a href="http://www.bcaffo.com/" target="_blank">Brian Caffo</a>, recently installed Graduate Program Director at the <a href="http://www.biostat.jhsph.edu/" target="_blank">best Biostat department in the country</a>, has kindly agreed to lead off with the case for abstraction. We&#8217;ll follow up later in the week with my counterpoint. In the meantime, there have already been a number of really interesting and insightful comments inspired by our teaser post that are well worth reading. See the comments <a href="http://simplystatistics.org/post/28125455811/how-important-is-abstract-thinking-for-graduate" target="_blank">here</a>. _
 
 The impetus for writing this blog post came out of a particularly heady lunchroom discussion on the role of measure theoretic probability in our curriculum. We have a very mathematically rigorous program at Hopkins Biostatistics that includes a full academic year of measure theoretic probability.  Similar to elsewhere, many faculty dispute the necessity of this course. I am in favor of it. My principal reason being that I believe it is useful for building up and evaluating a student’s abilities in abstraction and generalization. 

@@ -2,8 +2,11 @@
 title: 'Open letter to journal editors: dynamite plots must die'
 author: Rafael Irizarry
 date: '2019-02-21'
-slug: dynamite-plots-must-die
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
  
 Statisticians have been pointing out the problem with dynamite plots, also known as bar and line graphs, for years.
 Karl Broman lists them as one of the [top ten worst graphs](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/). The problem has even been documented in the peer reviewed literature. 

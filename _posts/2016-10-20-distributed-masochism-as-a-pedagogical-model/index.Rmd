@@ -1,10 +1,12 @@
 ---
 title: Distributed Masochism as a Pedagogical Model
 author: Jeff Leek
-comments: true
-slug: "distributed-masochism-as-a-pedagogical-model"
-date: 2016-10-20
+date: '2016-10-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note: This is a guest post by 
 [Sean Kross](http://seankross.com/). Sean is a software developer in the

@@ -2,10 +2,11 @@
 title: Creating an expository graph for a talk
 author: Jeff Leek
 date: '2017-10-02'
-slug: creating-an-expository-graph-for-a-talk
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 I'm co-teaching a [data science class](http://jtleek.com/advdatasci/) at Johns Hopkins with [John Muschelli](http://johnmuschelli.com/). I gave the lectures on EDA and he just gave a lecture on how to create an ["expository graph"](http://jtleek.com/advdatasci/slides/09-expository-graphs-slides.html). When we teach the class an exploratory graph is the kind of graph you make for yourself just to try to understand a data set. An expository graph is one where you are trying to communicate information to someone else. 

@@ -1,20 +1,12 @@
 ---
-id: 1467
 title: 'Repost: The 5 Most Critical Statistical Concepts'
-date: 2013-07-03T13:56:24+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_512808305441697
-al2fb_facebook_link_time:
-  - 2013-07-03T17:56:33+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1463249810
-categories:
-  - Uncategorized
-slug: "repost-the-5-most-critical-statistical-concepts"
+date: '2013-07-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 (Editor's Note: This is an old post but a good one from Jeff.)
 
 It seems like everywhere we look, data is being generated - from politics, to biology, to publishing, to social networks. There are also diverse new computational tools, like GPGPU and cloud computing, that expand the statistical toolbox. Statistical theory is more advanced than its ever been, with exciting work in a range of areas.

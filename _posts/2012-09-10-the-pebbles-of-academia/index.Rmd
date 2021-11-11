@@ -1,21 +1,12 @@
 ---
-id: 69
 title: The pebbles of academia
-date: 2012-09-10T19:02:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/31281359451/the-pebbles-of-academia
-tumblr_simplystatistics_id:
-  - 31281359451
-dsq_thread_id:
-  - 934071659
-categories:
-  - Uncategorized
-tags:
-  - humor
-  - Rant
-slug: "the-pebbles-of-academia"
+date: '2012-09-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I have just been awarded a certificate for successful completion of the Conflict of Interest Commitment training (I barely passed). Lately, I have been totally swamped by administrative duties and have had little time for actual research. The experience reminded me of something I read in this <a href="http://www.nytimes.com/2011/05/29/business/economy/29view.html?_r=1" target="_blank">NYTimes article</a> by <span><a href="http://marginalrevolution.com/" target="_blank">Tyler Cowen</a></span>
 
 > <span>Michael Mandel, an economist with the Progressive Policy Institute, compares government regulation of innovation to the accumulation of pebbles in a stream. At some point too many pebbles block off the water flow, yet no single pebble is to blame for the slowdown. Right now the pebbles are limiting investment in future innovation.</span>

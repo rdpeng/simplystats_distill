@@ -1,18 +1,12 @@
 ---
-id: 95
 title: Science Exchange starts Reproducibility Initiative
-date: 2012-08-23T14:46:17+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/30035351286/science-exchange-starts-reproducibility-initiative
-tumblr_simplystatistics_id:
-  - 30035351286
-dsq_thread_id:
-  - 938428568
-categories:
-  - Uncategorized
-slug: "science-exchange-starts-reproducibility-initiative"
+date: '2012-08-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I&#8217;ve fallen behind and so haven&#8217;t had a chance to mention this, but <a href="https://www.scienceexchange.com" target="_blank">Science Exchange</a> has started its <a href="https://www.scienceexchange.com/reproducibility" target="_blank">Reproducibility Initiative</a>. The idea is that authors can submit their study to be reproduced and Science Exchange will match the study with a validator who will attempt to reproduce the results (for a fee).
 
 > <span>Validated studies will receive a Certificate of Reproducibility acknowledging that their results have been independently reproduced as part of the Reproducibility Initiative. Researchers have the opportunity to publish the replicated results as an independent publication in the PLOS Reproducibility Collection, and can share their data via the figshare Reproducibility Collection repository. The original study will also be acknowledged as independently reproduced if published in a </span><a class="about_link" href="https://www.scienceexchange.com/reproducibility" target="_blank">supporting journal</a><span>.</span>

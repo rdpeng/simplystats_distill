@@ -1,9 +1,12 @@
 ---
 title: Data Scientists Clashing at Hedge Funds
 author: Roger Peng
-slug: "Data-Scientists-Clashing-at-Hedge-Funds"
-date: 2017-02-15
+date: '2017-02-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 There's an interesting article over at Bloomberg about how [data scientists have struggled at some hedge funds](https://www.bloomberg.com/news/articles/2017-02-15/point72-shows-how-firms-face-culture-clash-on-road-to-quantland):

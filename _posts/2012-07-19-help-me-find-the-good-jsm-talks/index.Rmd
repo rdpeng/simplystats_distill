@@ -1,22 +1,12 @@
 ---
-id: 138
 title: Help me find the good JSM talks
-date: 2012-07-19T13:43:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/27552843631/help-me-find-the-good-jsm-talks
-tumblr_simplystatistics_id:
-  - 27552843631
-dsq_thread_id:
-  - 968138557
-categories:
-  - Uncategorized
-tags:
-  - data
-  - JSM
-  - Talks
-slug: "help-me-find-the-good-jsm-talks"
+date: '2012-07-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I&#8217;m about to head out for JSM in a couple of weeks. The sheer magnitude of the conference means it is pretty hard to figure out what talks I should attend. One approach I&#8217;ve used in the past is to identify people who I know give good talks and go to their talks. But that isn&#8217;t a very good talk-discovery mechanism. So this year I&#8217;m trying a crowd-sourcing experiment. 
 
 First, some background on what kind of talks I like.

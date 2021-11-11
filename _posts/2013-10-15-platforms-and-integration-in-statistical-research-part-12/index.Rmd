@@ -1,20 +1,12 @@
 ---
-id: 2029
 title: Platforms and Integration in Statistical Research (Part 1/2)
-date: 2013-10-15T10:21:50+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_555643151158212
-al2fb_facebook_link_time:
-  - 2013-10-15T14:21:54+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1859972721
-categories:
-  - Uncategorized
-slug: "platforms-and-integration-in-statistical-research-part-12"
+date: '2013-10-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In the technology world today, one of the common topics of interest is the so-called "war" between Apple and Google (or Android). This war is ostensibly over dominance of the mobile phone industry, where Apple sells the most popular phone but Google/Android (as an operating system) controls over half the market. (Android phones themselves are manufactured by a variety of companies and no one of those companies sells more phones than Apple.)
 
 **Apple vs. Google (vs. Microsoft)**

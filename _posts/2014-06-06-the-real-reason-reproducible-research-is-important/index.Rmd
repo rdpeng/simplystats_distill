@@ -1,20 +1,12 @@
 ---
-id: 3127
 title: The Real Reason Reproducible Research is Important
-date: 2014-06-06T06:19:31+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_655587197830473
-al2fb_facebook_link_time:
-  - 2014-06-06T10:19:37+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2741183741
-categories:
-  - Uncategorized
-slug: "the-real-reason-reproducible-research-is-important"
+date: '2014-06-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Reproducible research has been on my mind a bit these days, partly because it has been in the news with the [Piketty stuff](http://simplystatistics.org/2014/06/03/post-piketty-lessons/), and also perhaps because I just [published a book on it](http://www.amazon.com/Implementing-Reproducible-Research-Chapman-Series/dp/1466561599/ref=sr_1_1?ie=UTF8&qid=1402049601&sr=8-1&keywords=roger+peng) and I'm [teaching a class on it](https://www.coursera.org/course/repdata) as we speak (as well as next month and the month after...).
 
 However, as I watch and read many discussions over the role of reproducibility in science, I often feel that many people miss the point. Now, just to be clear, when I use the word "reproducibility" or say that a study is reproducible, I do not mean "independent verification" as in a separate investigator conducted an independent study and came to the same conclusion as the original study (that is what I refer to as "replication"). By using the word reproducible, I mean that the original data (and original computer code) can be analyzed (by an independent investigator) to obtain the same results of the original study. In essence, it is the notion that the _data analysis_ can be successfully repeated_. _Reproducibility is particularly important in large computational studies where the data analysis can often play an outsized role in supporting the ultimate conclusions.

@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 23 - Special Guest Walt Hickey
-slug: "nssd-episode-23"
-date: 2016-10-01
+author: Roger Peng
+date: '2016-10-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and Roger invite Walt Hickey of FiveThirtyEight.com on to the show to talk about polling, movies, and data analysis reproducibility (of course).
 

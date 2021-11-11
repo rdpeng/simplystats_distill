@@ -1,23 +1,13 @@
 ---
-id: 1215
-title: 'Mindlessly normalizing genomics data is bad - but ignoring unwanted variability can be worse'
-date: 2013-04-26T10:49:08+00:00
+title: Mindlessly normalizing genomics data is bad - but ignoring unwanted variability
+  can be worse
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_487380551317806
-al2fb_facebook_link_time:
-  - 2013-04-26T14:49:14+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/04/Screen-shot-2013-04-25-at-11.12.20-PM.png
-dsq_thread_id:
-  - 1237281871
-categories:
-  - Uncategorized
-tags:
-  - genomics
-  - quantile normalization
-slug: "mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse"
+date: '2013-04-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Yesterday, and bleeding over into today, [quantile normalization](http://www.ncbi.nlm.nih.gov/pubmed/12538238) (QN) was being discussed on Twitter. This is the [Yesterday, and bleeding over into today, [quantile normalization](http://www.ncbi.nlm.nih.gov/pubmed/12538238) (QN) was being discussed on Twitter. This is the](https://twitter.com/mbeisen/status/327563522185764864) that started the whole thing off. The conversation went a bunch of different directions and then this happened:
 
 > well, this happens all over bio-statistics - ie, naive use in seemingly undirected ways until you get a "good" pvalue. And then end

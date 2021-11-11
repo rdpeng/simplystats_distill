@@ -1,18 +1,12 @@
 ---
-id: 305
 title: Evidence-based Music
-date: 2012-02-01T14:02:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/16863248312/evidence-based-music
-tumblr_simplystatistics_id:
-  - 16863248312
-dsq_thread_id:
-  - 935680307
-categories:
-  - Uncategorized
-slug: "evidence-based-music"
+date: '2012-02-01'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There was recently a fascinating article published in PNAS that <a href="http://www.ncbi.nlm.nih.gov/pubmed/22215592" target="_blank">compared the sound quality of different types of violins</a>. In this study, researchers assembled a collection of six violins, three of which were made by Stradivari and Guarneri del Gesu and three made by modern luthiers (i.e. 20th century). The combined value of the &#8220;old&#8221; violins was $10 million, about 100 times greater than the combined value of the &#8220;new&#8221; violins. Also, they note:
 
 > <span>Numbers of subjects and instruments were small because it is difficult to persuade the owners of fragile, enormously valuable old violins to release them for extended periods into the hands of blindfolded strangers.</span>

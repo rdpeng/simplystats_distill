@@ -1,20 +1,12 @@
 ---
-id: 1540
-title: 'The researcher degrees of freedom - recipe tradeoff in data analysis'
-date: 2013-07-31T10:25:34+00:00
+title: The researcher degrees of freedom - recipe tradeoff in data analysis
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_523659947689866
-al2fb_facebook_link_time:
-  - 2013-07-31T14:25:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1551474123
-categories:
-  - Uncategorized
-slug: "the-researcher-degrees-of-freedom-recipe-tradeoff-in-data-analysis"
+date: '2013-07-31'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 An important concept that is only recently gaining the [attention](http://andrewgelman.com/2012/11/01/researcher-degrees-of-freedom/) [it](http://theness.com/neurologicablog/index.php/publishing-false-positives/) [deserves](http://duncanlaw.wordpress.com/2012/04/09/researcher-degrees-of-freedom/) is researcher degrees of freedom. From [Simmons et al](http://people.psych.cornell.edu/~jec7/pcd%20pubs/simmonsetal11.pdf).:
 
 > The culprit is a construct we refer to as researcher degrees of freedom. In the course of collecting and analyzing data, researchers have many decisions to make: Should more data be collected? Should some observations be excluded? Which conditions should be combined and which ones compared? Which control variables should be considered? Should specific measures be combined or transformed or both?

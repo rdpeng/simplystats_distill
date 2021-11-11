@@ -1,22 +1,12 @@
 ---
-id: 13
 title: Some academic thoughts on the poll aggregators
-date: 2012-11-08T20:11:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/35285752046/some-academic-thoughts-on-the-poll-aggregators
-  - http://simplystatistics.tumblr.com/post/35285752046/some-academic-thoughts-on-the-poll-aggregators
-  - http://simplystatistics.tumblr.com/post/35285752046/some-academic-thoughts-on-the-poll-aggregators
-tumblr_simplystatistics_id:
-  - 35285752046
-  - 35285752046
-  - 35285752046
-dsq_thread_id:
-  - 934633741
-categories:
-  - Uncategorized
-slug: "some-academic-thoughts-on-the-poll-aggregators"
+date: '2012-11-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The night of the presidential elections I wrote a <a href="http://simplystatistics.org/post/35187901781/nate-silver-does-it-again-will-pundits-finally-accept" target="_blank">post</a> celebrating the victory of data over punditry. I was motivated by the personal attacks made against Nate Silver by pundits that do not understand Statistics. The post generated a little bit of (justified) _<a href="http://www.urbandictionary.com/define.php?term=nerdrage" target="_blank">nerdrage</a> _(see comment section). So here I clarify a couple of things not as a member of Nate Silver&#8217;s fan club (my <a href="http://www.urbandictionary.com/define.php?term=mancrush" target="_blank"><em>mancrush</em> </a>started with <a href="http://www.baseballprospectus.com/" target="_blank">PECOTA</a> not fivethirtyeight) but as an applied statistician.
 
 The main reason <a href="http://fivethirtyeight.blogs.nytimes.com/" target="_blank">fivethrityeight</a> predicts election results so well is mainly due to the idea of averaging polls. This idea was around way before fivethirtyeight started. In fact, it&#8217;s a version of <a href="http://en.wikipedia.org/wiki/Meta-analysis" target="_blank">meta-analysis</a> which has been around for hundreds of years and is commonly used to <a href="http://www.ncbi.nlm.nih.gov/pubmed/3802833" target="_blank">improve results of clinical trials</a>. This election cycle several groups,  including Sam Wang (<a href="http://election.princeton.edu/" target="_blank">Princeton Election Consortium</a>), Simon Jackman (<a href="http://www.huffingtonpost.com/simon-jackman/pollster-predictions_b_2081013.html" target="_blank">pollster</a>), and Drew Linzer (<a href="http://votamatic.org/" target="_blank">VOTAMATIC</a>), predicted the election perfectly using this trick. 

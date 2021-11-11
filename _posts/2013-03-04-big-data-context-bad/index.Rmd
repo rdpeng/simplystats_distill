@@ -1,24 +1,12 @@
 ---
-id: 1065
-title: 'Big Data - Context = Bad'
-date: 2013-03-04T10:00:24+00:00
+title: Big Data - Context = Bad
 author: Roger Peng
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_468967259825802
-al2fb_facebook_link_time:
-  - 2013-03-04T15:00:49+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1117384326
-categories:
-  - Uncategorized
-slug: "big-data-context-bad"
+date: '2013-03-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There's a nice article by Nick Bilton in the New York Times Bits blog about [the need for context when looking at Big Data](http://bits.blogs.nytimes.com/2013/02/24/disruptions-google-flu-trends-shows-problems-of-big-data-without-context/?smid=pl-share). Actually, the article starts off by describing how Google's Flu Trends model overestimated the number of people infected with flue in the U.S. this season, but then veers off into a more general discussion about Big Data.
 
 My favorite quote comes from Mark Hansen:

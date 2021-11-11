@@ -1,22 +1,13 @@
 ---
-id: 3928
-title: 'π day special: How to use Bioconductor to find empirical evidence in support of π being a normal number'
-date: 2015-03-14T10:15:10+00:00
+title: 'π day special: How to use Bioconductor to find empirical evidence in support
+  of π being a normal number'
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_781511755238016
-al2fb_facebook_link_time:
-  - 2015-03-14T14:15:19+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/03/pi2.png
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3594767137
-categories:
-  - Uncategorized
-slug: "%cf%80-day-special-how-to-use-bioconductor-to-find-empirical-evidence-in-support-of-%cf%80-being-a-normal-number"
+date: '2015-03-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note: Today 3/14/15 at some point between 9:26:53 and 9:26:54 it was the most π day of them all. Below is a repost from last year._
 

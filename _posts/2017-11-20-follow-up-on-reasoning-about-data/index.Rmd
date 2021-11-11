@@ -2,8 +2,11 @@
 title: Follow Up on Reasoning About Data
 author: Roger Peng
 date: '2017-11-20'
-slug: follow-up-on-reasoning-about-data
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Sometimes, when I write a really long blog post, I forget what the point was at the end. I suppose I could just update the previous post...but that feels wrong for some reason.
 

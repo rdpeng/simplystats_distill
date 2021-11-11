@@ -1,20 +1,12 @@
 ---
-id: 2998
 title: 'Why big data is in trouble: they forgot about applied statistics'
-date: 2014-05-07T10:08:32+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_642287822493744
-al2fb_facebook_link_time:
-  - 2014-05-07T14:08:40+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/05/Screen-Shot-2014-05-06-at-9.06.38-PM.png
-dsq_thread_id:
-  - 2667532985
-categories:
-  - Uncategorized
-slug: "why-big-data-is-in-trouble-they-forgot-about-applied-statistics"
+date: '2014-05-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This year the idea that statistics is important for big data has exploded into the popular media. Here are a few examples, starting with the Lazer et. al paper in Science that got the ball rolling on this idea.
 
   * [The parable of Google Flu: traps in big data analysis](http://gking.harvard.edu/files/gking/files/0314policyforumff.pdf)

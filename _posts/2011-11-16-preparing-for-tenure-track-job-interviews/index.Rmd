@@ -1,20 +1,12 @@
 ---
-id: 375
 title: Preparing for tenure track job interviews
-date: 2011-11-16T15:58:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12883549461/preparing-for-tenure-track-job-interviews
-tumblr_simplystatistics_id:
-  - 12883549461
-dsq_thread_id:
-  - 934053546
-categories:
-  - Uncategorized
-tags:
-  - advice
-slug: "preparing-for-tenure-track-job-interviews"
+date: '2011-11-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 If you are in the job market you will soon be receiving (or already received) an invitation for an interview. So how should you prepare?  You have two goals. The first is to make a good impression. Here are some tips:
 
 <!-- more -->1) During your talk, do NOT go over your allotted time. Practice your talk at least twice. Both times in front of a live audiences that asks questions. 

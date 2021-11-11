@@ -1,22 +1,12 @@
 ---
-id: 362
 title: Selling the Power of Statistics
-date: 2011-11-30T14:12:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13545601315/selling-the-power-of-statistics
-tumblr_simplystatistics_id:
-  - 13545601315
-dsq_thread_id:
-  - 936994035
-categories:
-  - Uncategorized
-tags:
-  - analytics
-  - finance
-  - tennis
-slug: "selling-the-power-of-statistics"
+date: '2011-11-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A few weeks ago we learned that <a href="http://www.bloomberg.com/news/2011-11-15/buffett-s-stake-in-century-old-ibm-bolsters-berkshire-s-defense.html" target="_blank">Warren Buffett is a big IBM fan</a> (a $10 billion fan, that is). Having heard that I went over to the IBM web site to see what they&#8217;re doing these days. For starters, they&#8217;re not selling computers anymore! At least not the kind that I would use. One of the big things they do now is &#8220;Business Analytics and Optimization&#8221; (i.e. statistics), which is one of the reasons they <a href="http://simplystatistics.tumblr.com/post/9955104326/data-analysis-companies-getting-gobbled-up" target="_blank">bought SPSS and then later Algorithmics</a>.
 
 Roaming around the IBM web site, I found this little video on how <a href="http://www-935.ibm.com/services/us/gbs/bao/?lnk=mhse#overlay-noscript" target="_blank">IBM is involved with tennis matches</a> like the US Open. It&#8217;s the usual promo video: a bit cheesy, but pretty interesting too. For example, they provide all the players an automatically generated post-game &#8220;match analysis DVD&#8221; that has summaries of all the data from their match with corresponding video.

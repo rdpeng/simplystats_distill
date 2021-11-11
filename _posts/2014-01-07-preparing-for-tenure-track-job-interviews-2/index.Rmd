@@ -1,24 +1,12 @@
 ---
-id: 2404
 title: Preparing for tenure track job interviews
-date: 2014-01-07T10:00:55+00:00
 author: Rafael Irizarry
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_592313554157838
-al2fb_facebook_link_time:
-  - 2014-01-07T15:01:01+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2097846982
-categories:
-  - Uncategorized
-slug: "preparing-for-tenure-track-job-interviews-2"
+date: '2014-01-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a slightly modified version of a previous post._
 
 If you are in the job market you will soon be receiving (or already received) an invitation for an interview. So how should you prepare?  You have two goals. The first is to make a good impression. Here are some tips:

@@ -1,18 +1,12 @@
 ---
-id: 377
 title: First 100 Posts
-date: 2011-11-15T17:20:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12840430342/first-100-posts
-tumblr_simplystatistics_id:
-  - 12840430342
-dsq_thread_id:
-  - 1104324149
-categories:
-  - Uncategorized
-slug: "first-100-posts"
+date: '2011-11-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In honor of us passing the 100 post milestone, I&#8217;ve collected a few of our more interesting posts from the past 3 months for those who have not been avid followers from Day 1. Enjoy!
 
   * First Post: <a href="http://simplystatistics.tumblr.com/post/9954726952/data-science-hot-career-choice" target="_blank">Data Science = Hot Career Choice</a>

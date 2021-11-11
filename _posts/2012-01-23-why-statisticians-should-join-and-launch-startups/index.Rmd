@@ -1,23 +1,12 @@
 ---
-id: 313
 title: Why statisticians should join and launch startups
-date: 2012-01-23T14:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/16347982080/why-statisticians-should-join-and-launch-startups
-tumblr_simplystatistics_id:
-  - 16347982080
-dsq_thread_id:
-  - 942670520
-categories:
-  - Uncategorized
-tags:
-  - enterprenuership
-  - jobs
-  - startups
-  - statistics
-slug: "why-statisticians-should-join-and-launch-startups"
+date: '2012-01-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The tough economic times we live in, and the potential for big paydays, have made <a href="http://en.wikipedia.org/wiki/The_Social_Network" target="_blank">entrepreneurship cool</a>. From the <a href="http://www.whitehouse.gov/issues/startup-america" target="_blank">venture capitalist-in-chief</a>, to the javascript <a href="http://chats-blog.com/2012/01/08/michael-bloomberg-learning-to-code/" target="_blank">coding mayor of New York</a>, everyone is on board. No surprise there, successful startups lead to job creation which can have a major positive impact on the economy. 
 
 The game has been dominated for a long time by the folks over in CS. But the value of many recent startups is either based on, or can be magnified by, good data analysis. Here are a few startups that are based on data/data analysis: 

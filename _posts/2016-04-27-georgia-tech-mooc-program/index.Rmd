@@ -1,10 +1,12 @@
 ---
-title: An update on Georgia Tech's MOOC-based CS degree 
+title: An update on Georgia Tech's MOOC-based CS degree
 author: Roger Peng
-date: 2016-04-27
-comments: true
-slug: "georgia-tech-mooc-program"
+date: '2016-04-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 [This article](https://www.insidehighered.com/news/2016/04/27/georgia-tech-plans-next-steps-online-masters-degree-computer-science?utm_source=Inside+Higher+Ed&utm_campaign=d373e33023-DNU20160427&utm_medium=email&utm_term=0_1fcbc04421-d373e33023-197601005#.VyCmdfkGRPU.mailto) in Inside Higher Ed discusses next steps for Georgia
 Tech's ground-breaking low-cost CS degree based on MOOCs run by

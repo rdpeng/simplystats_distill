@@ -1,22 +1,13 @@
 ---
-id: 212
-title: A disappointing response from @NatureMagazine about folks with statistical skills
-date: 2012-04-30T15:02:56+00:00
+title: A disappointing response from @NatureMagazine about folks with statistical
+  skills
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/22124036383/a-disappointing-response-from-naturemagazine-about
-tumblr_simplystatistics_id:
-  - 22124036383
-dsq_thread_id:
-  - 936128398
-categories:
-  - Uncategorized
-tags:
-  - data science
-  - data scientist
-  - nature
-slug: "a-disappointing-response-from-naturemagazine-about"
+date: '2012-04-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Last week <a href="http://simplystatistics.tumblr.com/post/21845976361/nature-is-hiring-a-data-editor-how-will-they-make" target="_blank">I linked to</a> an ad for a Data Editor position at Nature Magazine. I was super excited that Nature was recognizing data as an important growth area. But the ad doesn&#8217;t mention anything about statistical analysis skills; it focuses exclusively on data management expertise. As I pointed out in the earlier post, managing data is only half the equation - figuring out what to do with the data is the other half. The second half requires knowledge of statistics.
 
 The folks over at Nature <a href="https://twitter.com/#!/NatureMagazine/status/195523909771198464" target="_blank">responded to our post</a> on Twitter:

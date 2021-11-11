@@ -1,10 +1,12 @@
 ---
 title: Not So Standard Deviations Episode 12 - The New Bayesian vs. Frequentist
 author: Roger Peng
-comments: true
-slug: "nssd-episode-12"
-date: 2016-03-26
+date: '2016-03-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 In this episode, Hilary and I discuss the new direction for the
 journal Biostatistics, the recent fracas over ggplot2 and base

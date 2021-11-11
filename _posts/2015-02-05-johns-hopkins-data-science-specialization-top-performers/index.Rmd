@@ -1,22 +1,12 @@
 ---
-id: 3866
 title: Johns Hopkins Data Science Specialization Top Performers
-date: 2015-02-05T10:40:14+00:00
 author: Ira Gooding
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_765238283532030
-al2fb_facebook_link_time:
-  - 2015-02-06T15:34:34+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/02/Sasa-Bogdanovic-120x90.jpg
-dsq_thread_id:
-  - 3491478832
-categories:
-  - Uncategorized
-slug: "johns-hopkins-data-science-specialization-top-performers"
+date: '2015-02-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: The Johns Hopkins Data Science Specialization is the largest data science program in the world.  [Brian](http://www.bcaffo.com/), [Roger](http://www.biostat.jhsph.edu/~rpeng/), and [myself ](http://jtleek.com/) conceived the program at the beginning of January 2014 , then built, recorded, and launched the classes starting in April 2014 with the help of [Ira](https://twitter.com/iragooding).  Since April 2014 we have enrolled 1.76 million student and awarded 71,589 Signature Track verified certificates. The first capstone class ran in October - just 7 months after the first classes launched and 4 months after all classes were running. Despite this incredibly short time frame 917 students finished all 9 classes and enrolled in the Capstone Course. 478 successfully completed the course._
 
 When we first announced the the Data Science Specialization, we said that the top performers would be profiled here on Simply Statistics. Well, that time has come, and we've got a very impressive group of participants that we want to highlight. These folks have successfully completed all nine MOOCs in the specialization and earned top marks in our first capstone session with [SwiftKey](http://swiftkey.com/en/). We had the pleasure of meeting some of them last week in a video conference, and we were struck by their insights and expertise. Check them out below.

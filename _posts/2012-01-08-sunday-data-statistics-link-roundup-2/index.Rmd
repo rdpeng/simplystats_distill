@@ -1,24 +1,12 @@
 ---
-id: 328
 title: Sunday Data/Statistics Link Roundup
-date: 2012-01-08T19:35:42+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15522150769/sunday-data-statistics-link-roundup
-tumblr_simplystatistics_id:
-  - 15522150769
-dsq_thread_id:
-  - 993947194
-categories:
-  - Uncategorized
-tags:
-  - data
-  - links
-  - open access
-  - statistics
-  - sunday links
-slug: "sunday-data-statistics-link-roundup-2"
+date: '2012-01-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A few data/statistics related links of interest:
 
   1. <a href="http://www.nytimes.com/2012/01/03/science/broad-institute-director-finds-power-in-numbers.html?ref=science" target="_blank">Eric Lander Profile</a>

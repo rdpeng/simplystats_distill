@@ -1,20 +1,12 @@
 ---
-id: 2284
-title: "Are MOOC's fundamentally flawed? Or is it a problem with statistical literacy?"
-date: 2013-12-11T13:58:56+00:00
+title: Are MOOC's fundamentally flawed? Or is it a problem with statistical literacy?
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_580493185339875
-al2fb_facebook_link_time:
-  - 2013-12-11T18:59:03+00:00
-al2fb_facebook_link_picture:
-  - post=http://charliekennedy.files.wordpress.com/2009/12/1217-wright-bros-1903.jpg
-dsq_thread_id:
-  - 2044216056
-categories:
-  - Uncategorized
-slug: "are-moocs-fundamentally-flawed-or-is-it-a-problem-with-statistical-literacy"
+date: '2013-12-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 People know I have taught a MOOC on Data Analysis, so I frequently get emails about updates on the "state of MOOCs". It definitely feels like the wild west of education is happening right now. If you make an analogy to air travel, I would say we are about here:
 
 <p style="text-align: center;">

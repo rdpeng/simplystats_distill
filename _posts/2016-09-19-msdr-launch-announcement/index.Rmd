@@ -1,9 +1,12 @@
 ---
 title: Mastering Software Development in R
 author: Roger Peng
-slug: "msdr-launch-announcement"
-date: 2016-09-19
+date: '2016-09-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Today I'm happy to announce that we're launching a new specialization on Coursera titled [**Mastering Software Development in R**](https://www.coursera.org/specializations/r/). This is a 5-course sequence developed with [Sean Kross](https://twitter.com/seankross) and [Brooke Anderson](http://csu-cvmbs.colostate.edu/academics/erhs/Pages/brooke-anderson.aspx). 
 

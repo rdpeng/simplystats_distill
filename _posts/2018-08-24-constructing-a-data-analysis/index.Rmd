@@ -2,8 +2,11 @@
 title: Constructing a Data Analysis
 author: Roger Peng
 date: '2018-08-24'
-slug: constructing-a-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 This week Hilary Parker and I have started our "Book Club" on [Not So Standard Deviations](http://nssdeviations.com/63-book-club-part-1) where we will be discussing Nigel Cross's book *Design Thinking: Understanding How Designers Think and Work*. We will be talking about how the work of designers parallels the work of data scientists and how many of the principles developed in design port over so well to data analysis. While data visualization has always taken cues from design, I think much broader aspects of data analysis could benefit from the work studying design. At any rate, I think this is a topic that should be discussed more amongst statisticians and data analysts.
 

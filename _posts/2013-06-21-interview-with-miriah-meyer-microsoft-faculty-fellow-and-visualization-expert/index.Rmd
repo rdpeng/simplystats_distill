@@ -1,20 +1,12 @@
 ---
-id: 1421
-title: 'Interview with Miriah Meyer - Microsoft Faculty Fellow and Visualization Expert'
-date: 2013-06-21T10:39:24+00:00
+title: Interview with Miriah Meyer - Microsoft Faculty Fellow and Visualization Expert
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_508278475894680
-al2fb_facebook_link_time:
-  - 2013-06-21T14:39:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/06/miriah1.jpg
-dsq_thread_id:
-  - 1418931502
-categories:
-  - Uncategorized
-slug: "interview-with-miriah-meyer-microsoft-faculty-fellow-and-visualization-expert"
+date: '2013-06-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <a href="http://simplystatistics.org/2013/06/21/interview-with-miriah-meyer-microsoft-faculty-fellow-and-visualization-expert/miriah-2/" rel="attachment wp-att-1424"><img class="alignnone  wp-image-1424" alt="miriah" src="http://simplystatistics.org/wp-content/uploads/2013/06/miriah1.jpg" width="311" height="256" /></a>
 
 _[Miriah Meyer](http://www.cs.utah.edu/~miriah/) received her Ph.D. in computer science from the University of Utah, then did a postdoctoral fellowship at Harvard University and was a visiting fellow at MIT and the Broad Institute. Her research focuses on developing visualization tools in close collaboration with biological scientists. She has been recognized as a Microsoft Faculty Fellow, a TED Fellow, and appeared on the TR35. We talked with Miriah about visualization, collaboration, and her influences during her career as part of the [Simply Statistics Interview Series](http://simplystatistics.org/interviews/)._

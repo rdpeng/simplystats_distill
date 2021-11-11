@@ -1,20 +1,12 @@
 ---
-id: 2208
 title: Feeling optimistic after the Future of the Statistical Sciences Workshop
-date: 2013-11-18T10:24:17+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_571037246285469
-al2fb_facebook_link_time:
-  - 2013-11-18T15:24:22+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1976529051
-categories:
-  - Uncategorized
-slug: "feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop"
+date: '2013-11-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Last I week I participated in the [Future of the Statistical Sciences Workshop](http://www.statistics2013.org/presentations-and-panelists/). I arrived feeling somewhat pessimistic about the future of our discipline. My pessimism stemmed from the emergence of the term _Data Science_ and the small role academic (bio)statistics department are playing in the excitement and initiatives surrounding it.  Data Science centers/departments/initiatives are propping up in universities without much interaction with (bio)statistics departments. Funding agencies, interested in supporting Data Science, are not always including academic statisticians in the decision making process.
 
 About [100 participants,](http://www.statistics2013.org/workshop-invited-participants/) including many of our discipline's leaders, attended the workshop. It was organized in [sessions](http://www.statistics2013.org/presentations-and-panelists/) and about a dozen talks; some about the future, others featuring collaborations between statisticians and subject matter experts. The collaborative talks provided great examples of the best our field has to offer and the rest generated provocative discussions. In most of these discussions the disconnect between our discipline and  Data Science was raised as cause for concern.

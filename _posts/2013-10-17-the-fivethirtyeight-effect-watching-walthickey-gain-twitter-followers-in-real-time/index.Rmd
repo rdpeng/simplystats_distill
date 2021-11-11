@@ -1,20 +1,13 @@
 ---
-id: 2034
-title: 'The @fivethirtyeight effect - watching @walthickey gain Twitter followers in real time'
-date: 2013-10-17T10:16:31+00:00
+title: The @fivethirtyeight effect - watching @walthickey gain Twitter followers in
+  real time
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_556776391044888
-al2fb_facebook_link_time:
-  - 2013-10-17T14:16:37+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/10/walthickey-followers.png
-dsq_thread_id:
-  - 1867962305
-categories:
-  - Uncategorized
-slug: "the-fivethirtyeight-effect-watching-walthickey-gain-twitter-followers-in-real-time"
+date: '2013-10-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Last night Nate Silver announced that he had hired Walt Hickey away from Business Insider to be an editor for the new http://www.fivethirtyeight.com/ website with a couple of tweets:
 
 <blockquote class="twitter-tweet" width="550">

@@ -1,20 +1,12 @@
 ---
-id: 3132
 title: What I do when I get a new data set as told through tweets
-date: 2014-06-13T09:06:18+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_658832274172632
-al2fb_facebook_link_time:
-  - 2014-06-13T13:06:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://changeprocessdesign.files.wordpress.com/2009/11/6-blind-men-hans.jpg
-dsq_thread_id:
-  - 2761093939
-categories:
-  - Uncategorized
-slug: "what-i-do-when-i-get-a-new-data-set-as-told-through-tweets"
+date: '2014-06-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Hilary Mason asked a really interesting question yesterday:
 
 <blockquote class="twitter-tweet" lang="en">

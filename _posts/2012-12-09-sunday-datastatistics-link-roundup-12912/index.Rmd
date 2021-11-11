@@ -1,26 +1,12 @@
 ---
-id: 703
 title: Sunday data/statistics link roundup (12/9/12)
-date: 2012-12-09T10:14:57+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_431876780201517
-al2fb_facebook_link_time:
-  - 2012-12-09T15:15:02+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 965801068
-categories:
-  - Uncategorized
-tags:
-  - Computing
-  - cs
-  - data analysis
-  - data visualization
-  - deep learning
-slug: "sunday-datastatistics-link-roundup-12912"
+date: '2012-12-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. <span style="line-height: 16px;">Some <a href="http://www.prana.com/life/2012/12/01/conscious-consumerism-how-do-your-brands-rate/">interesting data/data visualizations</a> about working conditions in the apparel industry. <a href="http://www.free2work.org/trends/apparel/?utm_source=Social%20Ventures&utm_medium=Hootsuite&utm_campaign=SV%20News%20Feed">Here</a> is the full report. Whenever I see reports like this, I wish the raw data were more clearly linked. I want to be able to get in, play with the data, and see if I notice something that doesn't appear in the infographics. </span>
   2. <span style="line-height: 16px;">This is an awesome <a href="http://wmbriggs.com/blog/?p=6465">plain-language discussion</a> of how a bunch of methods (CS and Stats) with fancy names relate to each other. It shows that CS/Machine Learning/Stats are converging in many ways and there isn't much new under the sun. On the other hand, I think the really exciting thing here is to use these methods on new questions, once people <a href="http://simplystatistics.org/2012/12/08/dropping-the-stick-in-data-analysis/">drop the stick</a>. </span>
   3. <span style="line-height: 16px;">If you are a reader of this blog and somehow do not read anything else on the internet, you will have missed Hadley Wickham's <a href="https://github.com/hadley/devtools/wiki/Rcpp">Rcpp tutorial</a>. In my mind, this pretty much seals it, Julia isn't going to overtake R anytime soon. In other news, Hadley is <a href="http://biostat.jhsph.edu/newsEvent/event/seminar/seminars.shtml">coming to visit</a> JHSPH Biostats this week! I'm psyched to meet him. </span>

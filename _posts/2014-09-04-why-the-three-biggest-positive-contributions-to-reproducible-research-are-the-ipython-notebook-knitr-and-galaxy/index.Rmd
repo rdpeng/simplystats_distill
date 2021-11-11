@@ -1,20 +1,13 @@
 ---
-id: 3252
-title: Why the three biggest positive contributions to reproducible research are the iPython Notebook, knitr, and Galaxy
-date: 2014-09-04T14:08:42+00:00
+title: Why the three biggest positive contributions to reproducible research are the
+  iPython Notebook, knitr, and Galaxy
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_694282403960952
-al2fb_facebook_link_time:
-  - 2014-09-04T18:08:48+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2988350630
-categories:
-  - Uncategorized
-slug: "why-the-three-biggest-positive-contributions-to-reproducible-research-are-the-ipython-notebook-knitr-and-galaxy"
+date: '2014-09-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There is a huge amount of interest in reproducible research and replication of results. Part of this is driven by some of the pretty major mistakes in reproducibility we have seen in [economics ](http://simplystatistics.org/2013/04/19/podcast-7-reinhart-rogoff-reproducibility/)and [genomics](http://simplystatistics.org/2011/09/11/the-duke-saga/). This has spurred discussion at a variety of levels including at the level of the [United States Congress.](http://simplystatistics.org/2014/04/01/this-is-how-an-important-scientific-debate-is-being-used-to-stop-epa-regulation/)
 
 To solve this problem we need the appropriate infrastructure. I think developing infrastructure is a lot like playing the lottery, only if the lottery required a lot more work to buy a ticket. You pour a huge amount of effort into building good infrastructure.  I think it helps if you build it for yourself like Yihui did for knitr:

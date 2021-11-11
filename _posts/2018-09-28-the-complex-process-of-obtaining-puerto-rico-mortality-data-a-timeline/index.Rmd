@@ -2,8 +2,11 @@
 title: 'The complex process of obtaining Puerto Rico mortality data: a timeline'
 author: Rafael Irizarry
 date: '2018-09-28'
-slug: the-complex-process-of-obtaining-puerto-rico-mortality-data-a-timeline
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}

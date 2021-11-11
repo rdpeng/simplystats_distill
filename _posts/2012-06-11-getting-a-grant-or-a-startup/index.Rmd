@@ -1,18 +1,12 @@
 ---
-id: 181
 title: Getting a grant...or a startup
-date: 2012-06-11T12:47:01+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/24880964035/getting-a-grant-or-a-startup
-tumblr_simplystatistics_id:
-  - 24880964035
-dsq_thread_id:
-  - 963140741
-categories:
-  - Uncategorized
-slug: "getting-a-grant-or-a-startup"
+date: '2012-06-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <a href="http://ycombinator.com/index.html" target="_blank">Y Combinator</a> is company that invests in startups and brings them to the San Francisco area to get them ready for prime time. One of the co-founders is <a href="http://paulgraham.com/" target="_blank">Paul Graham</a>, whose essays we&#8217;ve featured on this blog.
 
 The Y Combinator web site itself is quite interesting and in particular, the section on <a href="http://ycombinator.com/howtoapply.html" target="_blank">how to apply to Y Combinator</a> caught my eye. Now, I don&#8217;t know the first thing about starting a startup (nor do I have any current interest in doing so), but I do know a little bit about applying for NIH grants and it struck me that the advice for the startups seemed very useful for writing grants. It surprised me because I always thought that the process of &#8220;marketing&#8221; a startup to someone would be quite different from applying for a grant&#8212;-startups are supposed to be cool and innovative and futuristic while grants are more about doing the usual thing. Just shows you how much I know about the startup world.

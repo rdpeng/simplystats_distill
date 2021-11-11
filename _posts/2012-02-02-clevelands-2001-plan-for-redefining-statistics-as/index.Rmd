@@ -1,24 +1,13 @@
 ---
-id: 304
 title: |
   Cleveland's (?) 2001 plan for redefining statistics as "data science"
-date: 2012-02-02T12:36:58+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/16917509786/clevelands-2001-plan-for-redefining-statistics-as
-tumblr_simplystatistics_id:
-  - 16917509786
-dsq_thread_id:
-  - 935588263
-categories:
-  - Uncategorized
-tags:
-  - Cleveland
-  - Computing
-  - data science
-  - Theory
-slug: "clevelands-2001-plan-for-redefining-statistics-as"
+date: '2012-02-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <a href="http://cm.bell-labs.com/cm/ms/departments/sia/doc/datascience.pdf" target="_blank">This plan</a> has been making the rounds on Twitter and is being attributed to William Cleveland in 2001 (thanks to Kasper for the link). I&#8217;m not sure of the provenance of the document but it has some really interesting ideas and is worth reading in its entirety. I actually think that many Biostatistics departments follow the proposed distribution of effort pretty closely. 
 
 One of the most interesting sections is the discussion of computing (emphasis mine): 

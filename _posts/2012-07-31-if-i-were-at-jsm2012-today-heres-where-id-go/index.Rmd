@@ -1,18 +1,12 @@
 ---
-id: 114
-title: "If I were at #JSM2012 today, here's where I'd go."
-date: 2012-07-31T13:58:01+00:00
+title: 'If I were at #JSM2012 today, here''s where I''d go.'
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/28409892787/if-i-were-at-jsm2012-today-heres-where-id-go
-tumblr_simplystatistics_id:
-  - 28409892787
-dsq_thread_id:
-  - 951698256
-categories:
-  - Uncategorized
-slug: "if-i-were-at-jsm2012-today-heres-where-id-go"
+date: '2012-07-31'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Obviously, there are tons of sessions everyday at <a href="http://amstat.org/meetings/jsm/2012/index.cfm" target="_blank">JSM</a> this week and it&#8217;s physically impossible to go to everything that looks interesting. Alas, I am but one man, so choices had to be made. Here&#8217;s what looks good to me from the <a href="http://amstat.org/meetings/jsm/2012/onlineprogram/" target="_blank">JSM program</a>:
 
   * 8:30-10:20am: **Contemporary Software Design Strategies for Statistical Methodologists**, HQ-Sapphire B

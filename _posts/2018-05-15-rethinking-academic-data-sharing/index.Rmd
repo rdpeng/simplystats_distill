@@ -2,8 +2,11 @@
 title: Rethinking Academic Data Sharing
 author: Roger Peng
 date: '2018-05-15'
-slug: rethinking-academic-data-sharing
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 The sharing of data is one of the key principles of *reproducible research* (the other one being code sharing). Using the data and code a researcher has used to generate a finding, other researchers can reproduce those findings and examine the process that lead to them. Reproducibility is critical for transparency, so that others can verify the process, and for speeding up knowledge transfer. But recent events have gotten me thinking more about the data sharing aspect of reproducibility and whether it is tenable in the long run.

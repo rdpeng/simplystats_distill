@@ -1,25 +1,12 @@
 ---
-id: 391
 title: 'Guest Post: SMART thoughts on the ADHD 200 Data Analysis Competition'
-date: 2011-11-02T15:37:42+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12242790356/guest-post-smart-thoughts-on-the-adhd-200-data
-tumblr_simplystatistics_id:
-  - 12242790356
-dsq_thread_id:
-  - 934141091
-categories:
-  - Uncategorized
-tags:
-  - ADHD
-  - adhd 200
-  - caffo
-  - competition
-  - neuroimaging
-  - SMART
-slug: "guest-post-smart-thoughts-on-the-adhd-200-data"
+date: '2011-11-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 **Note**: _This is a guest post by our colleagues <span id="internal-source-marker_0.8358260081149638">Brian Caffo, </span>Ani Eloyan, Fang Han, Han Liu,John Muschelli, Mary Beth Nebel, Tuo Zhao and Ciprian Crainiceanu. They <a href="http://fcon_1000.projects.nitrc.org/indi/adhd200/results.html" target="_blank">won</a> the <a href="http://fcon_1000.projects.nitrc.org/indi/adhd200/" target="_blank">ADHD 200</a> imaging data analysis competition. There has been <a href="http://www.reddit.com/r/cogsci/comments/lblqs/the_adhd200_competition_was_intended_to_exhibit/" target="_blank">some</a> <a href="http://www.talyarkoni.org/blog/2011/10/12/brain-based-prediction-of-adhd-now-with-100-fewer-brains/" target="_blank">controversy</a> around the results because one team obtained a higher score without using any of the imaging data. Our colleagues have put together a very clear discussion of the issues raised by the competition so we are publishing it here to contribute to the discussion. Questions about this post should be directed to the Hopkins team leader <a href="http://www.bcaffo.com/home/contacts" target="_blank">Brian Caffo</a> _  
 <span> </span>
 

@@ -1,18 +1,12 @@
 ---
-id: 156
 title: Skepticism+Ideas+Grit
-date: 2012-07-09T12:32:12+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/26828197575/skepticism-ideas-grit
-tumblr_simplystatistics_id:
-  - 26828197575
-dsq_thread_id:
-  - 960122408
-categories:
-  - Uncategorized
-slug: "skepticism-ideas-grit"
+date: '2012-07-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A number of people seem to have objected to my <a href="http://simplystatistics.org/post/26020538368/the-price-of-skepticism" target="_blank">post quoting Carl Sagan about skepticism</a> (hi Paramita!) and I appreciate the comments. However, I wanted to clarify why I liked the quotation. I think in order to be successful in science three things are necessary:
 
   1. A healthy skepticism

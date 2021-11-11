@@ -1,24 +1,12 @@
 ---
-id: 2928
 title: 'The #rOpenSci hackathon #ropenhack'
-date: 2014-04-10T09:41:09+00:00
 author: Jeff Leek
-dsq_thread_id:
-  - 2599532572
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_630041917051668
-al2fb_facebook_link_time:
-  - 2014-04-10T13:41:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "the-ropensci-hackathon-ropenhack"
+date: '2014-04-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a guest post by [Alyssa Frazee](http://alyssafrazee.com/), a graduate student in the Biostatistics department at Johns Hopkins and a participant in the recent rOpenSci hackathon. _
 
 Last week, I took a break from my normal PhD student schedule to participate in a [hackathon](https://github.com/ropensci/hackathon) in San Francisco. The two-day event was hosted by [rOpenSci](http://ropensci.org/), an organization committed to developing R tools for open science. Working with [several wonderful people](https://github.com/ropensci/hackathon/wiki/Confirmed-attendees) from the R community was inspiring, humbling, and incredibly fun. So many great things happened in a two-day whirlwind: it would be impossible now to capture the whole thing in a narrative that would do it justice. So instead of a play-by-play, here are some of the quotes from the event that I've recently been reflecting on:

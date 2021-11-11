@@ -1,20 +1,12 @@
 ---
-id: 2040
 title: Platforms and Integration in Statistical Research (Part 2/2)
-date: 2013-10-18T08:40:43+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_557257907663403
-al2fb_facebook_link_time:
-  - 2013-10-18T12:40:48+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1871678313
-categories:
-  - Uncategorized
-slug: "platforms-and-integration-in-statistical-research-part-22"
+date: '2013-10-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In my [last post](http://simplystatistics.org/2013/10/15/platforms-and-integration-in-statistical-research-part-12/), I talked about two general approaches to conducting statistical research: platforms and integration. In this followup I thought I'd describe the characteristics of certain fields that suggesting taking one approach over another.
 
 I think in practice, most statisticians will dedicate some time to both the platform and integrative approaches to doing statistical research because different approaches work better in different situations. The question then is not "Which approach is better?" but rather "What characteristics of a field suggest one should take a platform / integrative approach in order to have the greatest impact?" I think one way to answer this question is to make an analogy with transaction costs a la the [theory of the firm](http://en.wikipedia.org/wiki/Theory_of_the_firm). (This kind of analogy also plays a role in determining who best to collaborate with but that's a different post).

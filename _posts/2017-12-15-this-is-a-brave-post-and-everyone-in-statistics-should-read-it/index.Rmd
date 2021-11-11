@@ -2,10 +2,11 @@
 title: This is a brave post and everyone in statistics should read it
 author: Jeff Leek
 date: '2017-12-15'
-slug: this-is-a-brave-post-and-everyone-in-statistics-should-read-it
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 [This post](https://medium.com/@kristianlum/statistics-we-have-a-problem-304638dc5de5) by Kristian Lum is incredibly brave. It points out some awful behavior by people in our field and should be required reading for everyone. 
 

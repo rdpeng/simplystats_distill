@@ -2,13 +2,11 @@
 title: My unfunded HHMI teaching professors proposal
 author: Jeff
 date: '2017-07-19'
-slug: my-unfunded-hhmi-teaching-professors-proposal
-categories:
-  - Education
-tags:
-  - grant
-  - sad
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A little over a year ago I saw a request from the Howard Hughes Medical Institute for proposals focused on [undergraduate teaching](http://www.hhmi.org/news/hhmi-searches-next-million-dollar-professors). I decided to apply for this grant since it combines all of the things I'm interested in: teaching, education research, biology, and data science. So I put together a proposal, got a couple of colleagues to write me letters of support, and sent it off. 
 

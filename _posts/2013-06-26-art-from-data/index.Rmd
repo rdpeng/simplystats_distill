@@ -1,20 +1,12 @@
 ---
-id: 1448
 title: Art from Data
-date: 2013-06-26T08:39:23+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_510147825707745
-al2fb_facebook_link_time:
-  - 2013-06-26T12:39:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1438079180
-categories:
-  - Uncategorized
-slug: "art-from-data"
+date: '2013-06-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There's a nice piece by Mark Hansen about [data-driven aesthetics](http://bits.blogs.nytimes.com/2013/06/19/data-driven-aesthetics/) in the New York Times special section on big data.
 
 > From a speedometer to a weather map to a stock chart, we routinely interpret and act on data displayed visually. With a few exceptions, data has no natural “look,” no natural “visualization,” and choices have to be made about how it should be displayed. Each choice can reveal certain kinds of patterns in the data while hiding others.

@@ -1,23 +1,13 @@
 ---
-id: 792
-title: By introducing competition open online education will improve teaching at top universities
-date: 2013-01-08T10:00:17+00:00
+title: By introducing competition open online education will improve teaching at top
+  universities
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_444209195634942
-al2fb_facebook_link_time:
-  - 2013-01-08T15:17:26+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1014500084
-categories:
-  - Uncategorized
-tags:
-  - education
-  - MOOC
-slug: "by-introducing-competition-open-online-education-will-improve-teaching-at-top-universities"
+date: '2013-01-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It is no secret that faculty evaluations at [top universities](http://www.shanghairanking.com/ARWU2012.html) weigh research much more than teaching. This is not surprising given that, among other reasons,  global visibility comes from academic innovation (think Nobel Prizes) not classroom instruction. Come promotion time the peer review system carefully examines your publication record and ability to raise research funds. External experts within your research area are asked if you are a leader in the field. Top universities maintain their status by imposing standards that lead to a highly competitive environment in which only the most talented researchers survive.
 
 However, the assessment of teaching excellence is much less stringent. Unless they reveal utter incompetence, teaching evaluations are practically ignored; especially if you have graduated numerous PhD students. Certainly, outside experts are not asked about your teaching. This imbalance in incentives explains why faculty use research funding to buy-out of teaching and why highly recruited candidates negotiate low teaching loads.

@@ -1,10 +1,12 @@
 ---
 title: Some things I've found help reduce my stress around science
 author: Jeff Leek
-comments: true
-slug: "some-stress-reducers"
-date: 2016-12-29
+date: '2016-12-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Being a scientist can be pretty stressful for any number of reasons, from the peer review process, to getting funding, to [getting blown up on the internet](http://simplystatistics.org/2015/11/16/so-you-are-getting-crushed-on-the-internet-the-new-normal-for-academics/). 
 

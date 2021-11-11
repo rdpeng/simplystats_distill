@@ -1,20 +1,13 @@
 ---
-id: 1415
-title: "Google's brainteasers (that don't work) and Johns Hopkins Biostatistics Data Analysis"
-date: 2013-06-20T10:10:15+00:00
+title: Google's brainteasers (that don't work) and Johns Hopkins Biostatistics Data
+  Analysis
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_507908595931668
-al2fb_facebook_link_time:
-  - 2013-06-20T14:10:20+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1415292408
-categories:
-  - Uncategorized
-slug: "googles-brainteasers-that-dont-work-and-johns-hopkins-biostatistics-data-analysis"
+date: '2013-06-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [This article](http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?pagewanted=all&_r=0) is getting some attention, because Google's VP for people operations at Google has made public a few insights that the Google HR team has come to over the last several years. The most surprising might be:
 
   1. <span style="line-height: 16px;">They don't collect GPAs except for new candidates</span>

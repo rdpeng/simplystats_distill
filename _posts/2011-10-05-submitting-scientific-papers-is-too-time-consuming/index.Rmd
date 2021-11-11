@@ -1,20 +1,12 @@
 ---
-id: 428
 title: Submitting scientific papers is too time consuming
-date: 2011-10-05T13:46:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11059923583/submitting-scientific-papers-is-too-time-consuming
-tumblr_simplystatistics_id:
-  - 11059923583
-dsq_thread_id:
-  - 934867332
-categories:
-  - Uncategorized
-tags:
-  - Rant
-slug: "submitting-scientific-papers-is-too-time-consuming"
+date: '2011-10-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As an academic who does a lot of research for a living, I spend a lot of my time writing and submitting papers. Before my time, this process involved sending multiple physical copies of a paper by snail mail to the editorial office. New technology has changed this process. Now to submit a paper you generally have to: (1) find a Microsoft Word or Latex template for the journal and use it for your paper and (2) upload the manuscript and figures (usually separately). This is a big improvement over snail mail submission! But it still takes a huge amount of time. Some simple changes would give academics back huge blocks of time to focus on teaching and research.
 
 

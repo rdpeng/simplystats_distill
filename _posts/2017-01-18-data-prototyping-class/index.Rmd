@@ -1,10 +1,12 @@
 ---
 title: Got a data app idea? Apply to get it prototyped by the JHU DSL!
 author: Jeff Leek
-comments: true
-slug: "data-prototyping-class"
-date: 2017-01-18
+date: '2017-01-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 ![Get your app built](https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/papr.png)
 

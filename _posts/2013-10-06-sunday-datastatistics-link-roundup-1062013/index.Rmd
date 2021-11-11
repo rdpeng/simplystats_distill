@@ -1,20 +1,12 @@
 ---
-id: 1943
 title: Sunday data/statistics link roundup (10/6/2013)
-date: 2013-10-06T14:52:47+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_551259144929946
-al2fb_facebook_link_time:
-  - 2013-10-06T18:52:52+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1830667536
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-1062013"
+date: '2013-10-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. <span style="line-height: 16px;"><a href="http://www.gwern.net/The%20Existential%20Risk%20of%20Mathematical%20Error">A fascinating read</a> about applying decision theory to mathematical proofs. They talk about Type I and Type II errors and everything. </span>
   2. Statistical concepts [explained through dance](http://www.youtube.com/watch?v=VFjaBh12C6s&list=PLCkLQOAPOtT2H1hJRUxUYOxThRwfVI9jI&index=1). Even for a pretty culture-deficient dude like me this is cool.
   3. Lots of good talks from the [WIN Workshop](http://www.winworkshop.net/videos.php), including by one of our speakers for the [Unconference on the Future of Statistics](https://plus.google.com/events/cd94ktf46i1hbi4mbqbbvvga358).

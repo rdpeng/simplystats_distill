@@ -1,22 +1,12 @@
 ---
-id: 4422
 title: 'Prediction Markets for Science: What Problem Do They Solve?'
-date: 2015-11-10T20:29:19+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_881866501869207
-al2fb_facebook_link_time:
-  - 2015-11-11T01:29:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4307923034
-categories:
-  - Uncategorized
-slug: "prediction-markets-for-science-what-problem-do-they-solve"
+date: '2015-11-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I've recently seen a bunch of press on [this paper](http://www.pnas.org/content/early/2015/11/04/1516179112.abstract), which describes an experiment with developing a prediction market for scientific results. From FiveThirtyEight:
 
 > Although [replication is essential for verifying results](http://fivethirtyeight.com/datalab/psychology-is-starting-to-deal-with-its-replication-problem/), the [current scientific culture does little to encourage it in most fields](http://fivethirtyeight.com/features/science-isnt-broken/). That’s a problem because it means that misleading scientific results, like those from the “shades of gray” study, [could be common in the scientific literature](http://pss.sagepub.com/content/22/11/1359.short?rss=1&ssource=mfr). Indeed, a 2005 study claimed that [most published research findings are false.](http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124)

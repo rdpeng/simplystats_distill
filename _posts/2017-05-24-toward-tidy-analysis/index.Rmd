@@ -2,11 +2,11 @@
 title: Toward tidy analysis
 author: Jeff Leek
 date: '2017-05-24'
-slug: toward-tidy-analysis
-categories: []
-tags:
-  - tidyverse
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 [Tidy data](http://vita.had.co.nz/papers/tidy-data.html) at its heart is a set of three rules for organizing a data set: 
 

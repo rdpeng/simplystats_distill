@@ -1,20 +1,12 @@
 ---
-id: 166
 title: The problem with small big data
-date: 2012-06-26T12:56:13+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/25924012903/the-problem-with-small-big-data
-tumblr_simplystatistics_id:
-  - 25924012903
-dsq_thread_id:
-  - 936785632
-categories:
-  - Uncategorized
-tags:
-  - big data
-slug: "the-problem-with-small-big-data"
+date: '2012-06-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There&#8217;s lots of talk about &#8220;big data&#8221; these days and I think that&#8217;s great. I think it&#8217;s bringing statistics out into the mainstream (even if they don&#8217;t call it statistics) and it creating lots of opportunities for people with statistics training. It&#8217;s one of the reasons we created this blog.
 
 One thing that I think gets missed in much of the mainstream reporting is that, in my opinion, the biggest problems aren&#8217;t with the truly massive datasets out there that need to be mined for important information. Sure, those types of problems pose interesting challenges with respect to hardware infrastructure and algorithm design.

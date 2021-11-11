@@ -1,20 +1,13 @@
 ---
-id: 1971
-title: 'Cancelled NIH study sections: a subtle, yet disastrous, effect of the government shutdown'
-date: 2013-10-10T10:00:05+00:00
+title: 'Cancelled NIH study sections: a subtle, yet disastrous, effect of the government
+  shutdown'
 author: Rafael Irizarry
-dsq_thread_id:
-  - 1841613124
-al2fb_facebook_link_id:
-  - 136171103105421_552898174766043
-al2fb_facebook_link_time:
-  - 2013-10-10T14:00:14+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "cancelled-nih-study-sections-a-subtle-yet-disastrous-effect-of-the-government-shutdown"
+date: '2013-10-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note:_ _This post is contributed by [Debashis Ghosh](http://stat.psu.edu/people/dug10). Debashis is the chair of __the Biostatistical Methods and Research Design (BMRD) study sections at the National Institutes of Health (NIH).  BMRD's focus is statistical methodology._
 
 I write today to discuss effects of the government shutdown that will likely have disastrous long-term effects on the state of biomedical and scientific research.  A list of the sections can be found at <http://public.csr.nih.gov/StudySections/Standing/Pages/default.aspx>.   These are panels of distinguished scientists in their fields that meet three times a year to review grant submissions to the NIH by investigators.  For most professors and scientists that work in academia, these grants provide the means of conducting research and funding for staff such as research associates, postdocs and graduate students.  At most universities and medical schools in the U.S., having an independent research grant is necessary for assistant professors to be promoted and get tenure (of course, there is some variation in this across all universities).

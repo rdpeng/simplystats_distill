@@ -1,20 +1,12 @@
 ---
-id: 2564
 title: Announcing the Release of swirl 2.0
-date: 2014-01-28T09:44:06+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_601039433285250
-al2fb_facebook_link_time:
-  - 2014-01-28T14:44:12+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2186114807
-categories:
-  - Uncategorized
-slug: "swirl-2"
+date: '2014-01-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This post was written by Nick Carchedi, a Master's degree student in the Department of Biostatistics at Johns Hopkins. He is working with us to develop the [Data Science Specialization](http://jhudatascience.org) as well as software for interactive learning of R and statistics._
 
 Official swirl website: [swirlstats.com](http://swirlstats.com)

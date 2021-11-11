@@ -1,9 +1,12 @@
 ---
 title: 'More datasets for teaching data science: The expanded dslabs package'
-author: 'Amy Gill'
+author: Amy Gill
 date: '2019-07-19'
-slug: more-datasets-for-teaching-data-science-the-expanded-dslabs-package
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 ## Introduction
 

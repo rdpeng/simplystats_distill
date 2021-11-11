@@ -1,20 +1,12 @@
 ---
-id: 74
 title: 'Simply Statistics Podcast #3: Interview with Steven Salzberg'
-date: 2012-09-07T14:12:34+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/31056769228/interview-with-steven-salzberg-about-the-encode
-tumblr_simplystatistics_id:
-  - 31056769228
-tumblr_attribution:
-  - http://www.youtube.com/
-dsq_thread_id:
-  - 933962978
-categories:
-  - Podcast
-slug: "interview-with-steven-salzberg-about-the-encode"
+date: '2012-09-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Interview with Steven Salzberg about the ENCODE Project.
 
 In this episode Jeff and I have a discussion with Steven Salzberg, Professor of Medicine and Biostatistics at Johns Hopkins University, about the recent findings from the <a href="http://www.genome.gov/10005107" target="_blank">ENCODE Project</a> where he helps us separate fact from fiction. You’re going to want to watch to the end with this one.

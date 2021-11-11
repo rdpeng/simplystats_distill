@@ -1,20 +1,12 @@
 ---
-id: 409
 title: Colors in R
-date: 2011-10-17T16:05:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11573348494/colors-in-r
-tumblr_simplystatistics_id:
-  - 11573348494
-dsq_thread_id:
-  - 934996421
-categories:
-  - Uncategorized
-tags:
-  - R
-slug: "colors-in-r"
+date: '2011-10-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One of my favorite R packages that I use all the time is the <a href="http://cran.r-project.org/package=RColorBrewer" target="_blank">RColorBrewer</a> package. The package has been around for a while now and is written/maintained by Erich Neuwirth. The guts of the package are based on <a href="http://www.personal.psu.edu/cab38/" target="_blank">Cynthia Brewer&#8217;s</a> very cool work on the use of color in cartography (check out the <a href="http://colorbrewer2.org/" target="_blank">colorbrewer web site)</a>.
 
 As a side note, I think the ability to manipulate colors in plots/graphs/maps is one of R&#8217;s many great strengths. My personal experience is that getting the right color scheme can make a difference in how data are perceived in a plot.

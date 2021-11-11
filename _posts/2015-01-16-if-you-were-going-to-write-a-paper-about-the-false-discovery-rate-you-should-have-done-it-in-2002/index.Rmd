@@ -1,22 +1,13 @@
 ---
-id: 3797
-title: If you were going to write a paper about the false discovery rate you should have done it in 2002
-date: 2015-01-16T10:58:04+00:00
+title: If you were going to write a paper about the false discovery rate you should
+  have done it in 2002
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_756088597780332
-al2fb_facebook_link_time:
-  - 2015-01-16T15:58:10+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/01/citations-boxplot.png
-dsq_thread_id:
-  - 3426241140
-categories:
-  - Uncategorized
-slug: "if-you-were-going-to-write-a-paper-about-the-false-discovery-rate-you-should-have-done-it-in-2002"
+date: '2015-01-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 People often talk about academic superstars as people who have written highly cited papers. Some of that has to do with people's genius, or ability, or whatever. But one factor that I think sometimes gets lost is luck and timing. So I wrote a little script to get the first 30 papers that appear when you search Google Scholar for the terms:
 
   * empirical processes

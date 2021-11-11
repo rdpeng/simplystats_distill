@@ -1,20 +1,12 @@
 ---
-id: 3184
 title: Privacy as a function of sample size
-date: 2014-06-25T14:41:09+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_664273660295160
-al2fb_facebook_link_time:
-  - 2014-06-25T18:41:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2794864039
-categories:
-  - Uncategorized
-slug: "privacy-as-a-function-of-sample-size"
+date: '2014-06-25'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The U.S. Supreme Court just made a unanimous ruling in [Riley v. California](http://www.docstoc.com/docs/document-preview.aspx?doc_id=171429294) making it clear that police officers must get a warrant before searching through the contents of a cell phone obtained incident to an arrest. The message was put pretty clearly in the decision:
 
 >  Our answer to the question of what police must do before searching a cell phone seized incident to an arrest is accordingly simple — get a warrant.

@@ -1,20 +1,12 @@
 ---
-id: 3028
 title: 'JHU Data Science: More is More'
-date: 2014-05-05T10:09:09+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_641534802569046
-al2fb_facebook_link_time:
-  - 2014-05-05T14:09:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2662391201
-categories:
-  - Uncategorized
-slug: "jhu-data-science-more-is-more"
+date: '2014-05-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Today Jeff Leek, Brian Caffo, and I are launching 3 new courses on Coursera as part of the [Johns Hopkins Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1). These courses are
 
   * [Exploratory Data Analysis](https://www.coursera.org/course/exdata)

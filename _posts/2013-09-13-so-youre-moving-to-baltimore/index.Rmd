@@ -1,20 +1,12 @@
 ---
-id: 1818
-title: "So you're moving to Baltimore"
-date: 2013-09-13T15:21:59+00:00
+title: So you're moving to Baltimore
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_541539039235290
-al2fb_facebook_link_time:
-  - 2013-09-13T19:22:05+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1756820693
-categories:
-  - Uncategorized
-slug: "so-youre-moving-to-baltimore"
+date: '2013-09-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note: This post was written by Brian Caffo, occasional Simply Statistics contributor and Director of Graduate Studies in the Department of Biostatistics at Johns Hopkins. This was written primarily for incoming graduate students, but if you're planning on moving to Baltimore anyway, feel free to use it to your advantage!_
 
 Congratulations on picking Hopkins Biostatistics for your graduate studies. Now that you’re either here or coming to to Baltimore, I’m guessing that you’ll need some start-up knowledge for this quirky, fun city. Here’s a guide of to some of my favorite Baltimore places and traditions.

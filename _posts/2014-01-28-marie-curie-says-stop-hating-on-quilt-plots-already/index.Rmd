@@ -1,20 +1,12 @@
 ---
-id: 2573
 title: Marie Curie says stop hating on quilt plots already.
-date: 2014-01-28T08:50:37+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_601024159953444
-al2fb_facebook_link_time:
-  - 2014-01-28T13:50:42+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/01/heatmap-300x300.png
-dsq_thread_id:
-  - 2185923543
-categories:
-  - Uncategorized
-slug: "marie-curie-says-stop-hating-on-quilt-plots-already"
+date: '2014-01-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 > "There are sadistic scientists who hurry to hunt down error instead of establishing the truth." -Marie Curie (http://en.wikiquote.org/wiki/Marie_Curie)
 
 Thanks to Kasper H. for that quote. I think it is a perfect fit for today's culture of academic put down as academic contribution. One perfect example is the explosion of hate against the quilt plot. A quilt plot is a heatmap with several parameters selected in advance; that's it. [This simplification](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0085047) of R's heatmap function appeared in the journal PLoS One. They say (though not up front and not clearly enough for my personal taste) that they know it is just a heatmap.

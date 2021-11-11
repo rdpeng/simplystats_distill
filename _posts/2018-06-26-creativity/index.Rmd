@@ -2,8 +2,11 @@
 title: Creativity in Data Analysis
 author: Roger Peng
 date: '2018-06-26'
-slug: creativity
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I’ve often heard that there is a need for data analysts to be *creative* in their work. But why? Where and how exactly is that creativity exercised? 
 

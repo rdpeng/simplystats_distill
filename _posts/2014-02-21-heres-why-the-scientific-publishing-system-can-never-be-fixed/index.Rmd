@@ -1,21 +1,13 @@
 ---
-id: 2704
 title: |
   Here's why the scientific publishing system can never be "fixed"
-date: 2014-02-21T12:41:55+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_10201652224207000
-al2fb_facebook_link_time:
-  - 2014-02-21T17:42:02+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2299278666
-categories:
-  - Uncategorized
-slug: "heres-why-the-scientific-publishing-system-can-never-be-fixed"
+date: '2014-02-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There's been much discussion recently about how the scientific publishing system is "broken". Just the latest one that I saw was a tweet from Princeton biophysicist Josh Shaevitz:
 
 <blockquote class="twitter-tweet" lang="en">

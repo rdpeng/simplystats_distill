@@ -1,21 +1,12 @@
 ---
-id: 404
 title: Finding good collaborators
-date: 2011-10-20T16:05:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11695813030/finding-good-collaborators
-tumblr_simplystatistics_id:
-  - 11695813030
-dsq_thread_id:
-  - 933693040
-categories:
-  - Uncategorized
-tags:
-  - academia
-  - advice
-slug: "finding-good-collaborators"
+date: '2011-10-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The job of the statistician is almost entirely about collaboration. Sure, there&#8217;s theoretical work that we can do by ourselves, but most of the impact that we have on science comes from our work with scientists in other fields. Collaboration is also what makes the field of statistics so much fun.
 
 So one question I get a lot from people is &#8220;how do you find good collaborations&#8221;? Or, put another way, how do you find good collaborators? It turns out this distinction is more important than it might seem.

@@ -1,22 +1,12 @@
 ---
-id: 4577
 title: A non-comprehensive list of awesome things other people did in 2015
-date: 2015-12-21T11:22:07+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_897928006929723
-al2fb_facebook_link_time:
-  - 2015-12-21T16:22:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4422717013
-categories:
-  - Uncategorized
-slug: "a-non-comprehensive-list-of-awesome-things-other-people-did-in-2015"
+date: '2015-12-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note: This is the third year I'm making a list of awesome things other people did this year. Just like the lists for [2013](http://simplystatistics.org/2013/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-this-year/) and [2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/) I am doing this off the top of my head.   I have avoided talking about stuff I worked on or that people here at Hopkins are doing because this post is supposed to be about other people's awesome stuff. I wrote this post because a blog often feels like a place to complain, but we started Simply Stats as a place to be pumped up about the stuff people were doing with data. This year's list is particularly "off the cuff" so I'd appreciate additions if you have 'em. I have surely missed awesome things people have done._
 
   1. I hear the [Tukey conference](http://sml.princeton.edu/tukey) put on by my former advisor John S. was amazing. Out of it came this really good piece by David Donoho on [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf).

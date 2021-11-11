@@ -1,21 +1,12 @@
 ---
-id: 21
 title: Computing for Data Analysis (Simply Statistics Edition)
-date: 2012-10-29T14:00:26+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/34563838584/computing-for-data-analysis-simply-statistics-edition
-tumblr_simplystatistics_id:
-  - 34563838584
-dsq_thread_id:
-  - 933611894
-categories:
-  - Uncategorized
-tags:
-  - MOOC
-  - R
-slug: "computing-for-data-analysis-simply-statistics-edition"
+date: '2012-10-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 As the entire East Coast gets soaked by Hurricane Sandy, I can&#8217;t help but think that this is the perfect time to&#8230;take a course online! Well, as long as you have electricity, that is. I live in a heavily tree-lined area and so it&#8217;s only a matter of time before the lights cut out on me (I&#8217;d better type quickly!). 
 
 I just finished teaching my course Computing for Data Analysis through Coursera. This was my first experience teaching a course online and definitely my first experience teaching a course to > 50,000 people. There were definitely some bumps along the road, but the students who participated were fantastic at helping me smooth the way. In particular, the interaction on the discussion forums was very helpful. I couldn&#8217;t have done it without the students&#8217; help. So, if you took my course over the past 4 weeks, thanks for participating!

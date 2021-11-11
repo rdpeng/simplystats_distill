@@ -1,20 +1,12 @@
 ---
-id: 1452
 title: What is the Best Way to Analyze Data?
-date: 2013-06-27T16:41:20+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_510682482320946
-al2fb_facebook_link_time:
-  - 2013-06-27T20:41:37+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1442824653
-categories:
-  - Uncategorized
-slug: "what-is-the-best-way-to-analyze-data"
+date: '2013-06-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One topic I've been thinking about recently is extent to which data analysis is an art versus a science. In my thinking about art and science, I rely on Don Knuth's distinction, from his 1974 lecture "Computer Programming as an Art":
 
 > Science is knowledge that we understand so well that we can teach it to a computer; and if we don't fully understand something, it is an art to deal with it. Since the notion of an algorithm or a computer program provides us with an extremely useful test for the depth of our knowledge about any given subject, the process of going from an art to a science means that we learn how to automate something.

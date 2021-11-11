@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 27 - Special Guest Amelia McNamara
-slug: "nssd-episode-27"
-date: 2016-11-30
+author: Roger Peng
+date: '2016-11-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I had the pleasure of sitting down with Amelia McNamara, Visiting Assistant Professor of Statistical and Data Sciences at Smith College, to talk about data science, data journalism, visualization, the problems with R, and adult coloring books.
 

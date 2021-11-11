@@ -1,22 +1,12 @@
 ---
-id: 3904
 title: Navigating Big Data Careers with a Statistics PhD
-date: 2015-02-18T10:12:29+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_770310623024796
-al2fb_facebook_link_time:
-  - 2015-02-18T15:12:37+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3526711062
-categories:
-  - Uncategorized
-slug: "navigating-big-data-careers-with-a-statistics-phd"
+date: '2015-02-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   <em>Editor's note: This is a guest post by <a href="http://www.drsherrirose.com/" target="_blank">Sherri Rose</a>. She is an Assistant Professor of Biostatistics in the Department of Health Care Policy at Harvard Medical School. Her work focuses on nonparametric estimation, causal inference, and machine learning in health settings. Dr. Rose received her BS in statistics from The George Washington University and her PhD in biostatistics from the University of California, Berkeley, where she coauthored a book on <a href="http://drsherrirose.com/targeted-learning-book/" target="_blank">Targeted Learning</a>. She tweets <a href="https://twitter.com/sherrirose" target="_blank">@sherrirose</a>.</em>
 </div>

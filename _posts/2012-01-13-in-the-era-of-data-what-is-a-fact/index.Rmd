@@ -1,25 +1,12 @@
 ---
-id: 322
 title: In the era of data what is a fact?
-date: 2012-01-13T14:00:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15774146480/in-the-era-of-data-what-is-a-fact
-tumblr_simplystatistics_id:
-  - 15774146480
-dsq_thread_id:
-  - 933935273
-categories:
-  - Uncategorized
-tags:
-  - data
-  - fact
-  - New York Times
-  - opinion
-  - statisteracy
-  - statistical literacy
-slug: "in-the-era-of-data-what-is-a-fact"
+date: '2012-01-13'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The Twitter universe is abuzz about <a href="http://publiceditor.blogs.nytimes.com/2012/01/12/should-the-times-be-a-truth-vigilante/?pagewanted=all" target="_blank">this</a> article in the New York Times. Arthur Brisbane, who responds to reader&#8217;s comments, asks 
 
 > <span>I’m looking for reader input on whether and when New York Times news reporters should challenge “facts” that are asserted by newsmakers they write about.</span>

@@ -1,18 +1,12 @@
 ---
-id: 604
 title: A grand experiment in science funding
-date: 2012-11-20T10:33:50+00:00
 author: Jeff Leek
-dsq_thread_id:
-  - 936217203
-categories:
-  - Uncategorized
-tags:
-  - citizen science
-  - Funding
-  - science
-slug: "a-grand-experiment-in-science-funding"
+date: '2012-11-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Among all the young scientists I know, I think [Ethan Perlstein](http://www.perlsteinlab.com/) is one of the most innovative in the way he has adapted to the internet era. His website is incredibly unique among academic websites, he is all over the social media and his latest experiment in [crowd-funding his research](http://www.rockethub.com/projects/11106-crowdsourcing-discovery) is something I'm definitely keeping an eye on.
 
 The basic idea is that he has identified a project (giving meth to <del>yeast</del> mouse brains -see the comment by Ethan below-, I think) and put it up on [Rockethub](http://www.rockethub.com/), which is a crowd funding platform. The basic idea is he is looking for people to donate to his lab to fund the project. I would love it if this project succeeded, so if you have a few extra dollars lying around I'm sure he'd really appreciate it if [you'd donate](http://www.rockethub.com/projects/11106-crowdsourcing-discovery/fuel/reward_selection).

@@ -1,34 +1,12 @@
 ---
-id: 1050
 title: Please save the unsolicited R01s
-date: 2013-02-27T10:21:21+00:00
 author: Steven Salzberg
-al2fb_facebook_excerpt:
-  - |
-    Top-down, large "omics" projects are cutting into the ever-declining funds for basic research funding.  NIH can't fix Congress, but it can do more to save basic research by funding more R01 grants.
-dsq_thread_id:
-  - 1102872845
-al2fb_facebook_link_id:
-  - 136171103105421_467206840001844
-al2fb_facebook_link_time:
-  - 2013-02-27T15:21:26+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/02/number-of-new-r01s.jpg
-categories:
-  - Uncategorized
-tags:
-  - bioinformatics
-  - genomics
-  - grant funding
-  - NHGRI
-  - NIAID
-  - NIH
-  - R01
-  - research funding
-  - sequencing
-  - top-down science
-slug: "please-save-the-unsolicited-r01s"
+date: '2013-02-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _**Editor's note**: With the sequestration deadline hours away, the career of many young US scientists is on the line.  In this guest post, our colleague Steven Salzberg , an avid [_**Editor's note**: With the sequestration deadline hours away, the career of many young US scientists is on the line.  In this guest post, our colleague Steven Salzberg , an avid ](http://www.forbes.com/sites/stevensalzberg/2013/01/14/congress-is-killing-medical-research/) and [its peer review process](http://simplystatistics.org/2013/01/04/does-nih-fund-innovative-work-does-nature-care-about-publishing-accurate-articles/), tells us why now more than ever the NIH should prioritize funding R01s over other project grants ._
 
 First let's get the obvious facts out of the way: the federal budget is a mess, and Congress is completely disfunctional.  When it comes to NIH funding, this is not a good thing.

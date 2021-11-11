@@ -1,16 +1,12 @@
 ---
-title: "How to find the science paper behind a headline when the link is missing"
-author: "Jeff Leek"
-date: '2015-01-15T13:35:42+00:00'
-al2fb_facebook_link_picture: post=http://simplystatistics.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-15-at-1.11.22-PM.png
-categories: Uncategorized
-al2fb_facebook_link_time: '2015-01-15T18:35:48+00:00'
-dsq_thread_id: null
-id: 3785
-pe_theme_meta: O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}
-slug: how-to-find-the-science-paper-behind-a-headline-when-the-link-is-missing
-al2fb_facebook_link_id: 136171103105421_755752611147264
+title: How to find the science paper behind a headline when the link is missing
+author: Jeff Leek
+date: '2015-01-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I just saw a pretty wild statistic on Twitter that less than 60% of university news releases link to the papers they are describing.
 
 &nbsp;

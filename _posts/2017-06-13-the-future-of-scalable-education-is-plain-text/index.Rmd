@@ -2,12 +2,11 @@
 title: The future of education is plain text
 author: Jeff Leek
 date: '2017-06-13'
-slug: the-future-of-education-is-plain-text
-categories:
-  - Education
-tags:
-  - moocs
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I was recently at a National Academy meeting on [Envisioning the Data Science Curriculum](http://sites.nationalacademies.org/CSTB/CurrentProjects/CSTB_175246). It was a fun meeting and one of the questions that came up was what kind of infrastructure do we need to enable shared curricula, compatibility across schools, and not reinventing the wheel. My answer to this question was that we need lecture notes stored in plain text files (like [rmarkdown](http://rmarkdown.rstudio.com/) files) and data stored in [csv files](https://simplystatistics.org/2016/04/20/data-repositories/) with direct links. 
 

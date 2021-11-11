@@ -1,21 +1,12 @@
 ---
-id: 400
 title: Graduate student data analysis inspired by a high-school teacher
-date: 2011-10-22T13:02:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11770724755/graduate-student-data-analysis-inspired-by-a
-tumblr_simplystatistics_id:
-  - 11770724755
-dsq_thread_id:
-  - 933692953
-categories:
-  - Uncategorized
-tags:
-  - education
-  - reproducibility
-slug: "graduate-student-data-analysis-inspired-by-a"
+date: '2011-10-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I love watching TED talks. One of my absolute favorites is the <a href="http://www.ted.com/talks/dan_meyer_math_curriculum_makeover.html" target="_blank">talk</a> by Dan Meyer on how math class needs a makeover. Dan also has one of the more fascinating <a href="http://blog.mrmeyer.com/" target="_blank">blogs</a> I have read. He talks about math education, primarily K-12 education.  His posts on <a href="http://blog.mrmeyer.com/?p=3055" target="_blank">curriculum design</a>, <a href="http://blog.mrmeyer.com/?p=811" target="_blank">assessment </a>, <a href="http://blog.mrmeyer.com/?p=154" target="_blank">work ethic</a>, and <a href="http://blog.mrmeyer.com/?p=133" target="_blank">homework</a> are really, really good. In fact, just go read all his <a href="http://blog.mrmeyer.com/?page_id=2716" target="_blank">author choices</a>. You won&#8217;t regret it. 
 
 The best quote from the talk is:

@@ -1,20 +1,12 @@
 ---
-id: 1953
 title: The Care and Feeding of the Biostatistician
-date: 2013-10-08T10:33:10+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_552027224853138
-al2fb_facebook_link_time:
-  - 2013-10-08T14:33:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1836576470
-categories:
-  - Uncategorized
-slug: "the-care-and-feeding-of-the-biostatistician"
+date: '2013-10-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
   *Editor’s Note: This guest post was written by <a href="http://www.hopkinschildrens.org/elizabeth-matsui-md.aspx">Elizabeth C. Matsui</a>, an Associate Professor in the Division of Pediatric Allergy and Immunology at the Johns Hopkins School of Medicine.*
 

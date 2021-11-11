@@ -1,22 +1,12 @@
 ---
-id: 249
 title: A proposal for a really fast statistics journal
-date: 2012-03-14T13:53:20+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/19289280474/a-proposal-for-a-really-fast-statistics-journal
-tumblr_simplystatistics_id:
-  - 19289280474
-dsq_thread_id:
-  - 939262241
-categories:
-  - Uncategorized
-tags:
-  - journal idea
-  - open science
-  - proposal
-slug: "a-proposal-for-a-really-fast-statistics-journal"
+date: '2012-03-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I know we need a new journal like we need a good poke in the eye. But I got fired up by the recent discussion of open science (by <a href="http://krugman.blogs.nytimes.com/2012/01/17/open-science-and-the-econoblogosphere/" target="_blank">Paul Krugman</a> and others) and the seriously misguided <a href="http://en.wikipedia.org/wiki/Research_Works_Act" target="_blank">Research Works Act</a>- that aimed to make it illegal to deposit published papers funded by the government in Pubmed central or other open access databases.
 
 <div>

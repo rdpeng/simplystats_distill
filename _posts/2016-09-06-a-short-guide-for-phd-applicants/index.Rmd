@@ -1,12 +1,12 @@
 ---
-title: 'A Short Guide for Students Interested in a Statistics PhD Program'
-date: 2016-09-06
+title: A Short Guide for Students Interested in a Statistics PhD Program
 author: Rafael Irizarry
-comments: true
-categories:
-  - Advice
-slug: "a-short-guide-for-phd-applicants"
+date: '2016-09-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 This summer I had several conversations with undergraduate
 students seeking career advice. All were interested in data analysis

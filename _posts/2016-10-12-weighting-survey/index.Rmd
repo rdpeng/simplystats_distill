@@ -1,9 +1,12 @@
 ---
 title: The Dangers of Weighting Up a Sample
 author: Roger Peng
-slug: "weighting-survey"
-date: 2016-10-12
+date: '2016-10-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 There's a [great story](http://www.nytimes.com/2016/10/13/upshot/how-one-19-year-old-illinois-man-is-distorting-national-polling-averages.html) by Nate Cohn over at the New York Times' Upshot
 about the dangers of "weighting up" a sample from a survey. In this

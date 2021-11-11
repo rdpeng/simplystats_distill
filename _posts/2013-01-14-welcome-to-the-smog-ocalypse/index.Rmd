@@ -1,20 +1,12 @@
 ---
-id: 875
 title: Welcome to the Smog-ocalypse
-date: 2013-01-14T16:23:50+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_446614288727766
-al2fb_facebook_link_time:
-  - 2013-01-14T21:23:54+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/01/BeijingFog1-225x300.jpg
-dsq_thread_id:
-  - 1025883338
-categories:
-  - Uncategorized
-slug: "welcome-to-the-smog-ocalypse"
+date: '2013-01-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <img class="size-medium wp-image-876 alignleft" alt="Beijing fog, 2013" src="http://simplystatistics.org/wp-content/uploads/2013/01/BeijingFog1-225x300.jpg" width="225" height="300" srcset="http://simplystatistics.org/wp-content/uploads/2013/01/BeijingFog1-225x300.jpg 225w, http://simplystatistics.org/wp-content/uploads/2013/01/BeijingFog1-768x1024.jpg 768w, http://simplystatistics.org/wp-content/uploads/2013/01/BeijingFog1.jpg 1536w" sizes="(max-width: 225px) 100vw, 225px" />
 
 Recent reports of air pollution levels out of Beijing are [very](http://www.nytimes.com/2013/01/15/world/asia/china-allows-media-to-report-alarming-air-pollution-crisis.html?smid=pl-share) [very](http://bloom.bg/ZTFD9q) disturbing. Levels of fine particulate matter (PM2.5, or PM less than 2.5 microns in diameter) have reached unprecedented levels. So high are the levels that even the [offici](http://www.nytimes.com/2013/01/15/world/asia/china-allows-media-to-report-alarming-air-pollution-crisis.html?ref=global-home&_r=0)[al media are allowed to mention it](http://www.nytimes.com/2013/01/15/world/asia/china-allows-media-to-report-alarming-air-pollution-crisis.html?ref=global-home&_r=0).

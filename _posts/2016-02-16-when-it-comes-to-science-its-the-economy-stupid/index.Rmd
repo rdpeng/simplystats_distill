@@ -1,20 +1,12 @@
 ---
-id: 4662
-title: 'When it comes to science - its the economy stupid.'
-date: 2016-02-16T14:57:14+00:00
+title: When it comes to science - its the economy stupid.
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_925193040869886
-al2fb_facebook_link_time:
-  - 2016-02-16T19:57:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-categories:
-  - Uncategorized
-slug: "when-it-comes-to-science-its-the-economy-stupid"
+date: '2016-02-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I read a lot of articles about what is going wrong with science:
 
   * [The reproducibility/replicability crisis](http://www.economist.com/news/briefing/21588057-scientists-think-science-self-correcting-alarming-degree-it-not-trouble)

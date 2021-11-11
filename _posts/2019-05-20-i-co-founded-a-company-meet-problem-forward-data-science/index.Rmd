@@ -2,10 +2,11 @@
 title: I co-founded a company! Meet Problem Forward Data Science
 author: Jeff Leek
 date: '2019-05-20'
-slug: i-co-founded-a-company-meet-problem-forward-data-science
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I have some exciting news about something I've been working on for the last year or so. I started a company! It's called [Problem Forward](https://www.problemforward.com/) data science.  I'm pumped about this new startup for a lot of reasons.
 

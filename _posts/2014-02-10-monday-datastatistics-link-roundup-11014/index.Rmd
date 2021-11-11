@@ -1,20 +1,12 @@
 ---
-id: 2641
 title: Monday data/statistics link roundup (2/10/14)
-date: 2014-02-10T05:44:14+00:00
 author: Jeff Leek
-al2fb_facebook_error:
-  - 'Add link: Facebook error: An unexpected error has occurred. Please retry your request later.'
-al2fb_facebook_error_time:
-  - 2014-02-10T10:54:56+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2246288296
-categories:
-  - Uncategorized
-slug: "monday-datastatistics-link-roundup-11014"
+date: '2014-02-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I'm going to try Monday's for the links. Let me know what you think.
 
   1. The Guardian is reading our blog. A week after [Rafa posts](http://simplystatistics.org/2014/01/29/not-teaching-computing-and-statistics-in-our-public-schools-will-make-upward-mobility-even-harder/) that everyone should learn to code for career preparedness, [the Guardian gets on the bandwagon](http://www.theguardian.com/technology/2014/feb/07/year-of-code-dan-crow-songkick).

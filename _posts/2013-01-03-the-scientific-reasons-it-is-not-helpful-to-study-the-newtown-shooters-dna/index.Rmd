@@ -1,24 +1,12 @@
 ---
-id: 775
-title: "The scientific reasons it is not helpful to study the Newtown shooter's DNA"
-date: 2013-01-03T10:10:46+00:00
+title: The scientific reasons it is not helpful to study the Newtown shooter's DNA
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_442157589173436
-al2fb_facebook_link_time:
-  - 2013-01-03T15:10:50+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1006252706
-categories:
-  - Uncategorized
-tags:
-  - genomics
-  - inference
-  - popular press
-slug: "the-scientific-reasons-it-is-not-helpful-to-study-the-newtown-shooters-dna"
+date: '2013-01-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The Connecticut Medical Examiner [has asked to sequence](http://www.theatlanticwire.com/technology/2012/12/adam-lanza-dna-test/60371/) and study the DNA of the recent Newtown shooter. I've been seeing this pop up over the last few days on a lot of [popular media sites](http://www.businessinsider.com/plans-to-study-adam-lanzas-dna-splits-scientific-community-2012-12), where they mention some objections scientists (or geneticists) may have to this "scientific" study. But I haven't seen the objections explicitly laid out anywhere. So here are mine.
 
 **Ignoring the fundamentals of the genetics of complex disease:** If the violent behavior of the shooter has any genetic underpinning, it is complex. If you only look at one person's DNA, without a clear behavior definition (violent? mental disorder? etc.?) it is impossible to assess important complications such as [penetrance](http://en.wikipedia.org/wiki/Penetrance), [epistasis](http://en.wikipedia.org/wiki/Epistasis), and [gene-environment interactions](http://en.wikipedia.org/wiki/Gene%E2%80%93environment_interaction), to name a few. These make statistical analysis incredibly complicated even in huge, well-designed studies.

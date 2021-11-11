@@ -1,20 +1,12 @@
 ---
-id: 2396
 title: 'Repost: Prediction: the Lasso vs. just using the top 10 predictors'
-date: 2014-01-04T14:37:24+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_591101840945676
-al2fb_facebook_link_time:
-  - 2014-01-04T19:37:29+00:00
-al2fb_facebook_link_picture:
-  - post=http://biostat.jhsph.edu/~jleek/code/accuracy-plot.png
-dsq_thread_id:
-  - 2092087605
-categories:
-  - Uncategorized
-slug: "repost-prediction-the-lasso-vs-just-using-the-top-10-predictors"
+date: '2014-01-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a previously published post of mine from a couple of years ago (!). I always thought about turning it into a paper. The interesting idea (I think) is how the causal model matters for whether the lasso or the marginal regression approach works better. Also [check it out](https://github.com/ecpolley/SuperLearner/blob/master/R/SL.leekasso.R), the Leekasso is part of the SuperLearner package._
 
 One incredibly popular tool for the analysis of high-dimensional data is the <a href="http://www-stat.stanford.edu/~tibs/lasso.html" target="_blank">lasso</a>. The lasso is commonly used in cases when you have many more predictors than independent samples (the n « p) problem. It is also often used in the context of prediction.

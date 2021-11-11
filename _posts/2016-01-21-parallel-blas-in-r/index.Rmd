@@ -1,22 +1,12 @@
 ---
-id: 4593
 title: Parallel BLAS in R
-date: 2016-01-21T11:53:07+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_912827282106462
-al2fb_facebook_link_time:
-  - 2016-01-21T16:53:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4511122506
-categories:
-  - Uncategorized
-slug: "parallel-blas-in-r"
+date: '2016-01-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I'm working on a new chapter for my R Programming book and the topic is parallel computation. So, I was happy to see this tweet from David Robinson (@drob) yesterday:
 
 <blockquote class="twitter-tweet" lang="en">

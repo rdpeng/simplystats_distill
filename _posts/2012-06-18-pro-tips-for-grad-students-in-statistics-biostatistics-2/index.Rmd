@@ -1,24 +1,12 @@
 ---
-id: 174
 title: Pro Tips for Grad Students in Statistics/Biostatistics (Part 1)
-date: 2012-06-18T16:21:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/25368234643/pro-tips-for-grad-students-in-statistics-biostatistics
-tumblr_simplystatistics_id:
-  - 25368234643
-dsq_thread_id:
-  - 935202359
-categories:
-  - Uncategorized
-tags:
-  - advice
-  - data analysis
-  - pro tips
-  - reproducible research
-  - sensible models
-slug: "pro-tips-for-grad-students-in-statistics-biostatistics-2"
+date: '2012-06-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <div>
   I just finished teaching a Ph.D. level applied statistical methods course here at Hopkins. As part of the course, I gave one &#8220;pro-tip&#8221; a day; something I wish I had learned in graduate school that has helped me in becoming a practicing applied statistician. Here are the first three, more to come soon. 
 </div>

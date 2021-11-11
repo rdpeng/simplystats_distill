@@ -1,24 +1,12 @@
 ---
-id: 1409
 title: Does fraud depend on my philosophy?
-date: 2013-06-24T10:00:30+00:00
 author: Roger Peng
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_509436159112245
-al2fb_facebook_link_time:
-  - 2013-06-24T14:00:38+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1430565076
-categories:
-  - Uncategorized
-slug: "does-fraud-depend-on-my-philosophy"
+date: '2013-06-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Ever since my [last post on replication and fraud](http://simplystatistics.org/2013/05/17/when-does-replication-reveal-fraud/) I've been doing some more thinking about why people consider some things "scientific fraud". (First of all, let me just say that I was a bit surprised by the discussion in the comments for that post. Some people apparently thought I was asking about the actual probability that the study was a fraud. This was not the case. I just wanted people to think about how they would react when confronted with the scenario.)
 
 I often find that when I talk to people about the topic of scientific fraud, especially statisticians, there is a sense that much work that goes on out there is fraudulent, but the precise argument for why is difficult to pin down.

@@ -1,20 +1,12 @@
 ---
-id: 1647
 title: 'Simply Statistics #JSM2013 Picks for Tuesday'
-date: 2013-08-06T07:40:32+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_525972427458618
-al2fb_facebook_link_time:
-  - 2013-08-06T11:40:38+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1576393038
-categories:
-  - Uncategorized
-slug: "simply-statistics-jsm2013-picks-for-tuesday"
+date: '2013-08-06'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It seems like Monday was a big hit at JSM with Nate Silver's talk and all. Rafa estimates that there were about [1 million people there](https://twitter.com/rafalab/status/364480835577073664) (+/- 1 million). Ramnath Vaidyanathan has a nice summary of the [talk](http://storify.com/ramnathv/jsm-2013?utm_campaign=&utm_source=t.co&utm_content=storify-pingback&awesm=sfy.co_hPE1&utm_medium=sfy.co-twitter) and the [Q&A](https://gist.github.com/ramnathv/975b7d5df642c3804fc5) afterwards. Among other things, Silver encouraged people to start a blog and communicate directly with the public. Couldn't agree more! Thanks to all who live-tweeted at #JSM2013. I felt like I was there.
 
 On to Tuesday! Here's where I'd like to go:

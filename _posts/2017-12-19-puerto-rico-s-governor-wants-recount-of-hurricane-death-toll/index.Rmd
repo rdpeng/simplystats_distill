@@ -2,8 +2,11 @@
 title: Puerto Rico's governor wants recount of hurricane death toll
 author: Roger Peng
 date: '2017-12-19'
-slug: puerto-rico-s-governor-wants-recount-of-hurricane-death-toll
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A quick followup to [Rafa's analysis](https://simplystatistics.org/2017/12/03/data-do-not-agree-with-hurricane-official-death-count/) of the death toll from Hurricane Maria, [from Axios](https://www.axios.com/puerto-rico-governor-calls-for-a-recount-of-hurricane-death-toll-2518381352.html):
 

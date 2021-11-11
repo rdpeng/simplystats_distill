@@ -1,22 +1,12 @@
 ---
-id: 4133
 title: The Massive Future of Statistics Education
-date: 2015-07-03T10:17:24+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_827669160622275
-al2fb_facebook_link_time:
-  - 2015-07-03T14:17:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3901445923
-categories:
-  - Uncategorized
-slug: "the-massive-future-of-statistics-education"
+date: '2015-07-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _NOTE: This post was written as a chapter for the not-yet-released Handbook on Statistics Education. _
 
 Data are eating the world, but our collective ability to analyze data is going on a starvation diet.

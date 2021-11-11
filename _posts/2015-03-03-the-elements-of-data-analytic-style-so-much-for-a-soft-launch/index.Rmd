@@ -1,22 +1,12 @@
 ---
-id: 3910
-title: 'The elements of data analytic style - so much for a soft launch'
-date: 2015-03-03T11:22:28+00:00
+title: The elements of data analytic style - so much for a soft launch
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_775972959125229
-al2fb_facebook_link_time:
-  - 2015-03-03T16:22:33+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/03/Screen-Shot-2015-03-02-at-2.14.05-PM-300x202.png
-dsq_thread_id:
-  - 3563939475
-categories:
-  - Uncategorized
-slug: "the-elements-of-data-analytic-style-so-much-for-a-soft-launch"
+date: '2015-03-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: I wrote a book called Elements of Data Analytic Style. Buy it on [Leanpub](https://leanpub.com/datastyle) or [Amazon](http://www.amazon.com/Elements-Data-Analytic-Style-ebook/dp/B00U6D80YY/ref=sr_1_1?ie=UTF8&qid=1425397222&sr=8-1&keywords=elements+of+data+analytic+style)! If you buy it on Leanpub, you get all updates (there are likely to be some) for free and you can pay what you want (including zero) but the author would be appreciative if you'd throw a little scratch his way. _
 
 So uh, I was going to soft launch my new book The Elements of Data Analytic Style yesterday. I figured I'd just quietly email my Coursera courses to let them know I created a new reference. It turns out that that wasn't very quiet. First this happened:

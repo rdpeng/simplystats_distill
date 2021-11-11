@@ -1,24 +1,12 @@
 ---
-id: 354
 title: Citizen science makes statistical literacy critical
-date: 2011-12-03T17:20:13+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13684264380/citizen-science-makes-statistical-literacy-critical
-tumblr_simplystatistics_id:
-  - 13684264380
-dsq_thread_id:
-  - 933775588
-categories:
-  - Uncategorized
-tags:
-  - citizen science
-  - diy
-  - education
-  - statistical literacy
-  - WSJ
-slug: "citizen-science-makes-statistical-literacy-critical"
+date: '2011-12-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 In today&#8217;s Wall Street Journal, Amy Marcus has a <a href="http://online.wsj.com/article/SB10001424052970204621904577014330551132036.html" target="_blank">piece</a> on the <a href="http://en.wikipedia.org/wiki/Citizen_science" target="_blank">Citizen Science</a> movement, focusing on citizen science in health in particular. I am fully in support of this enthusiasm and a big fan of citizen science - if done properly. There have already been some pretty big <a href="http://www.wired.com/wiredscience/2010/08/citizen-scientist-pulsars/" target="_blank">success</a> <a href="http://depts.washington.edu/bakerpg/drupal/system/files/jiang08A.pdf" target="_blank">stories</a>. As more companies like <a href="http://www.fitbit.com/" target="_blank">Fitbit</a> and <a href="https://www.23andme.com/" target="_blank">23andMe</a> spring up, it is really easy to collect data about yourself (<a href="http://myyearofdata.wordpress.com/" target="_blank">right Chris?</a>). At the same time organizations like <a href="http://www.patientslikeme.com/" target="_blank">Patients Like Me</a> make it possible for people with specific diseases or experiences to self-organize. 
 
 But the thing that struck me the most in reading the article is the importance of statistical literacy for citizen scientists, reporters, and anyone reading these articles. For example the article says:

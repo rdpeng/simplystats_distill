@@ -1,22 +1,12 @@
 ---
-id: 656
 title: Sunday data/statistics link roundup (12/2/12)
-date: 2012-12-02T10:18:06+00:00
 author: Jeff Leek
-dsq_thread_id:
-  - 954425923
-categories:
-  - Uncategorized
-tags:
-  - Art
-  - cnn
-  - crowd funding
-  - humor
-  - Kaggle
-  - roger
-  - sunday links
-slug: "sunday-datastatistics-link-roundup-12212"
+date: '2012-12-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
   1. <span style="line-height: 16px;"><a href="http://sloanreview.mit.edu/feature/business-quandary-use-a-competition-to-crowdsource-best-answers/?non_mobile=1">An interview</a> with Anthony Goldbloom, CEO of Kaggle. I'm not sure I'd agree with the characterization that all data scientists are: creative, curious, and competitive and certainly those characteristics aren't unique to data scientists. And I didn't know this: "We have 65,000 data scientists signed up to Kaggle, and just like with golf tournaments, we have them all ranked from 1 to 65,000." </span>
   2. <span style="line-height: 16px;">Check it out, <a href="http://www.r-bloggers.com/images-as-voronoi-tesselations/">art with R</a>! It's actually pretty interesting to see how they use statistical algorithms to generate different artistic styles. <a href="http://www.r-bloggers.com/dominant-color-palettes-with-k-means/">Here</a> are some more. </span>
   3. <span style="line-height: 16px;">Now that Ethan Perlstein's crowdfunding experiment </span><a style="line-height: 16px;" href="http://twitter.com/eperlste/status/273152039922565121">was successful</a><span style="line-height: 16px;">, other people are getting on the bandwagon. If you want to find out what kind of bacteria you have in your gut, for example, you could check out <a href="http://www.indiegogo.com/ubiome">this</a>. </span>

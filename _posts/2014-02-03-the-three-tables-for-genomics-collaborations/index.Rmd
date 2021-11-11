@@ -1,20 +1,12 @@
 ---
-id: 2616
 title: The three tables for genomics collaborations
-date: 2014-02-03T10:12:19+00:00
 author: Rafael Irizarry
-al2fb_facebook_link_id:
-  - 136171103105421_603429626379564
-al2fb_facebook_link_time:
-  - 2014-02-03T15:12:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2214875623
-categories:
-  - Uncategorized
-slug: "the-three-tables-for-genomics-collaborations"
+date: '2014-02-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Collaborations between biologists and statisticians are very common in genomics. For the data analysis to be fruitful, the statistician needs to understand what samples are being analyzed. For the analysis report to make sense to the biologist, it needs to be properly annotated with information such as gene names, genomic location, etc... In a recent post, Jeff laid out [his guide](http://simplystatistics.org/2013/11/14/the-leek-group-guide-to-sharing-data-with-a-statistician-to-speed-collaboration/)<span style="text-decoration: underline;"> </span>for such collaborations, here I describe an approach that has helped me in mine.
 
 In many of my past collaborations, sharing the experiment's key information,  in a way that facilitates data analysis, turned out to be more time consuming than the analysis itself. One reason is that the data producers annotated samples in ways that was imposible to decipher without direct knowledge of the experiment (e.g using lab specific codes in the filenames, or colors in excel files).  In the early days of microarrays, a group of researchers noticed this problem and created a [markup language](http://www.mged.org/Workgroups/MAGE/mage-ml.html) to describe and communicate information about  experiments electronically.

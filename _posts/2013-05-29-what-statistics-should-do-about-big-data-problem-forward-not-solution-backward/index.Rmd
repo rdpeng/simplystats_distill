@@ -1,20 +1,12 @@
 ---
-id: 1360
 title: 'What statistics should do about big data: problem forward not solution backward'
-date: 2013-05-29T17:59:07+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_499715476750980
-al2fb_facebook_link_time:
-  - 2013-05-29T21:59:13+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1336691219
-categories:
-  - Uncategorized
-slug: "what-statistics-should-do-about-big-data-problem-forward-not-solution-backward"
+date: '2013-05-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There has been a lot of discussion among statisticians about big data and what statistics should do to get involved. Recently [Steve M. and Larry W.](http://normaldeviate.wordpress.com/2013/05/28/steve-marron-on-big-data/) took up the same issue on their blog. I have been thinking about this for a while, since I work in genomics, which almost always comes with "big data". It is also one area of big data where statistics and statisticians have played a huge role.
 
 A question that naturally arises is, "why have statisticians been so successful in genomics?" I think a major reason is the phrase I borrowed from [Brian C. ](http://www.bcaffo.com/)(who may have borrowed it from [Ron B](http://www.biostat.ucla.edu/Directory/Brookmeyer).)

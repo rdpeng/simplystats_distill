@@ -1,20 +1,12 @@
 ---
-id: 3377
 title: 'Dear Laboratory Scientists: Welcome to My World'
-date: 2014-10-15T19:42:03+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_712280978827761
-al2fb_facebook_link_time:
-  - 2014-10-15T23:42:08+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3121151745
-categories:
-  - Uncategorized
-slug: "dear-laboratory-scientists-welcome-to-my-world"
+date: '2014-10-15'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Consider the following question: Is there a reproducibility/replication crisis in epidemiology?
 
 I think there are only two possible ways to answer that question:

@@ -1,25 +1,12 @@
 ---
-id: 324
 title: Help us rate health news reporting with citizen-science powered http://www.healthnewsrater.com
-date: 2012-01-11T13:19:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15669033251/healthnewsrater
-tumblr_simplystatistics_id:
-  - 15669033251
-dsq_thread_id:
-  - 977640700
-categories:
-  - Uncategorized
-tags:
-  - crowdsourcing
-  - data
-  - good science
-  - healthnewsrater
-  - science reporting
-  - statistics
-slug: "healthnewsrater"
+date: '2012-01-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 We here at Simply Statistics are big fans of science news reporting. We read newspapers, blogs, and the news sections of scientific journals to keep up with the coolest new research. 
 
 But health science reporting, although exciting, can also be incredibly frustrating to read. Many articles have sensational titles, like <a href="http://www.dailymail.co.uk/health/article-1149207/How-using-Facebook-raise-risk-cancer.html" target="_blank">&#8220;How using Facebook could raise your risk of cancer&#8221;</a>. The articles go on to describe some research and interview a few scientists, then typically make fairly large claims about what the research means. This isn&#8217;t surprising - eye catching headlines are important in this era of short attention spans and information overload. 

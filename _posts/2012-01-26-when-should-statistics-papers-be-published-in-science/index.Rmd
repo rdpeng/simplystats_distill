@@ -1,26 +1,12 @@
 ---
-id: 310
 title: When should statistics papers be published in Science and Nature?
-date: 2012-01-26T14:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/16520282447/when-should-statistics-papers-be-published-in-science
-tumblr_simplystatistics_id:
-  - 16520282447
-dsq_thread_id:
-  - 935004368
-categories:
-  - Uncategorized
-tags:
-  - FDR
-  - groundbreaking versus definitive
-  - MIC
-  - MINE
-  - nature
-  - publishing
-  - science
-slug: "when-should-statistics-papers-be-published-in-science"
+date: '2012-01-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Like many statisticians, I was amped to see a <a href="http://www.sciencemag.org/content/334/6062/1518.abstract" target="_blank">statistics paper</a> appear in Science. Given the impact that statistics has on the scientific community, it is a shame that more statistics papers don&#8217;t appear in the glossy journals like _Science_ or _Nature_. As I pointed out in <a href="http://simplystatistics.tumblr.com/post/15402808730/p-values-and-hypothesis-testing-get-a-bad-rap-but-we" target="_blank">the previous post</a>, if the paper that introduced the p-value was cited every time this statistic was used, the paper would have over 3 million citations!
 
 But a couple of our readers* have pointed to a <a href="http://www-stat.stanford.edu/~tibs/reshef/comment.pdf" target="_blank">response</a> to the MIC paper published by Noah Simon and Rob Tibshirani. Simon and Tibshirani show that the MIC statistic is underpowered compared to another recently published statistic for the same purpose that came out in 2009 in the Annals of Applied Statistics. A nice <a href="http://scientificbsides.wordpress.com/2012/01/23/detecting-novel-associations-in-large-data-sets-let-the-giants-battle-it-out/" target="_blank">summary</a> of the discussion is provided by Florian over at his blog. 

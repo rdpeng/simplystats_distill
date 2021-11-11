@@ -1,20 +1,12 @@
 ---
-id: 3173
 title: The difference between data hype and data hope
-date: 2014-06-23T13:14:12+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_663373570385169
-al2fb_facebook_link_time:
-  - 2014-06-23T17:14:18+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2789238862
-categories:
-  - Uncategorized
-slug: "the-difference-between-data-hype-and-data-hope"
+date: '2014-06-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I was reading one of my favorite stats blogs, [StatsChat](http://www.statschat.org.nz/), where Thomas points [to this article](http://www.theatlantic.com/technology/archive/2014/05/virtual-clinical-trials-doctors-could-use-algorithms-instead-of-people-to-test-new-drugs/371902/?mkt_tok=3RkMMJWWfF9wsRovuaTLZKXonjHpfsX86O8oW6Sg38431UFwdcjKPmjr1YIBSMFrI%2BSLDwEYGJlv6SgFSrnAMaxlzLgNXRk%3D) in the Atlantic and highlights this quote:
 
 > Dassault Systèmes is focusing on that level of granularity now, trying to simulate propagation of cholesterol in human cells and building oncological cell models. "It's data science and modeling," Charlès told me. "Coupling the two creates a new environment in medicine."

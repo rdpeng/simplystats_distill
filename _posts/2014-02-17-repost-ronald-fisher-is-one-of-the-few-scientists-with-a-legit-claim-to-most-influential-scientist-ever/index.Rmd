@@ -1,20 +1,13 @@
 ---
-id: 2709
-title: 'Repost: Ronald Fisher is one of the few scientists with a legit claim to most influential scientist ever'
-date: 2014-02-17T12:03:55+00:00
+title: 'Repost: Ronald Fisher is one of the few scientists with a legit claim to most
+  influential scientist ever'
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_10201628296088812
-al2fb_facebook_link_time:
-  - 2014-02-17T17:04:03+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/02/2013-12-03-16.27.07-300x225.jpg
-dsq_thread_id:
-  - 2279788878
-categories:
-  - Uncategorized
-slug: "repost-ronald-fisher-is-one-of-the-few-scientists-with-a-legit-claim-to-most-influential-scientist-ever"
+date: '2014-02-17'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note: Ronald  This is a repost of the post "[R.A. Fisher is the most influential scientist ever](http://simplystatistics.org/2012/03/07/r-a-fisher-is-the-most-influential-scientist-ever/)" with a picture of my pilgrimage to his  gravesite in Adelaide, Australia. _
 
 You can now see profiles of famous scientists on Google Scholar citations. Here are links to a few of them (via Ben L.). <a href="http://scholar.google.com/citations?user=6kEXBa0AAAAJ&hl=en" target="_blank">Von Neumann</a>, <a href="http://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en" target="_blank">Einstein</a>, <a href="http://scholar.google.com/citations?user=xJaxiEEAAAAJ&hl=en" target="_blank">Newton</a>, <a href="http://scholar.google.com/citations?user=B7vSqZsAAAAJ&hl=en" target="_blank">Feynman</a>

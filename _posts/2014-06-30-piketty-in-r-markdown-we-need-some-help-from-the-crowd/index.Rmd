@@ -1,20 +1,12 @@
 ---
-id: 3188
-title: 'Piketty in R markdown - we need some help from the crowd'
-date: 2014-06-30T09:45:02+00:00
+title: Piketty in R markdown - we need some help from the crowd
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_666403583415501
-al2fb_facebook_link_time:
-  - 2014-06-30T13:45:08+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/06/fig11.png
-dsq_thread_id:
-  - 2806941420
-categories:
-  - Uncategorized
-slug: "piketty-in-r-markdown-we-need-some-help-from-the-crowd"
+date: '2014-06-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Thomas Piketty's book [Capital in the 21st Century](http://www.amazon.com/Capital-Twenty-First-Century-Thomas-Piketty/dp/067443000X) was a surprise best seller and the subject of intense scrutiny. A few weeks ago the [Financial Times claimed](http://www.ft.com/cms/s/2/e1f343ca-e281-11e3-89fd-00144feabdc0.html#axzz33PSo6ySt) that the analysis was riddled with errors, leading to a firestorm of discussion. A few days ago the [London School of economics posted](http://blogs.lse.ac.uk/impactofsocialsciences/2014/05/22/thomas-piketty-data-make-it-open/) a similar call to make the data open and machine readable saying.
 
 > None of this data is explicitly open for everyone to reuse, clearly licenced and in machine-readable formats.

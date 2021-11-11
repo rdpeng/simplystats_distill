@@ -1,22 +1,12 @@
 ---
-id: 4490
 title: 'Not So Standard Deviations: Episode 5 - IRL Roger is Totally With It'
-date: 2015-12-03T09:52:47+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_890576450998212
-al2fb_facebook_link_time:
-  - 2015-12-03T14:52:53+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4372278847
-categories:
-  - Podcast
-slug: "not-so-standard-deviations-episode-5-irl-roger-is-totally-with-it"
+date: '2015-12-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I just posted Episode 5 of Not So Standard Deviations so check your feeds! Sorry for the long delay since the last episode but we got a bit tripped up by the Thanksgiving holiday.
 
 In this episode, Hilary and I open up the mailbag and go through some of the feedback we've gotten on the previous episodes. The rest of the time is spent talking about the importance of reproducibility in data analysis both in academic research and in industry settings.

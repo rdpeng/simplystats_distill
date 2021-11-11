@@ -1,22 +1,12 @@
 ---
-id: 419
 title: An R function to determine if you are a data scientist
-date: 2011-10-10T13:05:54+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/11271228367/datascientist
-tumblr_simplystatistics_id:
-  - 11271228367
-dsq_thread_id:
-  - 934766231
-categories:
-  - Uncategorized
-tags:
-  - diy
-  - fun
-  - R
-slug: "datascientist"
+date: '2011-10-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 &#8220;Data scientist&#8221; is one of the buzzwords in the running for rebranding applied statistics mixed with some computing. David Champagne, over at Revolution Analytics, <a href="http://tdwi.org/articles/2011/01/05/Rise-of-Data-Science.aspx" target="_blank">described</a> the skills for being a data scientist with a Venn Diagram. Just for fun, I wrote a little R function for determining where you land on the data science Venn Diagram. Here is an example of a plot the function makes using the Simply Statistics bloggers as examples. 
 
 ![](http://www.biostat.jhsph.edu/~jleek/datascience2.png)

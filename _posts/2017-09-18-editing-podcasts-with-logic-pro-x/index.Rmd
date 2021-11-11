@@ -1,9 +1,12 @@
 ---
 title: Editing Podcasts with Logic Pro X
 author: Roger Peng
-date: 2017-09-18
-slug: editing-podcasts-logic-pro-x
+date: '2017-09-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 I thought I'd write a brief description of how I edit podcasts using Logic Pro X because when I was first getting into podcasts, I didn't find a lot of useful stuff out there. A lot of it was YouTube videos of advanced editing or very basic stuff. I don't consider myself a sound expert in any way, but I wanted a good workflow that would produce decent quality stuff. When I first started [Not So Standard Deviations](http://nssdeviations.com) with [Hilary Parker](https://twitter.com/hspter/) I actually edited the first few episodes using Final Cut Pro X, a video editor, because that's just what I was familiar with. Eventually, I learned Logic Pro X, which is Apple's digital audio workstation, largely because of [this post by Jason Snell](https://sixcolors.com/post/2015/02/how-i-podcast-editing/).
 

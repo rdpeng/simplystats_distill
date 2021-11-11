@@ -2,10 +2,11 @@
 title: Interview with Abhi Datta
 author: Jeff Leek
 date: '2019-04-01'
-slug: interview-with-abhi-datta
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor’s note: This is the next in our series of interviews with early career statisticians and data scientists. Today we are talking to Abhi Datta about his work in large scale spatial analysis and his interest in soccer! Follow him on Twitter at [@datta_science](https://twitter.com/datta_science). If you have recommendations of an (early career) person in academics or industry you would like to see promoted, reach out to Jeff (@jtleek) on Twitter!_
 

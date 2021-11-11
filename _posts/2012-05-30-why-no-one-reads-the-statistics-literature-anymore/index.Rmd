@@ -1,18 +1,12 @@
 ---
-id: 187
 title: Why "no one reads the statistics literature anymore"
-date: 2012-05-30T12:54:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/24060354412/why-no-one-reads-the-statistics-literature-anymore
-tumblr_simplystatistics_id:
-  - 24060354412
-dsq_thread_id:
-  - 933698879
-categories:
-  - Uncategorized
-slug: "why-no-one-reads-the-statistics-literature-anymore"
+date: '2012-05-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Spurred by Rafa&#8217;s post on <a href="http://simplystatistics.tumblr.com/post/23674712262/how-do-we-evaluate-statisticians-working-in-genomics" target="_blank">evaluating statisticians working in genomics</a>, there&#8217;s an interesting <a href="https://groups.google.com/group/reproducible-research/browse_thread/thread/7a8da11209cec2f2" target="_blank">discussion</a> going on at the Scientists for Reproducible Research group on statistics journals. Evan Johnson kicks it off:
 
 > <span>&#8230;our statistics journals have </span><span>little impact on how genomic data are analyzed. My group rarely looks </span><span>to publish in statistics journals anymore because even IF we can get </span><span>it published quickly, NO ONE will read it, so the only things we send  </span><span>there anymore are things that we don&#8217;t care if anyone ever uses.</span>

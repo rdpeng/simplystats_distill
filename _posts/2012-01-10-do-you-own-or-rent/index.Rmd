@@ -1,23 +1,12 @@
 ---
-id: 326
 title: Do you own or rent?
-date: 2012-01-10T12:00:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15615939541/do-you-own-or-rent
-tumblr_simplystatistics_id:
-  - 15615939541
-dsq_thread_id:
-  - 936991742
-categories:
-  - Uncategorized
-tags:
-  - Apple
-  - chromebook
-  - Computing
-  - statistician
-slug: "do-you-own-or-rent"
+date: '2012-01-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 When it comes to computing, history has gone back and forth between what I would call the &#8220;owner model&#8221; and the &#8220;renter model&#8221;. The question is what&#8217;s the best approach and how do you determine that?
 
 Back in the day when people like John von Neumann were busy inventing the computer to work out H-bomb calculations, there was more or less a renter model in place. Computers were obviously quite expensive and so not everyone could have one. If you wanted to do your calculation, you&#8217;d walk down to the computer room, give them your punch cards with your program written out, and they&#8217;d run it for you. Sometime later you&#8217;d get some print out with the results of your program. 

@@ -1,18 +1,12 @@
 ---
-id: 115
-title: "Why I'm Staying in Academia"
-date: 2012-07-30T13:45:00+00:00
+title: Why I'm Staying in Academia
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/28335633068/why-im-staying-in-academia
-tumblr_simplystatistics_id:
-  - 28335633068
-dsq_thread_id:
-  - 933680737
-categories:
-  - Uncategorized
-slug: "why-im-staying-in-academia"
+date: '2012-07-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Recently, I&#8217;ve seen a few blog posts/articles about professors leaving academia for industry or some other non-academic position. By my last count I think I&#8217;ve seen three from computer science professors leaving academia for Google. The most recent one being from <a href="http://cs.unm.edu/~terran/academic_blog/?p=113" target="_blank">Terran Lane</a> at University of New Mexico. At this point, Google should just start a recruiting office in middle of all the CS departments around the country. I think they&#8217;d get some good people.
 
 Each of the &#8220;fairwell&#8221; blog posts cover many of the same points&#8212;difficulty with having an impact, increasing specialization of academic research, difficult funding climate, increasing workloads&#8212;and, frankly, all of this is true to varying degrees. <a href="http://www.cc.gatech.edu/~beki/Beki.html" target="_blank">Beki Grinter</a> has already written a pretty good <a href="http://beki70.wordpress.com/2012/07/26/on-not-leaving-academia/" target="_blank">response</a>. One topic, massive open online courses (MOOCs), is something on which I&#8217;ll comment at a later date. For now, I thought I would add a few of my thoughts.

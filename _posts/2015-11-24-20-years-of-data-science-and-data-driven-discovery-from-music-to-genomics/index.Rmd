@@ -1,22 +1,12 @@
 ---
-id: 4018
 title: '20 years of Data Science: from Music to Genomics'
-date: 2015-11-24T10:00:56+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3751090935
-al2fb_facebook_link_id:
-  - 136171103105421_886939608028563
-al2fb_facebook_link_time:
-  - 2015-11-24T15:01:09+00:00
-al2fb_facebook_link_picture:
-  - post=http://www.biostat.jhsph.edu/~ririzarr/Demo/img7.gif
-categories:
-  - Uncategorized
-slug: "20-years-of-data-science-and-data-driven-discovery-from-music-to-genomics"
+date: '2015-11-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I finally got around to reading David Donoho's [50 Years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf) paper.  I highly recommend it. The following quote seems to summarize the sentiment that motivated the paper, as well as why it has resonated among academic statisticians:
 
 <div class="page" title="Page 5">

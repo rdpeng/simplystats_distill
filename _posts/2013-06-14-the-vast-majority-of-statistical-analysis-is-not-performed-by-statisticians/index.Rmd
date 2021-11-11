@@ -1,20 +1,12 @@
 ---
-id: 1396
 title: The vast majority of statistical analysis is not performed by statisticians
-date: 2013-06-14T10:31:10+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_505773562811838
-al2fb_facebook_link_time:
-  - 2013-06-14T14:31:17+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1401414782
-categories:
-  - Uncategorized
-slug: "the-vast-majority-of-statistical-analysis-is-not-performed-by-statisticians"
+date: '2013-06-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   Whether you know it or not, everything you do produces data - from the websites you read to the rate at which your heart beats. Until pretty recently, most of the data you produced wasn’t collected, it floated off unmeasured. The only data that were collected were painstakingly gathered by scientists one number at a time in small experiments with a few people. This laborious process meant that data were expensive and time-consuming to collect. Yet many of the most amazing scientific discoveries over the last two centuries were squeezed from just a few data points. But over the last two decades, the unit price of data has dramatically dropped. New technologies touching every aspect of our lives from our money, to our health, to our social interactions have made data collection cheap and easy (see e.g. <a href="http://en.wikipedia.org/wiki/Camp_Williams">Camp Williams</a>).
 </p>

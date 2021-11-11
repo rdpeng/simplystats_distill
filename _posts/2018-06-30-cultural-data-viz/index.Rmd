@@ -1,9 +1,12 @@
 ---
 title: Cultural Differences in Map Data Visualization
 author: Roger Peng
-date: 2018-06-30
-slug: cultural-data-viz
+date: '2018-06-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 Matthew Panzarino had an interesting article in TechCrunch on [Apple’s process for rebuilding their Maps app](https://techcrunch.com/2018/06/29/apple-is-rebuilding-maps-from-the-ground-up/). While most of the article describes the laborious process of data collection, one part jumped out at me, which was the team that Panzarino describes as the "Department of Details." They are responsible for a number of odds and ends regarding how maps are presented, but they are particularly concerned with presenting maps to people around the world.

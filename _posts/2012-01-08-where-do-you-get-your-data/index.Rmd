@@ -1,24 +1,12 @@
 ---
-id: 329
 title: Where do you get your data?
-date: 2012-01-08T16:30:18+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15513091261/where-do-you-get-your-data
-tumblr_simplystatistics_id:
-  - 15513091261
-dsq_thread_id:
-  - 933641916
-categories:
-  - Uncategorized
-tags:
-  - data
-  - data sharing
-  - Rant
-  - reproducibility
-  - reproducible research
-slug: "where-do-you-get-your-data"
+date: '2012-01-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Here&#8217;s a question I get fairly frequently from various types of people: Where do you get your data? This is sometimes followed up quickly with &#8220;Can we use some of your data?&#8221;
 
 My contention is that if someone asks you these questions, start looking for the exits.

@@ -1,22 +1,13 @@
 ---
-id: 15
-title: If we truly want to foster collaboration, we need to rethink the "independence" criteria during promotion
-date: 2012-11-05T15:00:44+00:00
+title: If we truly want to foster collaboration, we need to rethink the "independence"
+  criteria during promotion
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/35057298733/if-we-truly-want-to-foster-collaboration-we-need-to
-  - http://simplystatistics.tumblr.com/post/35057298733/if-we-truly-want-to-foster-collaboration-we-need-to
-  - http://simplystatistics.tumblr.com/post/35057298733/if-we-truly-want-to-foster-collaboration-we-need-to
-tumblr_simplystatistics_id:
-  - 35057298733
-  - 35057298733
-  - 35057298733
-dsq_thread_id:
-  - 934635651
-categories:
-  - Uncategorized
-slug: "if-we-truly-want-to-foster-collaboration-we-need-to"
+date: '2012-11-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p class="MsoNormal">
   <span>When I talk about collaborative work, I don&#8217;t mean spending a day or two helping compute some p-values and end up as middle author in a subject-matter paper. I mean spending months working on a project, </span>from start to finish, with experts from other disciplines to accomplish a goal that can only be accomplished with a diverse team. Many papers in genomics are like this (the ENOCDE  and 1000 genomes papers for example). Investigators A dreams up the biology, B develops the technology, C codes up algorithms to deal with massive data, while D analyzes the data and assess uncertainty, with the results reported in one high profile paper. I illustrate the point with genomics because it&#8217;s what I know best, but examples abound in other specialties as well. 
 </p>

@@ -1,20 +1,12 @@
 ---
-id: 2263
 title: Advice for students on the academic job market
-date: 2013-12-04T10:00:26+00:00
 author: Rafael Irizarry
-dsq_thread_id:
-  - 2023929794
-al2fb_facebook_link_id:
-  - 136171103105421_577462368976290
-al2fb_facebook_link_time:
-  - 2013-12-04T15:00:32+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-categories:
-  - Uncategorized
-slug: "advice-for-stats-students-on-the-academic-job-market-2"
+date: '2013-12-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: This is a slightly modified version of a previous post._
 
 Job hunting season is upon us. Openings are already being posted <a href="http://www.stat.ufl.edu/vlib/Index.html" target="_blank">here</a>, <a href="http://www.stat.washington.edu/jobs/" target="_blank">here</a>, and <a href="http://jobs.amstat.org/" target="_blank">here</a>. So you should have your CV, research statement, and web page ready. I highly recommend having a web page. It doesn’t have to be fancy. <a href="http://jkp-mac1.uchicago.edu/~pickrell/Site/Home.html" target="_blank">Here</a>, <a href="http://www.biostat.jhsph.edu/~khansen/" target="_blank">here</a>, and <a href="http://www.biostat.jhsph.edu/~jleek/research.html" target="_blank">here</a> are some good ones ranging from simple to a bit over the top. Minimum requirements are a list of publications and a link to a CV. If you have written software, link to that as well.

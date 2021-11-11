@@ -1,22 +1,12 @@
 ---
-id: 4563
 title: Instead of research on reproducibility, just do reproducible research
-date: 2015-12-11T12:18:33+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_893568160699041
-al2fb_facebook_link_time:
-  - 2015-12-11T17:18:43+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4395554109
-categories:
-  - Uncategorized
-slug: "instead-of-research-on-reproducibility-just-do-reproducible-research"
+date: '2015-12-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Right now reproducibility, replicability, false positive rates, biases in methods, and other problems with science are the hot topic. As I mentioned in a previous post pointing out a flaw with a scientific study is way easier to do correctly than generating a new scientific study. Some folks have noticed that right now there is a huge market for papers pointing out how science is flawed. The combination of the relative ease of pointing out flaws and the huge payout for writing these papers is helping to generate the hype around the "reproducibility crisis".
 
 I [gave a talk](http://www.slideshare.net/jtleek/evidence-based-data-analysis-45800617) a little while ago at an NAS workshop where I stated that all the tools for reproducible research exist (the caveat being really large analyses - although that is changing as well). To make a paper completely reproducible, open, and available for post publication review you can use the following approach with no new tools/frameworks needed.

@@ -1,20 +1,12 @@
 ---
-id: 1697
 title: 'Treading a New Path for Reproducible Research: Part 1'
-date: 2013-08-21T14:34:04+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_532788890110305
-al2fb_facebook_link_time:
-  - 2013-08-21T18:34:12+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2013/08/rrpipeline-1024x463.png
-dsq_thread_id:
-  - 1624846805
-categories:
-  - Uncategorized
-slug: "treading-a-new-path-for-reproducible-research-part-1"
+date: '2013-08-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p dir="ltr">
   Discussions about reproducibility in scientific research have been on the rise lately, including <a href="http://simplystatistics.org/2013/07/09/repost-preventing-errors-through-reproducibility/">on</a> <a href="http://simplystatistics.org/2013/04/30/reproducibility-and-reciprocity/">this</a> <a href="http://simplystatistics.org/2011/12/02/reproducible-research-in-computational-science/">blog</a>. There are many underlying trends that have produced this increased interest in reproducibility: larger and larger studies being harder to replicate independently, cheaper data collection technologies/methods producing larger datasets, cheaper computing power allowing for more sophisticated analyses (even for small datasets), and the rise of general computational science (for every “X” we now have “Computational X”).
 </p>

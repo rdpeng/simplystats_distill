@@ -1,20 +1,13 @@
 ---
-id: 2433
-title: 'edge.org asks famous scientists what scientific concept to throw out &#038; they say statistics'
-date: 2014-01-16T10:10:00+00:00
+title: edge.org asks famous scientists what scientific concept to throw out &#038;
+  they say statistics
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_596346273754566
-al2fb_facebook_link_time:
-  - 2014-01-16T15:10:05+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 2130288126
-categories:
-  - Uncategorized
-slug: "edge-org-asks-famous-scientists-what-scientific-concept-to-throw-out-they-say-statistics"
+date: '2014-01-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I don't think I've ever been forwarded one link on the web more than I have been forwarded the edge.org post on ["What scientific idea is ready for retirement?"](http://www.edge.org/responses/what-scientific-idea-is-ready-for-retirement). Here are a few of the comments with my responses. I'm going to keep them brief because I think the edge.org crowd pushes people to say outrageous things, so it isn't even clear they mean what they say.
 
 I think the whole conceit of the question is a little silly. If you are going to retire a major scientific idea you better have a replacement or at least a guess at what we could do next. The question totally ignores the key question of: "Suppose we actually did what you suggested, what would we do instead?"

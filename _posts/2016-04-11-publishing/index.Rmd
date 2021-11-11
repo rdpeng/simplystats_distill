@@ -1,10 +1,13 @@
 ---
-title: Junior scientists - you don't have to publish in open access journals to be an open scientist.
+title: Junior scientists - you don't have to publish in open access journals to be
+  an open scientist.
 author: Jeff Leek
-comments: true
-slug: "publishing"
-date: 2016-04-11
+date: '2016-04-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note - This is a chapter from my book [How to be a modern scientist](https://leanpub.com/modernscientist) where I talk about some of the tools and techniques that scientists have available to them now that they didn't before._
 

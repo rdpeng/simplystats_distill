@@ -1,24 +1,12 @@
 ---
-id: 1753
 title: Did Faulty Software Shut Down the NASDAQ?
-date: 2013-08-24T10:00:33+00:00
 author: Roger Peng
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_533840046671856
-al2fb_facebook_link_time:
-  - 2013-08-24T14:00:43+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1638157262
-categories:
-  - Uncategorized
-slug: "did-faulty-software-shut-down-the-nasdaq"
+date: '2013-08-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This past Thursday, the NASDAQ stock exchange shut down for just over 3 hours due to some technical problems. It's still not clear what the problem was because NASDAQ officials are being tight-lipped. NASDAQ has had a bad run of problems recently, the most visible was the botching of the Facebook initial public offering.
 
 Stock trading these days is a highly technical business involving complex algorithms and multiple exchanges spread across the country. Poorly coded software or just plain old bugs have the potential to take down an entire exchange and paralyze parts of the financial system for hours.

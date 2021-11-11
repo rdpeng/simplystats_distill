@@ -1,10 +1,12 @@
 ---
 title: Are Datasets the New Server Rooms?
 author: Roger Peng
-comments: false
-slug: "datasets-new-server-rooms"
-date: 2016-10-26
+date: '2016-10-26'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Josh Nussbaum has an [interesting post](https://medium.com/@josh_nussbaum/data-sets-are-the-new-server-rooms-40fdb5aed6b0?_hsenc=p2ANqtz-8IHAReMPP2JjyYs6TqyMYCnjUapQdLQFEaQOjNX9BfUhZV2nzXWwy2NHJHrCs-VN67GxT4djKCUWq8tkhTyiQkb965bg&_hsmi=36470868#.wz8f23tak) over at Medium about whether massive datasets are the new server rooms of tech business. 
 

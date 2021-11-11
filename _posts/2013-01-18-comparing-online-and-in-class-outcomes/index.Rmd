@@ -1,20 +1,12 @@
 ---
-id: 913
 title: Comparing online and in-class outcomes
-date: 2013-01-18T11:31:44+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_448154925240369
-al2fb_facebook_link_time:
-  - 2013-01-18T16:31:48+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1033221837
-categories:
-  - Uncategorized
-slug: "comparing-online-and-in-class-outcomes"
+date: '2013-01-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 My colleague John McGready has just [published a study](http://www.sciencedirect.com/science/article/pii/S009174351200597X) he conducted comparing the outcomes of students in the online and in-class versions of his _Statistical Reasoning in Public Health_ class that he teaches here in the fall. In this class the online and in-class portions are taught concurrently, so it's basically one big class where some people are not in the building. Everything is the same for both groups--quizzes, tests, homework, instructor, lecture notes. From the article:
 
 > <p id="p0015">

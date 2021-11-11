@@ -1,20 +1,12 @@
 ---
-id: 2172
 title: Out with Big Data, in with Hyperdata
-date: 2013-11-11T09:53:55+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_568260009896526
-al2fb_facebook_link_time:
-  - 2013-11-11T14:54:00+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1956306493
-categories:
-  - Uncategorized
-slug: "out-with-big-data-in-with-hyperdata"
+date: '2013-11-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Big data is so [last year](http://www.nytimes.com/2013/11/11/technology/gathering-more-data-faster-to-produce-more-up-to-date-information.html).
 
 > <p itemprop="articleBody">

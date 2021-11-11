@@ -1,20 +1,12 @@
 ---
-id: 2551
 title: Oh no, the Leekasso....
-date: 2014-03-12T09:38:31+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_10201773819846815
-al2fb_facebook_link_time:
-  - 2014-03-12T13:38:39+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/01/LeekassoLasso-300x300.png
-dsq_thread_id:
-  - 2414114796
-categories:
-  - Uncategorized
-slug: "oh-no-the-leekasso"
+date: '2014-03-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 An astute reader (Niels Hansen, who is visiting our department today) caught a bug in [my code](https://github.com/jtleek/leekasso) on Github for the Leekasso. I had:
 
 _lm1 = lm(y ~ leekX)_

@@ -1,22 +1,12 @@
 ---
-id: 4151
 title: 'stringsAsFactors: An unauthorized biography'
-date: 2015-07-24T11:04:20+00:00
 author: Roger Peng
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_836227039766487
-al2fb_facebook_link_time:
-  - 2015-07-24T15:04:28+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3966706260
-categories:
-  - Uncategorized
-slug: "stringsasfactors-an-unauthorized-biography"
+date: '2015-07-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Recently, I was listening in on the conversation of some colleagues who were discussing a bug in their R code. The bug was ultimately traced back to the well-known phenomenon that functions like 'read.table()' and 'read.csv()' in R convert columns that are detected to be character/strings to be factor variables. This lead to the spontaneous outcry from one colleague of
 
 > Why does stringsAsFactors not default to FALSE????

@@ -1,12 +1,12 @@
 ---
-title: 'Interview With a Data Sucker'
-date: 2016-09-07
+title: Interview With a Data Sucker
 author: Rafael Irizarry
-comments: true
-categories:
-  - Open Science
-slug: "interview-with-a-data-sucker"
+date: '2016-09-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 A few months ago Jill Sederstrom from ASH Clinical News interviewed
 me for [this article](http://ashclinicalnews.org/attack-of-the-data-suckers/) on the data sharing editorial published by the The New England Journal of Medicine (NEJM) and the debate it generated.

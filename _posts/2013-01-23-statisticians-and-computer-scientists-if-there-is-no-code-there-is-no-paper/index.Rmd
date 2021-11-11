@@ -1,24 +1,12 @@
 ---
-id: 927
-title: 'Statisticians and computer scientists - if there is no code, there is no paper'
-date: 2013-01-23T11:25:05+00:00
+title: Statisticians and computer scientists - if there is no code, there is no paper
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_450279158361279
-al2fb_facebook_link_time:
-  - 2013-01-23T16:25:08+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1042601604
-categories:
-  - Uncategorized
-tags:
-  - policy
-  - R
-  - software
-slug: "statisticians-and-computer-scientists-if-there-is-no-code-there-is-no-paper"
+date: '2013-01-23'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I think it has been beat to death that the incentives in academia lean heavily toward producing papers and less toward producing/maintaining software. There are people that are way, way more knowledgeable than me about building and maintaining software. For example, Titus Brown hit a lot of the key issues in his [interview](http://simplystatistics.org/2012/08/17/interview-with-c-titus-brown-computational-biologist/). The open source community is also filled with advocates and researchers who know way more about this than I do.
 
 This post is more about my views on changing the perspective of code/software in the data analysis community. I have been frustrated often with statisticians and computer scientists who write papers where they develop new methods and seem to demonstrate that those methods blow away all their competitors. But then no software is available to actually test and see if that is true. Even worse, sometimes I just want to use their method to solve a problem in our pipeline, but I have to code it from scratch!

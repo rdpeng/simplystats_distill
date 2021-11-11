@@ -2,8 +2,11 @@
 title: Trustworthy Data Analysis
 author: Roger Peng
 date: '2018-06-04'
-slug: trustworthy-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 The success of a data analysis depends critically on the audience. But why? A lot has to do with whether the audience *trusts* the analysis as well as the person presenting the analysis. Almost al presentations are incomplete because for any analysis of reasonable size, some details must be omitted for the sake of clarity. A good presentation will have a structured narrative that will guide the presenter in choosing what should be included and what should be omitted. However, audiences will vary in their acceptance of that narrative and will often want to know if other details exist. 
 

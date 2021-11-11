@@ -1,22 +1,12 @@
 ---
-id: 3526
 title: Sunday data/statistics link roundup (11/2/14)
-date: 2014-11-02T19:16:22+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_720029154719610
-al2fb_facebook_link_time:
-  - 2014-11-03T00:16:30+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3185034111
-categories:
-  - Uncategorized
-slug: "sunday-datastatistics-link-roundup-11214"
+date: '2014-11-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Better late than never! If you have something cool to share, please continue to email it to me with subject line "Sunday links".
 
   1. A [DrivenData](http://www.drivendata.org/) is a Kaggle-like site but for social good. I like the principle of using data for societal benefit, since there are so many ways it seems to be used for nefarious purposes (via Rafa).

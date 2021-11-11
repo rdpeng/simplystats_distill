@@ -1,20 +1,12 @@
 ---
-id: 1893
 title: 'How I view an academic talk: like a sports game'
-date: 2013-09-24T10:32:55+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_546174152105112
-al2fb_facebook_link_time:
-  - 2013-09-24T14:33:00+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1792760422
-categories:
-  - Uncategorized
-slug: "how-i-view-an-academic-talk-like-a-sports-game"
+date: '2013-09-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I know this is a little random/non-statisticsy but I have been thinking about it a lot lately. Over the last couple of weeks I have been giving a bunch of talks and guest lectures here locally around the Baltimore/DC area. Each one of them was to a slightly <a style="font-size: 16px;" href="http://www.meetup.com/Data-Science-MD/events/135629022/">different</a> <a style="font-size: 16px;" href="http://www.cbcb.umd.edu/~langmead/teaching/f2013_439/syllabus.pdf">audience.</a>
 
 As I was preparing/giving all of these talks I realized I have a few habits that I have developed in the way I view the talks and in the way that I give them. I 100% agree with Hilary M. that a talk [should entertain](http://www.hilarymason.com/speaking/speaking-entertain-dont-teach/) more than it should teach. I also try to give talks that [I would like to see myself](http://simplystatistics.org/2012/03/05/characteristics-of-my-favorite-statistics-talks/).

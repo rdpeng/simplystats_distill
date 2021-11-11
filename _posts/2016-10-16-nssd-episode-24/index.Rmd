@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 24 - 50 Minutes of Blathering
-slug: "nssd-episode-24"
-date: 2016-10-16
+author: Roger Peng
+date: '2016-10-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Another IRL episode! Hilary and I met at a Jimmy John's to talk data
 science, like you do. Topics covered include RStudio Conf, polling,

@@ -1,22 +1,12 @@
 ---
-id: 4426
 title: So you are getting crushed on the internet? The new normal for academics.
-date: 2015-11-16T09:49:04+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_883938794995311
-al2fb_facebook_link_time:
-  - 2015-11-16T14:49:16+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 4323746018
-categories:
-  - Uncategorized
-slug: "so-you-are-getting-crushed-on-the-internet-the-new-normal-for-academics"
+date: '2015-11-16'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Roger and I were just talking about all the discussion around the [Case and Deaton paper](http://www.pnas.org/content/early/2015/10/29/1518393112.full.pdf) on death rates for middle class people. Andrew Gelman [discussed it](http://www.slate.com/articles/health_and_science/science/2015/11/death_rates_for_white_middle_aged_americans_are_not_increasing.html) among many others. They noticed a potential bias in the analysis and did some re-analysis. Just yesterday [Noah Smith](http://noahpinionblog.blogspot.com/2015/11/gelman-vs-case-deaton-academics-vs.html) wrote a piece about academics versus blogs and how many academics are taken by surprise when they see their paper being discussed so rapidly on the internet. Much of the debate comes down to the speed, tone, and ferocity of internet discussion of academic work - along with the fact that sometimes it isn't fully fleshed out.
 
 I have been seeing this play out not just in the case of this specific paper, but many times that folks have been confronted with blogs or the quick publication process of [f1000Research](http://f1000research.com/). I think it is pretty scary for folks who aren't used to "internet speed" to see this play out and I thought it would be helpful to make a few points.

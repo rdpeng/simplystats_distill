@@ -1,22 +1,12 @@
 ---
-id: 365
-title: 'Apple this is ridiculous - you gotta upgrade to upgrade!?'
-date: 2011-11-27T19:34:11+00:00
+title: Apple this is ridiculous - you gotta upgrade to upgrade!?
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13412260027/apple-this-is-ridiculous-you-gotta-upgrade-to
-tumblr_simplystatistics_id:
-  - 13412260027
-dsq_thread_id:
-  - 945631199
-categories:
-  - Uncategorized
-tags:
-  - Apple
-  - Computing
-  - Mac exhaustion
-slug: "apple-this-is-ridiculous-you-gotta-upgrade-to"
+date: '2011-11-27'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 So along with a few folks here around Hopkins we have been kicking around the idea of developing an app for the iPhone/Android. I&#8217;ll leave the details out for now (other than to say stay tuned!).
 
 But to start developing an app for the iPhone, you need a version of <a href="http://developer.apple.com/xcode/" target="_blank">Xcode</a>, Apple&#8217;s development environment. The latest version of Xcode is version 4, which can only be installed with the latest version of Mac OS X Lion (10.7, I think) and above. So I dutifully went off to download Lion. Except, whoops! You can only download Lion from the Mac App store.

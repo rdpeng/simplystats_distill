@@ -1,24 +1,12 @@
 ---
-id: 243
 title: 'Laws of Nature and the Law of Patents: Supreme Court Rejects Patents for Correlations'
-date: 2012-03-20T22:40:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/19646774024/laws-of-nature-and-the-law-of-patents-supreme-court
-tumblr_simplystatistics_id:
-  - 19646774024
-dsq_thread_id:
-  - 934071639
-categories:
-  - Uncategorized
-tags:
-  - Guest Post
-  - Mayo
-  - Patent
-  - Reeves
-  - supreme court
-slug: "laws-of-nature-and-the-law-of-patents-supreme-court"
+date: '2012-03-20'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 <p class="MsoNormal">
   This is a guest post by Reeves Anderson, an <a href="http://www.arnoldporter.com/professionals.cfm?action=view&id=5146" target="_blank">associate</a> at Arnold and Porter LLP. <em>Reeves Anderson is a member of the Appellate and Supreme Court practice group at Arnold & Porter LLP in Washington, D.C.  The views expressed herein are those of the author alone and not of Arnold & Porter LLP or any of the firm’s clients. Stay tuned for follow-up posts by the Simply Statistics crowd on the implications of this ruling for statistics in general and personalized medicine in particular. </em>
 </p>

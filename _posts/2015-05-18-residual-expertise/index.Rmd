@@ -1,22 +1,12 @@
 ---
-id: 4024
-title: 'Residual expertise - or why scientists are amateurs at most of science'
-date: 2015-05-18T10:21:18+00:00
+title: Residual expertise - or why scientists are amateurs at most of science
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_807942999261558
-al2fb_facebook_link_time:
-  - 2015-05-18T14:21:25+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3774043501
-categories:
-  - Uncategorized
-slug: "residual-expertise"
+date: '2015-05-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: I have been unsuccessfully attempting to finish a book I started 3 years ago about how and why everyone should get pumped about reading and understanding scientific papers. I've adapted part of one of the chapters into this blogpost. It is pretty raw but hopefully gets the idea across. _
 
 An episode of_ The Daily Show with Jon Stewart_ featured physicist Lisa Randall, an incredible physicist and noted scientific communicator, as the invited guest.

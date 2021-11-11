@@ -1,9 +1,12 @@
 ---
-author: Roger Peng
 title: Not So Standard Deviations Episode 25 - How Exactly Do You Pronounce SQL?
-slug: "nssd-episode-25"
-date: 2016-10-28
+author: Roger Peng
+date: '2016-10-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and I go through the overflowing mailbag to respond to listener questions! Topics include causal inference in trend modeling, regression model selection, using SQL, and data science certification.
 

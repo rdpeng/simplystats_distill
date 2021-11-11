@@ -1,22 +1,12 @@
 ---
-id: 333
 title: 'Why all #academics should have professional @twitter accounts'
-date: 2012-01-05T16:24:14+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/15348632030/why-all-academics-should-have-professional-twitter
-tumblr_simplystatistics_id:
-  - 15348632030
-dsq_thread_id:
-  - 936992333
-categories:
-  - Uncategorized
-tags:
-  - academia
-  - education
-  - Twitter
-slug: "why-all-academics-should-have-professional-twitter"
+date: '2012-01-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I started my professional Twitter account <a href="http://twitter.com/#!/leekgroup" target="_blank">@leekgroup</a> about a year and half ago at the suggestion of a colleague of mine, John Storey (<a href="https://twitter.com/#!/storeylab" target="_blank">@storeylab</a>). I started using the account to post updates on papers/software my group was publishing. Basically, everything I used to report on my webpage as &#8220;News&#8221;. 
 
 I started to give talks where the title slide included my Twitter name, rather than my webpage. It frequently drew the biggest laugh in the talk, and I would get comments like, &#8220;Do you really think people care what you are thinking every moment of every day?&#8221; That is what some people use Twitter for, and no I&#8217;m not really interested in making those kind of updates. 

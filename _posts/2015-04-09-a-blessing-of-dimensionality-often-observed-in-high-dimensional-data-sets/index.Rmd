@@ -1,22 +1,12 @@
 ---
-id: 3967
 title: A blessing of dimensionality often observed in high-dimensional data sets
-date: 2015-04-09T15:19:13+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_792919457430579
-al2fb_facebook_link_time:
-  - 2015-04-09T19:19:20+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3668656950
-categories:
-  - Uncategorized
-slug: "a-blessing-of-dimensionality-often-observed-in-high-dimensional-data-sets"
+date: '2015-04-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [](http://www.jstatsoft.org/v59/i10/paper) have one observation per row and one variable per column.  Using this definition, big data sets can be either:
 
   1. **Wide** - a wide data set has a large number of measurements per observation, but fewer observations. This type of data set is typical in neuroimaging, genomics, and other biomedical applications.

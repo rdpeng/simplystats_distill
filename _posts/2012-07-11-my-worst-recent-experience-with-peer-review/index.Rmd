@@ -1,22 +1,12 @@
 ---
-id: 153
 title: My worst (recent) experience with peer review
-date: 2012-07-11T14:10:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/26977029850/my-worst-recent-experience-with-peer-review
-tumblr_simplystatistics_id:
-  - 26977029850
-dsq_thread_id:
-  - 934601527
-categories:
-  - Uncategorized
-tags:
-  - peer review
-  - Rant
-  - validation
-slug: "my-worst-recent-experience-with-peer-review"
+date: '2012-07-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 My colleagues and I just published a paper <a href="http://www.biomedcentral.com/1471-2105/13/150/abstract" target="_blank">on validation of genomic results</a> in BMC Bioinformatics. It is <a href="http://www.biomedcentral.com/bmcbioinformatics/mostviewed" target="_blank">&#8220;highly accessed&#8221;</a> and we are really happy with how it turned out. 
 
 But it was brutal getting it published. Here is the line-up of places I sent the paper. 

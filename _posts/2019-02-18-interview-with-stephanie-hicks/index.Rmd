@@ -2,10 +2,11 @@
 title: Interview with Stephanie Hicks
 author: ~
 date: '2019-02-18'
-slug: interview-with-stephanie-hicks
-categories: []
-tags: []
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 _Editor's note: For a while we ran an interview series for statisticians and data scientists, but things have gotten a little hectic around here so we've dropped the ball! But we are re-introducing the series, starting with Stephanie Hicks. If you have recommendations of a (junior) person in academics or industry you would like to see promoted, reach out to Jeff (@jtleek) on Twitter!_
 

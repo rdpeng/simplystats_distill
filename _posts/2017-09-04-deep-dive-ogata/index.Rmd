@@ -2,8 +2,11 @@
 title: Deep Dive - Y. Ogata's Residual Analysis for Point Processes
 author: Roger Peng
 date: '2017-09-04'
-slug: deep-dive-ogata
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 For a long time now---actually ever since we started the blog---I've wanted to do a series of deep dives into specific papers that I thought were great. Clearly, it's taken a bit longer than I expected, but I figure better late than never. Actually, that's become a bit of a [theme for my work these days](https://twitter.com/rdpeng/status/900699027108282368)! 
 

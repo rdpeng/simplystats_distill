@@ -1,26 +1,13 @@
 ---
-id: 3769
-title: 'Statistics and R for the Life Sciences: New HarvardX course starts January 19'
-date: 2015-01-12T10:30:08+00:00
+title: 'Statistics and R for the Life Sciences: New HarvardX course starts January
+  19'
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 3412257979
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_754565694599289
-al2fb_facebook_link_time:
-  - 2015-01-12T15:30:13+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/01/edx_screenshot_v2-1024x603.png
-categories:
-  - Uncategorized
-slug: "statistics-and-r-for-the-life-sciences-new-harvardx-course-starts-january-19"
+date: '2015-01-12'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 The first course of our Biomedical Data Science online curriculum
   
 starts next week. You can sign up [here](https://www.edx.org/course/statistics-r-life-sciences-harvardx-ph525-1x). Instead of relying on

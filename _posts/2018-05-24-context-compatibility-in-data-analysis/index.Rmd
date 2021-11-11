@@ -2,8 +2,11 @@
 title: Context Compatibility in Data Analysis
 author: Roger Peng
 date: '2018-05-24'
-slug: context-compatibility-in-data-analysis
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 All data arise within a particular context and often as a result of a specific question being asked. That is all well and good until we attempt to use that same data to answer a different question within a different *context*. When you match an existing dataset with a new question, you have to ask if the original context in which the data were collected is compatible with the new question and the new context. If there is *context compatibility*, then it is often reasonable to move forward. If not, then you either have to stop or come up with some statistical principle or assumption that makes the two contexts compatible. Good data analysts will often do this in their heads quickly and may not even realize they are doing it. However, I think explicitly recognizing this task is important for making sure that data analyses can provide clear answers and useful conclusions. 
 

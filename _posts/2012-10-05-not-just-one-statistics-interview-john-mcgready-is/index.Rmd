@@ -1,23 +1,12 @@
 ---
-id: 41
 title: Not just one statistics interview...John McGready is the Jon Stewart of statistics
-date: 2012-10-05T14:20:54+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/32938228102/not-just-one-statistics-interview-john-mcgready-is
-tumblr_simplystatistics_id:
-  - 32938228102
-dsq_thread_id:
-  - 938247016
-categories:
-  - Uncategorized
-tags:
-  - biostatistics
-  - interview
-  - mcgready
-  - youtube
-slug: "not-just-one-statistics-interview-john-mcgready-is"
+date: '2012-10-05'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor&#8217;s Note: We usually reserve Friday&#8217;s for posting <a href="http://simplystatistics.org/interviews" target="_blank">Simply Statistics Interviews</a>. This week, we have a special guest post by <a href="http://www.biostat.jhsph.edu/~jmcgread/" target="_blank">John McGready</a>, a colleague of ours who has been doing interviews with many of us in the department and has some cool ideas about connecting students in their first statistics class with cutting edge researchers wrestling with many of the same concepts applied to modern problems. I&#8217;ll let him explain&#8230;_
 
 <span>I teach a two quarter course in introductory biostatistics to master&#8217;s students in public health at Johns Hopkins.  The majority of the class is composed of MPH students, but there are also students doing professional master&#8217;s degrees in environmental health, molecular biology, health policy and mental health. Despite the short length of the course, it covers the &#8220;greatest hits&#8221; of biostatistics, encompassing everything from exploratory data analysis up through and including multivariable proportional hazards regression.  The course focus is more conceptual and less mathematical/computing centric than the other two introductory sequences taught at Hopkins: as such it has earned the unfortunate nickname &#8220;baby biostatistics&#8221; from some at the School.  This, in my opinion, is an unfortunate misnomer: statistical reasoning is often the most difficult part of learning statistics.  We spend a lot of time focusing on the current literature, and making sense or critiquing research by considering not only the statistical methods employed and the numerical findings, but also the study design and the logic of the substantive conclusions made by the study authors.</span>

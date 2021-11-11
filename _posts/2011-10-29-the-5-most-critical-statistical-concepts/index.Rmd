@@ -1,23 +1,12 @@
 ---
-id: 395
 title: The 5 Most Critical Statistical Concepts
-date: 2011-10-29T16:05:05+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12076163379/the-5-most-critical-statistical-concepts
-tumblr_simplystatistics_id:
-  - 12076163379
-dsq_thread_id:
-  - 933692797
-categories:
-  - Uncategorized
-tags:
-  - Critical Skills
-  - education
-  - List
-  - proposal
-slug: "the-5-most-critical-statistical-concepts"
+date: '2011-10-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 It seems like everywhere we look, data is being generated - from politics, to biology, to publishing, to social networks. There are also diverse new computational tools, like GPGPU and cloud computing, that expand the statistical toolbox. Statistical theory is more advanced than its ever been, with exciting work in a range of areas. 
 
 With all the excitement going on around statistics, there is also increasing diversity. It is increasingly hard to define &#8220;statistician&#8221; since the definition ranges from <a href="http://www.stat.washington.edu/jaw/" target="_blank">very mathematical</a> to <a href="http://en.wikipedia.org/wiki/Nate_Silver" target="_blank">very applied</a>. An obvious question is: what are the most critical skills needed by statisticians? 

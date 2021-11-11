@@ -1,20 +1,12 @@
 ---
-id: 3230
 title: Interview with COPSS Award winner Martin Wainwright
-date: 2014-08-18T10:00:15+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_687117658010760
-al2fb_facebook_link_time:
-  - 2014-08-18T14:00:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2014/08/wainwright.jpg
-dsq_thread_id:
-  - 2937454447
-categories:
-  - Uncategorized
-slug: "interview-with-copss-award-winner-martin-wainright"
+date: '2014-08-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's note: [Martin Wainwright](http://www.cs.berkeley.edu/~wainwrig/) is the winner of the 2014 COPSS Award. This award is the most prestigious award in statistics, sometimes refereed to as the [Nobel Prize in Statistics](http://en.wikipedia.org/wiki/COPSS_Presidents'_Award). Martin received the award for: "<span style="color: #222222;"> For fundamental and groundbreaking contributions to high-dimensional statistics, graphical modeling, machine learning, optimization and algorithms, covering deep and elegant mathematical analysis as well as new methodology with wide-ranging implications for numerous applications." He kindly agreed to be interviewed by Simply Statistics. </span>_
 
 [<img class="alignnone wp-image-3232" src="http://simplystatistics.org/wp-content/uploads/2014/08/wainwright.jpg" alt="wainwright" width="250" height="333" srcset="http://simplystatistics.org/wp-content/uploads/2014/08/wainwright-225x300.jpg 225w, http://simplystatistics.org/wp-content/uploads/2014/08/wainwright-768x1024.jpg 768w, http://simplystatistics.org/wp-content/uploads/2014/08/wainwright.jpg 3000w" sizes="(max-width: 250px) 100vw, 250px" />](http://simplystatistics.org/wp-content/uploads/2014/08/wainwright.jpg)

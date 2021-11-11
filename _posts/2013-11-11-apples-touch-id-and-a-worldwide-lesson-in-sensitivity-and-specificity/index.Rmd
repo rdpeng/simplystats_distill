@@ -1,20 +1,12 @@
 ---
-id: 2171
-title: "Apple's Touch ID and a worldwide lesson in sensitivity and specificity"
-date: 2013-11-11T14:06:57+00:00
+title: Apple's Touch ID and a worldwide lesson in sensitivity and specificity
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_568346276554566
-al2fb_facebook_link_time:
-  - 2013-11-11T19:07:01+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1956980697
-categories:
-  - Uncategorized
-slug: "apples-touch-id-and-a-worldwide-lesson-in-sensitivity-and-specificity"
+date: '2013-11-11'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I've been playing with my new iPhone 5s for the last few weeks, and first let me just say that it's an awesome phone. Don't listen to whatever Jeff says. It's probably worth it just for the camera, but I've been particularly interested in the behavior of Apple's fingerprint sensor (a.k.a. Touch ID). Before the phone came out, there were persistent rumors of a fingerprint sensor from now-defunct AuthenTec, and I wondered how the sensor would work given that it was unlikely to be perfect.
 
 Apple reportedly sold 9 million iPhone 5c and 5s models over the opening weekend alone. Of those, about 7 million were estimated to be the 5s model which includes the fingerprint sensor (the 5c does not include it). So now millions of people have been using this thing and I'm getting the sense that many people are experiencing the same behavior I've observed over the last few weeks.

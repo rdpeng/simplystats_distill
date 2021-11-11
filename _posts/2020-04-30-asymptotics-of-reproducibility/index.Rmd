@@ -2,8 +2,11 @@
 title: Asymptotics of Reproducibility
 author: Roger Peng
 date: '2020-04-30'
-slug: asymptotics-of-reproducibility
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Every once in a while, I see a tweet or post that asks whether one should use tool X or software Y in order to “make their data analysis reproducible”. I think this is a reasonable question because, in part, there are so many good tools out there! This is undeniably a good thing and quite a contrast to just 10 years ago when there were comparatively few choices. 
 

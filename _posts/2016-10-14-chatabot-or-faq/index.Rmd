@@ -1,10 +1,12 @@
 ---
-title: Should I make a chatbot or a better FAQ? 
+title: Should I make a chatbot or a better FAQ?
 author: Jeff Leek
-comments: true
-slug: "chatabot-or-faq"
-date: 2016-10-14
+date: '2016-10-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 
 Roger pointed me to this [interesting article](https://www.theinformation.com/behind-facebooks-messenger-missteps) (paywalled, sorry!) about Facebook's chatbot service. I think the article made a couple of interesting points. The first thing I thought was interesting was their explicit acknowledgement of the process I outlined in a previous post for building an AI startup - (1) convince (or in this case pay) some humans to be your training set, and (2) collect the data on the humans and then use it to build your AI. 

@@ -1,22 +1,12 @@
 ---
-id: 367
 title: Data Scientist vs. Statistician
-date: 2011-11-22T12:41:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/13155804487/data-scientist-vs-statistician
-tumblr_simplystatistics_id:
-  - 13155804487
-dsq_thread_id:
-  - 933699303
-categories:
-  - Uncategorized
-tags:
-  - Computing
-  - data science
-  - statistics
-slug: "data-scientist-vs-statistician"
+date: '2011-11-22'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 There&#8217;s in interesting discussion over at reddit on <a href="http://www.reddit.com/r/MachineLearning/comments/mhodz/data_scientist_vs_statistician/" target="_blank">the difference between a data scientist and a statistician</a>. My crude summary of the discussion seems to be that by and large they are the same but the phrase &#8220;data scientist&#8221; is just the hip new name for statistician that will probably sound stupid 5 years from now.
 
 My question is why isn&#8217;t &#8220;statistician&#8221; hip? The comments don&#8217;t seem to address that much (although a few go in that direction). There a few interesting comments about computing. For example from ByteMining:

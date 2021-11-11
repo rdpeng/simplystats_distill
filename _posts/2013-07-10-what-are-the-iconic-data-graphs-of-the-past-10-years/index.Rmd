@@ -1,24 +1,12 @@
 ---
-id: 1481
 title: What are the iconic data graphs of the past 10 years?
-date: 2013-07-10T10:00:56+00:00
 author: Roger Peng
-al2fb_facebook_exclude:
-  - 
-al2fb_facebook_exclude_video:
-  - 
-al2fb_facebook_link_id:
-  - 136171103105421_515325681856626
-al2fb_facebook_link_time:
-  - 2013-07-10T14:01:11+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1484513592
-categories:
-  - Uncategorized
-slug: "what-are-the-iconic-data-graphs-of-the-past-10-years"
+date: '2013-07-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 This article in the New York Times about the supposed [death of photography](http://bits.blogs.nytimes.com/2013/07/05/the-death-of-photography-has-been-greatly-exaggerated/?smid=pl-share) got me thinking about statistics. Apparently, the death of photography has been around the corner for some time now:
 
 > For years, photographers have been bracing for this moment, warned that the last rites will be read for photography when video technology becomes good enough for anyone to record. But as this Fourth of July showed me, I think the reports of the death of photography have been greatly exaggerated.

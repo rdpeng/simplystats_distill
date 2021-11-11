@@ -1,10 +1,12 @@
 ---
 title: Not So Standard Deviations Episode 11 - Start and Stop
 author: Roger Peng
-comments: true
-slug: "nssd-episode-11"
-date: 2016-03-14
+date: '2016-03-14'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 We’ve started a Patreon page! Now you can support the podcast directly by going to [our page](http://patreon.com/NSSDeviations) and making a pledge. This will help Hilary and me build the podcast, add new features, and get some better equipment.
 

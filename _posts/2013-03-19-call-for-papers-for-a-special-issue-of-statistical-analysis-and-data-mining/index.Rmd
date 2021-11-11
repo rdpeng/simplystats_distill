@@ -1,20 +1,12 @@
 ---
-id: 1111
 title: Call for papers for a special issue of Statistical Analysis and Data Mining
-date: 2013-03-19T11:06:32+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_474720605917134
-al2fb_facebook_link_time:
-  - 2013-03-19T15:06:37+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1149323154
-categories:
-  - Uncategorized
-slug: "call-for-papers-for-a-special-issue-of-statistical-analysis-and-data-mining"
+date: '2013-03-19'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 David Madigan sends the following. It looks like a really interesting place to submit papers for both statisticians and data scientists, so submit away!
 
 > Statistical Analysis and Data Mining, An American Statistical Association Journal

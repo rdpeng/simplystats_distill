@@ -1,20 +1,12 @@
 ---
-id: 1619
 title: That causal inference came out of nowhere
-date: 2013-08-02T09:43:52+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_524464877609373
-al2fb_facebook_link_time:
-  - 2013-08-02T13:44:02+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1560424594
-categories:
-  - Uncategorized
-slug: "that-causal-inference-came-out-of-nowhere"
+date: '2013-08-02'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [This](http://archpedi.jamanetwork.com/article.aspx?articleid=1720224) is a study of breastfeeding and its impact on IQ that has been making the rounds on a number of different media outlets. I first saw it on the [Wall Street Journal](http://online.wsj.com/article/SB10001424127887324809004578635783141433600.html) where I was immediately drawn to this quote:
 
 > They then subtracted those factors using a statistical model. Dr. Belfort said she hopes that "what we have left is the true connection" with nursing and IQ.

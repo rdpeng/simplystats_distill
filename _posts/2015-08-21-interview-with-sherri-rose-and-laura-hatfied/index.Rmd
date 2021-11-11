@@ -1,22 +1,12 @@
 ---
-id: 4272
 title: Interview with Sherri Rose and Laura Hatfield
-date: 2015-08-21T13:20:14+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_847624851960039
-al2fb_facebook_link_time:
-  - 2015-08-21T17:20:20+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose-300x200.png
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-dsq_thread_id:
-  - 4054313700
-categories:
-  - Uncategorized
-slug: "interview-with-sherri-rose-and-laura-hatfied"
+date: '2015-08-21'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 &nbsp;
 
 [<img class="aligncenter wp-image-4273 size-medium" src="http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose-300x200.png" alt="Sherri Rose and Laura Hatfield" width="300" height="200" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose-300x200.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose-260x173.png 260w, http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose.png 975w" sizes="(max-width: 300px) 100vw, 300px" />](http://simplystatistics.org/wp-content/uploads/2015/08/hatfieldrose.png)

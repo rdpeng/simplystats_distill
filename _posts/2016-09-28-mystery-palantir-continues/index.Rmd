@@ -1,9 +1,12 @@
 ---
 title: The Mystery of Palantir Continues
 author: Roger Peng
-slug: "mystery-palantir-continues"
-date: 2016-09-28
+date: '2016-09-28'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Palantir, the secretive data science/consulting/software company, continues to be a mystery to most people, but recent reports have not been great. [Reuters reports](http://www.nytimes.com/reuters/2016/09/26/business/26reuters-palantir-tech-discrimination-lawsuit.html?smprod=nytcore-iphone&smid=nytcore-iphone-share&_r=0) that the U.S. Department of Labor is suing it for employment discrimination:
 

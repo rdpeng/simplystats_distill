@@ -1,10 +1,12 @@
 ---
-author: Roger Peng
-comments: true
 title: Not So Standard Deviations Episode 17 - Diurnal High Variance
-slug: "nssd-episode-17"
-date: 2016-06-09
+author: Roger Peng
+date: '2016-06-09'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Hilary and I talk about Amazon Echo and Alexa as AI as a service, the COMPAS algorithm, criminal justice forecasts, and whether algorithms can introduce or remove bias (or both).
 

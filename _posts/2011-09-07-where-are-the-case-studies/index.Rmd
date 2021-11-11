@@ -1,20 +1,12 @@
 ---
-id: 478
 title: Where are the Case Studies?
-date: 2011-09-07T12:48:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/9916013240/where-are-the-case-studies
-tumblr_simplystatistics_id:
-  - 9916013240
-dsq_thread_id:
-  - 933945128
-categories:
-  - Uncategorized
-tags:
-  - Rant
-slug: "where-are-the-case-studies"
+date: '2011-09-07'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Many case studies I find interesting don&#8217;t appear in JASA Applications and **Case Studies **or other applied statistics journals for that matter. Some because the technical skill needed to satisfy reviewers is not sufficiently impressive, others because they lack mathematical rigor. But perhaps the main reason for this disconnect is that many interesting case studies are developed by people outside our field or outside academia.
 
 In this blog we will try to introduce readers to some of these case studies. I&#8217;ll start it off by pointing readers to Nate Silver&#8217;s <a href="http://fivethirtyeight.blogs.nytimes.com" target="_blank">FiveThirtyEight</a> blog. Mr. Silver (yes, Mr. not Prof. nor Dr.) is one of my favorite statisticians. He first became famous for <a href="http://en.wikipedia.org/wiki/PECOTA" target="_blank">PECOTA</a>; a system that uses data and statistics to predict the performance of baseball players. In FiveThirtyEight he uses a rather sophisticated meta-analysis approach to predicting election outcomes.

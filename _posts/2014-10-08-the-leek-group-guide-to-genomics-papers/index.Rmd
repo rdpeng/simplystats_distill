@@ -1,20 +1,12 @@
 ---
-id: 3336
 title: The Leek group guide to genomics papers
-date: 2014-10-08T14:16:00+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_708786925843833
-al2fb_facebook_link_time:
-  - 2014-10-08T18:16:06+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3096790743
-categories:
-  - Uncategorized
-slug: "the-leek-group-guide-to-genomics-papers"
+date: '2014-10-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 [Leek group guide to genomics papers](https://github.com/jtleek/genomicspapers/)
 
 When I was a student, my advisor, [John Storey](http://www.genomine.org/), made a list of papers for me to read on nights and weekends. That list was incredibly helpful for a couple of reasons.

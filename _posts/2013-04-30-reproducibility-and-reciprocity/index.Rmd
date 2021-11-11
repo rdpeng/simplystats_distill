@@ -1,20 +1,12 @@
 ---
-id: 1246
 title: Reproducibility and reciprocity
-date: 2013-04-30T09:58:47+00:00
 author: Roger Peng
-al2fb_facebook_link_id:
-  - 136171103105421_488747744514420
-al2fb_facebook_link_time:
-  - 2013-04-30T13:58:52+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1248082681
-categories:
-  - Uncategorized
-slug: "reproducibility-and-reciprocity"
+date: '2013-04-30'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 One element about the entire discussion about reproducible research that I haven't seen talked about very much is the potential for the lack of reciprocity. I think even if scientists were not concerned about the possibility of getting scooped by others by making their data/code available this issue would be sufficient to give people pause about making their work reproducible.
 
 What do I mean by reciprocity? Consider the following (made up) scenario:

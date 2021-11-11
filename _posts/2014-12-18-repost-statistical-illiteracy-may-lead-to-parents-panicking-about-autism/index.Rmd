@@ -1,22 +1,12 @@
 ---
-id: 3721
 title: 'Repost: Statistical illiteracy may lead to parents panicking about Autism'
-date: 2014-12-18T12:09:24+00:00
 author: Jeff Leek
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_740730659316126
-al2fb_facebook_link_time:
-  - 2014-12-18T17:09:31+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3337151591
-categories:
-  - Uncategorized
-slug: "repost-statistical-illiteracy-may-lead-to-parents-panicking-about-autism"
+date: '2014-12-18'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 _Editor's Note: This is a repost of a [previous post on our blog from 2012](http://simplystatistics.org/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/). The repost is inspired by similar issues with statistical illiteracy that are coming up in [allergy screening](http://skybrudeconsulting.com/blog/2014/12/12/diagnostic-testing.html) and [pregnancy screening](http://www.bostonglobe.com/metro/2014/12/14/oversold-and-unregulated-flawed-prenatal-tests-leading-abortions-healthy-fetuses/aKFAOCP5N0Kr8S1HirL7EN/story.html). _
 
 I just was doing my morning reading of a few news sources and stumbled across this [Huffington Post article](http://www.huffingtonpost.com/2012/11/29/autism-risk-babies-cries_n_2211729.html) talking about research correlating babies cries to autism. It suggests that the sound of a babies cries may predict their future risk for autism. As the parent of a young son, this obviously caught my attention in a very lizard-brain, caveman sort of way. I couldn't find a link to the research paper in the article so I did some searching and found out this result is also being covered by [Time](http://healthland.time.com/2012/11/28/can-a-babys-cry-be-a-clue-to-autism/), [Science Daily](http://www.sciencedaily.com/releases/2012/11/121127111352.htm), [Medical Daily](http://www.medicaldaily.com/articles/13324/20121129/baby-s-cry-reveal-autism-risk.htm), and a bunch of other news outlets.

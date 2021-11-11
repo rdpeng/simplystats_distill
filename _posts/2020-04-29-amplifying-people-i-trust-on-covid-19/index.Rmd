@@ -1,9 +1,12 @@
 ---
 title: Amplifying people I trust on COVID-19
-date: '2020-04-29'
-slug: amplifying-people-i-trust-on-covid-19
 author: Jeff Leek
+date: '2020-04-29'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 Like a lot of people, I've been glued to various media channels trying to learn about the latest with what is going on with COVID-19. I have also been frustrated - like a lot of people - with misinformation and the deluge of preprints and peer reviewed material. Some of this information is critically important and some is hard to trust. 
 

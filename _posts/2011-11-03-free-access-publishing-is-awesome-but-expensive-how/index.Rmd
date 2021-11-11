@@ -1,24 +1,12 @@
 ---
-id: 388
 title: Free access publishing is awesome...but expensive. How do we pay for it?
-date: 2011-11-03T16:05:06+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/12286350206/free-access-publishing-is-awesome-but-expensive-how
-tumblr_simplystatistics_id:
-  - 12286350206
-dsq_thread_id:
-  - 953324008
-categories:
-  - Uncategorized
-tags:
-  - Free Access
-  - open access
-  - peer review
-  - PLoS
-  - publishing
-slug: "free-access-publishing-is-awesome-but-expensive-how"
+date: '2011-11-03'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 I am a huge fan of open access journals. I think open access is good both for moral reasons (science should be freely available) and for more selfish ones (I want people to be able to read my work). If given the choice, I would publish all of my work in journals that distribute results freely.
 
 But it turns out that for most open/free access systems, the publishing charges are paid by the scientists publishing in the journals. I did a quick scan and compiled this little table of how much it costs to publish a paper in different journals (<a href="http://www.springeropen.com/about/apccomparison/" target="_blank">here</a> is a bigger table):

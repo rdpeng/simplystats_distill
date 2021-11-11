@@ -1,9 +1,12 @@
 ---
-title: 'It Costs Money to Get It Right'
+title: It Costs Money to Get It Right
 author: Roger Peng
 date: '2017-10-09'
-slug: it-costs-money-to-get-it-right
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 
 On the latest episode of [Not So Standard Deviations](http://nssdeviations.com/46-uncanny-valley-of-stickerness) I talked with Hilary about Apple's efforts to train machine learning algorithms in their Face ID technology in the iPhone X. The gist of Face ID is that it recognizes your face using a mathematical representation and then unlocks the phone when it can confirm that it is you. In its keynote presentation, Apple mentioned that it's using machine learning to do this and even had developed its own custom chips to do the computations.
 

@@ -1,22 +1,12 @@
 ---
-id: 4109
 title: How public relations and the media are distorting science
-date: 2015-06-24T10:07:45+00:00
 author: Rafael Irizarry
-pe_theme_meta:
-  - 'O:8:"stdClass":2:{s:7:"gallery";O:8:"stdClass":3:{s:2:"id";s:2:"-1";s:5:"width";s:0:"";s:6:"height";s:0:"";}s:5:"video";O:8:"stdClass":1:{s:2:"id";s:2:"-1";}}'
-al2fb_facebook_link_id:
-  - 136171103105421_824159250973266
-al2fb_facebook_link_time:
-  - 2015-06-24T14:05:52+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 3874992874
-categories:
-  - Uncategorized
-slug: "how-public-relations-and-the-media-are-distorting-science"
+date: '2015-06-24'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Throughout history, engineers, medical doctors and other applied scientists have helped convert  basic science discoveries into products, public goods and policy that have greatly improved our quality of life. With rare exceptions, it has taken years if not decades to establish these discoveries. And even the exceptions stand on the shoulders of incremental contributions. The researchers that produce this knowledge go through a slow and painstaking process to reach these achievements.
 
 In contrast, most science related media reports that grab the public's attention fall into three categories:

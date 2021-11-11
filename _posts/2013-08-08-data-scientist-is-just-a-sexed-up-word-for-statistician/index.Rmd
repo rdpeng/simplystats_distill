@@ -1,20 +1,12 @@
 ---
-id: 1656
 title: Data scientist is just a sexed up word for statistician
-date: 2013-08-08T10:28:16+00:00
 author: Jeff Leek
-al2fb_facebook_link_id:
-  - 136171103105421_526921247363736
-al2fb_facebook_link_time:
-  - 2013-08-08T14:28:23+00:00
-al2fb_facebook_link_picture:
-  - post=http://simplystatistics.org/?al2fb_image=1
-dsq_thread_id:
-  - 1585082913
-categories:
-  - Uncategorized
-slug: "data-scientist-is-just-a-sexed-up-word-for-statistician"
+date: '2013-08-08'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 A couple of cool things happened at this years JSM.
 
   1. Twitter adoption went way up and it was much easier for people (like me) who weren't there to keep track of all the action by monitoring the [#JSM2013](https://twitter.com/search?q=%23jsm2013&src=typd) hashtag.

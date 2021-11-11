@@ -1,18 +1,12 @@
 ---
-id: 200
 title: What are the products of data analysis?
-date: 2012-05-10T12:55:41+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/22776960880/what-are-the-products-of-data-analysis
-tumblr_simplystatistics_id:
-  - 22776960880
-dsq_thread_id:
-  - 950034491
-categories:
-  - Uncategorized
-slug: "what-are-the-products-of-data-analysis"
+date: '2012-05-10'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Thanks to everyone for the feedback on my post on <a href="http://simplystatistics.tumblr.com/post/22585430491/how-do-you-know-if-someone-is-great-at-data-analysis" target="_blank">knowing when someone is good at data analysis</a>. A couple people suggested I take a look <a href="http://www.kaggle.com/users" target="_blank">here</a> for a few people who have proven they&#8217;re good at data analysis. I think that&#8217;s a great idea and a good place to start.
 
 But I also think that while demonstrating an ability to build good prediction models is impressive and definitely shows an understanding of the data, not all important problems can be easily posed as prediction problems. Most of my work does not involve prediction at all and the problems I face (i.e., estimating very small effects in the presence of large unmeasured confounding factors) would be difficult to formulate as a prediction challenge (at least, I can&#8217;t think of an easy way). In fact, part of <a href="http://www.scribd.com/full/28736728?access_key=key-21htoe67zs4rs9ecj1al" target="_blank">my</a> and <a href="http://www.ncbi.nlm.nih.gov/pubmed/22364439" target="_blank">my colleagues&#8217;</a> research involves showing how statistical methods designed for prediction problems can fail miserably when applied to other non-prediction settings.

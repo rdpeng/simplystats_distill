@@ -1,23 +1,12 @@
 ---
-id: 43
 title: Should we stop publishing peer-reviewed papers?
-date: 2012-10-04T13:54:00+00:00
 author: Admin
-tumblr_simplystatistics_permalink:
-  - http://simplystatistics.tumblr.com/post/32871552079/should-we-stop-publishing-peer-reviewed-papers
-tumblr_simplystatistics_id:
-  - 32871552079
-dsq_thread_id:
-  - 935912205
-categories:
-  - Uncategorized
-tags:
-  - blogging
-  - idea
-  - peer review
-  - question
-slug: "should-we-stop-publishing-peer-reviewed-papers"
+date: '2012-10-04'
+output:
+  distill::distill_article:
+    self_contained: no
 ---
+
 Nate Silver, everyone&#8217;s favorite statistician made good, just gave an interview where he said he thinks <a href="http://techcrunch.com/2012/10/01/nyt-election-oracle-fivethirtyeight-on-why-blogging-is-great-for-science/" target="_blank">many journal articles should be blog posts</a>. I have been thinking about this same issue for a while now, and I&#8217;m not the only one. <a href="http://dienekes.blogspot.com/2012/06/how-journals-once-facilitated-and-now.html" target="_blank">This is</a> a really interesting post suggesting that although scientific journals once facilitated dissemination of ideas, they now impede the flow of information and make it more expensive. 
 
 Two recent examples really drove this message home for me. In the first example, I posted a quick idea called <a href="http://simplystatistics.org/post/18132467723/prediction-the-lasso-vs-just-using-the-top-10" target="_blank">the Leekasso</a>, which led to some discussion on the blog, has nearly 2,000 page views (a pretty recent number of downloads for a paper), and has been implemented in software by someone <a href="http://cran.r-project.org/web/packages/SuperLearner/NEWS" target="_blank">other than me</a>. If this were one of my papers, it would be one of the more reasonably high impact papers. The <a href="http://simplystatistics.org/post/31990205510/prediction-contest" target="_blank">second example</a> is a post I put up about a recent Nature paper. The authors (who are really good sports) ended up writing to me to get my critiques. I wrote them out, and they responded. All of this happened after peer review and informally. All of the interaction also occurred in email, where no one can see but us. 
