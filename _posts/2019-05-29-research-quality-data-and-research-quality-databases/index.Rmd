@@ -1,6 +1,7 @@
 ---
 title: Research quality data and research quality databases
 author: Jeff Leek
+preview: https://user-images.githubusercontent.com/1571674/58572594-f77d2080-8209-11e9-87a2-0621a13eeb03.png
 date: '2019-05-29'
 output:
   distill::distill_article:
