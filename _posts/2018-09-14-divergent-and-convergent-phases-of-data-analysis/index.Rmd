@@ -2,6 +2,7 @@
 title: Divergent and Convergent Phases of Data Analysis
 author: Roger Peng
 date: '2018-09-14'
+preview: images/double_diamond_data_analysis.png
 output:
   distill::distill_article:
     self_contained: no
@@ -18,7 +19,7 @@ One thing that I have found missing from many discussions about tooling in data 
 One image that is commonly found in the literature on design thinking is the [“double diamond”](https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond), which is a model for the design process. I think this model can be usefully adapted to help us think about data analysis and my best representation is here (apologies for the scribble).
 
 
-![Double Diamond for Data Analysis](/post/2018-09-14-divergent-and-convergent-phases-of-data-analysis_files/figure-html/double_diamond_data_analysis.png)
+![Double Diamond for Data Analysis](images/double_diamond_data_analysis.png)
 
 In this figure I’ve identified four phases of data analysis that alternate between divergent and convergent forms of thinking. The x-axis is roughly “time” or the timeline of the analysis. The y-axis can be thought of as indicating the range of possibilities. Okay, it’s not exactly a numerical graph, but you get the idea. The wide parts of each diamond are meant to indicate that there are many possibilities under consideration while the narrow “choke points” indicate that there should be one or a few things under consideration. 
 

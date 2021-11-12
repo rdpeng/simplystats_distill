@@ -1,0 +1,12 @@
+---
+title: "Featured Posts"
+listing: 
+  posts:
+    - 2021-11-10-thinking-about-failure-in-data-analysis
+    - 2019-04-17-tukey-design-thinking-and-better-questions
+    - 2020-04-30-asymptotics-of-reproducibility
+    - 2018-09-14-divergent-and-convergent-phases-of-data-analysis
+    - 2020-04-29-amplifying-people-i-trust-on-covid-19
+    - 2018-11-01-the-role-of-academia-in-data-science-education
+    - 2020-11-24-the-four-jobs-of-the-data-scientist
+---
