@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: Making Coffee With R
 author: Admin
 date: '2012-10-17'
 output:

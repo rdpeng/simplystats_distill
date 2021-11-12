@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: Seek Simplicity and Distrust It
 author: Admin
 date: '2011-09-07'
 output:

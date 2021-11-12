@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: Reproducible Research Talk in Vancouver
 author: Admin
 date: '2011-11-02'
 output:

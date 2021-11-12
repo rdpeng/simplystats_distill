@@ -1350,23 +1350,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/2017-04-06-march-for-science/",
-    "title": "Redirect",
-    "description": {},
-    "author": [
-      {
-        "name": "Rafael Irizarry",
-        "url": {}
-      }
-    ],
-    "date": "2017-04-06",
-    "categories": [],
-    "contents": "\nThis page was generated in error. The “Science really is non-partisan: facts and skepticism annoy everybody” blog post is here\nApologies for the inconvenience.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-11-11T14:28:26-05:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2017-04-03-interactive-data-analysis/",
     "title": "The Importance of Interactive Data Analysis for Data-Driven Discovery",
     "description": {},
@@ -2371,7 +2354,7 @@
   },
   {
     "path": "posts/2016-05-23-update-on-theranos/",
-    "title": "Untitled",
+    "title": "Update on Theranos",
     "description": {},
     "author": [
       {
@@ -2383,7 +2366,7 @@
     "categories": [],
     "contents": "\nI think it’s fair to say that things for Theranos, the Silicon Valley blood testing company, are not looking up. From the Wall Street Journal (via The Verge):\n\nTheranos has voided two years of results from its Edison blood-testing machines, issuing tens of thousands of corrected reports to patients and doctors and raising the possibility that many health care decisions may have been made based on inaccurate data. The Wall Street Journal first reported the news, saying that many of the corrected tests have been run using traditional machinery. One doctor told the Journal that she sent a patient to the emergency room after seeing abnormal results from a Theranos test; the corrected report returned normal readings.\n\nFurthermore, this commentary in JAMA from John Ioannides emphasizes the need for caution when implementing testing on a massive scale. In particular, “The notion of patients and healthy people being repeatedly tested in supermarkets and pharmacies, or eventually in cafeterias or at home, sounds revolutionary, but little is known about the consequences” and the consequences really matter here. In addition, as the title of the commentary would indicate, research done in secret is not research at all. For there the be credibility for a company like this, data needs to be made public.\nI continue to maintain that the fundamental premise on which the company is built, as stated by its founder Elizabeth Holmes, is flawed. Two concepts are repeatedly made in the context of Theranos:\nMore testing is better. Anyone who stayed awake in their introduction to Bayesian statistics lecture knows this is very difficult to make true in all circumstances, no matter how accurate a test is. With rare diseases, the number of false positives is overwhelming and can have very real harmful effects on people. Combine testing on a massive scale, with repeated application over time, and you get a recipe for confusion.\nPeople do not get tested because they are afraid of needles. Elizabeth Holmes makes a big deal about her personal fear of needles and it’s impact on her (not) getting blood tests done. I have no doubt that many people share this fear, but I have serious doubt that this is the reason people don’t get the medical testing done. There are many barriers to people getting the medical care that they need, many that are non-financial in nature and do not include fear of needles. The problem of getting people the medical care that they need is one deserving of serious attention, but changing the manner in which blood is collected is not going to do it.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T14:24:17-05:00",
+    "last_modified": "2021-11-12T07:59:49-05:00",
     "input_file": {}
   },
   {
@@ -10225,7 +10208,7 @@
   },
   {
     "path": "posts/2012-10-17-johns-hopkins-grad-anthony-damico-shows-how-to/",
-    "title": "Untitled",
+    "title": "Making Coffee With R",
     "description": {},
     "author": [
       {
@@ -10237,7 +10220,7 @@
     "categories": [],
     "contents": "\n[vimeo 43305640 w=500 h=281]\nJohns Hopkins grad Anthony Damico shows how to make coffee with R (except not really). The BLS mug is what makes it for me.\n\n(Source: http://player.vimeo.com/)\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T14:00:43-05:00",
+    "last_modified": "2021-11-12T08:01:37-05:00",
     "input_file": {}
   },
   {
@@ -10697,23 +10680,6 @@
     "contents": "\nStatistical analysis suggests the Washington Nationals were wrong to shut down Stephen Strasburg\n\n\n\n",
     "preview": {},
     "last_modified": "2021-11-11T13:59:47-05:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2012-09-14-after-our-interview-with-steven-salzberg-someone/",
-    "title": "Untitled",
-    "description": {},
-    "author": [
-      {
-        "name": "Admin",
-        "url": {}
-      }
-    ],
-    "date": "2012-09-14",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-11-11T13:59:43-05:00",
     "input_file": {}
   },
   {
@@ -12078,7 +12044,7 @@
   },
   {
     "path": "posts/2012-07-13-this-is-not-about-statistics-but-its-about/",
-    "title": "Untitled",
+    "title": "This is Not About Statistics But It is About Emacs",
     "description": {},
     "author": [
       {
@@ -12090,7 +12056,7 @@
     "categories": [],
     "contents": "\n[youtube http://www.youtube.com/watch?v=p3Te\\_a-AGqM?wmode=transparent&autohide=1&egm=0&hd=1&iv\\_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0&w=500&h=375]\nThis is not about statistics, but it’s about Emacs, which I’ve been using for a long time. This guy is an Emacs virtuoso, and the crazy thing is that he’s only been using it for 8 months!\nBest line: “Should I wait for the next version of Emacs? Hell no!”\n(Thanks to Brian C. and Kasper H. for the pointer.)\n\n(Source: http://www.youtube.com/)\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:57:10-05:00",
+    "last_modified": "2021-11-12T08:05:09-05:00",
     "input_file": {}
   },
   {
@@ -12826,7 +12792,7 @@
   },
   {
     "path": "posts/2012-05-16-the-west-wing-was-always-a-favorite-show-of-mine/",
-    "title": "Untitled",
+    "title": "The Numbers Don't Lie",
     "description": {},
     "author": [
       {
@@ -12838,7 +12804,7 @@
     "categories": [],
     "contents": "\n[youtube http://www.youtube.com/watch?v=t7FJFuuvxpI?wmode=transparent&autohide=1&egm=0&hd=1&iv\\_load\\_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0&w=500&h=375]\nThe West Wing was always a favorite show of mine (at least, seasons 1-4, the Sorkin years) and I think this is a great scene which talks about the difference between evidence and interpretation. The topic is a 5-day waiting period for gun purchases and they’ve just received a poll in a few specific congressional districts showing weak support for this proposed policy.\n\n(Source: http://www.youtube.com/)\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:55:53-05:00",
+    "last_modified": "2021-11-12T08:06:40-05:00",
     "input_file": {}
   },
   {
@@ -14407,7 +14373,7 @@
   },
   {
     "path": "posts/2012-02-13-the-duke-clinical-trials-saga-what-really-happened/",
-    "title": "The Duke Clinical Trials Saga: What Really Happened",
+    "title": "The Duke Clinical Trials Saga - What Really Happened",
     "description": {},
     "author": [
       {
@@ -14419,7 +14385,7 @@
     "categories": [],
     "contents": "\nThe Duke Clinical Trials Saga: What Really Happened\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:53:55-05:00",
+    "last_modified": "2021-11-12T08:07:30-05:00",
     "input_file": {}
   },
   {
@@ -15767,7 +15733,7 @@
   },
   {
     "path": "posts/2011-11-17-the-history-of-nonlinear-principal-components/",
-    "title": "Untitled",
+    "title": "History of Nonlinear Principal Components Analysis",
     "description": {},
     "author": [
       {
@@ -15779,7 +15745,7 @@
     "categories": [],
     "contents": "\n[youtube http://www.youtube.com/watch?v=V-hFORcBj44?wmode=transparent&autohide=1&egm=0&hd=1&iv\\_load\\_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0&w=500&h=375]\nThe History of Nonlinear Principal Components Analysis, a lecture given by Jan de Leeuw. For those that have ~45 minutes to spare, it’s a very nice talk given in Jan’s characteristic style.\n\n(Source: http://www.youtube.com/)\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:52:45-05:00",
+    "last_modified": "2021-11-12T08:10:27-05:00",
     "input_file": {}
   },
   {
@@ -16056,7 +16022,7 @@
   },
   {
     "path": "posts/2011-11-02-i-gave-a-talk-on-reproducible-research-back-in/",
-    "title": "Untitled",
+    "title": "Reproducible Research Talk in Vancouver",
     "description": {},
     "author": [
       {
@@ -16068,7 +16034,7 @@
     "categories": [],
     "contents": "\n[youtube http://www.youtube.com/watch?v=aH8dpcirW1U?wmode=transparent&autohide=1&egm=0&hd=1&iv\\_load\\_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0&w=500&h=375]\nI gave a talk on reproducible research back in July at the Applied Mathematics Perspectives workshop in Vancouver, BC.\nIn addition to the YouTube version, there’s also a Silverlight version where you can actually see the slides while I’m talking.\n\n(Source: http://www.youtube.com/)\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:52:33-05:00",
+    "last_modified": "2021-11-12T08:08:26-05:00",
     "input_file": {}
   },
   {
@@ -17535,7 +17501,7 @@
   },
   {
     "path": "posts/2011-09-07-seek-simplicity-and-distrust-it/",
-    "title": "Untitled",
+    "title": "Seek Simplicity and Distrust It",
     "description": {},
     "author": [
       {
@@ -17547,7 +17513,7 @@
     "categories": [],
     "contents": "\nSeek simplicity and distrust it.\nA. N. Whitehead\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-11T13:51:46-05:00",
+    "last_modified": "2021-11-12T08:09:14-05:00",
     "input_file": {}
   },
   {

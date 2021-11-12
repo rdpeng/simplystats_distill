@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: History of Nonlinear Principal Components Analysis
 author: Admin
 date: '2011-11-17'
 output:

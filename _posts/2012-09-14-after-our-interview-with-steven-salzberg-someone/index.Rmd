@@ -1,9 +1,0 @@
----
-NA: ~
-author: Admin
-date: '2012-09-14'
-output:
-  distill::distill_article:
-    self_contained: no
----
-

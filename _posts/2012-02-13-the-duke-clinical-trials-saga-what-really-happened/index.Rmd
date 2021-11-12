@@ -1,5 +1,5 @@
 ---
-title: 'The Duke Clinical Trials Saga: What Really Happened'
+title: 'The Duke Clinical Trials Saga - What Really Happened'
 author: Admin
 date: '2012-02-13'
 output:

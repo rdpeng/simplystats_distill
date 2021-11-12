@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: This is Not About Statistics But It is About Emacs
 author: Admin
 date: '2012-07-13'
 output:
