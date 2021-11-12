@@ -14,9 +14,9 @@ What does it mean for a data analysis to fail? I’ve come to feel that this is 
 
 One thing to clarify here is that when I think of failure, I think of something that is more or less immediately observable. So once you’ve done the analysis, you know whether you’ve failed or not. This rules out a number of possibilities that I think people are used to thinking about. For example, it rules out the question of whether the claims of an analysis are true or not. Often, it is not possible to determine the truth of an analysis until much later. It also rules out considerations of replication or reproducibility because both of those require future analyses to be done. Therefore, I’m not going to consider these ideas for now and focus on what we as analysts can do in the moment.
 
-An analysis failure, broadly speaking, is any outcome that does not meet our expectations. This might sound like a bit of an anti-climactic definition of “failure” but ultimately such an outcome represents a failure of our understanding about something: the data (and data generation process), the methods, or the science. As a result, a success is any outcome that is as-expected. That also seems like a bit of low bar for success, but we can make other distinctions later regarding whether a success is good or not.
-
 ## Types of Failure
+
+An analysis failure, broadly speaking, is any outcome that does not meet our expectations. This might sound like a bit of an anti-climactic definition of “failure” but ultimately such an outcome represents a failure of our understanding about something: the data (and data generation process), the methods, or the science. As a result, a success is any outcome that is as-expected. That also seems like a bit of low bar for success, but we can make other distinctions later regarding whether a success is good or not.
 
 My taxonomy of failure falls into two large bins:
 
