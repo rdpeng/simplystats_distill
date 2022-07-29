@@ -1,0 +1,51 @@
+---
+title: "Is Code the Best Way to Represent a Data Analysis?"
+description: |
+  Code is a useful representation of a data analysis for the purposes of transparency and opennness. But code alone is often insufficient for evaluating the quality of a data analysis and for determining why certain outputs differ from what was expected. Is there a better way to represent a data analysis that helps to resolve some of these questions?
+author:
+  - name: Roger Peng
+    url: {}
+date: 2022-07-29
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+I’ve spent the better part of my career advocating for the increased publication of code that is used in data analysis. This effort to make data analysis more reproducible is largely focused around principles of transparency and openness, the idea being that scientific investigation cannot be fully evaluated unless you knew what was done.
+
+Over the past 20 years, the principles of transparency and openness have not changed. But I have changed in the sense that I’ve found my self wanting more. While transparency has inherent value, I have found that it’s not *exactly* what people want when they see a data analysis. What they want is an answer to the question, “Is this data analysis any good?” 
+
+Looking at code usually does not tell me anything about the quality of the analysis because in the best case scenario, the code matches what was written in the description of the analysis, which is what I would expect. In my experience, most people get value out of the code (and the data) when they can go into the code, make modifications, and run alternate analyses on the data. They may be interested in the sensitivity to a certain parameter or certain assumption. These things cannot be evaluated without doing a *new* analysis that differs from the original published analysis.
+
+The need for people to actively modify code and re-run analyses in order to assess the quality of an analysis implies that a *static* analysis of the code itself is not necessarily sufficient for this purpose. In other words, we cannot in general simply look at the unmodified published code for an analysis and determine whether it is a good analysis or not.
+
+The fundamental problem with code as a representation for data analysis is that code only shows what were the *observed results*. But when evaluating the quality of a data analysis, I think it is equally important to know what were the *expected results* and *why the observed results differ from the expected results* (if they do). Information about the expected results is usually not directly embedded in the code. Sometimes this information is presented in a written summary (i.e. “these results were surprising because...”) but sometimes not. Figuring out why observed results differ from expectations can usually be assessed by modifying the original code (if one is so skilled) and re-running the analysis to see alternate results. Essentially, this is the process of “debugging” the data analysis.
+
+## Analysis Conundrum
+
+With software, for example, it is possible to say “This software was designed to produce output X.” Then, if the software produces output X, that is as-expected. If the software produces output Y, we know because of the design specification that this is unexpected and we can engage in the debugging process to determine the cause. Other engineers may disagree with the design and believe that producing output X is a bad idea, but given the design specification, everyone can agree that output Y is incorrect.
+
+With a data analysis, it is possible for an analyst to say “I expect the output of this data analysis to be in the set X.” However, because thing we are ultimately investigating is nature itself, it’s not like we can design nature to produce a specific output. Therefore, another analyst could say, “Well, I expect the output of this analysis to be in the set Y.”
+
+Now, no matter what the output of this data analysis, there will be some disagreement. Output X will be as-expected to the first analyst and unexpected for the second analyst. Output Y would be unexpected for the first analyst and as-expected for the second. If the analysis produces some other output in the set Z, then both analysts will be surprised. Therefore, no matter the output of the analysis, one or both of the analysts will demand an explanation. 
+
+The question here is how does looking at the code resolve any of this? Even in the best of circumstances, there isn’t really a debate about the code itself because both analysts are observing the same analysis with the same data and are in total agreement about *what was done*. The disagreement stems from differences in the analysts’ expectations and the uncertainty about what caused the observed results to deviate from their expectations. Simply looking at the analytic code does not necessarily resolve this uncertainty.
+
+There can be many reasons why an observed result differs from expectations, but I tend to group them at a high level into three categories:
+* Science - While it can be difficult to admit, sometimes we are just wrong about the science and therefore our original expectations are misplaced. Perhaps we misinterpreted the literature or indexed too heavily on our own personal experience or something else.
+* Data - The data collection/generation process may be misunderstood or mischaracterized, leading to unexpected results at the end of the analysis. Distributions of the data may be different from what was expected, or perhaps there were missing data where we didn’t expect there to be. There are many things that can fall in this category and experienced analyst tend to have a feel for what is possible and what is most likely.
+* Analysis - Data analyses these days tend to have  relatively complex code bases and long pipelines that process the data. It’s always possible that there is a problem somewhere in this code that will need to be debugged. Often these issues can be caught before publication, but not always. 
+
+A challenge, of course, is that the data analyst does not immediately know which category is to blame when an observed result differs from expectations. Therefore, the analyst has to consider all three sources of possible problems to narrow down the answer. This is not an easy task!
+
+
+## A Better Way?
+
+Is it possible to develop a representation for a data analysis that allows for some amount of “static analysis” (i.e. not having to re-run the analysis) that can explain why a result differs from one’s expectations? To be honest, I don’t know, but here are some thoughts in that direction.
+
+1. Embedding expectations about observed results - this is something I’ve already mentioned and is useful to allow others to interpret your interpretation of the results.  Many people do this already (perhaps indirectly), but not always. Sometimes a literature review serves this role. But it would be good to do it more explicitly so that we have a concrete thing to compare the results to. That said, everyone has different expectations so it’s not really that important that people know yours specifically. But it is a useful starting point. (Also note that this is not so much about pre-registration because pre-registration tends to be more about hypotheses and analytic plans, not so much about observed outputs and results.)
+2. Describing the unexpected - This is obviously the other side of the coin of specifying expectations, but is equally important. Describing the set of *unexpected outcomes* is part of the design of the analysis and is something that could be debated. 
+3. Specifying operating conditions - Many methods have assumptions under which they admit certain properties. These assumptions, however, have to be translated into specific *operating conditions* that are functions of the observed data. For example, if we assume the data are Normally distributed, we have to translate that assumption into some function of the data (e.g. a histogram or Q-Q plot). Although it is generally considered good practice to “check the assumptions”, not everyone does it and even if they do, the checking process is usually not well-specified. Specifying these operating conditions is valuable because it may be possible to trace an unexpected result to a violation of one of these conditions.
+4. Failure modes - there are some conditions that are simply not checkable with the observed data but can nevertheless cause an unexpected outcome. These *failure modes* cannot always be prevented in the context of the data analysis, but can at least be described or perhaps mitigated against. For example, an unobserved confounder may be driving the results or lack of independence between observations may be causing large variability than expected.
+
+The increasing publication of computer code for data analyses is a welcome development for the sake of transparency and openness. However, the code alone often does not address some key questions that others may have about *why* an analysis produced results that were perhaps different from what was expected. I think it would be useful to consider the possible alternatives or additions to representing data analyses via code that would give us the ability to evaluate a data analysis without having to re-run it. 
