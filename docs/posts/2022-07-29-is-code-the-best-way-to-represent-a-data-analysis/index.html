@@ -2147,9 +2147,9 @@ data analysis more reproducible is largely focused around principles of
 transparency and openness, the idea being that scientific investigation
 cannot be fully evaluated unless you knew what was done.</p>
 <p>Over the past 20 years, the principles of transparency and openness
-have not changed. But I have changed in the sense that I’ve found my
-self wanting more. While transparency has inherent value, I have found
-that it’s not <em>exactly</em> what people want when they see a data
+have not changed. But I have changed in the sense that I’ve found myself
+wanting more. While transparency has inherent value, I have found that
+it’s not <em>exactly</em> what people want when they see a data
 analysis. What they want is an answer to the question, “Is this data
 analysis any good?”</p>
 <p>Looking at code usually does not tell me anything about the quality
@@ -2191,10 +2191,10 @@ idea, but given the design specification, everyone can agree that output
 Y is incorrect.</p>
 <p>With a data analysis, it is possible for an analyst to say “I expect
 the output of this data analysis to be in the set X.” However, because
-thing we are ultimately investigating is nature itself, it’s not like we
-can design nature to produce a specific output. Therefore, another
-analyst could say, “Well, I expect the output of this analysis to be in
-the set Y.”</p>
+the thing we are ultimately investigating is nature itself, it’s not
+like we can design nature to produce a specific output. Therefore,
+another analyst could say, “Well, I expect the output of this analysis
+to be in the set Y.”</p>
 <p>Now, no matter what the output of this data analysis, there will be
 some disagreement. Output X will be as-expected to the first analyst and
 unexpected for the second analyst. Output Y would be unexpected for the
@@ -2212,21 +2212,25 @@ to deviate from their expectations. Simply looking at the analytic code
 does not necessarily resolve this uncertainty.</p>
 <p>There can be many reasons why an observed result differs from
 expectations, but I tend to group them at a high level into three
-categories: * Science - While it can be difficult to admit, sometimes we
-are just wrong about the science and therefore our original expectations
-are misplaced. Perhaps we misinterpreted the literature or indexed too
-heavily on our own personal experience or something else. * Data - The
-data collection/generation process may be misunderstood or
-mischaracterized, leading to unexpected results at the end of the
+categories:</p>
+<ul>
+<li>Science - While it can be difficult to admit, sometimes we are just
+wrong about the science and therefore our original expectations are
+misplaced. Perhaps we misinterpreted the literature or indexed too
+heavily on our own personal experience or something else.</li>
+<li>Data - The data collection/generation process may be misunderstood
+or mischaracterized, leading to unexpected results at the end of the
 analysis. Distributions of the data may be different from what was
 expected, or perhaps there were missing data where we didn’t expect
 there to be. There are many things that can fall in this category and
 experienced analyst tend to have a feel for what is possible and what is
-most likely. * Analysis - Data analyses these days tend to have
-relatively complex code bases and long pipelines that process the data.
-It’s always possible that there is a problem somewhere in this code that
-will need to be debugged. Often these issues can be caught before
-publication, but not always.</p>
+most likely.</li>
+<li>Analysis - Data analyses these days tend to have relatively complex
+code bases and long pipelines that process the data. It’s always
+possible that there is a problem somewhere in this code that will need
+to be debugged. Often these issues can be caught before publication, but
+not always.</li>
+</ul>
 <p>A challenge, of course, is that the data analyst does not immediately
 know which category is to blame when an observed result differs from
 expectations. Therefore, the analyst has to consider all three sources
