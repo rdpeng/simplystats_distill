@@ -687,6 +687,23 @@
     "input_file": {}
   },
   {
+    "path": "posts/2018-06-10-an-ode-to-king-james/",
+    "title": "An ode to King James",
+    "description": {},
+    "author": [
+      {
+        "name": "Rafael Irizarry",
+        "url": {}
+      }
+    ],
+    "date": "2018-06-10",
+    "categories": [],
+    "contents": "\nThe NBA season is over and, once again, what I will most remember are King James’ heroics.\nAs a lifelong Boston Celtics fan, I am supposed to hate LeBron James. But I don’t. As a fan of the game of basketball, and a statistician, I just can’t help but be in awe of the best player ever to play the game. Also how can you hate this guy (don’t miss the wrist watch)?\n\n\n\nOf all the ridiculous stats one can rattle about LeBron, to me, the most impressive actually relate to a simple one: career totals. The graph below shows you his total points, assists, steals and rebounds as a function of time. The consistency, durability, and all-around production is simply unprecedented.\nAt 33, he is already top 25 all time in three categories: points, assists and steals. If he can keep up his current pace for five more years (I know it’s a big if), he will be top 3 in points, assists and steals, and top 25 in rebounds. No other player comes close.\n\n\n\nHere is the code that produces the graph above:\n\n\nlibrary(dplyr)\nlibrary(rvest)\nurl <- \"https://web.archive.org/web/20180605212404/https://www.espn.com/nba/player/stats/_/id/1966/lebron-james\"\nh <- read_html(url)\nlebron <-html_nodes(h, \"table\") %>% .[[3]] %>% rvest::html_table(fill=TRUE) %>% .[,1:17]\nnames(lebron) <- as.character(lebron[2,])\nlebron <-lebron[3:17,]\nind <- 11:17\nlebron[ ,ind] <- apply(lebron[,ind], 2, as.numeric)\n\nstats <- c(\"pts\",\"ast\",\"stl\",\"trb\")\nfull_stats <- c(\"Points\", \"Assists\", \"Steals\", \"Rebounds\")\nurls <- paste0(\"https://web.archive.org/web/20180617065113/https://www.basketball-reference.com/leaders/\", stats, \"_career.html\")\ntabs <- lapply(urls, function(url){\n  tab <- read_html(url) %>%\n    html_nodes(\"table\") %>%\n    .[[2]] %>%\n    html_table()\n   tab <- tab %>% mutate(Player = gsub(\"\\\\*\", \"\", Player))\n   names(tab)[3] <- \"Value\"\n   tab\n})\nnames(tabs) <- stats\nnames(lebron)[11] <- \"TRB\"\nind <- match(toupper(stats), names(lebron))\n\nrafalib::mypar(2,2)\nfor(i in seq_along(stats)){\n  y <- lebron[[ ind[i] ]]\n  r <- mean(y)\n  x <- 2004:2018\n\n  YLIM <- c(min(y), max(tabs[[i]]$Value))\n  YLIM[2] <- YLIM[2]*(1.05)\n  XLIM <- c(min(x), 2018 + 5)\n  plot(x, cumsum(y), xlim = XLIM, ylim = YLIM, xaxt=\"n\",\n       main = full_stats[i], xlab=\"\", ylab=\"Total\")\n  axis(side=1, 2004:2023, 2004:2023, las =2)\n  abline(-2003*r, r, lty = 2, col = \"red\")\n  j <- c(1:3,25)\n  the_names <- tabs[[i]]$Player[j]\n  the_names[4] <- paste0(\"Top 25\")\n  z <-  tabs[[i]]$Value[j]\n  abline(h = z, lty = 2)\n  text(2008.5, z, the_names, pos=3, offset = 0.1, cex = 0.7)\n}\n\n\n\n\n\n",
+    "preview": "http://n.sinaimg.cn/sinacn/w600h686/20180104/c476-fyqinct9321280.jpg",
+    "last_modified": "2022-12-25T16:12:40-05:00",
+    "input_file": "index.knit.md"
+  },
+  {
     "path": "posts/2018-06-04-trustworthy-data-analysis/",
     "title": "Trustworthy Data Analysis",
     "description": {},

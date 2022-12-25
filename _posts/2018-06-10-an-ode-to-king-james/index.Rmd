@@ -21,18 +21,17 @@ At 33, he is already top 25 **all time** in three categories: points, assists an
 ```{r king-james-totals, echo=FALSE, message=FALSE}
 library(dplyr)
 library(rvest)
-url <- "http://www.espn.com/nba/player/stats/_/id/1966/lebron-james"
+url <- "https://web.archive.org/web/20180605212404/https://www.espn.com/nba/player/stats/_/id/1966/lebron-james"
 h <- read_html(url)
-lebron <-html_nodes(h, "table") %>% .[[3]] %>% rvest::html_table(fill=TRUE)
-names(lebron) <- lebron[2,]
-lebron <-lebron[3:17,1:17]
+lebron <-html_nodes(h, "table") %>% .[[3]] %>% rvest::html_table(fill=TRUE) %>% .[,1:17]
+names(lebron) <- as.character(lebron[2,])
+lebron <-lebron[3:17,]
 ind <- 11:17
 lebron[ ,ind] <- apply(lebron[,ind], 2, as.numeric)
 
 stats <- c("pts","ast","stl","trb")
 full_stats <- c("Points", "Assists", "Steals", "Rebounds")
-urls <- paste0("https://www.basketball-reference.com/leaders/",
-              stats, "_career.html")
+urls <- paste0("https://web.archive.org/web/20180617065113/https://www.basketball-reference.com/leaders/", stats, "_career.html")
 tabs <- lapply(urls, function(url){
   tab <- read_html(url) %>%
     html_nodes("table") %>%
@@ -73,18 +72,17 @@ Here is the code that produces the graph above:
 ```{r eval=FALSE}
 library(dplyr)
 library(rvest)
-url <- "http://www.espn.com/nba/player/stats/_/id/1966/lebron-james"
+url <- "https://web.archive.org/web/20180605212404/https://www.espn.com/nba/player/stats/_/id/1966/lebron-james"
 h <- read_html(url)
-lebron <-html_nodes(h, "table") %>% .[[3]] %>% rvest::html_table(fill=TRUE)
-names(lebron) <- lebron[2,]
-lebron <-lebron[3:17,1:17]
+lebron <-html_nodes(h, "table") %>% .[[3]] %>% rvest::html_table(fill=TRUE) %>% .[,1:17]
+names(lebron) <- as.character(lebron[2,])
+lebron <-lebron[3:17,]
 ind <- 11:17
 lebron[ ,ind] <- apply(lebron[,ind], 2, as.numeric)
 
 stats <- c("pts","ast","stl","trb")
 full_stats <- c("Points", "Assists", "Steals", "Rebounds")
-urls <- paste0("https://www.basketball-reference.com/leaders/",
-              stats, "_career.html")
+urls <- paste0("https://web.archive.org/web/20180617065113/https://www.basketball-reference.com/leaders/", stats, "_career.html")
 tabs <- lapply(urls, function(url){
   tab <- read_html(url) %>%
     html_nodes("table") %>%
