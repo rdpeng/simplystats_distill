@@ -1,6 +1,6 @@
 ---
-title: 'π day special: How to use Bioconductor to find empirical evidence in support
-  of π being a normal number'
+title: 'pi day special: How to use Bioconductor to find empirical evidence in support
+  of pi being a normal number'
 author: Rafael Irizarry
 date: '2015-03-14'
 output:
@@ -30,7 +30,7 @@ These observed counts should also be independent, and to explore this we can loo
 
 To do this in about an hour and with just a few lines of code (included below), I used the [Bioconductor](http://www.bioconductor.org/) [Biostrings](http://www.bioconductor.org/packages/release/bioc/html/Biostrings.html) package to match strings and the _foreach_ function to parallelize.
 
-```{r}
+```{r, eval=FALSE}
 library(Biostrings)
 library(doParallel)
 

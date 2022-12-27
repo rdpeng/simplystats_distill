@@ -12,7 +12,8 @@ There is currently [a debate](https://twitter.com/NateSilver538/status/861611275
 
 To test out [blogdown](https://bookdown.org/yihui/blogdown/) (thanks [Yihui Xie](https://twitter.com/rdpeng/status/861573798642012161)!) I decided to write this post showing the code I used for the simple analysis I performed, hoping to get others to look at the data, point out mistakes, or show me a better way to do what I did. There are many more things I can think of doing, such as account for pollster effect or try to better estimate the day the poll was actually taken. 
  
-Here I read-in and wrangle the raw data prepared by 538.
+Here I read-in and wrangle the raw data prepared by 538:
+
 ```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 ##download data from 538 
@@ -51,6 +52,7 @@ res <- polls %>%
 ```
 
 Here is the plot of these weighted averages:
+
 ```{r}
 rafalib::mypar()
 with(res, plot(date, avg, type="b", pch = 21, bg = 1, xlab = "Date", ylab = "Weighted Average of Clinton - Trump"))
