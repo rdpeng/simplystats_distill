@@ -33,7 +33,7 @@ ds_theme_set()
 ### This is not evaluated
 ### To run this you need to download the original word file
 ### covert to a pdf, and make filename path to that file
-filename <- "~/myDocuments/tmp/Excess_mortality_due_to_Hurricane_Maria_to_be_measured_using_a_simple_method.pdf"
+filename <- "~/myDocuments/papers/papers-by-others/Excess_mortality_due_to_Hurricane_Maria_to_be_measured_using_a_simple_method.pdf"
 txt <- pdf_text(filename)[4]
 tmp <- str_split(txt, "\n")[[1]][2:14] %>%
   str_replace_all("\\s([A-Z])", "\\1") %>%
@@ -41,8 +41,9 @@ tmp <- str_split(txt, "\n")[[1]][2:14] %>%
   str_split("\\s+", simplify = TRUE) 
 tmp[1,1] <- "Month"
 the_names <- tmp[1,]
+colnames(tmp) <- the_names
 tab <- tmp %>% 
-  tbl_df %>% 
+  as_tibble() %>% 
   slice(-1) %>% 
   mutate_all(parse_guess) %>% 
   setNames(the_names) %>%
@@ -55,7 +56,7 @@ save("static/data/2017-12-03-hurricane-maria-deaths.rda")
 
 ```{r, echo=FALSE, message=FALSE, out.width = "100%"}
 ## load rda created wtih pdf in code above
-load(url("https://simplystatistics.org/data/2017-12-03-hurricane-maria-deaths.rda"))
+load(url("https://github.com/rbind/simplystats/raw/master/static/data/2017-12-03-hurricane-maria-deaths.rda"))
 ## 2017 data point 
 annotate <- data_frame(x = 9, y = 2838, label = "September 2017")
 sept_avg <- tab %>% filter(Year != "Average") %>% filter(Month == "September") %>% .$Deaths %>% mean()
@@ -84,6 +85,7 @@ To create this plot, I downloaded the Microsoft Word version of the preprint, co
 The September 2017 data point is a clear outlier, 455 deaths above average, and is well beyond 55 deaths above the largest deviation from the monthly average. Keep in mind that Hurricane María hit Puerto Rico on September 20th, so only 10 days account for the observed difference. The official figure includes September and October so it covers at least 40 days. 
 
 Below is a plot of the total deaths, which the preprint shows in Figure 2.
+
 ```{r, echo=FALSE,  out.width = "100%"}
 tab %>% ggplot() +
   geom_line(aes(as.numeric(Month), Deaths, 

@@ -7,15 +7,13 @@ output:
     self_contained: no
 ---
 
-
-
 I recently coded up a simple package that implements a file-based queue abstract data type. This package was needed for a different package that I'm working on involving parallel processing (more on that in the near future). Actually, this othe package is [a project that I started almost nine years ago](https://twitter.com/rdpeng/status/900699027108282368) but was never able to get off the ground. I tried to implement a queue interface in the [filehash](https://github.com/rdpeng/filehash) package but it never served the purpose that I needed.
 
 Recently, I came across Rich FitzJohn's [thor](https://github.com/richfitz/thor) package, which provides an interface to the [LMDB](https://github.com/LMDB/lmdb) database, which is a light-weight key-value style database. When I saw this, I realized that it was exactly what I needed because it supports transactions with blocking. So if multiple processes attempt to write to the database at once, it will block the other processes untill the currently writing one is finished, and then move on to the next one. 
 
 The code for the `queue` package is [available on GitHub](https://github.com/rdpeng/queue) and can be installed in the usual way via `devtools`:
 
-```r
+```{r, eval=FALSE}
 devtools::install_github("rdpeng/queue")
 ```
 
@@ -28,8 +26,8 @@ The package just involves four functions:
 
 There are also functions 
 
-* `create_Q`: create the queue and associated files on the disk
-* `init_Q`: initialize a queue that has been previously created
+* `create_queue`: create the queue and associated files on the disk
+* `init_queue`: initialize a queue that has been previously created
 
 Everything is implemented as S3 classes and methods. Queues are just sub-directories on the filesystem that contain some metadata for the underlying LMDB database. 
 
@@ -37,7 +35,7 @@ You can create a queue with the `create_Q()` function.
 
 ```{r}
 library(queue)
-x <- create_Q("testq")
+x <- create_queue("testq")
 is_empty(x)
 ```
 
@@ -64,7 +62,7 @@ The implementation is pretty basic right now but the guts of it are there. I don
 
 
 
-
+~/myDocuments/git/simplystats_distill/_posts/2017-08-28-simple-queue-package-for-r/index.Rmd
 
 
 

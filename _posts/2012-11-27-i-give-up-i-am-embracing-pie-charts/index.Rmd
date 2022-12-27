@@ -14,7 +14,7 @@ Most statisticians know that pie charts are a terrible way to plot percentages. 
 
 I have only used the `pie` R function once and it was to make this plot:
 
-```{r}
+```{r, eval=FALSE}
 saveGIF({
   N=10
   for(i in 0:(N-1)){
