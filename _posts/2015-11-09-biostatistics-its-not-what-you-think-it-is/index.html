@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1480,7 +1517,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p><a href="http://www.hsph.harvard.edu/biostatistics">My department</a> recently sent me on a recruitment trip for our graduate program. I had the opportunity to chat with undergrads interested in pursuing a career related to data analysis. I found that several did not know about the existence of Departments of <em>Biostatistics</em> and most of the rest thought <em>Biostatistics</em> was the study of clinical trials. We <a href="http://simplystatistics.org/2012/08/14/statistics-statisticians-need-better-marketing/">have</a> <a href="http://simplystatistics.org/2011/11/02/we-need-better-marketing/">posted</a> on the need for better marketing for Statistics, but Biostatistics needs it even more. So this post is for students considering a career as applied statisticians or data science and are considering PhD programs.</p>
+<p><a href="http://www.hsph.harvard.edu/biostatistics">My department</a> recently sent me on a recruitment trip for our graduate program. I had the opportunity to chat with undergrads interested in pursuing a career related to data analysis. I found that several did not know about the existence of Departments of <em>Biostatistics</em> and most of the rest thought <em>Biostatistics</em> was the study of clinical trials. We <a href="http://simplystatistics.org/posts/2012-08-14-statistics-statisticians-need-better-marketing/">have</a> <a href="http://simplystatistics.org/posts/2011-11-02-we-need-better-marketing/">posted</a> on the need for better marketing for Statistics, but Biostatistics needs it even more. So this post is for students considering a career as applied statisticians or data science and are considering PhD programs.</p>
 <p>There are dozens of Biostatistics departments and most run PhD programs. As an undergraduate, you may have never heard of it because they are usually in schools that undergrads don’t regularly frequent: Public Health and Medicine.  However, they are very active in research and teaching graduate students. In fact, the 2014 US News &amp; World Report <a href="http://US%20News%20and%20R">ranking of Statistics Departments</a> includes three Biostat departments in the top five spots. Although clinical trials are a popular area of interest in these departments, there are now many other areas of research. With so many fields of science shifting to data intensive research, Biostatistics has adapted to work in these areas. Today pretty much any Biostat department will have people working on projects related to genetics, genomics, computational biology, electronic medical records, neuroscience, environmental sciences, and epidemiology, health-risk analysis, and clinical decision making. Through collaborations, academic biostatisticians have early access to the cutting edge datasets produced by public health scientists and biomedical researchers. Our research usually revolves in either developing statistical methods that are used by researchers working in these fields or working directly with a collaborator in data-driven discovery.</p>
 <p><strong>How is it different from Statistics? </strong>In the grand scheme of things, they are not very different. As implied by the name, Biostatisticians focus on data related to biology while statisticians tend to be more general. However, the underlying theory and skills we learn are similar. In my view, the major difference is that Biostatisticians, in general, tend to be more interested in data and the subject matter, while in Statistics Departments more emphasis is given to the mathematical theory.</p>
 <p><strong>What type of job can I get with a Phd In Biostatistics? </strong><a href="http://fortune.com/2015/04/27/best-worst-graduate-degrees-jobs/">A well paying one</a>. And you will have many options to chose from. Our graduates tend to go to academia, industry or government. Also, the <strong>Bio </strong>in the name does not keep our graduates for landing non-bio related jobs, such as in high tech. The reason for this is that the training our students receive and the what they learn from research experiences can be widely applied to data analysis challenges.</p>

@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -792,6 +793,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1864,15 +1866,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2071,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2133,7 +2141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>The ASA has <a href="http://www.statistics2013.org/">declared</a> 2013 to be the International Year of Statistics and I am ready to celebrate it in full force. It is a great time to be a statistician and I am hoping more people will join the fun. In fact, as we like to point out in this blog, Statistics has already been at the center of many exciting accomplishments of the 21st century. <a href="http://en.wikipedia.org/wiki/Sabermetrics">Sabermetrics</a>  has become a standard approach and inspired the Hollywood movie <a href="http://www.imdb.com/title/tt1210166/">Money Ball</a>. Friend of the blog <a href="http://www2.research.att.com/~volinsky/">Chris Volinsk</a>y, a PhD Statistician, led <a href="http://www.nytimes.com/2009/07/28/technology/internet/28netflix.html">the team</a> that won the <a href="http://www.netflixprize.com/">Netflix million dollar prize</a>. Nate Silver et al. <a href="http://simplystatistics.org/2012/11/07/nate-silver-does-it-again-will-pundits-finally-accept/">proved the pundits wrong</a> by, once again, using statistical models to <a href="http://mashable.com/2012/11/07/nate-silver-wins/">predict election results almost perfectly</a>. R has become one the most <a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=all">widely used</a> programming languages in the world. Meanwhile, in academia, the number of statisticians becoming leaders in fields like environmental sciences, human genetics, genomics, and social sciences continues to grow. It is no surprise that stats majors at Harvard have <a href="http://nesterko.com/visuals/statconcpred2012-with-dm/">more than quadrupled</a> since 2000 and that statistics MOOCs are among <a href="http://edudemic.com/2012/12/the-11-most-popular-open-online-courses/">the most</a> popular.</p>
+<p>The ASA has <a href="http://www.statistics2013.org/">declared</a> 2013 to be the International Year of Statistics and I am ready to celebrate it in full force. It is a great time to be a statistician and I am hoping more people will join the fun. In fact, as we like to point out in this blog, Statistics has already been at the center of many exciting accomplishments of the 21st century. <a href="http://en.wikipedia.org/wiki/Sabermetrics">Sabermetrics</a>  has become a standard approach and inspired the Hollywood movie <a href="http://www.imdb.com/title/tt1210166/">Money Ball</a>. Friend of the blog <a href="http://www2.research.att.com/~volinsky/">Chris Volinsk</a>y, a PhD Statistician, led <a href="http://www.nytimes.com/2009/07/28/technology/internet/28netflix.html">the team</a> that won the <a href="http://www.netflixprize.com/">Netflix million dollar prize</a>. Nate Silver et al. <a href="http://simplystatistics.org/posts/2012-11-07-nate-silver-does-it-again-will-pundits-finally-accept/">proved the pundits wrong</a> by, once again, using statistical models to <a href="http://mashable.com/2012/11/07/nate-silver-wins/">predict election results almost perfectly</a>. R has become one the most <a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=all">widely used</a> programming languages in the world. Meanwhile, in academia, the number of statisticians becoming leaders in fields like environmental sciences, human genetics, genomics, and social sciences continues to grow. It is no surprise that stats majors at Harvard have <a href="http://nesterko.com/visuals/statconcpred2012-with-dm/">more than quadrupled</a> since 2000 and that statistics MOOCs are among <a href="http://edudemic.com/2012/12/the-11-most-popular-open-online-courses/">the most</a> popular.</p>
 <p style="text-align: left;">
 <img class="aligncenter" alt="" src="http://mope.amsiintern.org.au/wp-content/uploads/2012/09/IYSTAT-Logo-extended-620x350.jpg" width="372" height="210" />The unprecedented advances in digital technology during the second half of the 20th century has produced a measurement revolution that is transforming the world. Many areas of science are now being driven by new measurement technologies and many insights are being made by discovery-driven, as opposed to hypothesis-driven, experiments. Empiricism is back with a vengeance. The current scientific era is defined by its dependence on data and the statistical methods and concepts developed during the 20th century provide an incomparable toolbox to help tackle current challenges. The toolbox, along with computer science, will also serve as a base for the methods of tomorrow.  So I will gladly join the Year of Statistics’ festivities during 2013 and beyond, during the era of data-driven science.
 </p>

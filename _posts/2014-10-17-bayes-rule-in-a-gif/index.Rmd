@@ -13,4 +13,4 @@ Say Pr(A)=5% is the prevalence of a disease (% of red dots on top fig). Each ind
 
 The individual being tested is highlighted with a moving black circle. Pr(B) of these will test positive: we put these in the bottom left and the rest in the bottom right. The proportion of red points that end up in the bottom left is the proportion of red points Pr(A) with a positive test Pr(B|A), thus Pr(B|A) x Pr(A). Pr(A|B), or the proportion of reds in the bottom left, is therefore Pr(B|A) x Pr(A) divided by Pr(B):  Pr(A|B)=Pr(B|A) x Pr(A) / Pr(B)
 
-ps - Is this a [frequentist or Bayesian](http://simplystatistics.org/2014/10/13/as-an-applied-statistician-i-find-the-frequentists-versus-bayesians-debate-completely-inconsequential/) gif?
+ps - Is this a [frequentist or Bayesian](http://simplystatistics.org/posts/2014-10-13-as-an-applied-statistician-i-find-the-frequentists-versus-bayesians-debate-completely-inconsequential/) gif?

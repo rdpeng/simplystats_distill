@@ -9,7 +9,7 @@ output:
 
 <div>
   <p>
-    In response to <a href="http://simplystatistics.org/2015/11/17/why-are-randomized-trials-not-used-by-policymakers/">my previous post</a>, <a href="https://gspp.berkeley.edu/directories/faculty/avi-feller">Avi Feller</a> sent me these links related to efforts promoting the use of RCTs  and evidence-based approaches for policymaking:
+    In response to <a href="http://simplystatistics.org/posts/2015-11-17-why-are-randomized-trials-not-used-by-policymakers/">my previous post</a>, <a href="https://gspp.berkeley.edu/directories/faculty/avi-feller">Avi Feller</a> sent me these links related to efforts promoting the use of RCTs  and evidence-based approaches for policymaking:
   </p>
   
   <ul>

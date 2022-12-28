@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1480,39 +1517,127 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>This summer I had several conversations with undergraduate students seeking career advice. All were interested in data analysis and were considering graduate school. I also frequently receive requests for advice via email. We have posted on this topic before, for example <a href="http://simplystatistics.org/2015/02/18/navigating-big-data-careers-with-a-statistics-phd/">here</a> and <a href="http://simplystatistics.org/2015/11/09/biostatistics-its-not-what-you-think-it-is/">here</a>, but I thought it would be useful to share this short guide I put together based on my recent interactions.</p>
+<p>This summer I had several conversations with undergraduate
+students seeking career advice. All were interested in data analysis
+and were considering graduate school. I also frequently receive
+requests for advice via email. We have posted on this topic
+before, for example
+<a href="http://simplystatistics.org/posts/2015-02-18-navigating-big-data-careers-with-a-statistics-phd/">here</a>
+and
+<a href="http://simplystatistics.org/posts/2015-11-09-biostatistics-its-not-what-you-think-it-is/">here</a>, but
+I thought it would be useful to share this short guide I put together based on my recent interactions.</p>
 <h2 id="its-ok-to-be-confused">It’s OK to be confused</h2>
-<p>When I was a college senior I didn’t really understand what Applied Statistics was nor did I understand what one does as a researcher in academia. Now I love being an academic doing research in applied statistics. But it is hard to understand what being a researcher is like until you do it for a while. Things become clearer as you gain more experience. One important piece of advice is to carefully consider advice from those with more experience than you. It might not make sense at first, but I can tell today that I knew much less than I thought I did when I was 22.</p>
+<p>When I was a college senior I didn’t really understand what Applied
+Statistics was nor did I understand what one does as a researcher in
+academia. Now I love being an academic doing research in applied statistics.
+But it is hard to understand what being a researcher is like until you do
+it for a while. Things become clearer as you gain more experience. One
+important piece of advice is
+to carefully consider advice from those with more
+experience than you. It might not make sense at first, but I
+can tell today that I knew much less than I thought I did when I was 22.</p>
 <h2 id="should-i-even-go-to-graduate-school">Should I even go to graduate school?</h2>
-<p>Yes. An undergraduate degree in mathematics, statistics, engineering, or computer science provides a great background, but some more training greatly increases your career options. You may be able to learn on the job, but note that a masters can be as short as a year.</p>
+<p>Yes. An undergraduate degree in mathematics, statistics, engineering, or computer science
+provides a great background, but some more training greatly increases
+your career options. You may be able to learn on the job, but note
+that a masters can be as short as a year.</p>
 <h2 id="a-masters-or-a-phd">A masters or a PhD?</h2>
-<p>If you want a career in academia or as a researcher in industry or government you need a PhD. In general, a PhD will give you more career options. If you want to become a data analyst or research assistant, a masters may be enough. A masters is also a good way to test out if this career is a good match for you. Many people do a masters before applying to PhD Programs. The rest of this guide focuses on those interested in a PhD.</p>
+<p>If you want a career in academia or as a researcher in industry or
+government you need a PhD. In general, a PhD will
+give you more career options. If you want to become a data analyst or
+research assistant, a masters may be enough. A masters is also a good way
+to test out if this career is a good match for you. Many people do a
+masters before applying to PhD Programs. The rest of this guide
+focuses on those interested in a PhD.</p>
 <h2 id="what-discipline">What discipline?</h2>
-<p>There are many disciplines that can lead you to a career in data science: Statistics, Biostatistics, Astronomy, Economics, Machine Learning, Computational Biology, and Ecology are examples that come to mind. I did my PhD in Statistics and got a job in a Department of Biostatistics. So this guide focuses on Statistics/Biostatistics.</p>
-<p>Note that once you finish your PhD you have a chance to become a postdoctoral fellow and further focus your training. By then you will have a much better idea of what you want to do and will have the opportunity to chose a lab that closely matches your interests.</p>
+<p>There are many disciplines that can lead you to a career in data
+science: Statistics, Biostatistics, Astronomy, Economics, Machine Learning, Computational
+Biology, and Ecology are examples that come to mind. I did my PhD
+in Statistics and got a job in a Department of Biostatistics. So this
+guide focuses on Statistics/Biostatistics.</p>
+<p>Note that once you finish your PhD you have a chance to become a
+postdoctoral fellow and further focus your training. By then you will have a
+much better idea of what you want to do and will have the opportunity
+to chose a lab that closely matches your interests.</p>
 <h2 id="what-is-the-difference-between-statistics-and-biostatistics">What is the difference between Statistics and Biostatistics?</h2>
-<p>Short answer: very little. I treat them as the same in this guide. Long answer: read <a href="http://simplystatistics.org/2015/11/09/biostatistics-its-not-what-you-think-it-is/">this</a>.</p>
+<p>Short answer: very little. I treat them as the same in this guide. Long answer: read
+<a href="http://simplystatistics.org/posts/2015-11-09-biostatistics-its-not-what-you-think-it-is/">this</a>.</p>
 <h2 id="how-should-i-prepare-during-my-senior-year">How should I prepare during my senior year?</h2>
 <h3 id="math">Math</h3>
-<p>Good grades in math and statistics classes are almost a requirement. Good GRE scores help and you need to get a near perfect score in the Quantitative Reasoning part of the GRE. Get yourself a practice book and start preparing. Note that to survive the first two years of a statistics PhD program you need to prove theorems and derive relatively complicated mathematical results. If you can’t easily handle the math part of the GRE, this will be quite challenging.</p>
-<p>When choosing classes note that the area of math most related to your stat PhD courses is Real Analysis. The area of math most used in applied work is Linear Algebra, specifically matrix theory including understanding eigenvalues and eigenvectors. You might not make the connection between what you learn in class and what you use in practice until much later. This is totally normal.</p>
-<p>If you don’t feel ready, consider doing a masters first. But also, get a second opinion. You might be being too hard on yourself.</p>
+<p>Good grades in math and statistics classes
+are almost a requirement. Good GRE scores help and you need to get a near perfect score in
+the Quantitative Reasoning part of the GRE. Get yourself a practice
+book and start preparing. Note that to survive the first two years of a statistics PhD program
+you need to prove theorems and derive relatively complicated
+mathematical results. If you can’t easily handle the math part of the GRE, this will be
+quite challenging.</p>
+<p>When choosing classes note that the area of math most related to your
+stat PhD courses is Real
+Analysis. The area of math most used in applied work is Linear
+Algebra, specifically matrix theory including understanding
+eigenvalues and eigenvectors. You might not make the connection between
+what you learn in class and what you use in practice until much
+later. This is totally normal.</p>
+<p>If you don’t feel ready, consider doing a masters first. But also, get
+a second opinion. You might be being too hard on yourself.</p>
 <h3 id="programming">Programming</h3>
-<p>You will be using a computer to analyze data so knowing some programming is a must these days. At a minimum, take a basic programming class. Other computer science classes will help especially if you go into an area dealing with large datasets. In hindsight, I wish I had taken classes on optimization and algorithm design.</p>
-<p>Know that learning to program and learning a computer language are different things. You need to learn to program. The choice of language is up for debate. If you only learn one, learn R. If you learn three, learn R, Python and C++.</p>
-<p>Knowing Linux/Unix is an advantage. If you have a Mac try to use the terminal as much as possible. On Windows get an emulator.</p>
+<p>You will be using a computer to analyze data so knowing some
+programming is a must these days. At a minimum, take a basic
+programming class. Other computer science classes will help especially
+if you go into an area dealing with large datasets. In hindsight, I
+wish I had taken classes on optimization and algorithm design.</p>
+<p>Know that learning to program and learning a computer language are
+different things. You need to learn to program. The choice of language
+is up for debate. If you only learn one, learn R. If you learn three,
+learn R, Python and C++.</p>
+<p>Knowing Linux/Unix is an advantage. If you have a Mac try to use the
+terminal as much as possible. On Windows get an emulator.</p>
 <h3 id="writing-and-communicating">Writing and Communicating</h3>
-<p>My biggest educational regret is that, as a college student, I underestimated the importance of writing. To this day I am correcting that mistake.</p>
-<p>Your success as a researcher greatly depends on how well you write and communicate. Your thesis, papers, grant proposals and even emails have to be well written. So practice as much as possible. Take classes, read works by good writers, and <a href="http://bulletin.imstat.org/2011/09/terence%E2%80%99s-stuff-speaking-reading-writing/">practice</a>. Consider starting a blog even if you don’t make it public. Also note that in academia, job interviews will involve a 50 minute talk as well as several conversations about your work and future plans. So communication skills are also a big plus.</p>
+<p>My biggest educational regret is that, as a college student, I underestimated the importance
+of writing. To this day I am correcting that mistake.</p>
+<p>Your success as a researcher greatly depends on how well
+you write and communicate. Your thesis, papers, grant
+proposals and even emails have to be well written. So practice as much as
+possible. Take classes, read works by good writers, and
+<a href="http://bulletin.imstat.org/2011/09/terence%E2%80%99s-stuff-speaking-reading-writing/">practice</a>. Consider
+starting a blog even if you don’t make it public. Also note that in
+academia, job interviews will
+involve a 50 minute talk as well as several conversations about your
+work and future plans. So communication skills are also a big plus.</p>
 <h2 id="but-wait-why-so-much-math">But wait, why so much math?</h2>
-<p>The PhD curriculum is indeed math heavy. Faculty often debate the possibility of changing the curriculum. But regardless of differing opinions on what is the right amount, math is the foundation of our discipline. Although it is true that you will not directly use much of what you learn, I don’t regret learning so much abstract math because I believe it positively shaped the way I think and attack problems.</p>
-<p>Note that after the first two years you are pretty much done with courses and you start on your research. If you work with an applied statistician you will learn data analysis via the apprenticeship model. You will learn the most, by far, during this stage. So be patient. Watch <a href="https://www.youtube.com/watch?v=R37pbIySnjg">these</a> <a href="https://www.youtube.com/watch?v=Bg21M2zwG9Q">two</a> Karate Kid scenes for some inspiration.</p>
+<p>The PhD curriculum is indeed math heavy. Faculty often debate the
+possibility of changing the curriculum. But regardless of
+differing opinions on what is the right amount, math is the
+foundation of our discipline. Although it is true that you will not
+directly use much of what you learn, I don’t regret learning so much abstract
+math because I believe it positively shaped the way I think and attack
+problems.</p>
+<p>Note that after the first two years you are
+pretty much done with courses and you start on your research. If you work with an
+applied statistician you will learn data analysis via the
+apprenticeship model. You will learn the most, by far, during this
+stage. So be patient. Watch
+<a href="https://www.youtube.com/watch?v=R37pbIySnjg">these</a>
+<a href="https://www.youtube.com/watch?v=Bg21M2zwG9Q">two</a> Karate Kid scenes
+for some inspiration.</p>
 <h2 id="what-department-should-i-apply-to">What department should I apply to?</h2>
-<p>The top 20-30 departments are practically interchangeable in my opinion. If you are interested in applied statistics make sure you pick a department with faculty doing applied research. Note that some professors focus their research on the mathematical aspects of statistics. By reading some of their recent papers you will be able to tell. An applied paper usually shows data (not simulated) and motivates a subject area challenge in the abstract or introduction. A theory paper shows no data at all or uses it only as an example.</p>
+<p>The top 20-30 departments are practically interchangeable in my
+opinion. If you are interested in applied statistics make sure you
+pick a department with faculty doing applied research. Note that some
+professors focus their research on the mathematical aspects of
+statistics. By reading some of their recent papers you will be able to
+tell. An applied paper usually shows data (not simulated) and
+motivates a subject area challenge in the abstract or introduction. A
+theory paper shows no data at all or uses it only as an example.</p>
 <h2 id="can-i-take-a-year-off">Can I take a year off?</h2>
-<p>Absolutely. Especially if it’s to work in a data related job. In general, maturity and life experiences are an advantage in grad school.</p>
+<p>Absolutely. Especially if it’s to work in a data related job. In
+general, maturity and life experiences are an advantage in grad school.</p>
 <h2 id="what-should-i-expect-when-i-finish">What should I expect when I finish?</h2>
-<p>You will have many many options. The demand of your expertise is great and growing. As a result there are many high-paying options. If you want to become an academic I recommend doing a postdoc. <a href="http://simplystatistics.org/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/">Here</a> is why. But there are many other options as we describe <a href="http://simplystatistics.org/2015/02/18/navigating-big-data-careers-with-a-statistics-phd/">here</a> and <a href="http://simplystatistics.org/2011/09/12/advice-for-stats-students-on-the-academic-job-market/">here</a>.</p>
+<p>You will have many many options. The demand of your expertise is
+great and growing. As a result there are many high-paying options. If you want to
+become an academic I recommend doing a postdoc. <a href="http://simplystatistics.org/posts/2011-12-28-grad-students-in-bio-statistics-do-a-postdoc/">Here</a> is why.
+But there are many other options as we describe <a href="http://simplystatistics.org/posts/2015-02-18-navigating-big-data-careers-with-a-statistics-phd/">here</a>
+and <a href="http://simplystatistics.org/posts/2011-09-12-advice-for-stats-students-on-the-academic-job-market/">here</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

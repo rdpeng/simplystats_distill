@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -792,6 +793,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1864,15 +1866,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2071,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2133,10 +2141,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>In a previous <a href="http://simplystatistics.org/2014/01/17/missing-not-at-random-data-makes-some-facebook-users-feel-sad/">post</a> I explained how thinking like a statistician can help you avoid  <a href="http://www.npr.org/2014/01/09/261108836/many-younger-facebook-users-unfriend-the-network">feeling sad after using Facebook.</a> The basic point was that <em>missing not at random</em> (MNAR) data on your friends’ profiles (showing only the best parts of their life) can result in the biased view that your life is boring and uninspiring in comparison. A similar argument can be made to avoid  losing faith in humanity after reading internet comments or anonymous tweets, one of the most depressing activities that I have voluntarily engaged in.  If you want to see proof that racism, xenophobia, sexism and homophobia are still very much alive, read the unfiltered comments sections of articles related to race, immigration, gender or gay rights. However, as a statistician, I remain optimistic about our society after realizing how extremely biased these particular MNAR data can be.</p>
+<p>In a previous <a href="http://simplystatistics.org/posts/2014-01-17-missing-not-at-random-data-makes-some-facebook-users-feel-sad/">post</a> I explained how thinking like a statistician can help you avoid  <a href="http://www.npr.org/2014/01/09/261108836/many-younger-facebook-users-unfriend-the-network">feeling sad after using Facebook.</a> The basic point was that <em>missing not at random</em> (MNAR) data on your friends’ profiles (showing only the best parts of their life) can result in the biased view that your life is boring and uninspiring in comparison. A similar argument can be made to avoid  losing faith in humanity after reading internet comments or anonymous tweets, one of the most depressing activities that I have voluntarily engaged in.  If you want to see proof that racism, xenophobia, sexism and homophobia are still very much alive, read the unfiltered comments sections of articles related to race, immigration, gender or gay rights. However, as a statistician, I remain optimistic about our society after realizing how extremely biased these particular MNAR data can be.</p>
 <p>Assume we could summarize an individual’s “righteousness<span class="star inactive">“</span> with a numerical index. I realize this is a gross oversimplification, but bear with me. Below is my view on the distribution of this index across all members of our society.</p>
 <figure>
-<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/10/IMG_5842.jpg" alt="internet-comment-cartoon" /><figcaption aria-hidden="true">internet-comment-cartoon</figcaption>
+<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/10/IMG_5842.jpg" alt="internet-comment-cartoon" />
+<figcaption aria-hidden="true">internet-comment-cartoon</figcaption>
 </figure>
 <p>Note that the distribution is not bimodal. This means there is no gap between good and evil, instead we have a continuum. Although there is variability, and we do have some extreme outliers on both sides of the distribution, most of us are much closer to the median than we like to believe. The offending internet commentators represent a very small proportion (the “bad” tail shown in red). But in a large population, such as internet users, this extremely small proportion can be quite numerous and gives us a biased view.</p>
 <p>There is one more level of variability here that introduces biases. Since internet comments can be anonymous, we get an unprecedentedly large glimpse into people’s opinions and thoughts. We assign a “righteousness” index to our thoughts and opinion and include it in the scatter plot shown in the figure above. Note that this index exhibits variability within individuals: even the best people have the occasional bad thought.  The points in red represent thoughts so awful that no one, not even the worst people, would ever express publicly. The red points give us an overly pessimistic estimate of the individuals that are posting these comments, which exacerbates our already pessimistic view due to a non-representative sample of individuals.</p>

@@ -67,7 +67,7 @@ The confluence of these two factors leads to a much greater disappointment when 
 
 ## The Silver Lining
 
-It's important to remember that, as my colleague Rafa Irizarry [pointed out](http://simplystatistics.org/2013/08/01/the-roc-curves-of-science/), findings from many of the fields in the upper right box, especially clinical medicine, can have tremendous positive impacts on our lives when they do work out. Rafa says
+It's important to remember that, as my colleague Rafa Irizarry [pointed out](http://simplystatistics.org/posts/2013-08-01-the-roc-curves-of-science/), findings from many of the fields in the upper right box, especially clinical medicine, can have tremendous positive impacts on our lives when they do work out. Rafa says
 
 > ...I argue that the rate of discoveries is higher in biomedical research than in physics. But, to achieve this higher true positive rate, biomedical research has to tolerate a higher false positive rate.
 

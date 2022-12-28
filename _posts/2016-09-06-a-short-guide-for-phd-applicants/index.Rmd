@@ -13,9 +13,9 @@ students seeking career advice. All were interested in data analysis
 and were considering graduate school. I also frequently receive 
 requests for advice via email. We have posted on this topic
 before, for example
-[here](http://simplystatistics.org/2015/02/18/navigating-big-data-careers-with-a-statistics-phd/)
+[here](http://simplystatistics.org/posts/2015-02-18-navigating-big-data-careers-with-a-statistics-phd/)
 and
-[here](http://simplystatistics.org/2015/11/09/biostatistics-its-not-what-you-think-it-is/), but
+[here](http://simplystatistics.org/posts/2015-11-09-biostatistics-its-not-what-you-think-it-is/), but
 I thought it would be useful to share this short guide I put together based on my recent interactions.
 
 ## It's OK to be confused
@@ -65,7 +65,7 @@ to chose a lab that closely matches your interests.
 ## What is the difference between Statistics and Biostatistics?
 
 Short answer: very little. I treat them as the same in this guide. Long answer: read
-[this](http://simplystatistics.org/2015/11/09/biostatistics-its-not-what-you-think-it-is/).
+[this](http://simplystatistics.org/posts/2015-11-09-biostatistics-its-not-what-you-think-it-is/).
 
 ## How should I prepare during my senior year?
 
@@ -164,9 +164,9 @@ general, maturity and life experiences are an advantage in grad school.
 
 You will have many many options. The demand of your expertise is
 great and growing. As a result there are many high-paying options. If you want to
-become an academic I recommend doing a postdoc. [Here](http://simplystatistics.org/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/) is why.
-But there are many other options as we describe [here](http://simplystatistics.org/2015/02/18/navigating-big-data-careers-with-a-statistics-phd/)
- and [here](http://simplystatistics.org/2011/09/12/advice-for-stats-students-on-the-academic-job-market/).
+become an academic I recommend doing a postdoc. [Here](http://simplystatistics.org/posts/2011-12-28-grad-students-in-bio-statistics-do-a-postdoc/) is why.
+But there are many other options as we describe [here](http://simplystatistics.org/posts/2015-02-18-navigating-big-data-careers-with-a-statistics-phd/)
+ and [here](http://simplystatistics.org/posts/2011-09-12-advice-for-stats-students-on-the-academic-job-market/).
 
 
 
