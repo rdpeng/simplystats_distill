@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -792,6 +793,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1864,15 +1866,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2071,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2133,48 +2141,25 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>I finally got around to reading David Donoho’s <a href="https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf">50 Years of Data Science</a> paper.  I highly recommend it. The following quote seems to summarize the sentiment that motivated the paper, as well as why it has resonated among academic statisticians:</p>
-<div class="page" title="Page 5">
-<div class="layoutArea">
-<pre><code>&lt;div class=&quot;column&quot;&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;
-      The statistics profession is caught at a confusing moment: the activities which preoccupied it over centuries are now in the limelight, but those activities are claimed to be bright shiny new, and carried out by (although not actually invented by) upstarts and strangers.
-    &lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<p>The reason we started this blog over four years ago was because, as Jeff wrote in his inaugural post, we were “<a href="http://simplystatistics.org/2011/09/07/first-things-first/">fired up about the new era where data is abundant and statisticians are scientists</a>”. It was clear that many disciplines were becoming data-driven and  that interest in data analysis was growing rapidly. We were further motivated because, despite this <a href="http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/">new found interest in our work</a>, academic statisticians were, in general, more interested in the development of context free methods than in leveraging applied statistics to take <a href="http://simplystatistics.org/2012/06/22/statistics-and-the-science-club/">leadership roles</a> in data-driven projects. Meanwhile, great and highly visible applied statistics work was occurring in other fields such as astronomy, computational biology, computer science, political science and economics. So it was not completely surprising that some (bio)statistics departments were being left out from larger university-wide data science initiatives. Some of <a href="http://simplystatistics.org/2014/07/25/academic-statisticians-there-is-no-shame-in-developing-statistical-solutions-that-solve-just-one-problem/">our</a> <a href="http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/">posts</a> exhorted academic departments to embrace larger numbers of applied statisticians:</p>
+<p>I finally got around to reading David Donoho’s <a href="https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf">50 Years of Data Science</a> paper. I highly recommend it. The following quote seems to summarize the sentiment that motivated the paper, as well as why it has resonated among academic statisticians:</p>
+<blockquote>
+<p>“The statistics profession is caught at a confusing moment: the activities which preoccupied it over centuries are now in the limelight, but those activities are claimed to be bright shiny new, and carried out by (although not actually invented by) upstarts and strangers.”</p>
+</blockquote>
+<p>The reason we started this blog over four years ago was because, as Jeff wrote in his inaugural post, we were “<a href="http://simplystatistics.org/posts/2011-09-07-first-things-first/">fired up about the new era where data is abundant and statisticians are scientists</a>”. It was clear that many disciplines were becoming data-driven and that interest in data analysis was growing rapidly. We were further motivated because, despite this <a href="http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/">new found interest in our work</a>, academic statisticians were, in general, more interested in the development of context free methods than in leveraging applied statistics to take <a href="http://simplystatistics.org/2012/06/22/statistics-and-the-science-club/">leadership roles</a> in data-driven projects. Meanwhile, great and highly visible applied statistics work was occurring in other fields such as astronomy, computational biology, computer science, political science and economics. So it was not completely surprising that some (bio)statistics departments were being left out from larger university-wide data science initiatives. Some of <a href="http://simplystatistics.org/2014/07/25/academic-statisticians-there-is-no-shame-in-developing-statistical-solutions-that-solve-just-one-problem/">our</a> <a href="http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/">posts</a> exhorted academic departments to embrace larger numbers of applied statisticians:</p>
 <blockquote>
 <p>[M]any of the giants of our discipline were very much interested in solving specific problems in genetics, agriculture, and the social sciences. In fact, many of today’s most widely-applied methods were originally inspired by insights gained by answering very specific scientific questions. I worry that the balance between application and theory has shifted too far away from applications. An unfortunate consequence is that our flagship journals, including our applied journals, are publishing too many methods seeking to solve many problems but actually solving none.  By shifting some of our efforts to solving specific problems we will get closer to the essence of modern problems and will actually inspire more successful generalizable methods.</p>
 </blockquote>
 <p>Donoho points out that John Tukey had a similar preoccupation 50 years ago:</p>
-<div class="page" title="Page 10">
-<div class="layoutArea">
-<pre><code>&lt;div class=&quot;column&quot;&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;
-      For a long time I have thought I was a statistician, interested in inferences from the particular to the general. But as I have watched mathematical statistics evolve, I have had cause to wonder and to doubt. ... All in all I have come to feel that my central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data
-    &lt;/p&gt;
-  &lt;/blockquote&gt;
-  
-  &lt;p&gt;
-    Many applied statisticians do the things Tukey mentions above. In the blog we have encouraged them to &lt;a href=&quot;http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/&quot;&gt;teach the gory details of what what they do&lt;/a&gt;, along with the general methodology we currently teach. With all this in mind, several months ago, when I was invited to give a talk at a department that was, at the time, deciphering their role in their university&#39;s data science initiative, I gave a talk titled&lt;em&gt; 20 years of Data Science: from Music to Genomics. &lt;/em&gt;The goal was to explain why &lt;em&gt;applied statistician&lt;/em&gt; is not considered synonymous with &lt;em&gt;data scientist &lt;/em&gt;even when we focus on the same goal: &lt;a href=&quot;https://en.wikipedia.org/wiki/Data_science&quot;&gt;extract knowledge or insights from data.&lt;/a&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    The first example in the talk related to how academic applied statisticians tend to emphasize the parts that will be most appreciated by our math stat colleagues and ignore the aspects that are today being heralded as the linchpins of data science. I used my thesis papers as examples. &lt;a href=&quot;http://archive.cnmat.berkeley.edu/Research/1998/Rafael/tesis.pdf&quot;&gt;My dissertation work&lt;/a&gt; was about finding meaningful parametrization of musical sound signals that&lt;img class=&quot;wp-image-4449 alignright&quot; src=&quot;http://www.biostat.jhsph.edu/~ririzarr/Demo/img7.gif&quot; alt=&quot;Spectrogram&quot; width=&quot;380&quot; height=&quot;178&quot; /&gt; my collaborators could use to manipulate sounds to create new ones. To do this, I prepared a database of sounds, wrote code to extract and import the digital representations from CDs into S-plus (yes, I&#39;m that old), visualized the data to motivate models, wrote code in C (or was it Fortran?) to make the analysis go faster, and tested these models with residual analysis by ear (you can listen to them &lt;a href=&quot;http://www.biostat.jhsph.edu/~ririzarr/Demo/&quot;&gt;here&lt;/a&gt;). None of these data science aspects were highlighted in the &lt;a href=&quot;http://www3.stat.sinica.edu.tw/statistica/oldpdf/A10n42.pdf&quot;&gt;papers&lt;/a&gt; &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1198/000313001300339969#.Vk4_ht-rQUE&quot;&gt;I&lt;/a&gt; &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1198/016214501750332875#.Vk4_mN-rQUE&quot;&gt;wrote &lt;/a&gt;&lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1198/016214501753168082#.Vk4_qt-rQUE&quot;&gt;about&lt;/a&gt; my &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/1467-9892.01515/abstract?userIsAuthenticated=false&amp;deniedAccessCustomisedMessage=&quot;&gt;thesis&lt;/a&gt;. Here is a screen shot from &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/1467-9892.01515/abstract&quot;&gt;this paper&lt;/a&gt;:
-  &lt;/p&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM.png"><img class="wp-image-4449 aligncenter" src="http://simplystatistics.org/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM.png" alt="Screen Shot 2015-04-15 at 12.24.40 PM" width="320" height="342" srcset="http://simplystatistics.org/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM-957x1024.png 957w, http://simplystatistics.org/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM-187x200.png 187w, http://simplystatistics.org/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM.png 1204w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
+<blockquote>
+<p>“For a long time I have thought I was a statistician, interested in inferences from the particular to the general. But as I have watched mathematical statistics evolve, I have had cause to wonder and to doubt. … All in all I have come to feel that my central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data.”</p>
+</blockquote>
+<p>Many applied statisticians do the things Tukey mentions above. In the blog we have encouraged them to <a href="http://simplystatistics.org/posts/2014-09-15-applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/">teach the gory details of what what they do</a>, along with the general methodology we currently teach. With all this in mind, several months ago, when I was invited to give a talk at a department that was, at the time, deciphering their role in their university’s data science initiative, I gave a talk titled <em>20 years of Data Science: from Music to Genomics. </em>The goal was to explain why <em>applied statistician </em>is not considered synonymous with<em> data scientist </em>even when we focus on the same goal: <a href="https://en.wikipedia.org/wiki/Data_science">extract knowledge or insights from data</a>.</p>
+<p>The first example in the talk related to how academic applied statisticians tend to emphasize the parts that will be most appreciated by our math stat colleagues and ignore the aspects that are today being heralded as the linchpins of data science. I used my thesis papers as examples. <a href="http://archive.cnmat.berkeley.edu/Research/1998/Rafael/tesis.pdf">My dissertation work</a> was about finding meaningful parametrization of musical sound signals that<img class="wp-image-4449 alignright" src="http://www.biostat.jhsph.edu/~ririzarr/Demo/img7.gif" alt="Spectrogram" width="380" height="178" /></p>
+<p>my collaborators could use to manipulate sounds to create new ones. To do this, I prepared a database of sounds, wrote code to extract and import the digital representations from CDs into S-plus (yes, I’m that old), visualized the data to motivate models, wrote code in C (or was it Fortran?) to make the analysis go faster, and tested these models with residual analysis by ear (you can listen to them <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/">here</a>). None of these data science aspects were highlighted in the <a href="http://www3.stat.sinica.edu.tw/statistica/oldpdf/A10n42.pdf">papers</a> <a href="http://www.tandfonline.com/doi/abs/10.1198/000313001300339969#.Vk4_ht-rQUE">I</a> <a href="http://www.tandfonline.com/doi/abs/10.1198/016214501750332875#.Vk4_mN-rQUE">wrote </a><a href="http://www.tandfonline.com/doi/abs/10.1198/016214501753168082#.Vk4_qt-rQUE">about</a> my <a href="http://onlinelibrary.wiley.com/doi/10.1111/1467-9892.01515/abstract?userIsAuthenticated=false&deniedAccessCustomisedMessage=">thesis</a>. Here is a screen shot from <a href="http://onlinelibrary.wiley.com/doi/10.1111/1467-9892.01515/abstract">this paper</a>:</p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2016/05/Screen-Shot-2015-04-15-at-12.24.40-PM-957x1024.png" /></p>
 <p>I am actually glad I wrote out and published all the technical details of this work.  It was great training. My point was simply that based on the focus of these papers, this work would not be considered data science.</p>
 <p>The rest of my talk described some of the work I did once I transitioned into applications in Biology. I was fortunate to have a <a href="http://www.jhsph.edu/faculty/directory/profile/3859/scott-zeger">department chair</a> that appreciated lead-author papers in the subject matter journals as much as statistical methodology papers. This opened the door for me to become a full fledged applied statistician/data scientist. In the talk I described how <a href="http://bioinformatics.oxfordjournals.org/content/20/3/307.short">developing software packages,</a> <a href="http://www.nature.com/nmeth/journal/v2/n5/abs/nmeth756.html">planning</a> the <a href="http://www.nature.com/nmeth/journal/v4/n11/abs/nmeth1102.html">gathering of data</a> to <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16108723">aid method development</a>, developing <a href="http://www.ncbi.nlm.nih.gov/pubmed/14960458">web tools</a> to assess data analysis techniques in the wild, and facilitating <a href="http://www.ncbi.nlm.nih.gov/pubmed/19151715">data-driven discovery</a> in biology has been very gratifying and, simultaneously, helped my career. However, at some point, early in my career, senior members of my department encouraged me to write and submit a methods paper to a statistical journal to go along with every paper I sent to the subject matter journals. Although I do write methods papers when I think the ideas add to the statistical literature, I did not follow the advice to simply write papers for the sake of publishing in statistics journals. Note that if (bio)statistics departments require applied statisticians to do this, then it becomes harder to have an impact as data scientists. Departments that are not producing widely used methodology or successful and visible applied statistics projects (or both), should not be surprised when they are not included in data science initiatives. So, applied statistician, read that Tukey quote again, listen to <a href="https://youtu.be/vbb-AjiXyh0">President Obama</a>, and go do some great data science.</p>
-<p> </p>
-<p> </p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

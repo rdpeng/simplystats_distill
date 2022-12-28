@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1480,39 +1517,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<div class="page" title="Page 2">
-<div class="layoutArea">
-<pre><code>&lt;div class=&quot;column&quot;&gt;
-  &lt;p&gt;
-    An unfortunate fact about the US K-12 system is that the education gap between poor and rich is growing. One manifestation of this trend is that we rarely see US kids from disadvantaged backgrounds become tenure track faculty, especially in the STEM fields. In my experience, the ones that do make it, when asked how they overcame the suboptimal math education their school district provided, often respond &quot;I was &lt;a href=&quot;https://en.wikipedia.org/wiki/Tracking_(education)&quot;&gt;tracked&lt;/a&gt;&quot; or &quot;I went to a &lt;a href=&quot;https://en.wikipedia.org/wiki/Magnet_school&quot;&gt;magnet school&lt;/a&gt;&quot;. Magnet schools filter students with admission tests and then teach at a higher level than an average school, so essentially the entire school is an advanced track.
-  &lt;/p&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</div>
+<p>An unfortunate fact about the US K-12 system is that the education gap between poor and rich is growing. One manifestation of this trend is that we rarely see US kids from disadvantaged backgrounds become tenure track faculty, especially in the STEM fields. In my experience, the ones that do make it, when asked how they overcame the suboptimal math education their school district provided, often respond “I was <a href="https://en.wikipedia.org/wiki/Tracking_(education)">tracked</a>” or “I went to a <a href="https://en.wikipedia.org/wiki/Magnet_school">magnet school</a>”. Magnet schools filter students with admission tests and then teach at a higher level than an average school, so essentially the entire school is an advanced track.</p>
 <p>Twenty years of classroom instruction experience has taught me that classes with diverse academic abilities present one of the most difficult teaching challenges. Typically, one is forced to focus on only a sub-group of students, usually the second quartile. As a consequence the lower and higher quartiles are not properly served. At the university level, we minimize this problem by offering different levels: remedial math versus math for engineers, probability for the Masters program versus probability for PhD students, co-ed intramural sports versus the varsity basketball team, intro to World Music versus a spot in the orchestra, etc. In K-12, tracking seems like the obvious solution to teaching to an array of student levels.</p>
 <p>Unfortunately, there has been a trend recently to move away from tracking and several school districts now forbid it. The motivation seems to be a series of <a href="http://www.tandfonline.com/doi/abs/10.1207/s15430421tip4501_9">observational</a> <a href="http://files.eric.ed.gov/fulltext/ED329615.pdf">studies</a> that note that “low-track classes tend to be primarily composed of low-income students, usually minorities, while upper-track classes are usually dominated by students from socioeconomically successful groups.” Tracking opponents infer that this unfortunate reality is due to bias (conscious or unconscious) in the the informal referrals that are typically used to decide which students are advanced. However, <strong>this is a critique of the referral system, not of tracking itself.</strong> A simple fix is to administer an objective test or use the percentiles from <a href="http://www.doe.mass.edu/mcas/overview.html">state assessment tests</a>. In fact, such exams have been developed and implemented. A recent study (summarized <a href="http://www.vox.com/2015/11/23/9784250/card-giuliano-gifted-talented">here</a>) examined the data from a district that for a period of time implemented an objective assessment and found that</p>
 <blockquote>
 <p>[t]he number of Hispanic students [in the advanced track increased] by 130 percent and the number of black students by 80 percent.</p>
 </blockquote>
 <p>Unfortunately, instead of maintaining the placement criteria, which benefited underrepresented minorities without relaxing standards, these school districts reverted to the old, flawed system due to budget cuts.</p>
-<p>Another argument against tracking is that students benefit more from being in classes with higher-achieving peers, rather than being in a class with students with similar subject mastery and a teacher focused on their level. However a <a href="http://web.stanford.edu/~pdupas/Tracking_rev.pdf"></a> (and the only one of which I am aware) finds that tracking helps all students:</p>
+<p>Another argument against tracking is that students benefit more from being in classes with higher-achieving peers, rather than being in a class with students with similar subject mastery and a teacher focused on their level. However a](<a href="http://web.stanford.edu/~pdupas/Tracking_rev.pdf" class="uri">http://web.stanford.edu/~pdupas/Tracking_rev.pdf</a>) (and the only one of which I am aware) finds that tracking helps all students:</p>
 <blockquote>
 <p>We find that tracking students by prior achievement raised scores for all students, even those assigned to lower achieving peers. On average, after 18 months, test scores were 0.14 standard deviations higher in tracking schools than in non-tracking schools (0.18 standard deviations higher after controlling for baseline scores and other control variables). After controlling for the baseline scores, students in the top half of the pre-assignment distribution gained 0.19 standard deviations, and those in the bottom half gained 0.16 standard deviations. <strong>Students in all quantiles benefited from tracking. </strong></p>
 </blockquote>
 <p>I believe that without tracking, the achievement gap between disadvantaged children and their affluent peers will continue to widen since involved parents will seek alternative educational opportunities, including private schools or subject specific extracurricular acceleration programs. With limited or no access to advanced classes in the public system, disadvantaged students will be less prepared to enter the very competitive STEM fields. Note that competition comes not only from within the US, but from other countries including many with educational systems that track.</p>
 <p>To illustrate the extreme gap, the following exercises are from a 7th grade public school math class (in a high performing school district):</p>
-<table style="width: 100%;">
-<tr>
-<td>
-<a href="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.49.41-AM.png"><img src="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.49.41-AM.png" alt="Screen Shot 2015-12-07 at 11.49.41 AM" width="275" /></a>
-</td>
-<td>
-<a href="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-09-at-9.00.57-AM.png"><img src="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-09-at-9.00.57-AM.png" alt="Screen Shot 2015-12-09 at 9.00.57 AM" width="275" /></a>
-</td>
-</tr>
-</table>
-<p>(Click to enlarge). There is no tracking so all students must work on these problems. Meanwhile, in a 7th grade advanced, private math class, that same student can be working on problems like these:<a href="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM.png"><img class="alignnone size-full wp-image-4511" src="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM.png" alt="Screen Shot 2015-12-07 at 11.47.45 AM" width="1165" height="341" srcset="http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM-300x88.png 300w, http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM-1024x300.png 1024w, http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM-260x76.png 260w, http://simplystatistics.org/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM.png 1165w" sizes="(max-width: 1165px) 100vw, 1165px" /></a>Let me stress that there is nothing wrong with the first example if it is the appropriate level of the student.  However, a student who can work at the level of the second example, should be provided with the opportunity to do so notwithstanding their family’s ability to pay. Poorer kids in districts which do not offer advanced classes will not only be less equipped to compete with their richer peers, but many of the academically advanced ones may, I suspect,  dismiss academics due to lack of challenge and boredom.  Educators need to consider evidence when making decisions regarding policy. Tracking can be applied unfairly, but that aspect can be remedied. Eliminating tracking all together takes away a crucial tool for disadvantaged students to move into the STEM fields and, according to the empirical evidence, hurts all students.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.49.41-AM.png" /></p>
+<p>There is no tracking so all students must work on these problems. Meanwhile, in a 7th grade advanced, private math class, that same student can be working on problems like these:</p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2016/12/Screen-Shot-2015-12-07-at-11.47.45-AM.png" /></p>
+<p>Let me stress that there is nothing wrong with the first example if it is the appropriate level of the student.  However, a student who can work at the level of the second example, should be provided with the opportunity to do so notwithstanding their family’s ability to pay. Poorer kids in districts which do not offer advanced classes will not only be less equipped to compete with their richer peers, but many of the academically advanced ones may, I suspect,  dismiss academics due to lack of challenge and boredom.  Educators need to consider evidence when making decisions regarding policy. Tracking can be applied unfairly, but that aspect can be remedied. Eliminating tracking all together takes away a crucial tool for disadvantaged students to move into the STEM fields and, according to the empirical evidence, hurts all students.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
