@@ -25,10 +25,7 @@ I became an applied statistician while working with David Brillinger on my PhD 
 
 
 ![](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2013/05/expression.jpg)
-<div class="caption">
-    Figure 1: Illustration of gene expression data before and after micorarrays.
-  </div>
-</div>
+<div class="caption"> Figure 1: Illustration of gene expression data before and after micorarrays.</div>
 
 When biologists at Hopkins first came to our department for help with their  microarray data, Scott put them in touch with me because I had experience with (what was then) large datasets (digitized music signals are represented by 44,100 points per second). The more I learned about the scientific problems and the more data I explored, the more motivated I became. The potential for statisticians having an impact in this nascent field was clear and my department was encouraging me to take the plunge. This institutional encouragement and support was crucial as successfully working in this field made it harder to publish in the mainstream statistical journals; an accomplishment that had traditionally been heavily weighted in the promotion process. The message was clear: having an immediate impact on specific scientific fields would be rewarded as much as mathematically rigorous methods with general applicability.
 

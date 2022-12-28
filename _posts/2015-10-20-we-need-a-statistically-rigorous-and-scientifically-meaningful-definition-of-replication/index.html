@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1480,9 +1517,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>Replication and confirmation are indispensable concepts that help define scientific facts.  However, the way in which we reach scientific consensus on a given finding is rather complex. Although <a href="http://simplystatistics.org/2015/06/24/how-public-relations-and-the-media-are-distorting-science/">some press releases try to convince us otherwise</a>, rarely is one publication enough. In fact, most published results go unnoticed and no attempts to replicate them are made.  These are not debunked either; they simply get discarded to the dustbin of history. The very few results that garner enough attention for others to spend time and energy on them are assessed by an ad-hoc process involving a community of peers. The assessments are usually a combination of deductive reasoning, direct attempts at replication, and indirect checks obtained by attempting to build on the result in question.  This process eventually leads to a result either being accepted by consensus or not. For particularly important cases, an official scientific consensus report may be commissioned by a national academy or an established scientific society. Examples of results that have become part of the scientific consensus in this way include smoking causing lung cancer, HIV causing AIDS, and climate change being caused by humans.  In contrast, the published result that vaccines cause autism has been thoroughly debunked by several follow up studies. In none of these four cases a simple definition of replication was used to confirm or falsify a result. The same is true for most results for which there is consensus. Yet science moves on, and continues to be an incomparable force at improving our quality of life.</p>
+<p>Replication and confirmation are indispensable concepts that help define scientific facts.  However, the way in which we reach scientific consensus on a given finding is rather complex. Although <a href="http://simplystatistics.org/posts/2015-06-24-how-public-relations-and-the-media-are-distorting-science/">some press releases try to convince us otherwise</a>, rarely is one publication enough. In fact, most published results go unnoticed and no attempts to replicate them are made.  These are not debunked either; they simply get discarded to the dustbin of history. The very few results that garner enough attention for others to spend time and energy on them are assessed by an ad-hoc process involving a community of peers. The assessments are usually a combination of deductive reasoning, direct attempts at replication, and indirect checks obtained by attempting to build on the result in question.  This process eventually leads to a result either being accepted by consensus or not. For particularly important cases, an official scientific consensus report may be commissioned by a national academy or an established scientific society. Examples of results that have become part of the scientific consensus in this way include smoking causing lung cancer, HIV causing AIDS, and climate change being caused by humans.  In contrast, the published result that vaccines cause autism has been thoroughly debunked by several follow up studies. In none of these four cases a simple definition of replication was used to confirm or falsify a result. The same is true for most results for which there is consensus. Yet science moves on, and continues to be an incomparable force at improving our quality of life.</p>
 <p>Regulatory agencies, such as the FDA, are an exception since they clearly spell out a <a href="http://www.fda.gov/downloads/Drugs/.../Guidances/ucm078749.pdf">definition</a> of replication. For example, to approve a drug they may require two independent clinical trials, adequately powered, to show statistical significance at some predetermined level. They also require a large enough effect size to justify the cost and potential risks associated with treatment. This is not to say that FDA approval is equivalent to scientific consensus, but they do provide a clearcut definition of replication.</p>
-<p>In response to a growing concern over a <em><a href="http://www.nature.com/news/reproducibility-1.17552">reproducibility crisis</a></em>, projects such as the <a href="http://osc.centerforopenscience.org/">Open Science Collaboration</a> have commenced to systematically try to replicate published results. In a <a href="http://simplystatistics.org/2015/10/01/a-glass-half-full-interpretation-of-the-replicability-of-psychological-science/">recent post</a>, Jeff described one of their <a href="http://www.sciencemag.org/content/349/6251/aac4716">recent papers</a> on estimating the reproducibility of psychological science (they really mean replicability; see note below). This Science paper led to lay press reports with eye-catching headlines such as “only 36% of psychology experiments replicate”. Note that the 36% figure comes from a definition of replication that mimics the definition used by regulatory agencies: results are considered replicated if a p-value &lt; 0.05 was reached in both the original study and the replicated one. Unfortunately, this definition ignores both effect size and statistical power. If power is not controlled, then the expected proportion of correct findings that replicate can be quite small. For example, if I try to replicate the smoking-causes-lung-cancer result with a sample size of 5, there is a good chance it will not replicate. In his post, Jeff notes that for several of the studies that did not replicate, the 95% confidence intervals intersected. So should intersecting confidence intervals be our definition of replication? This too has a flaw since it favors imprecise studies with very large confidence intervals. If effect size is ignored, we may waste our time trying to replicate studies reporting practically meaningless findings. Generally defining replication for published studies is not as easy as for highly controlled clinical trials. However, one clear improvement from what is currently being done is to consider statistical power and effect sizes.</p>
+<p>In response to a growing concern over a <em><a href="http://www.nature.com/news/reproducibility-1.17552">reproducibility crisis</a></em>, projects such as the <a href="http://osc.centerforopenscience.org/">Open Science Collaboration</a> have commenced to systematically try to replicate published results. In a <a href="http://simplystatistics.org/posts/2015-10-01-a-glass-half-full-interpretation-of-the-replicability-of-psychological-science/">recent post</a>, Jeff described one of their <a href="http://www.sciencemag.org/content/349/6251/aac4716">recent papers</a> on estimating the reproducibility of psychological science (they really mean replicability; see note below). This Science paper led to lay press reports with eye-catching headlines such as “only 36% of psychology experiments replicate”. Note that the 36% figure comes from a definition of replication that mimics the definition used by regulatory agencies: results are considered replicated if a p-value &lt; 0.05 was reached in both the original study and the replicated one. Unfortunately, this definition ignores both effect size and statistical power. If power is not controlled, then the expected proportion of correct findings that replicate can be quite small. For example, if I try to replicate the smoking-causes-lung-cancer result with a sample size of 5, there is a good chance it will not replicate. In his post, Jeff notes that for several of the studies that did not replicate, the 95% confidence intervals intersected. So should intersecting confidence intervals be our definition of replication? This too has a flaw since it favors imprecise studies with very large confidence intervals. If effect size is ignored, we may waste our time trying to replicate studies reporting practically meaningless findings. Generally defining replication for published studies is not as easy as for highly controlled clinical trials. However, one clear improvement from what is currently being done is to consider statistical power and effect sizes.</p>
 <p>To further illustrate this, let’s consider a very concrete example with real life consequences. Imagine a loved one has a disease with high mortality rates and asks for your help in evaluating the scientific evidence on treatments. Four experimental drugs are available all with promising clinical trials resulting in p-values &lt;0.05. However, a replication project redoes the experiments and finds that only the drug A and drug B studies replicate (p&lt;0.05). So which drug do you take? Let’s give a bit more information to help you decide. Here are the p-values for both original and replication trials:</p>
 <table style="width: 100%;">
 <tr>
@@ -1559,7 +1596,7 @@ No
 </tr>
 </table>
 <p>Which drug would you take now? The information I have provided is based on p-values and therefore is missing a key piece of information: the effect sizes. Below I show the confidence intervals for all four studies (left) and four replication studies (right). Note that except for drug B, all confidence intervals intersect. In light of the figure below, which one would you chose?</p>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2015/10/replication.png"><img class=" wp-image-4368 alignright" src="http://simplystatistics.org/wp-content/uploads/2015/10/replication.png" alt="replication" width="359" height="338" srcset="http://simplystatistics.org/wp-content/uploads/2015/10/replication-300x283.png 300w, http://simplystatistics.org/wp-content/uploads/2015/10/replication-212x200.png 212w, http://simplystatistics.org/wp-content/uploads/2015/10/replication.png 617w" sizes="(max-width: 359px) 100vw, 359px" /></a></p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/10/replication.png" /></p>
 <p>I would be inclined to go with drug D because it has a large effect size, a small p-value, and the replication experiment effect estimate fell inside a 95% confidence interval. I would definitely not go with A since it provides marginal benefits, even if the trial found a statistically significant effect and was replicated. So the p-value based definition of replication is practically worthless from a practical standpoint.</p>
 <p>It seems that before continuing the debate over replication, and certainly before declaring that we are in a <a href="http://www.nature.com/news/reproducibility-1.17552">reproducibility crisis</a>, we need a statistically rigorous and scientifically meaningful definition of replication.  This definition does not necessarily need to be dichotomous (replicated or not) and it will probably require more than one replication experiment and more than one summary statistic: one for effect size and one for uncertainty. In the meantime, we should be careful not to dismiss the current scientific process, which seems to be working rather well at either ignoring or debunking false positive results while producing useful knowledge and discovery.</p>
 <hr />
