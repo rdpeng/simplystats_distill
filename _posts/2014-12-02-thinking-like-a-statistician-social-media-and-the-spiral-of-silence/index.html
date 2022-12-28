@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1483,7 +1520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>A few months ago the Pew Research Internet Project published a <a href="http://www.pewinternet.org/2014/08/26/social-media-and-the-spiral-of-silence/">paper</a> on social media and the ‘<a href="http://en.wikipedia.org/wiki/Spiral_of_silence">spiral of silence</a>’. Their main finding is that people are less likely to discuss a controversial topic on social media than in person. Unlike others, I  did not find this result surprising, perhaps because I think like a statistician.</p>
 <p>Shares or retweets of published opinions on controversial political topics - religion, abortion rights, gender inequality, immigration, income inequality, race relations, the role of government, foreign policy, education, climate change - are ubiquitous in social media. These are usually accompanied by passionate statements of strong support or outraged disagreement. Because these are posted by people we elect to follow, we generally agree with what we see on our feeds. Here is a statistical explanation for why many keep silent when they disagree.</p>
 <p>We will summarize the <em>political view</em> of an individual as their opinions on the 10 topics listed above. For simplicity I will assume these opinions can be quantified with a left (liberal) to right (conservative) scale. Every individual can therefore be defined by a point in a 10 dimensional space. Once quantified in this way, we can define a political distance between any pair of individuals. In the American landscape there are two clear clusters which I will call the Fox News and MSNBC clusters. As seen in the illustration below, the cluster centers are very far from each other and individuals within the clusters are very close. Each cluster has a very low opinion of the other. A glance through a social media feed will quickly reveal individuals squarely inside one of these clusters. Members of the clusters fearlessly post their opinions on controversial topics as this behavior is rewarded by likes, retweets or supportive comments from others in their cluster. Based on the uniformity of opinion inferred from the comments, one would think that everybody is in one of these two groups. But this is obviously not the case.</p>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2014/12/plotforpost.png"><img class="aligncenter wp-image-3602 size-large" src="http://simplystatistics.org/wp-content/uploads/2014/12/plotforpost-1024x1007.png" alt="plotforpost" width="396" height="389" srcset="http://simplystatistics.org/wp-content/uploads/2014/12/plotforpost-300x295.png 300w, http://simplystatistics.org/wp-content/uploads/2014/12/plotforpost-1024x1007.png 1024w" sizes="(max-width: 396px) 100vw, 396px" /></a></p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2014/12/plotforpost.png" /></p>
 <p>In the illustration above I include an example of an individual (the green dot) that is outside the two clusters. Although not shown, there are many of these <em>independent thinkers</em>. In our example, this individual is very close to the MSNBC cluster, but not in it. The controversial topic posts in this person’s feed are mostly posted by those in the cluster of closest proximity, and the spiral of silence is due in part to the fact that independent thinkers are uniformly adverse to disagreeing publicly. For the mathematical explanation of why, we introduce the concept of a <a href="http://en.wikipedia.org/wiki/Projection_%28mathematics%29"><em>projection</em></a>.</p>
 <p>In mathematics, a projection can map a multidimensional point to a smaller, simpler, subset. In our illustration, the independent thinker is very close to the MSNBC cluster on all dimensions except one. To use education as an example, let’s say this person supports <a href="http://www.foxnews.com/opinion/2014/10/10/florida-senator-why-am-fighting-for-school-choice-lifeline-for-poor-kids/">school choice</a>. As seen in the illustration, in the projection to the education dimension, that mostly liberal person is squarely in the Fox News cluster. Now imagine that a friend shares an article on <a href="http://www.huffingtonpost.com/diann-woodard/the-corporate-takeover_b_3397091.html">The Corporate Takeover of Public Education</a> along with a passionate statement of approval. Independent thinkers have a feeling that by voicing their dissent, dozens, perhaps hundreds, of strangers on social media (friends of friends for example) will judge them solely on this projection. To make matters worse, public shaming of the independent thinker, for supposedly being a member of the Fox News cluster, will then be rewarded by increased social standing among the MSNBC cluster as evidenced by retweets, likes and supportive comments. In a worse case scenario for this person, and best case scenario for the critics, this public shaming goes viral. While the short term rewards for preaching to the echo chamber are clear, there are no apparent incentives for dissent.</p>
 <p>The superficial and fast paced nature of social media is not amenable to nuances and subtleties. Disagreement with the groupthink on one specific topic can therefore get a person labeled as a “neoliberal corporate shill” by the MSNBC cluster or a “godless liberal” by the Fox News one. The irony is that in social media, those politically closest to you, will be the ones attaching the unwanted label.</p>

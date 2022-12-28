@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -114,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -185,6 +186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -426,10 +428,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1261,9 +1259,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1275,6 +1285,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1374,6 +1409,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1396,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1435,7 +1472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1481,15 +1518,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <p>In 2013, the Committee of Presidents of Statistical Societies (COPSS) celebrates its 50th Anniversary. As part of its celebration, COPSS will publish a book, with contributions from past recipients of its awards, titled “Past, Present and Future of Statistical Science”. Below is my contribution titled <em>The bright future of applied statistics</em>.</p>
-<p>When I was asked to contribute to this issue, titled Past, Present, and Future of Statistical Science, I contemplated my career while deciding what to write about. One aspect that stood out was how much I benefited from the right circumstances. I came to one clear conclusion: it is a great time to be an applied statistician. I decided to describe the aspects of my career that I have thoroughly enjoyed in the <em>past</em> and <em>present</em> and explain why I this has led me to believe that the <em>is bright for applied statisticians</em>.</p>
+<p>When I was asked to contribute to this issue, titled Past, Present, and Future of Statistical Science, I contemplated my career while deciding what to write about. One aspect that stood out was how much I benefited from the right circumstances. I came to one clear conclusion: it is a great time to be an applied statistician. I decided to describe the aspects of my career that I have thoroughly enjoyed in the
+<em>past</em> and <em>present</em> and explain why I this has led me to believe that the <em>is bright for applied statisticians</em>.</p>
 <p>I became an applied statistician while working with David Brillinger on my PhD thesis. When searching for an advisor I visited several professors and asked them about their interests. David asked me what I liked and all I came up with was “<em>I don’t know. Music?</em>”, to which he responded “<em>That’s what we will work on</em>”. Apart from the necessary theorems to get a PhD from the Statistics Department at Berkeley, my thesis summarized my collaborative work with researchers at the Center for New Music and Audio Technology. The work<br /> involved separating and parameterizing the harmonic and non-harmonic components of musical sound signals [<a href="#Xirizarry2001local">5</a>]. The sounds had been digitized into data. The work was indeed fun, but I also had my first glimpse into the incredible potential of statistics in a world becoming more and more data-driven.</p>
 <p>Despite having expertise only in music, and a thesis that required a CD player to hear the data, <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/index.html">fitted models and residuals</a>, I was hired by the Department of Biostatistics at Johns Hopkins School of Public Health. Later I realized what was probably obvious to the School’s leadership: that regardless of the subject matter of my thesis, my time series expertise could be applied to several public health applications [<a href="#Xirizarry2001assessing">8</a>, <a href="#Xdipietro2001cross">2</a>, <a href="#Xcrone2001electrocorticographic">1</a>]. The public health and biomedical challenges surrounding me were simply too hard to resist and my new<br /> department knew this. It was inevitable that I would quickly turn into an applied Biostatistician. <!--l. 60--></p>
 <p>Since the day that I arrived at Hopkins 15 years ago, Scott Zeger, the department chair, fostered and encouraged faculty to leverage their statistical expertise to make a difference and to have an immediate impact in science. At that time, we were in the midst of a measurement revolution that was transforming several scientific fields into data-driven ones. By being located in a School of Public Health and next to a medical school, we were surrounded by collaborators working in such fields. These included environmental science, neuroscience, cancer biology, genetics, and molecular biology. Much of my work was motivated by collaborations with biologists that, for the first time, were collecting large amounts of data. Biology was changing from a data poor discipline to a data intensive<br /> ones.<br /> <!--l. 75--></p>
 <p>A specific example came from the measurement of gene expression. Gene expression is the process where DNA, the blueprint for life, is copied into RNA, the templates for the synthesis of proteins, the building blocks for life. Before microarrays were invented in the 1990s, the analysis of gene expression data amounted to spotting black dots on a piece of paper (see Figure 1A below). With microarrays, this suddenly changed to sifting through tens of thousands of numbers (see Figure 1B). Biologists went from using their eyes to categorize results to having thousands (and now millions) of measurements per sample to analyze. Furthermore, unlike genomic DNA, which is static, gene expression is a dynamic quantity: different tissues express different genes at different levels and at different times. The complexity was exacerbated by unpolished technologies that made measurements much noisier than anticipated. This complexity and level of variability made statistical thinking an important aspect of the analysis. The Biologists that used to say, “if I need statistics, the experiment went wrong” were now seeking out our help. The results of these collaborations have led to, among other things, the development of breast cancer recurrence gene expression assays making it possible to identify patients at risk of distant recurrence following surgery [<a href="#Xvan2002gene">9</a>].</p>
-<div class="figure" style="text-align: left;">
-<p class="noindent">
-<a href="http://simplystatistics.org/2013/05/15/the-bright-future-of-applied-statistics/expression/" rel="attachment wp-att-1329"><img class="alignnone size-full wp-image-1329" alt="expression" src="http://simplystatistics.org/wp-content/uploads/2013/05/expression.jpg"/></a>
-</p>
+<img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2013/05/expression.jpg" />
 <div class="caption">
 <pre><code>Figure 1: Illustration of gene expression data before and after micorarrays.</code></pre>
 </div>
