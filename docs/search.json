@@ -4,22 +4,22 @@
       "path": "about.html",
       "title": "About this blog",
       "author": [],
-      "contents": "\nWe are three biostatistics professors (Jeff Leek, Roger Peng, and Rafa Irizarry) who are fired\nup about the new era where data are abundant and statisticians are\nscientists. The views represented here are our own and do not\nrepresent the views of Johns Hopkins University, Harvard University or\nDana Farber Cancer Institute.\nAbout this blog: We’ll be posting ideas we find\ninteresting, contributing to discussion of science/popular writing,\nlinking to articles that inspire us, and sharing advice with\nup-and-coming statisticians.\nWhy “Simply Statistics”: We needed a title. Plus, we\nlike the idea of using simple statistics to solve real, important\nproblems. We aren’t fans of unnecessary complication – that just leads\nto lies, damn lies and something else.\n\n\n\n",
-      "last_modified": "2022-08-12T17:01:31-04:00"
+      "contents": "\nWe are three biostatistics professors (Jeff Leek, Roger Peng, and Rafa Irizarry) who are fired up about the new era where data are abundant and statisticians are scientists. The views represented here are our own and do not represent the views of Johns Hopkins University, Harvard University or Dana Farber Cancer Institute.\nAbout this blog: We’ll be posting ideas we find interesting, contributing to discussion of science/popular writing, linking to articles that inspire us, and sharing advice with up-and-coming statisticians.\nWhy “Simply Statistics”: We needed a title. Plus, we like the idea of using simple statistics to solve real, important problems. We aren’t fans of unnecessary complication – that just leads to lies, damn lies and something else.\n\n\n\n",
+      "last_modified": "2023-01-03T18:38:41-05:00"
     },
     {
       "path": "featured.html",
       "title": "Featured Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-11-12T10:09:26-05:00"
+      "last_modified": "2023-01-03T18:38:41-05:00"
     },
     {
       "path": "index.html",
       "title": "Simply Statistics",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-29T20:23:05-04:00"
+      "last_modified": "2023-01-03T18:38:43-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
