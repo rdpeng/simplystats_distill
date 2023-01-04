@@ -1,0 +1,40 @@
+---
+title: "The analyst is a random variable"
+author:
+  - name: Jeff Leek
+    url: {www.jtleek.com}
+date: 2023-01-03
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+I read this [really interesting paper](https://www.pnas.org/doi/10.1073/pnas.2203150119) over the break, where they had multiple analyst teams analyze the same data set and fit a model to answer the same question. 
+
+This is a topic we've thought about a lot in the past; mostly from a therotical perspective. We have discussed the [researcher degrees of freedom, recipe tradeoff](https://simplystatistics.org/posts/2013-07-31-the-researcher-degrees-of-freedom-recipe-tradeoff-in-data-analysis/) and how [p-values are just the tip of the iceberg](https://www.nature.com/articles/520612a) for analyst variability. 
+
+But a couple of empirical results from this new study highlight two very important messages that should get the attention of anyone who is interested in variability estimates for inference or machine learning. 
+
+## There is a lot of iceberg below the water in terms of analyst variation 
+
+The authors gave people the exact same data and asked them to estimate the exact same parameter. Despite these constraints, the analysts came up with a very broad range of estimates for the parameter of interest. These estimates ranged from highly statistically significant to not significant at all: 
+
+![](https://www.pnas.org/cms/10.1073/pnas.2203150119/asset/1bc2749c-e1b6-4b90-9a10-ddfc45229874/assets/images/large/pnas.2203150119fig01.jpg)
+
+Overall this isn't surprising to anyone who has ever analyzed data - different choices can lead to really different results. When the focus is statistical significance this is often called the [garden of forking paths](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf) when it is inadvertent or [p-hacking]((https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002106)) when it is a bit more directional.
+
+While the outputs have been observed (p-value distributions that [are a little strange](https://github.com/jtleek/tidypvals)) and the idea of researcher degrees of freedom has been theorized, its pretty interesting to see the empirical estimates of just how big the effect can be. 
+
+## The analyst is a random variable
+
+The variation across analysts shows that models for variability of parameter estimates should include not just sampling variation, or hidden sources of bias, but should also include an estimate of the variability due to *who analyzed the data*. 
+
+There has been a lot of theoretical work pointing out that there are a ton of analyst decisions that have an impact on the ultimate results of a study. This group did an amazing job of showing that impact. But they also pointed out that despite their best efforts to explain *why* these differences happen there is a lot of unexplained analyst to analyst variation in the parameter estimates. Prior attitudes, methodological expertise, and topical expertise only explained a small proportion of the analyst variation. 
+
+![](https://www.pnas.org/cms/10.1073/pnas.2203150119/asset/1979f812-ee00-42f7-b8dc-62a0d20ed378/assets/images/large/pnas.2203150119fig03.jpg)
+
+I'm sure eventually we will discover compelling error structures in inter-analyst variability - there are definitely [data analysis subcultures](https://simplystatistics.org/posts/2015-04-29-data-analysis-subcultures/), for example. 
+
+In the short term, the lack of explanation for analyst variability implies we need to treat the analyst as a random variable. The challenge is that most data sets are only ever analyzed by one person. An open statistical challenge is understanding how we can model or predict inter-analyst variability given the limited number of analysts in any practical example. 
+
+Just more reason why understanding the human behaviorial component of data analysis will be critical to our understanding of what data means. 

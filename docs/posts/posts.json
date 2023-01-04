@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2023-01-04-the-analyst-is-a-random-variable/",
+    "title": "The analyst is a random variable",
+    "description": {},
+    "author": [
+      {
+        "name": "Jeff Leek",
+        "url": {
+          "www.jtleek.com": {}
+        }
+      }
+    ],
+    "date": "2023-01-03",
+    "categories": [],
+    "contents": "\nI read this really interesting paper over the break, where they had multiple analyst teams analyze the same data set and fit a model to answer the same question.\nThis is a topic we’ve thought about a lot in the past; mostly from a therotical perspective. We have discussed the researcher degrees of freedom, recipe tradeoff and how p-values are just the tip of the iceberg for analyst variability.\nBut a couple of empirical results from this new study highlight two very important messages that should get the attention of anyone who is interested in variability estimates for inference or machine learning.\nThere is a lot of iceberg below the water in terms of analyst variation\nThe authors gave people the exact same data and asked them to estimate the exact same parameter. Despite these constraints, the analysts came up with a very broad range of estimates for the parameter of interest. These estimates ranged from highly statistically significant to not significant at all:\n\nOverall this isn’t surprising to anyone who has ever analyzed data - different choices can lead to really different results. When the focus is statistical significance this is often called the garden of forking paths when it is inadvertent or p-hacking when it is a bit more directional.\nWhile the outputs have been observed (p-value distributions that are a little strange) and the idea of researcher degrees of freedom has been theorized, its pretty interesting to see the empirical estimates of just how big the effect can be.\nThe analyst is a random variable\nThe variation across analysts shows that models for variability of parameter estimates should include not just sampling variation, or hidden sources of bias, but should also include an estimate of the variability due to who analyzed the data.\nThere has been a lot of theoretical work pointing out that there are a ton of analyst decisions that have an impact on the ultimate results of a study. This group did an amazing job of showing that impact. But they also pointed out that despite their best efforts to explain why these differences happen there is a lot of unexplained analyst to analyst variation in the parameter estimates. Prior attitudes, methodological expertise, and topical expertise only explained a small proportion of the analyst variation.\n\nI’m sure eventually we will discover compelling error structures in inter-analyst variability - there are definitely data analysis subcultures, for example.\nIn the short term, the lack of explanation for analyst variability implies we need to treat the analyst as a random variable. The challenge is that most data sets are only ever analyzed by one person. An open statistical challenge is understanding how we can model or predict inter-analyst variability given the limited number of analysts in any practical example.\nJust more reason why understanding the human behaviorial component of data analysis will be critical to our understanding of what data means.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2023-01-04T10:30:47-08:00",
+    "input_file": "the-analyst-is-a-random-variable.knit.md"
+  },
+  {
     "path": "posts/2017-01-19-what-is-artificial-intelligence/",
     "title": "What is artificial intelligence? A three part definition",
     "description": {},
