@@ -11,7 +11,7 @@ You can sign up following links [here](http://genomicsclass.github.io/book/page
 
 Last semester we successfully [You can sign up following links [here](http://genomicsclass.github.io/book/pages/classes.html)
 
-Last semester we successfully](http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/) of my [Data Analysis course](http://simplystatistics.org/2014/03/31/data-analysis-for-genomic-edx-course/). To create the second version, the first was split into eight courses. Over 2,000 students successfully completed the first of these, but, as expected, the numbers were lower for the more advanced courses. We wanted to remove any structural problems keeping students from maximizing what they get from our courses, so we studied the assessment questions data, which included completion rate and time, and used the findings to make improvements. We also used qualitative data from the discussion board. The major changes to version 3 are the following:
+Last semester we successfully](http://simplystatistics.org/posts/2014-11-25-harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/) of my [Data Analysis course](http://simplystatistics.org/posts/2014-03-31-data-analysis-for-genomic-edx-course/). To create the second version, the first was split into eight courses. Over 2,000 students successfully completed the first of these, but, as expected, the numbers were lower for the more advanced courses. We wanted to remove any structural problems keeping students from maximizing what they get from our courses, so we studied the assessment questions data, which included completion rate and time, and used the findings to make improvements. We also used qualitative data from the discussion board. The major changes to version 3 are the following:
 
   * We no longer use R packages that Microsoft Windows users had trouble installing in the first course.
   * All courses are now designed to be completed in 4 weeks.
@@ -19,7 +19,7 @@ Last semester we successfully](http://simplystatistics.org/2014/11/25/harvardx-b
   * We improved the assessment questions determined to be problematic.
   * We split the two courses that students took the longest to complete into smaller modules. Students now have twice as much time to complete these.
   * We consolidated the case studies into one course.
-  * We combined the materials from the statistics courses into a [book](http://simplystatistics.org/2015/09/23/data-analysis-for-the-life-sciences-a-book-completely-written-in-r-markdown/), which you can download [here](https://leanpub.com/dataanalysisforthelifesciences). The material in the book match the materials taught in class so you can use it to follow along.
+  * We combined the materials from the statistics courses into a [book](http://simplystatistics.org/posts/2015-09-23-data-analysis-for-the-life-sciences-a-book-completely-written-in-r-markdown/), which you can download [here](https://leanpub.com/dataanalysisforthelifesciences). The material in the book match the materials taught in class so you can use it to follow along.
 
 You can enroll into any of the seven courses following the links below. We will be on the discussion boards starting October 15, and we hope to see you there.
 

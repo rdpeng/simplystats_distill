@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2141,7 +2142,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>NYC mayor-elect Bill de Blasio <a href="http://www.nytimes.com/2013/12/06/nyregion/de-blasio-to-name-bratton-as-new-york-police-commissioner.html?smid=fb-nytimes&amp;WT.z_sma=NY_DBT_20131205&amp;bicmp=AD&amp;bicmlukp=WT.mc_id&amp;bicmst=%20201385874000000&amp;bicmet=%20201388638800000">is expected</a> to name William J. Bratton to lead the NYPD. Bratton has been commissioner before (1994-1996) so I was curious to see the crime rates during his tenure, which was within the period that saw an impressive drop (1990-2010). Here is the graph of violent crimes per 100,000 inhabitants for <del>NYC</del> NY state for year 1965-2012 (divided by commissioner). Will Bratton be able to continue the trend? The graph suggests to me that they have hit a “floor” (1960s levels!).</p>
-<p><a href="http://simplystatistics.org/2013/12/05/nyc-crime-rates-by-yearcommissioner/nycrimes/" rel="attachment wp-att-2278"><img class="alignnone size-full wp-image-2278" alt="nycrimes" src="http://simplystatistics.org/wp-content/uploads/2013/12/nycrimes.png" width="1036" height="492" srcset="http://simplystatistics.org/wp-content/uploads/2013/12/nycrimes-300x142.png 300w, http://simplystatistics.org/wp-content/uploads/2013/12/nycrimes-1024x486.png 1024w, http://simplystatistics.org/wp-content/uploads/2013/12/nycrimes.png 1036w" sizes="(max-width: 1036px) 100vw, 1036px" /></a></p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2013/12/nycrimes.png" /></p>
 <p>Data is <a href="http://www.disastercenter.com/crime/nycrime.htm">here</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

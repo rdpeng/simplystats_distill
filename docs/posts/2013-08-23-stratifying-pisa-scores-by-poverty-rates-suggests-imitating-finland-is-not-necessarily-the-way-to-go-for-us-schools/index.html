@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2141,8 +2142,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>For the past several years a <a href="http://www.businessinsider.com/finlands-education-system-best-in-world-2012-11?op=1">steady</a> <a href="http://www.nytimes.com/2011/12/13/education/from-finland-an-intriguing-school-reform-model.html?pagewanted=all">stream</a> of <a href="http://www.smithsonianmag.com/people-places/Why-Are-Finlands-Schools-Successful.html">news articles</a> and <a href="http://www.greatschools.org/students/2453-finland-education.gs">opinion pieces</a> have been praising the virtues of Finish schools and exalting the US to imitate this system. One data point supporting this view comes from the most recent PISA scores (2009) in which Finland outscored the US 536 to 500. Several people have pointed out that this is an apples (huge and diverse) to oranges (small and homogeneous) comparison. One of the many differences that makes the comparison complicated is that Finland has less students living in poverty ( 3%) than the US (20%). <a href="http://nasspblogs.org/principaldifference/2010/12/pisa_its_poverty_not_stupid_1.html">This post</a> defending US public school teachers makes this point with data. Here I show these data in graphical form. The plot on the left shows <a href="http://nces.ed.gov/surveys/pisa/">PISA scores</a> versus the percent of students living in poverty for several countries. There is a pattern suggesting that higher poverty rates are associated with lower PISA scores. In the plot on the right, US schools are stratified by % poverty (orange points). The regression line is the same. Some countries are added (purple) for comparative purposes (the <a href="http://nasspblogs.org/principaldifference/2010/12/pisa_its_poverty_not_stupid_1.html">post</a> does not provide their poverty rates).   Note that US school with poverty rates comparable to Finland’s (below 10%) outperform Finland and schools in the 10-24% range aren’t far behind. So why should these schools change what they are doing? Schools with poverty rates above 25% are another story. Clearly the US has lots of work to do in trying to improve performance in these schools,  but is it safe to assume that Finland’s system would work for these student populations?</p>
-<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2013/08/pisa2.png" /> <!--<a href="http://simplystatistics.org/wp-content/uploads/2013/08/pisa2.png"><img src="http://simplystatistics.org/wp-content/uploads/2013/08/pisa2.png" alt="pisa scores plotted against percent poverty"></a>
---></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2013/08/pisa2.png" /></p>
 <p>Note that I scraped data from <a href="http://nasspblogs.org/principaldifference/2010/12/pisa_its_poverty_not_stupid_1.html">this post</a> and not the original source.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

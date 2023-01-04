@@ -9,7 +9,7 @@ output:
 
 
 Four years ago we
-[posted](http://simplystatistics.org/2012/11/07/nate-silver-does-it-again-will-pundits-finally-accept/)
+[posted](http://simplystatistics.org/posts/2012-11-07-nate-silver-does-it-again-will-pundits-finally-accept/)
 on Nate Silver's, and other forecasters', triumph over pundits. In
 contrast, after yesterday's presidential election, results contradicted
 most polls and data-driven forecasters, several news articles came out

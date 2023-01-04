@@ -9,7 +9,7 @@ output:
 
 Job hunting season is upon us. Those on the job market should be sending in applications already. Here I provide links to some of the related posts we published last year.
 
-  * [Advice for stats students on the academic job market](http://simplystatistics.org/2011/09/12/advice-for-stats-students-on-the-academic-job-market/)
-  * [Another academic job market option: liberal arts colleges](http://simplystatistics.org/2011/09/15/another-academic-job-market-option-liberal-arts/)
-  * [Preparing for tenure track job interviews](http://simplystatistics.org/2011/11/16/preparing-for-tenure-track-job-interviews/)
-  * [On hard and soft money](http://simplystatistics.org/2011/12/19/on-hard-and-soft-money/)
+  * [Advice for stats students on the academic job market](http://simplystatistics.org/posts/2011-09-12-advice-for-stats-students-on-the-academic-job-market/)
+  * [Another academic job market option: liberal arts colleges](http://simplystatistics.org/posts/2011-09-15-another-academic-job-market-option-liberal-arts/)
+  * [Preparing for tenure track job interviews](http://simplystatistics.org/posts/2011-11-16-preparing-for-tenure-track-job-interviews/)
+  * [On hard and soft money](http://simplystatistics.org/posts/2011-12-19-on-hard-and-soft-money/)

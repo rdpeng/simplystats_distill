@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2152,7 +2153,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>For more precise definitions of what I mean by these terms, you can take a look at <a href="http://biorxiv.org/content/early/2016/07/29/066803">my recent paper with Jeff Leek and Prasad Patil</a>.</p>
 <p>One key distinction between replication and reproducibility is that with replication, there is no need to trust any of the original findings. In fact, you may be attempting to replicate a study <em>because</em> you do not trust the findings of the original study. A recent example includes the creation of stem cells from ordinary cells, a finding that was so extraodinary that it led several laboratories to quickly try to replicate the study. Ultimately, <a href="http://www.nature.com/nature/journal/v525/n7570/full/nature15513.html">seven separate laboratories could not replicate the finding</a> and the original study was ultimately retracted.</p>
 <h2 id="astronomy-and-epidemiology">Astronomy and Epidemiology</h2>
-<p>What do the fields of astronomy and epidemiology have in common? You might think nothing. Those two departments are often not even on the same campus at most universities! However, they have at least one common element, which is that the things that they study are generally reluctant to be controlled by human beings. As a result, both astronomers and epidemiologist rely heavily on one tools: the <strong>observational study</strong>. Much has been written about observational studies of late, and I’ll spare you the literature search by saying that the bottom line is they can’t be trusted (particularly observational studies that have not been pre-registered!).</p>
+<p>What do the fields of astronomy and epidemiology have in common? You might think nothing. Those two departments are often not even on the same campus at most universities! However, they have at least one common element, which is that the things that they study are generally reluctant to be controlled by human beings. As a result, both astronomers and epidemiologist rely heavily on one tools: the <strong>observational study</strong>.
+Much has been written about observational studies of late, and I’ll spare you the literature search by saying that the bottom line is they can’t be trusted (particularly observational studies that have not been pre-registered!).</p>
 <p>But that’s fine—we have a method for dealing with things we don’t trust: It’s called replication. Epidemiologists actually codified their understanding of when they believe a causal claim (see <a href="https://en.wikipedia.org/wiki/Bradford_Hill_criteria">Hill’s Criteria</a>), which is typically only after a claim has been replicated in numerous studies in a variety of settings. My understanding is that astronomers have a similar mentality as well—no single study will result in anyone believe something new about the universe. Rather, findings need to be replicated using different approaches, instruments, etc.</p>
 <p>The key point here is that in both astronomy and epidemiology expectations are low with respect to individual studies. <strong>It’s difficult to have a replication crisis when nobody believes the findings in the first place</strong>. Investigators have a culture of distrusting individual one-off findings until they have been replicated numerous times. In my own area of research, the idea that ambient air pollution causes health problems was difficult to believe for decades, until we started seeing the same associations appear in numerous studies conducted all around the world. It’s hard to imagine any single study “proving” that connection, no matter how well it was conducted.</p>
 <h2 id="theory-and-experimentation-in-science">Theory and Experimentation in Science</h2>
@@ -2160,7 +2162,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>The other aspect I want to look at here is whether a field has a strong basic theoretical foundation. The idea here is that some fields, like say physics, have a strong set of basic theories whose predictions have been consistently validated over time. Other fields, like medicine, lack even the most rudimentary theories that can be used to make basic predictions. Granted, the distinction between fields with or without “basic theory” is a bit arbitrary on my part, but I think it’s fair to say that different fields of study fall on a spectrum in terms of how much basic theory they can rely on.</p>
 <p>Given the theoretical nature of different fields and the primary mode of investigation, we can develop the following crude 2x2 table, in which I’ve inserted some representative fields of study.</p>
 <figure>
-<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/replication_2x2.png" alt="Theory vs. Experimentation in Science" /><figcaption aria-hidden="true">Theory vs. Experimentation in Science</figcaption>
+<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/replication_2x2.png" alt="Theory vs. Experimentation in Science" />
+<figcaption aria-hidden="true">Theory vs. Experimentation in Science</figcaption>
 </figure>
 <p>My primary contention here is</p>
 <blockquote>
@@ -2176,7 +2179,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </ol>
 <p>The confluence of these two factors leads to a much greater disappointment when findings from these fields do not replicate. This leads me to believe that <strong>the replication crisis in science is largely attributable to a mismatch in our expectations of how often findings should replicate and how difficult it is to actually discover true findings in certain fields</strong>. Further, the reliance of controlled experiements in certain fields has lulled us into believing that we can place tremendous weight on a small number of studies. Ultimately, when someone asks, “Why <em>haven’t</em> we cured cancer yet?” the answer is “Because it’s hard”.</p>
 <h2 id="the-silver-lining">The Silver Lining</h2>
-<p>It’s important to remember that, as my colleague Rafa Irizarry <a href="http://simplystatistics.org/2013/08/01/the-roc-curves-of-science/">pointed out</a>, findings from many of the fields in the upper right box, especially clinical medicine, can have tremendous positive impacts on our lives when they do work out. Rafa says</p>
+<p>It’s important to remember that, as my colleague Rafa Irizarry <a href="http://simplystatistics.org/posts/2013-08-01-the-roc-curves-of-science/">pointed out</a>, findings from many of the fields in the upper right box, especially clinical medicine, can have tremendous positive impacts on our lives when they do work out. Rafa says</p>
 <blockquote>
 <p>…I argue that the rate of discoveries is higher in biomedical research than in physics. But, to achieve this higher true positive rate, biomedical research has to tolerate a higher false positive rate.</p>
 </blockquote>

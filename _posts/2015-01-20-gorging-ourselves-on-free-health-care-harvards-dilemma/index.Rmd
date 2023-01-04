@@ -14,7 +14,7 @@ I didn’t imagine when I joined Harvard’s Department of Health Care Policy th
 
 Health care spending is tremendously right-skewed. The figure below shows the annual spending distribution among people with any spending (~80% of the total population) in two data sources on people covered by employer-sponsored insurance, such as the Harvard faculty. Notice that the y axis is on the log scale. More than half of people spend $1000 or less, but a few very unfortunate folks top out near half a million.
 
-[<img class="alignnone size-full wp-image-3814" src="http://simplystatistics.org/wp-content/uploads/2015/01/spending_distribution.jpg" alt="spending_distribution" width="600" height="400" />](http://simplystatistics.org/wp-content/uploads/2015/01/spending_distribution.jpg)
+[<img class="alignnone size-full wp-image-3814" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/spending_distribution.jpg" alt="spending_distribution" width="600" height="400" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/spending_distribution.jpg)
 
 Source: [Measuring health care costs of individuals with employer-sponsored health insurance in the US: A comparison of survey and claims data](https://www.bea.gov/papers/working_papers.htm). A. Aizcorbe, E. Liebman, S. Pack, D.M. Cutler, M.E. Chernew, A.B. Rosen. BEA working paper. WP2010-06. June 2010.
 
@@ -26,7 +26,7 @@ Here’s the problem: moral hazard. It’s a word I learned when I started hangi
 
 &nbsp;
 
-[<img class="alignnone size-large wp-image-3815" src="http://simplystatistics.org/wp-content/uploads/2015/01/buffet-1024x768.jpg" alt="buffet" width="500" height="380" />](http://simplystatistics.org/wp-content/uploads/2015/01/buffet.jpg)
+[<img class="alignnone size-large wp-image-3815" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/buffet-1024x768.jpg" alt="buffet" width="500" height="380" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/buffet.jpg)
 
 Source: https://www.flickr.com/photos/jimmonk/5687939526/in/photostream/
 

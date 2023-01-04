@@ -9,12 +9,10 @@ output:
 
 A substantial amount of scientific research is funded by investigator-initiated grants. A researcher has an idea, writes it up and sends a proposal to a funding agency. The agency then elicits help from a group of peers to evaluate competing proposals. Grants are awarded to the most highly ranked ideas. The percent awarded depends on how much funding gets allocated to these types of proposals. At the NIH, the largest funding agency of these types of grants, the success rate recently [fell below 20% from a high above 35%](https://nihdirectorsblog.files.wordpress.com/2013/09/sequestration-success-rates1.jpg). Part of the reason these percentages have fallen is to make room for large collaborative projects. Large projects seem to be increasing, and not just at the NIH. In Europe, for example, the [Human Brain Project](https://www.humanbrainproject.eu/) has an estimated cost of over 1 billion US$ over 10 years. To put this in perspective, 1 billion dollars can fund over 500 [NIH R01s](http://grants.nih.gov/grants/funding/r01.htm). R01 is the NIH mechanism most appropriate for investigator initiated proposals.
 
-The merits of big science has been widely debated (for example [here](http://www.michaeleisen.org/blog/?p=1179) and [here](http://simplystatistics.org/2013/02/27/please-save-the-unsolicited-r01s/)). And most agree that some big projects have been successful. However, in this post I present a statistical argument highlighting the importance of investigator-initiated awards. The idea is summarized in the graph below.
+The merits of big science has been widely debated (for example [here](http://www.michaeleisen.org/blog/?p=1179) and [here](http://simplystatistics.org/posts/2013-02-27-please-save-the-unsolicited-r01s/)). And most agree that some big projects have been successful. However, in this post I present a statistical argument highlighting the importance of investigator-initiated awards. The idea is summarized in the graph below.
 
 ![](https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/12/Rplot.png)
 
-<!-- <img class="alignnone size-full wp-image-4483" src="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png" alt="Rplot" width="1112" height="551" srcset="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-300x149.png 300w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-1024x507.png 1024w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-260x129.png 260w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png 1112w" sizes="(max-width: 1112px) 100vw, 1112px" />](http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png)
--->
 
 The two panes above represent two different funding strategies: fund-many-R01s (left) or reduce R01s to fund several large projects (right). The grey crosses represent investigators and the gold dots represent potential paradigm-shifting geniuses. Location on the Cartesian plane represent research areas, with the blue circles denoting areas that are prime for an important scientific advance. The largest scientific contributions occur when a gold dot falls in a blue circle. Large contributions also result from the accumulation of incremental work produced by grey crosses in the blue circles.
 
@@ -22,7 +20,7 @@ Although not perfect, the peer review approach implemented by most funding agenc
 
 The simulation presented (code below) here is clearly an over simplification, but it does depict the statistical reason why I favor investigator-initiated grants.  The simulation clearly depicts that the strategy of funding many investigator-initiated grants is key for the continued success of scientific research.
 
-```r
+```{r, eval=FALSE}
 set.seed(2)
 library(rafalib)
 thecol="gold3"

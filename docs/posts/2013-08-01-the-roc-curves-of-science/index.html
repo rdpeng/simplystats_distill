@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2140,10 +2141,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>Andrew Gelman’s <a href="http://andrewgelman.com/2013/07/24/too-good-to-be-true-the-scientific-mass-production-of-spurious-statistical-significance/">recent post</a> on what he calls the “scientific mass production of spurious statistical significance” reminded me of a thought I had back when I read John Ioannidis’ paper claiming that <a href="http://simplystatistics.org/2013/05/06/why-the-current-over-pessimism-about-science-is-the-perfect-confirmation-bias-vehicle-and-we-should-proceed-rationally/">most published research finding are false</a>. Many authors, which I will refer to as <em>the pessimists</em>, have joined Ioannidis in making similar claims and repeatedly blaming the current state of affairs on the mindless use of frequentist inference. The gist of my thought is that, for some scientific fields, the pessimist’s criticism is missing a critical point: that in practice, there is an inverse relationship between increasing rates of true discoveries and decreasing rates of false discoveries and that true discoveries from fields such as the biomedical sciences provide an enormous benefit to society. Before I explain this in more detail, I want to be very clear that I do think that reducing false discoveries is an important endeavor and that some of these false discoveries are completely avoidable. But, as I describe below, a general solution that improves the current situation is much more complicated than simply abandoning the frequentist inference that currently dominates.</p>
+<p>Andrew Gelman’s <a href="http://andrewgelman.com/2013/07/24/too-good-to-be-true-the-scientific-mass-production-of-spurious-statistical-significance/">recent post</a> on what he calls the “scientific mass production of spurious statistical significance” reminded me of a thought I had back when I read John Ioannidis’ paper claiming that <a href="http://simplystatistics.org/posts/2013-05-06-why-the-current-over-pessimism-about-science-is-the-perfect-confirmation-bias-vehicle-and-we-should-proceed-rationally/">most published research finding are false</a>. Many authors, which I will refer to as <em>the pessimists</em>, have joined Ioannidis in making similar claims and repeatedly blaming the current state of affairs on the mindless use of frequentist inference. The gist of my thought is that, for some scientific fields, the pessimist’s criticism is missing a critical point: that in practice, there is an inverse relationship between increasing rates of true discoveries and decreasing rates of false discoveries and that true discoveries from fields such as the biomedical sciences provide an enormous benefit to society. Before I explain this in more detail, I want to be very clear that I do think that reducing false discoveries is an important endeavor and that some of these false discoveries are completely avoidable. But, as I describe below, a general solution that improves the current situation is much more complicated than simply abandoning the frequentist inference that currently dominates.</p>
 <p>Few will deny that our current system, with all its flaws, still produces important discoveries. Many of the pessimists’ proposals for reducing false positives seem to be, in one way or another, a call for being more conservative in reporting findings. Example of recommendations include that we require larger effect sizes or smaller p-values, that we correct for the “<a href="http://www.slate.com/articles/health_and_science/science/2013/07/statistics_and_psychology_multiple_comparisons_give_spurious_results.html">researcher degrees of freedom</a>”, and that we use Bayesian analyses with pessimistic priors. I tend to agree with many of these recommendations but I have yet to see a specific proposal on exactly how conservative we should be. Note that we could easily bring the false positives all the way down to 0 by simply taking this recommendation to its extreme and stop publishing biomedical research results all together. This absurd proposal brings me to receiver operating characteristic (ROC) curves.</p>
 <figure>
-<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2013/07/Slide1.png" alt="ROC curves of science" /><figcaption aria-hidden="true">ROC curves of science</figcaption>
+<img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2013/07/Slide1.png" alt="ROC curves of science" />
+<figcaption aria-hidden="true">ROC curves of science</figcaption>
 </figure>
 <p>ROC curves plot true positive rates (TPR) versus false positive rates (FPR) for a given classifying procedure. For example, suppose a regulatory agency that runs randomized trials on drugs (e.g. FDA) classifies a drug as effective when a pre-determined statistical test produces a p-value &lt; 0.05 or a posterior probability &gt; 0.95. This procedure will have a historical false positive rate and true positive rate pair: one point in an ROC curve. We can change the 0.05 to, say, 0.2 (or the 0.95 to 0.80) and we would move up the ROC curve: higher FPR and TPR. Not doing research would put us at the useless bottom left corner. It is important to keep in mind that biomedical science is done by imperfect humans on imperfect and stochastic measurements so to make discoveries the field has to tolerate some false discoveries (ROC curves don’t shoot straight up from 0% to 100%). Also note that it can take years to figure out which publications report important true discoveries.</p>
 <p>I am going to use the concept of ROC curve to distinguish between reducing FPR by being statistically more conservative and reducing FPR via more general improvements. In my ROC curve the y-axis represents the number of important discoveries per decade and the x-axis the number of false positives per decade (to avoid confusion I will continue to use the acronyms TPR and FPR). The current state of biomedical research is represented by one point on the red curve: one TPR,FPR pair. The pessimist argue that the FPR is close to 100% of all results but they rarely comment on the TPR. Being more conservative lowers our FPR, which saves us time and money, but it also lowers our TPR, which could reduce the number of important discoveries that improve human health. So what is the optimal balance and how far are we from it? I don’t think this is an easy question to answer.</p>

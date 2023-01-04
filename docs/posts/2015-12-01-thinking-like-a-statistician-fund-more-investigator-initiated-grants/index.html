@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2141,67 +2142,69 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>A substantial amount of scientific research is funded by investigator-initiated grants. A researcher has an idea, writes it up and sends a proposal to a funding agency. The agency then elicits help from a group of peers to evaluate competing proposals. Grants are awarded to the most highly ranked ideas. The percent awarded depends on how much funding gets allocated to these types of proposals. At the NIH, the largest funding agency of these types of grants, the success rate recently <a href="https://nihdirectorsblog.files.wordpress.com/2013/09/sequestration-success-rates1.jpg">fell below 20% from a high above 35%</a>. Part of the reason these percentages have fallen is to make room for large collaborative projects. Large projects seem to be increasing, and not just at the NIH. In Europe, for example, the <a href="https://www.humanbrainproject.eu/">Human Brain Project</a> has an estimated cost of over 1 billion US$ over 10 years. To put this in perspective, 1 billion dollars can fund over 500 <a href="http://grants.nih.gov/grants/funding/r01.htm">NIH R01s</a>. R01 is the NIH mechanism most appropriate for investigator initiated proposals.</p>
-<p>The merits of big science has been widely debated (for example <a href="http://www.michaeleisen.org/blog/?p=1179">here</a> and <a href="http://simplystatistics.org/2013/02/27/please-save-the-unsolicited-r01s/">here</a>). And most agree that some big projects have been successful. However, in this post I present a statistical argument highlighting the importance of investigator-initiated awards. The idea is summarized in the graph below.</p>
+<p>The merits of big science has been widely debated (for example <a href="http://www.michaeleisen.org/blog/?p=1179">here</a> and <a href="http://simplystatistics.org/posts/2013-02-27-please-save-the-unsolicited-r01s/">here</a>). And most agree that some big projects have been successful. However, in this post I present a statistical argument highlighting the importance of investigator-initiated awards. The idea is summarized in the graph below.</p>
 <p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/12/Rplot.png" /></p>
-<!-- <img class="alignnone size-full wp-image-4483" src="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png" alt="Rplot" width="1112" height="551" srcset="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-300x149.png 300w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-1024x507.png 1024w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-260x129.png 260w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png 1112w" sizes="(max-width: 1112px) 100vw, 1112px" />](http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png)
--->
 <p>The two panes above represent two different funding strategies: fund-many-R01s (left) or reduce R01s to fund several large projects (right). The grey crosses represent investigators and the gold dots represent potential paradigm-shifting geniuses. Location on the Cartesian plane represent research areas, with the blue circles denoting areas that are prime for an important scientific advance. The largest scientific contributions occur when a gold dot falls in a blue circle. Large contributions also result from the accumulation of incremental work produced by grey crosses in the blue circles.</p>
 <p>Although not perfect, the peer review approach implemented by most funding agencies appears to work quite well at weeding out unproductive researchers and unpromising ideas. They also seem to do well at spreading funds across general areas. For example NIH spreads funds across <a href="https://www.nih.gov/institutes-nih/list-nih-institutes-centers-offices">diseases and public health challenges</a> (for example cancer, mental health, heart, genomics, heart and lung disease.) as well as <a href="https://www.nigms.nih.gov/Pages/default.aspx">general medicine</a>, <a href="https://www.genome.gov/">genomics</a> and <a href="https://www.nlm.nih.gov/">information.</a> However, precisely predicting who will be a gold dot or what specific area will be a blue circle seems like an impossible endeavor. Increasing the number of tested ideas and researchers therefore increases our chance of success. When a funding agency decides to invest big in a specific area (green dollar signs) they are predicting the location of a blue circle. As funding flows into these areas, so do investigators (note the clusters). The total number of funded lead investigators also drops. The risk here is that if the dollar sign lands far from a blue dot, we pull researchers away from potentially fruitful areas. If after 10 years of funding, the <a href="https://www.humanbrainproject.eu/">Human Brain Project</a> doesn’t <a href="https://www.humanbrainproject.eu/mission">“achieve a multi-level, integrated understanding of brain structure and function”</a> we will have missed out on trying out 500 ideas by hundreds of different investigators. With a sample size this large, we expect at least a  handful of these attempts to result in the type of impactful advance that justifies funding scientific research.</p>
 <p>The simulation presented (code below) here is clearly an over simplification, but it does depict the statistical reason why I favor investigator-initiated grants.  The simulation clearly depicts that the strategy of funding many investigator-initiated grants is key for the continued success of scientific research.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rafalib)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>thecol<span class="ot">=</span><span class="st">&quot;gold3&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mypar</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">0.5</span>,<span class="fl">0.5</span>,<span class="dv">2</span>,<span class="fl">0.5</span>))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Start with the many R01s model</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="do">##generate location of 2,000 investigators</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>N <span class="ot">=</span> <span class="dv">2000</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">runif</span>(N)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">runif</span>(N)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="do">## 1% are geniuses</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Ng <span class="ot">=</span> N<span class="sc">*</span><span class="fl">0.01</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>g <span class="ot">=</span> <span class="fu">rep</span>(<span class="dv">4</span>,N);g[<span class="dv">1</span><span class="sc">:</span>Ng]<span class="ot">=</span><span class="dv">16</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="do">## generate location of important areas of research</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>M0 <span class="ot">=</span> <span class="dv">10</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>x0 <span class="ot">=</span> <span class="fu">runif</span>(M0)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>y0 <span class="ot">=</span> <span class="fu">runif</span>(M0)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>r0 <span class="ot">=</span> <span class="fu">rep</span>(<span class="fl">0.03</span>,M0)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="do">##Make the plot</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">nullplot</span>(<span class="at">xaxt=</span><span class="st">&quot;n&quot;</span>,<span class="at">yaxt=</span><span class="st">&quot;n&quot;</span>,<span class="at">main=</span><span class="st">&quot;Many R01s&quot;</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">symbols</span>(x0,y0,<span class="at">circles=</span>r0,<span class="at">fg=</span><span class="st">&quot;black&quot;</span>,<span class="at">bg=</span><span class="st">&quot;blue&quot;</span>,<span class="at">lwd=</span><span class="dv">3</span>,<span class="at">add=</span><span class="cn">TRUE</span>,<span class="at">inches=</span><span class="cn">FALSE</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x,y,<span class="at">pch=</span>g,<span class="at">col=</span><span class="fu">ifelse</span>(g<span class="sc">==</span><span class="dv">4</span>,<span class="st">&quot;grey&quot;</span>,thecol))</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x,y,<span class="at">pch=</span>g,<span class="at">col=</span><span class="fu">ifelse</span>(g<span class="sc">==</span><span class="dv">4</span>,<span class="cn">NA</span>,thecol))</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="do">### Generate the location of 5 big projects</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>M1 <span class="ot">=</span> <span class="dv">5</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">=</span> <span class="fu">runif</span>(M1)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>y1 <span class="ot">=</span> <span class="fu">runif</span>(M1)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="do">##make initial plot</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">nullplot</span>(<span class="at">xaxt=</span><span class="st">&quot;n&quot;</span>,<span class="at">yaxt=</span><span class="st">&quot;n&quot;</span>,<span class="at">main=</span><span class="st">&quot;A Few Big Projects&quot;</span>)</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">symbols</span>(x0,y0,<span class="at">circles=</span>r0,<span class="at">fg=</span><span class="st">&quot;black&quot;</span>,<span class="at">bg=</span><span class="st">&quot;blue&quot;</span>,<span class="at">lwd=</span><span class="dv">3</span>,<span class="at">add=</span><span class="cn">TRUE</span>,<span class="at">inches=</span><span class="cn">FALSE</span>)</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="do">### Generate location of investigators attracted</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="do">### to location of big projects. There are 1000 total</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="do">### investigators</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Sigma <span class="ot">=</span> <span class="fu">diag</span>(<span class="dv">2</span>)<span class="sc">*</span><span class="fl">0.005</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>N1 <span class="ot">=</span> <span class="dv">200</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Ng1 <span class="ot">=</span> <span class="fu">round</span>(N1<span class="sc">*</span><span class="fl">0.01</span>)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>g1 <span class="ot">=</span> <span class="fu">rep</span>(<span class="dv">4</span>,N);g1[<span class="dv">1</span><span class="sc">:</span>Ng1]<span class="ot">=</span><span class="dv">16</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS)</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>M1){</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>   xy <span class="ot">=</span> <span class="fu">mvrnorm</span>(N1,<span class="fu">c</span>(x1[i],y1[i]),Sigma)</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>   <span class="fu">points</span>(xy[,<span class="dv">1</span>],xy[,<span class="dv">2</span>],<span class="at">pch=</span>g1,<span class="at">col=</span><span class="fu">ifelse</span>(g1<span class="sc">==</span><span class="dv">4</span>,<span class="st">&quot;grey&quot;</span>,thecol))</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="do">### generate location of investigators that ignore big projects</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="do">### note now 500 instead of 200. Note overall total</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="do">## is also less because large projects result in less</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="do">## lead investigators</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>N <span class="ot">=</span> <span class="dv">500</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">runif</span>(N)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">runif</span>(N)</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Ng <span class="ot">=</span> N<span class="sc">*</span><span class="fl">0.01</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>g <span class="ot">=</span> <span class="fu">rep</span>(<span class="dv">4</span>,N);g[<span class="dv">1</span><span class="sc">:</span>Ng]<span class="ot">=</span><span class="dv">16</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x,y,<span class="at">pch=</span>g,<span class="at">col=</span><span class="fu">ifelse</span>(g<span class="sc">==</span><span class="dv">4</span>,<span class="st">&quot;grey&quot;</span>,thecol))</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x1,y1,<span class="at">pch=</span><span class="st">&quot;$&quot;</span>,<span class="at">col=</span><span class="st">&quot;darkgreen&quot;</span>,<span class="at">cex=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>rafalib</span><span class='op'>)</span></span>
+<span><span class='va'>thecol</span><span class='op'>=</span><span class='st'>"gold3"</span></span>
+<span><span class='fu'><a href='https://rdrr.io/pkg/rafalib/man/mypar.html'>mypar</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>2</span>,mar<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.5</span>,<span class='fl'>0.5</span>,<span class='fl'>2</span>,<span class='fl'>0.5</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='co'>## Start with the many R01s model</span></span>
+<span><span class='co'>###</span></span>
+<span><span class='co'>##generate location of 2,000 investigators</span></span>
+<span><span class='va'>N</span> <span class='op'>=</span> <span class='fl'>2000</span></span>
+<span><span class='va'>x</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>N</span><span class='op'>)</span></span>
+<span><span class='va'>y</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>N</span><span class='op'>)</span></span>
+<span><span class='co'>## 1% are geniuses</span></span>
+<span><span class='va'>Ng</span> <span class='op'>=</span> <span class='va'>N</span><span class='op'>*</span><span class='fl'>0.01</span></span>
+<span><span class='va'>g</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>4</span>,<span class='va'>N</span><span class='op'>)</span>;<span class='va'>g</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='va'>Ng</span><span class='op'>]</span><span class='op'>=</span><span class='fl'>16</span></span>
+<span><span class='co'>## generate location of important areas of research</span></span>
+<span><span class='va'>M0</span> <span class='op'>=</span> <span class='fl'>10</span></span>
+<span><span class='va'>x0</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>M0</span><span class='op'>)</span></span>
+<span><span class='va'>y0</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>M0</span><span class='op'>)</span></span>
+<span><span class='va'>r0</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>0.03</span>,<span class='va'>M0</span><span class='op'>)</span></span>
+<span><span class='co'>##Make the plot</span></span>
+<span><span class='fu'><a href='https://rdrr.io/pkg/rafalib/man/nullplot.html'>nullplot</a></span><span class='op'>(</span>xaxt<span class='op'>=</span><span class='st'>"n"</span>,yaxt<span class='op'>=</span><span class='st'>"n"</span>,main<span class='op'>=</span><span class='st'>"Many R01s"</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/symbols.html'>symbols</a></span><span class='op'>(</span><span class='va'>x0</span>,<span class='va'>y0</span>,circles<span class='op'>=</span><span class='va'>r0</span>,fg<span class='op'>=</span><span class='st'>"black"</span>,bg<span class='op'>=</span><span class='st'>"blue"</span>,lwd<span class='op'>=</span><span class='fl'>3</span>,add<span class='op'>=</span><span class='cn'>TRUE</span>,inches<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='va'>y</span>,pch<span class='op'>=</span><span class='va'>g</span>,col<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>==</span><span class='fl'>4</span>,<span class='st'>"grey"</span>,<span class='va'>thecol</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='va'>y</span>,pch<span class='op'>=</span><span class='va'>g</span>,col<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>==</span><span class='fl'>4</span>,<span class='cn'>NA</span>,<span class='va'>thecol</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='co'>### Generate the location of 5 big projects</span></span>
+<span><span class='va'>M1</span> <span class='op'>=</span> <span class='fl'>5</span></span>
+<span><span class='va'>x1</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>M1</span><span class='op'>)</span></span>
+<span><span class='va'>y1</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>M1</span><span class='op'>)</span></span>
+<span><span class='co'>##make initial plot</span></span>
+<span><span class='fu'><a href='https://rdrr.io/pkg/rafalib/man/nullplot.html'>nullplot</a></span><span class='op'>(</span>xaxt<span class='op'>=</span><span class='st'>"n"</span>,yaxt<span class='op'>=</span><span class='st'>"n"</span>,main<span class='op'>=</span><span class='st'>"A Few Big Projects"</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/symbols.html'>symbols</a></span><span class='op'>(</span><span class='va'>x0</span>,<span class='va'>y0</span>,circles<span class='op'>=</span><span class='va'>r0</span>,fg<span class='op'>=</span><span class='st'>"black"</span>,bg<span class='op'>=</span><span class='st'>"blue"</span>,lwd<span class='op'>=</span><span class='fl'>3</span>,add<span class='op'>=</span><span class='cn'>TRUE</span>,inches<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span></span>
+<span><span class='co'>### Generate location of investigators attracted</span></span>
+<span><span class='co'>### to location of big projects. There are 1000 total</span></span>
+<span><span class='co'>### investigators</span></span>
+<span><span class='va'>Sigma</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>)</span><span class='op'>*</span><span class='fl'>0.005</span></span>
+<span><span class='va'>N1</span> <span class='op'>=</span> <span class='fl'>200</span></span>
+<span><span class='va'>Ng1</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='va'>N1</span><span class='op'>*</span><span class='fl'>0.01</span><span class='op'>)</span></span>
+<span><span class='va'>g1</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>4</span>,<span class='va'>N</span><span class='op'>)</span>;<span class='va'>g1</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='va'>Ng1</span><span class='op'>]</span><span class='op'>=</span><span class='fl'>16</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://www.stats.ox.ac.uk/pub/MASS4/'>MASS</a></span><span class='op'>)</span></span>
+<span><span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='va'>M1</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>   <span class='va'>xy</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/MASS/man/mvrnorm.html'>mvrnorm</a></span><span class='op'>(</span><span class='va'>N1</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>x1</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span>,<span class='va'>y1</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>)</span>,<span class='va'>Sigma</span><span class='op'>)</span></span>
+<span>   <span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>xy</span><span class='op'>[</span>,<span class='fl'>1</span><span class='op'>]</span>,<span class='va'>xy</span><span class='op'>[</span>,<span class='fl'>2</span><span class='op'>]</span>,pch<span class='op'>=</span><span class='va'>g1</span>,col<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>g1</span><span class='op'>==</span><span class='fl'>4</span>,<span class='st'>"grey"</span>,<span class='va'>thecol</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span>
+<span><span class='co'>### generate location of investigators that ignore big projects</span></span>
+<span><span class='co'>### note now 500 instead of 200. Note overall total</span></span>
+<span><span class='co'>## is also less because large projects result in less</span></span>
+<span><span class='co'>## lead investigators</span></span>
+<span><span class='va'>N</span> <span class='op'>=</span> <span class='fl'>500</span></span>
+<span><span class='va'>x</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>N</span><span class='op'>)</span></span>
+<span><span class='va'>y</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='va'>N</span><span class='op'>)</span></span>
+<span><span class='va'>Ng</span> <span class='op'>=</span> <span class='va'>N</span><span class='op'>*</span><span class='fl'>0.01</span></span>
+<span><span class='va'>g</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>4</span>,<span class='va'>N</span><span class='op'>)</span>;<span class='va'>g</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='va'>Ng</span><span class='op'>]</span><span class='op'>=</span><span class='fl'>16</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='va'>y</span>,pch<span class='op'>=</span><span class='va'>g</span>,col<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>==</span><span class='fl'>4</span>,<span class='st'>"grey"</span>,<span class='va'>thecol</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x1</span>,<span class='va'>y1</span>,pch<span class='op'>=</span><span class='st'>"$"</span>,col<span class='op'>=</span><span class='st'>"darkgreen"</span>,cex<span class='op'>=</span><span class='fl'>2</span>,lwd<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

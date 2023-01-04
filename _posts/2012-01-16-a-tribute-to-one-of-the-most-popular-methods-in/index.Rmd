@@ -1,5 +1,5 @@
 ---
-NA: ~
+title: A tribute to one of the most popular methods in statistics
 author: Admin
 date: '2012-01-16'
 output:

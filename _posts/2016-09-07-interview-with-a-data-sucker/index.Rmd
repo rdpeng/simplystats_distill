@@ -92,7 +92,7 @@ the data.
 
 ### In a recent blog post, you suggested several possible data sharing guidelines. What would the advantage be of having guidelines in place in help guide the data sharing process?
 
-I think you are referring to [a post by Jeff Leek](http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/) but I am happy to
+I think you are referring to [a post by Jeff Leek](http://simplystatistics.org/posts/2016-01-25-on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/) but I am happy to
 answer. For data to be generated, we need to incentivize the endeavor.
 Guidelines that assure patient privacy should of course be followed.
 Some other simple guidelines related to those mentioned by Jeff are:

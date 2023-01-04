@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -116,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2079,7 +2080,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2141,16 +2142,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>_Editor’s note: This is a guest post by <a href="http://www.hcp.med.harvard.edu/faculty/core/laura-hatfield-phd">Laura Hatfield</a>. Laura is an Assistant Professor of Health Care Policy at Harvard Medical School, with a specialty in Biostatistics. Her work focuses on understanding trade-offs and relationships among health outcomes. Dr. Hatfield received her BS in genetics from Iowa State University and her PhD in biostatistics from the University of Minnesota. She tweets <span class="citation" data-cites="bioannie">[@bioannie]</span>(<a href="https://twitter.com/bioannie)_" class="uri">https://twitter.com/bioannie)_</a></p>
+<p><em>Editor’s note: This is a guest post by <a href="http://www.hcp.med.harvard.edu/faculty/core/laura-hatfield-phd">Laura Hatfield</a>. Laura is an Assistant Professor of Health Care Policy at Harvard Medical School, with a specialty in Biostatistics. Her work focuses on understanding trade-offs and relationships among health outcomes. Dr. Hatfield received her BS in genetics from Iowa State University and her PhD in biostatistics from the University of Minnesota. She tweets <a href="https://twitter.com/bioannie"><span class="citation" data-cites="bioannie">@bioannie</span></a></em></p>
 <p>I didn’t imagine when I joined Harvard’s Department of Health Care Policy that the New York Times would be <a href="http://www.nytimes.com/2015/01/06/us/health-care-fixes-backed-by-harvards-experts-now-roil-its-faculty.html">writing about my benefits package</a>. Then a vocal and aggrieved group of faculty <a href="http://www.thecrimson.com/article/2014/11/12/harvards-health-benefits-unfairness/">rebelled against health benefits changes</a> for 2015, and commentators responded by gleefully <a href="http://www.thefiscaltimes.com/2015/01/07/Harvards-Whiny-Profs-Could-Get-Obamacare-Bonus">skewering</a> entitled-sounding Harvard professors. But I’m a statistician, so I want to talk data.</p>
 <p>Health care spending is tremendously right-skewed. The figure below shows the annual spending distribution among people with any spending (~80% of the total population) in two data sources on people covered by employer-sponsored insurance, such as the Harvard faculty. Notice that the y axis is on the log scale. More than half of people spend $1000 or less, but a few very unfortunate folks top out near half a million.</p>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2015/01/spending_distribution.jpg"><img class="alignnone size-full wp-image-3814" src="http://simplystatistics.org/wp-content/uploads/2015/01/spending_distribution.jpg" alt="spending_distribution" width="600" height="400" /></a></p>
+<p><a href="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/spending_distribution.jpg"><img class="alignnone size-full wp-image-3814" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/spending_distribution.jpg" alt="spending_distribution" width="600" height="400" /></a></p>
 <p>Source: <a href="https://www.bea.gov/papers/working_papers.htm">Measuring health care costs of individuals with employer-sponsored health insurance in the US: A comparison of survey and claims data</a>. A. Aizcorbe, E. Liebman, S. Pack, D.M. Cutler, M.E. Chernew, A.B. Rosen. BEA working paper. WP2010-06. June 2010.</p>
 <p>If instead of contributing to my premiums, Harvard instead gave me the $1000/month premium contribution in the form of wages, I would be on the hook for my own health care expenses. If I stay healthy, I pocket the money, minus income taxes. If I get sick, I have the extra money available to cover the expenses…provided I’m not one of the unlucky 10% of people spending more than $12,000/year. In that case, the additional wages would be insufficient to cover my health care expenses. This “every woman for herself” system lacks the key benefit of insurance: risk pooling. The sickest among us would be bankrupted by health costs. Another good reason for an employer to give me benefits is that I do not pay taxes on this part of my compensation (more on that later).</p>
 <p>At the opposite end of the spectrum is the Harvard faculty health insurance plan. Last year, the university paid ~$1030/month toward my premium and I put in ~$425 (tax-free). In exchange for this ~$17,000 of premiums, my family got first-dollar insurance coverage with very low co-pays. Faculty contributions to our collective expenses health care were distributed fairly evenly among all of us, with only minimal cost sharing to reflect how much care each person consumed. The sickest among us were in no financial peril. My family didn’t use much care and thus didn’t get our (or Harvard’s) money’s worth for all that coverage, but I’m ok with it. I still prefer risk pooling.</p>
 <p>Here’s the problem: moral hazard. It’s a word I learned when I started hanging out with health economists. It describes the tendency of people to over-consume goods that feel free, such as health care paid through premiums or desserts at an all-you-can-eat buffet. Just look at this array—how much cake do *you* want to eat for $9.99?</p>
 <p> </p>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2015/01/buffet.jpg"><img class="alignnone size-large wp-image-3815" src="http://simplystatistics.org/wp-content/uploads/2015/01/buffet-1024x768.jpg" alt="buffet" width="500" height="380" /></a></p>
+<p><a href="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/buffet.jpg"><img class="alignnone size-large wp-image-3815" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/01/buffet-1024x768.jpg" alt="buffet" width="500" height="380" /></a></p>
 <p>Source: <a href="https://www.flickr.com/photos/jimmonk/5687939526/in/photostream/" class="uri">https://www.flickr.com/photos/jimmonk/5687939526/in/photostream/</a></p>
 <p>One way to mitigate moral hazard is to expose people to more of their cost of care at the point of service instead of through premiums. You might think twice about that fifth tiny cake if you were paying per morsel. This is what the new Harvard faculty plans do: our premiums actually go down, but now we face a modest deductible, $250 per person or $750 max for a family. This is meant to encourage faculty to use their health care more efficiently, but it still affords good protection against catastrophic costs. The out-of-pocket max remains low at $1500 per individual or $4500 per family, with recent announcements to further protect individuals who pay more than 3% of salary in out-of-pocket health costs through a reimbursement program.</p>
 <p>The allocation of individuals’ contributions between premiums and point-of-service costs is partly a question of how we cross-subsidize each other. If Harvard’s total contribution remains the same and health care costs do not grow faster than wages (ha!), then increased cost sharing decreases the amount by which people who use less care subsidize those who use more. How you feel about the “right” level of cost sharing may depend on whether you’re paying or receiving a subsidy from your fellow employees. And maybe your political leanings.</p>

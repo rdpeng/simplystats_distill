@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2159,7 +2160,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </p>
 <p>to be “small”. To give this some context, imagine the <em>x</em> and <em>y</em> are log scale (base 2) gene expression measurements which implies the <em>d</em> represent log fold changes. If these differences have a standard deviation of 1, it implies that fold changes of 2 are typical between replicates. If our replication experiment produces measurements that are typically twice as big or twice as small as the original, I am not going to claim the measurements are reproduced. However, as it turns out, such terrible reproducibility can still result in correlations higher than 0.92.</p>
 <p>To someone basing their definition of correlation on the current common language usage this may seem surprising, but to someone basing it on math, it is not. To see this, note that the mathematical definition of correlation tells us that because <em>d</em> and <em>x</em> are independent:</p>
-<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/pearsonformula.png" /> <!-- [<img class=" aligncenter" src="http://simplystatistics.org/wp-content/uploads/2015/08/pearsonformula-300x55.png" alt="pearsonformula" width="300" height="55" />](http://simplystatistics.org/wp-content/uploads/2015/08/pearsonformula.png) --></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/pearsonformula.png" />
+<!-- [<img class=" aligncenter" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/pearsonformula-300x55.png" alt="pearsonformula" width="300" height="55" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/pearsonformula.png) --></p>
 <p>This tells us that correlation summarizes the variability of <em>d</em> relative to the variability of <em>x</em>. Because of the wide range of gene expression values we observe in practice, the standard deviation of <em>x</em> can easily be as large as 3 (variance is 9). This implies we expect to see correlations as high as 1/sqrt(1+1/9) = 0.95, despite the lack of reproducibility when comparing <em>x</em> to <em>y</em>.</p>
 <p>Note that using Spearman correlation does not fix this problem. A Spearman correlation of 1 tells us that the ranks of <em>x</em> and <em>y</em> are preserved, yet doest not summarize the actual differences. The problem comes down to the fact that we care about the variability of <em>d</em> and correlation, Pearson or Spearman, does not provide an optimal summary. While correlation relates to the preservation of ranks, a much more appropriate summary of reproducibly is the distance between <em>x</em> and <em>y</em> which is related to the standard deviation of the differences <em>d</em>. A very simple R command you can use to generate this summary statistic is:</p>
 <pre>sqrt(mean(d^2))</pre>
@@ -2168,17 +2170,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </pre>
 <p>The equivalent suggestion for plots it to make an <a href="https://en.wikipedia.org/wiki/MA_plot">MA-plot</a> instead of a scatterplot.</p>
 <p>But aren’t correlations and distances directly related? Sort of, and this actually brings up another problem. If the <em>x</em> and <em>y</em> are standardized to have average 0 and standard deviation 1 then, yes, correlation and distance are directly related:</p>
-<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/distcorr.png" /> <!-- [<img class=" size-medium wp-image-4202 aligncenter" src="http://simplystatistics.org/wp-content/uploads/2015/08/distcorr-300x51.png" alt="distcorr" width="300" height="51" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/distcorr-300x51.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/distcorr-260x44.png 260w, http://simplystatistics.org/wp-content/uploads/2015/08/distcorr.png 878w" sizes="(max-width: 300px) 100vw, 300px" />](http://simplystatistics.org/wp-content/uploads/2015/08/distcorr.png) --></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/distcorr.png" />
+<!-- [<img class=" size-medium wp-image-4202 aligncenter" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcorr-300x51.png" alt="distcorr" width="300" height="51" srcset="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcorr-300x51.png 300w, https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcorr-260x44.png 260w, https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcorr.png 878w" sizes="(max-width: 300px) 100vw, 300px" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcorr.png) --></p>
 <p>However, if instead <em>x</em> and <em>y</em> have different average values, which would put into question reproducibility, then distance is sensitive to this problem while correlation is not. If the standard devtiation is 1, the formula is:</p>
 <p> </p>
-<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/distcor2.png" /> <!--[<img class=" size-medium wp-image-4204 aligncenter" src="http://simplystatistics.org/wp-content/uploads/2015/08/distcor2-300x27.png" alt="distcor2" width="300" height="27" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/distcor2-300x27.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/distcor2-1024x94.png 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://simplystatistics.org/wp-content/uploads/2015/08/distcor2.png)--></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/distcor2.png" />
+<!--[<img class=" size-medium wp-image-4204 aligncenter" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcor2-300x27.png" alt="distcor2" width="300" height="27" srcset="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcor2-300x27.png 300w, https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcor2-1024x94.png 1024w" sizes="(max-width: 300px) 100vw, 300px" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/distcor2.png)--></p>
 <p>Once we consider units (standard deviations different from 1) then the relationship becomes even more complicated. Two advantages of distance you should be aware of are:</p>
 <ol type="1">
 <li>it is in the same units as the data, while correlations have no units making it hard to interpret and select thresholds, and</li>
 <li>distance accounts for bias (differences in average), while correlation does not.</li>
 </ol>
 <p>A final important point relates to the use of correlation with data that is not approximately normal. The useful interpretation of correlation as a summary statistic stems from the bivariate normal approximation: for every standard unit increase in the first variable, the second variable increased <em>r</em> standard units, with <em>r</em> the correlation. A summary of this is <a href="http://genomicsclass.github.io/book/pages/exploratory_data_analysis_2.html">here</a>. However, when data is not normal this interpretation no longer holds. Furthermore, heavy tail distributions, which are common in genomics, can lead to instability. Here is an example of uncorrelated data with a single pointed added that leads to correlations close to 1. This is quite common with RNAseq data.</p>
-<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/supp_figure_2.png" /> <!-- [<img class=" size-medium wp-image-4208 aligncenter" src="http://simplystatistics.org/wp-content/uploads/2015/08/supp_figure_2-300x300.png" alt="supp_figure_2" width="300" height="300" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/supp_figure_2-300x300.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/supp_figure_2-1024x1024.png 1024w, http://simplystatistics.org/wp-content/uploads/2015/08/supp_figure_2-200x200.png 200w" sizes="(max-width: 300px) 100vw, 300px" />](http://simplystatistics.org/wp-content/uploads/2015/08/supp_figure_2.png)--></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/08/supp_figure_2.png" />
+<!-- [<img class=" size-medium wp-image-4208 aligncenter" src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/supp_figure_2-300x300.png" alt="supp_figure_2" width="300" height="300" srcset="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/supp_figure_2-300x300.png 300w, https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/supp_figure_2-1024x1024.png 1024w, https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/supp_figure_2-200x200.png 200w" sizes="(max-width: 300px) 100vw, 300px" />](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2015/08/supp_figure_2.png)--></p>
 <p> </p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

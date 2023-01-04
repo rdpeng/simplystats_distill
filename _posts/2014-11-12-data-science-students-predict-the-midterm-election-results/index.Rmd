@@ -7,7 +7,7 @@ output:
     self_contained: no
 ---
 
-As explained in an [earlier post](http://simplystatistics.org/2014/11/04/538-election-forecasts-made-simple/), one of the homework assignments of my [CS109](http://cs109.github.io/2014/) class was to predict the results of the midterm election. We created a competition in which 49 students entered. The most interesting challenge was to provide intervals for the republican - democrat difference in each of the 35 senate races. Anybody missing more than 2 was eliminated. The average size of the intervals was the tie breaker.
+As explained in an [earlier post](http://simplystatistics.org/posts/2014-11-04-538-election-forecasts-made-simple/), one of the homework assignments of my [CS109](http://cs109.github.io/2014/) class was to predict the results of the midterm election. We created a competition in which 49 students entered. The most interesting challenge was to provide intervals for the republican - democrat difference in each of the 35 senate races. Anybody missing more than 2 was eliminated. The average size of the intervals was the tie breaker.
 
 The main teaching objective here was to get students thinking about how to evaluate prediction strategies when chance is involved. To a naive observer, a biased strategy that favored democrats and correctly called, say, Virginia may look good in comparison to strategies that called it a toss-up.  However, a look at the other 34 states would reveal the weakness of this biased strategy. I wanted students to think of procedures that can help distinguish lucky guesses from strategies that universally perform well.
 
@@ -307,12 +307,9 @@ It is important to note that 538 would have probably increased their interval si
 
 Here are some plots showing results from two of our top performers:
 
-[<img class="alignnone wp-image-3560" src="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png" alt="Rplot" width="714" height="233" srcset="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot-300x98.png 300w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot-1024x334.png 1024w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png 1674w" sizes="(max-width: 714px) 100vw, 714px" />](http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png) [<img class="alignnone  wp-image-3561" src="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png" alt="Rplot01" width="714" height="233" srcset="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01-300x98.png 300w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01-1024x334.png 1024w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png 1674w" sizes="(max-width: 714px) 100vw, 714px" />](http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png)
+![](https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/11/Rplot.png)
+
+![](https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2014/11/Rplot01.png) 
 
 I hope this exercise helped students realize that data science can be both fun and useful. I can't wait to do this again in 2016.
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;

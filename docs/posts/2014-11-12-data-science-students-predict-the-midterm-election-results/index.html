@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2140,7 +2141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>As explained in an <a href="http://simplystatistics.org/2014/11/04/538-election-forecasts-made-simple/">earlier post</a>, one of the homework assignments of my <a href="http://cs109.github.io/2014/">CS109</a> class was to predict the results of the midterm election. We created a competition in which 49 students entered. The most interesting challenge was to provide intervals for the republican - democrat difference in each of the 35 senate races. Anybody missing more than 2 was eliminated. The average size of the intervals was the tie breaker.</p>
+<p>As explained in an <a href="http://simplystatistics.org/posts/2014-11-04-538-election-forecasts-made-simple/">earlier post</a>, one of the homework assignments of my <a href="http://cs109.github.io/2014/">CS109</a> class was to predict the results of the midterm election. We created a competition in which 49 students entered. The most interesting challenge was to provide intervals for the republican - democrat difference in each of the 35 senate races. Anybody missing more than 2 was eliminated. The average size of the intervals was the tie breaker.</p>
 <p>The main teaching objective here was to get students thinking about how to evaluate prediction strategies when chance is involved. To a naive observer, a biased strategy that favored democrats and correctly called, say, Virginia may look good in comparison to strategies that called it a toss-up.  However, a look at the other 34 states would reveal the weakness of this biased strategy. I wanted students to think of procedures that can help distinguish lucky guesses from strategies that universally perform well.</p>
 <p>One of the concepts we discussed in class was the systematic bias of polls which we modeled as a random effect. One can’t infer this bias from polls until after the election passes. By studying previous elections students were able to estimate the SE of this random effect and incorporate it into the calculation of intervals. The realization of this random effect was <a href="http://fivethirtyeight.com/features/the-polls-were-skewed-toward-democrats/">very large</a> in these elections (about +4 for the democrats) which clearly showed the importance of modeling this source of variability. Strategies that restricted standard error measures to sample estimates from this year’s polls did very poorly. The <a href="http://fivethirtyeight.com/interactives/senate-forecast/">90% credible intervals</a> provided by 538, which I believe does incorporate this, missed 8 of the 35 races (23%). This suggests that they underestimated the variance.  Several of our students compared favorably to 538:</p>
 <div class="table-responsive">
@@ -2370,11 +2371,9 @@ Vincent Nguyen
 </div>
 <p>It is important to note that 538 would have probably increased their interval size had they actively participated in a competition requiring 95% of the intervals to cover. But all in all, students did very well. The majority correctly predicted the republican take over. The median mean square error across all 49 participantes was 8.2 which was not much worse that 538’s 6.6. Other example of strategies that I think helped some of these students perform well was the use of creative weighting schemes (based on previous elections) to average poll and the use of splines to estimate trends, which in this particular election were going in the republican’s favor.</p>
 <p>Here are some plots showing results from two of our top performers:</p>
-<p><a href="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png"><img class="alignnone wp-image-3560" src="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png" alt="Rplot" width="714" height="233" srcset="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot-300x98.png 300w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot-1024x334.png 1024w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot.png 1674w" sizes="(max-width: 714px) 100vw, 714px" /></a> <a href="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png"><img class="alignnone  wp-image-3561" src="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png" alt="Rplot01" width="714" height="233" srcset="http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01-300x98.png 300w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01-1024x334.png 1024w, http://simplystatistics.org/wp-content/uploads/2014/11/Rplot01.png 1674w" sizes="(max-width: 714px) 100vw, 714px" /></a></p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/11/Rplot.png" /></p>
+<p><img src="https://github.com/simplystats/simplystats.github.io/raw/master/wp-content/uploads/2014/11/Rplot01.png" /></p>
 <p>I hope this exercise helped students realize that data science can be both fun and useful. I can’t wait to do this again in 2016.</p>
-<p> </p>
-<p> </p>
-<p> </p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
