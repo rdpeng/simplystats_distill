@@ -14,7 +14,7 @@ The NIH is soliciting input for their [Strategic Plan for Data Science](https://
 
 My main critique is that the report is somewhat vague. More specifics and concrete examples should be included. 
 
-My main concern is that the draft describes initiatives with the goal of improving the _back end_ of data science (data storage, data management, and computing infrastructure) without realizing that to do this one needs to understand the needs of those working on the _front end_ of data science (data exploration, quality assessment, [interactive data analysis](https://simplystatistics.org/2017/04/03/interactive-data-analysis/), and method development). 
+My main concern is that the draft describes initiatives with the goal of improving the _back end_ of data science (data storage, data management, and computing infrastructure) without realizing that to do this one needs to understand the needs of those working on the _front end_ of data science (data exploration, quality assessment, [interactive data analysis](http://simplystatistics.org/posts/2017-04-03-interactive-data-analysis/), and method development). 
 
 My main recommendation is that the NIH Data Science leadership complement their current expertise with individuals  experienced with the _front end_ of data science. The ideal candidate has
 

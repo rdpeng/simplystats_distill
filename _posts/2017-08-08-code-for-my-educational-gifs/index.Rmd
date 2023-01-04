@@ -500,7 +500,7 @@ surv_income %>%
 
 # Bayes Rule
 
-This simple animation shows, case by case, the results of applying a highly accurate diagnostic test to a population with low prevalence of disease. It helps illustrate how the posterior probability of having the disease given a positive test is lower than the accuracy of the test. You can use Bayes rule to determine the actual conditional probabilities. More details are [here](https://simplystatistics.org/2014/10/17/bayes-rule-in-a-gif/).
+This simple animation shows, case by case, the results of applying a highly accurate diagnostic test to a population with low prevalence of disease. It helps illustrate how the posterior probability of having the disease given a positive test is lower than the accuracy of the test. You can use Bayes rule to determine the actual conditional probabilities. More details are [here](http://simplystatistics.org/posts/2014-10-17-bayes-rule-in-a-gif/).
 
 ```{r, echo = FALSE, fig.align='center'}
 knitr::include_graphics("https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/bayes.gif")

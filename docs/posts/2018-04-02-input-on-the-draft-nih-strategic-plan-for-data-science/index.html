@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.11/header-attrs.js","index_files/header-attrs-2.14/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2078,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2143,7 +2144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>The NIH is soliciting input for their <a href="https://grants.nih.gov/grants/rfi/NIH-Strategic-Plan-for-Data-Science.pdf">Strategic Plan for Data Science</a>. If you are interested, today, April 2, is the deadline. You can provide input <a href="https://grants.nih.gov/grants/rfi/rfi.cfm?ID=73">here</a>. Below is what I plan to submit.</p>
 <h2 id="summary">Summary</h2>
 <p>My main critique is that the report is somewhat vague. More specifics and concrete examples should be included.</p>
-<p>My main concern is that the draft describes initiatives with the goal of improving the <em>back end</em> of data science (data storage, data management, and computing infrastructure) without realizing that to do this one needs to understand the needs of those working on the <em>front end</em> of data science (data exploration, quality assessment, <a href="https://simplystatistics.org/2017/04/03/interactive-data-analysis/">interactive data analysis</a>, and method development).</p>
+<p>My main concern is that the draft describes initiatives with the goal of improving the <em>back end</em> of data science (data storage, data management, and computing infrastructure) without realizing that to do this one needs to understand the needs of those working on the <em>front end</em> of data science (data exploration, quality assessment, <a href="http://simplystatistics.org/posts/2017-04-03-interactive-data-analysis/">interactive data analysis</a>, and method development).</p>
 <p>My main recommendation is that the NIH Data Science leadership complement their current expertise with individuals experienced with the <em>front end</em> of data science. The ideal candidate has</p>
 <ul>
 <li>experienced the pain of explaining to a collaborator how to prepare a spreadsheet that is appropriate for data analysis,</li>
