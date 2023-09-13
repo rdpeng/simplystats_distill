@@ -1,0 +1,75 @@
+---
+title: "Russell Shinohara is awarded the 2023 Mortimer Spiegelman Award"
+author:
+  - name: Jeff Leek
+    url:
+      www.jtleek.com: {}
+date: 2023-09-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Russell Shinohara is awarded 2023 Mortimer Spiegelman Award
+
+Russell "Taki" Shinohara was selected as [2023 Moritmer Spiegelman Award](https://www.spiegelmanaward.org/) recipient. Dr. Shinohara was selected from an incredibly deep and talented pool of candidates who collectively represent the diversity and strength of the biostatistics field nationally and internationally. 
+
+Dr. Shinohara received his PhD in Biostatistics at the Johns Hopkins Bloomberg School of Public Health. He moved to the Perelman School of Medicine at the University of Pennsylvania where he is currently Professor of Biostatistics and Epidemiology. Dr. Shinohara is also the founder and director of the [Penn Statistics in Imagiging and Visualization Endeavor](https://www.dbeicoe.med.upenn.edu/pennsive). He has made major contributions to both the biostatistical and imaging fields, has an impressive track record of leadership and mentorship, and represents the biostatistics field well in the modern era of data science and machine learning. 
+
+We interviewed Dr. Shinohara shortly after receiving the award. 
+
+
+## Interview with Russel Shinohara
+
+**SS: Congratulations on winning the 2023 Mortimer Spiegelman Award! How are you feeling?** 
+ 
+RS: Thanks very much! To be honest, I'm totally humbled and a bit overwhelmed. I'm incredibly grateful to all of my incredible mentors, students, colleagues, and collaborators. Those folks deserve the lion's share of credit for our work together. I'm also very thankful to the APHA and the selection committee for choosing me.
+
+ 
+
+**SS: How did you get into biomedical imaging statistics?** 
+ 
+RS: When I was a grad student, I started hanging out with some biostatisticians who were interested in imaging statistics. Through them, I met an imaging collaborator and saw a brain MRI for the first time. To this day I remember exactly where I was, exactly what I saw, and the feeling of excitement running through my nerves.
+
+ 
+
+**SS: Can you tell us about some of your favorite projects over the last few years?**
+ 
+
+That's a tough question. I love the field of imaging statistics for the vast opportunities that abound - some examples of the projects that I've been most excited about over the past few years have been methods for studying brain lesions in multiple sclerosis, harmonizing data acquired on different MRI scanners for integrated analysis, and multi-modal imaging studies aiming to integrate information to better understand neurodevelopment and psychiatric illness.
+
+ 
+
+**SS: Tell us about the origins of the PennSIVE group and what you are doing today?**
+ 
+
+The PennSIVE group was initially a simple "copy-paste" of what I observed at the SMART group at Hopkins when I was a student. I wanted to build a vibrant, close-knit community of biostatisticians who focused on solving critical public health problems leveraging statistical methods, and rigorous applications thereof. Now, about a decade later, we're thrilled to be a Center of Excellence with five primary faculty members. The students, postdocs, staff, and faculty have made PennSIVE an inclusive family doing cutting-edge research that I'm incredibly grateful to call home.
+
+ 
+
+**SS: How do you balance statistical methods engagement with applications?** 
+ 
+
+RS: From my perspective, applications and methods are inextricably linked. We work on problems that arise in applied biomedical settings and innovate when it's necessary to answer the questions we want to answer. I'm a strong believer in "if it ain't broke, don't fix it." And through methods work, we can often see what's missing in terms of data on hand - which can lead us to better studies that further inform about biology.
+
+An example of this from my research focused on the problem of harmonizing data acquired on different MRI scanners for assessing the burden of disease in multiple sclerosis. When we first started on this problem, we attempted to develop methods based on the data we had. But quickly, we realized that we needed gold-standard data to model biases between scanner equipment more accurately. We were very fortunate to subsequently receive generous support from the National Multiple Sclerosis Society to recruit people living with MS and send them to different research centers across the northeast for imaging, providing the necessary counterfactual of how measurements acquired on the same person differ across scanners. These data are, in turn, making the next generation of statistical methods development possible. I believe this back-and-forth between methods development and applied scientific research to be the cornerstone of impactful statistical innovation.
+
+
+**SS: What do you think are the most exciting opportunities in biostatistics right now for students?**  
+ 
+
+RS: There are just so many! Biostatistics is a field that, independent of which direction you choose, there are boundless opportunities to make new discoveries, improve human health, and innovate with new methodology.
+
+ 
+
+**SS: What advice do you have for junior (bio)statisticians just getting into the field?**  
+ 
+
+RS: Do what makes you happy and excited - find people you love working with, problems that you just can't put down, and solutions that make a difference. The rest will come!
+
+ 
