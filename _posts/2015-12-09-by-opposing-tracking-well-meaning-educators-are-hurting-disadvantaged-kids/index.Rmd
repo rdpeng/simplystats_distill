@@ -18,7 +18,7 @@ Unfortunately, there has been a trend recently to move away from tracking and se
 Unfortunately, instead of maintaining the placement criteria, which benefited underrepresented minorities without relaxing standards, these school districts reverted to the old, flawed system due to budget cuts.
 
 
-Another argument against tracking is that students benefit more from being in classes with higher-achieving peers, rather than being in a class with students with similar subject mastery and a teacher focused on their level. However a](http://web.stanford.edu/~pdupas/Tracking_rev.pdf) (and the only one of which I am aware) finds that tracking helps all students:
+Another argument against tracking is that students benefit more from being in classes with higher-achieving peers, rather than being in a class with students with similar subject mastery and a teacher focused on their level. However a [recent randomized control trial](http://web.stanford.edu/~pdupas/Tracking_rev.pdf) (and the only one of which I am aware) finds that tracking helps all students:
 
 > We find that tracking students by prior achievement raised scores for all students, even those assigned to lower achieving peers. On average, after 18 months, test scores were 0.14 standard deviations higher in tracking schools than in non-tracking schools (0.18 standard deviations higher after controlling for baseline scores and other control variables). After controlling for the baseline scores, students in the top half of the pre-assignment distribution gained 0.19 standard deviations, and those in the bottom half gained 0.16 standard deviations. **Students in all quantiles benefited from tracking. **
 
