@@ -1,1 +1,6 @@
+.DS_Store
+.Rhistory
+finding-bad-htmls.R
 .Rproj.user
+.gitignore
+*_cache
