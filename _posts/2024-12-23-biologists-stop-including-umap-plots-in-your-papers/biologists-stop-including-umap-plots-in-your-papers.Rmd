@@ -16,13 +16,15 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+**Update on February 13, 2025**: We have updated the post after re-running the code with latest versions of all packages and by making sure that `umap` is aware that the input is a distance. We also changed the seed to today's day.
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(Matrix)
 library(ggplot2)
 library(dplyr)
 library(umap)
 dslabs::ds_theme_set()
-set.seed(2024-6-21)
+set.seed(2025-2-13)
 load("~/Documents/teaching/summer-students/summer-research-2024/rda/pop_gen_sample.RData")
 ```
 
@@ -31,9 +33,10 @@ library(Matrix)
 library(ggplot2)
 library(dplyr)
 library(umap)
-set.seed(2024-6-21)
+set.seed(2025-2-13)
 load("rda/pop_gen_sample.RData")
 ```
+
 
 ## The UMAP craze in singe cell RNA-Seq
 
@@ -69,7 +72,11 @@ x <- mnist$test$images[1:5000,]
 x <- (x[,apply(x, 2, sd) > 80] > 125) * 1
 y <- as.factor(mnist$test$labels[1:5000])
 d <- as.matrix(dist(x, method = "binary"))
-u <- umap(d, n_neighbors = 10, min_dist = 0.025)
+custom.settings <- umap.defaults
+custom.settings$input <- "dist"
+custom.settings$n_neighbors <- 10
+custom.settings$min_dist <- 0.025
+u <- umap(d, config = custom.settings)
 data.frame(dim1 = u$layout[,1], dim2 = u$layout[,2], Label = y) |>
   ggplot(aes(dim1, dim2, color = Label)) +
   geom_point(alpha = 0.5, cex = 0.5) 
@@ -88,8 +95,9 @@ Additionally, UMAP is highly sensitive and can create separations in data that s
 ```{r mvnorm-example}
 Sigma <- matrix(.8, 3, 3); diag(Sigma) <- 1
 x <- MASS::mvrnorm(100, rep(0,3), Sigma)
-#x <- matrix(rnorm(100), ncol = 1)
-u <- umap(as.matrix(dist(x)))
+custom.settings <- umap.defaults
+custom.settings$input <- "dist"
+u <- umap(as.matrix(dist(x)), config = custom.settings)
 ranks <- rank(rowMeans(x))
 colors <- colorRampPalette(c("blue", "red"))(nrow(x))
 colormap <- colors[ranks]
@@ -99,6 +107,19 @@ text(u$layout[,1], u$layout[,2], labels = ranks, col = colormap, cex = 0.5)
 
 
 Despite the data being drawn from a single multivariate normal distribution, UMAP artificially separates the data. This outcome isn't problematic provided one understands what UMAP is doing. But how many readers of Biology journals have this level of understanding of this complex technique?
+
+**Update**: Also note that you get different UMAP plots every time we rerun the simulations:
+
+```{r mvnorm-example-2}
+x <- MASS::mvrnorm(100, rep(0,3), Sigma)
+u <- umap(as.matrix(dist(x)), config = custom.settings)
+ranks <- rank(rowMeans(x))
+colors <- colorRampPalette(c("blue", "red"))(nrow(x))
+colormap <- colors[ranks]
+plot(u$layout[,1], u$layout[,2], type = "n", xlab = "dim1", ylab = "dim2")
+text(u$layout[,1], u$layout[,2], labels = ranks, col = colormap, cex = 0.5)
+```
+
 
 By failing to account for the nuances of UMAP, we risk misinterpreting the visualizations it generates. This underscores the importance of asking what exactly are we showing with the plot. and what biological insights are we to take from them.
 
@@ -138,7 +159,7 @@ names(color_map) <- c("GBR", "IBS", "ASW", "YRI", "PUR")
 y <- y[ind,]
 pop <- factor(pop_sample[ind], levels = c("GBR", "IBS", "YRI", "ASW", "PUR"))
 d <- as.matrix(dist(y))
-u <- umap(d)#, n_neighbors = 30, min_dist = 0.1)
+u <- umap(d, config = custom.settings)
 data.frame(dim1 = u$layout[,1], dim2 = u$layout[,2], 
            Population = pop) |>
   ggplot(aes(dim1, dim2, color = pop)) + 
@@ -146,7 +167,7 @@ data.frame(dim1 = u$layout[,1], dim2 = u$layout[,2],
   scale_color_manual(values = color_map)
 ```
 
-The resulting plot shows two distinct clusters for the US populations. A simplistic interpretation based on identity group labels used in the US might call these the _Hispanic_ (`dim2` > 0) and _Black_ (`dim2` < 0) clusters. However, closer inspection reveals that some Puerto Ricans are in the Black cluster, and some African American individuals are in the Hispanic cluster.
+The resulting plot shows two distinct clusters for the US populations. A simplistic interpretation based on identity group labels used in the US might call these the _Hispanic_ (`dim2` < 0) and _Black_ (`dim2` > 0) clusters. However, closer inspection reveals that some Puerto Ricans are in the Black cluster, and some African American individuals are in the Hispanic cluster.
 
 Is this evidence of mis-classifications or inaccurate self-identification? Not at all. An alternative explanation is that UMAP has artificially exaggerated the separation between these groups. 
 
@@ -207,5 +228,6 @@ The genotype data analysis was conducted to develop questions for a summer resea
 
 A detailed explanation of UMAP is not provided here, as comprehensive resources are readily available online. The [Wikipedia page](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Uniform_manifold_approximation_and_projection) is pretty good. Additionally, I suspect there are other insightful critiques of the use of UMAP in Biology, but I didn't have the time to research this for this post. 
 
+Thanks to Nikolay Oskolkov for comments that led to improvements of the original post.
 
 
