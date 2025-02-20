@@ -262,7 +262,7 @@ A well-functioning research environment relies on **general office support staff
 
 **Research hospitals** face higher costs due to strict **healthcare regulations**, requiring extensive compliance, **biobank maintenance**, and integration with **patient care**. They must support **clinical trials, EHR security, and specialized staff**, while also managing **higher legal and liability expenses**. These factors make clinical research up to **50% more expensive** than basic biological research.
 
-## Indirect costs keep research running—but They Aren’t Enough  
+## Indirect costs keep research running
 
 The conservative estimates above amount to **$8,000,000** in annual costs, with even higher expenses for clinical research. However, with an **indirect cost rate of 50%**, the university receives only **$5,000,000** from **NIH**, leaving a **$3,000,000 shortfall** that must be covered through other institutional resources. Despite this funding gap, universities continue to invest in research infrastructure, recognizing its critical role in advancing scientific discovery.  
 
