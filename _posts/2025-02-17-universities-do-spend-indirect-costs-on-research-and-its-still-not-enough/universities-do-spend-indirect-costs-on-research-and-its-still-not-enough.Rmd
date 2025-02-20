@@ -1,0 +1,269 @@
+---
+title: "Universities Do Spend Indirect Costs on Research, And It’s Still Not Enough"
+description: |
+ Many, including prominent scientists, seem to misunderstand the true cost of biomedical research and the fact that universities  subsidize it beyond what they receive from the NIH.
+author:
+  - name: Rafael Irizarry
+    url: {}
+date: 2025-02-17
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+After the recent announcement from NIH about reductions in NIH funding:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year, $9B of the $35B that the National Institutes of Health (NIH) granted for research was used for administrative overhead, what is known as “indirect costs.” Today, NIH lowered the maximum indirect cost rate research institutions can charge the government to 15%, above
+
+<a href="https://t.co/FSUYpEGKsr">pic.twitter.com/FSUYpEGKsr</a></p>&mdash; NIH (@NIH) <a href="https://twitter.com/NIH/status/1888004759396958263?ref_src=twsrc%5Etfw">February 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I've seen many claims suggesting that NIH indirect costs are wasted or used to subsidize non-research activities. However, based on my experience in budget and space allocation meetings, as well as negotiations for research resources for my department, I can say this is not the case.  
+
+To be clear, I am not arguing that universities are models of efficiency—that's a separate discussion. What I am emphasizing is that **NIH indirect costs are essential for covering research-related expenses**, and in reality, universities **invest more in research than what NIH funding alone provides, effectively subsidizing the shortfall**.
+
+## Why Universities Invest in Research
+
+So, if NIH-funded research costs universities money, why do they still encourage their faculty to pursue these grants?
+
+Research excellence shapes a university's global reputation, driving prestige, top talent, funding, and industry partnerships. Strong research programs enhance innovation, competitiveness, and recruitment. Federal funding further incentivizes investment in research.
+
+
+## How Biomedical Research is Funded in the U.S.  
+
+
+Research in the U.S. is supported by multiple agencies, including NSF, DARPA, and DoD. 
+The **National Institutes of Health (NIH)** funds most U.S. biomedical research, with an annual budget of **$48 billion**, primarily distributed through competitive grants to universities and research institutions. Federal research funding is allocated in **two parts** when awarded to researchers to complete a research project.  
+
+1. **Direct Costs** – Funds that go directly to the research project, covering expenses like project specific supplies, research staff, and part of the project leader's salary.  
+2. **Indirect Costs**, also called Facilities and Administrative (F&A) Costs – Funds that pay for the **infrastructure necessary to conduct research**, including lab space, utilities, research administration, and compliance costs.  
+
+
+## An Analogy
+
+To understand the distinction between direct and indirect costs, consider a restaurant and think of your meal as a project:  
+
+- **Direct Costs**: Ingredients, the salaries of the chefs and servers that are directly tied to the preparation and delivery of your meal.  
+- **Indirect Costs**: The cost of rent, insurance, stoves, ovens, refrigerators, pots, pans, electricity, gas, the salaries of dishwashers, accountants, and managers- these are essential for running the restaurant but are not directly linked to making a specific meal.  
+
+In the same way that restaurants cannot operate without covering indirect costs, scientists cannot conduct research without the necessary infrastructure.
+
+## What exactly are indirect costs?
+
+For decades, the system has operated as follows: when applying for grants, investigators list their **direct costs**, while the **NIH applies an institution-wide average indirect cost (IDC) rate** instead of requiring researchers to itemize every indirect expense. This approach streamlines planning and project management, sparing researchers from tracking every individual indirect cost.  
+
+An analogy: Imagine a restaurant calculating, for **each meal**, the exact portion of rent, insurance, kitchen equipment, utilities, and staff salaries that contribute to its price. Instead, it's far simpler to apply a percentage markup to each menu item.
+
+Note that the research institute does not set its **indirect cost rate**; instead, the **NIH calculates it based on institution specific characteristics that affect the cost of research.**
+
+For [R1 universities](https://en.wikipedia.org/w/index.php?title=List_of_research_universities_in_the_United_States&oldid=1276403631), indirect cost rates typically range from 25% to 75%, depending on factors such as real estate costs, local average wages, and the type of research being conducted. 
+
+Unlike direct costs, which go to the investigator, **indirect costs** go to the institution with more spending flexibility. The lack of itemized budgets has led some, including investigators, to question whether all funds support research. However, as we show below, biomedical research—especially experimental biology—incurs institutional expenses far exceeding even a **50% indirect cost rate**.
+
+
+## Breaking Down Indirect Cost
+
+Consider a research department with 20 biomedical researchers, each receiving **NIH grants** that collectively fund $10 million in **direct costs**. These funds typically cover salaries for lead researchers, postdoctoral fellows, and technicians, along with project-specific supplies, equipment, publication fees, and conference travel.
+
+Now, lets break down the annual indirect costs. I provide **conservative estimates** for each component, though investment levels may vary across institutions based on the specific needs of their communities.
+
+### Space 
+
+Each group will need 750 square feet of space. In addition to the dedicated group space, research facilities require extra area for shared equipment, specialized core labs, conference rooms, and common support areas. This typically takes about 20-25% of the total space so let's assign 5,000 square feet.
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1x2 Image Table</title>
+  <style>
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+    }
+    td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <a title="Eastmarin, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Glowing_ALS-IGB_XBD201906-00793012.jpg">
+          <img width="512" alt="Glowing ALS-IGB XBD201906-00793012" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Glowing_ALS-IGB_XBD201906-00793012.jpg/512px-Glowing_ALS-IGB_XBD201906-00793012.jpg?20191224021042">
+        </a>
+      </td>
+      <td>
+        <a title="P5693852, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CICB%27s_Laboratory.jpg">
+          <img width="512" alt="CICB's Laboratory" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/CICB%27s_Laboratory.jpg?20121005123605">
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+So this adds up to 20,000 square feet of space. The university can either build space or rent. Building 20,000 square feet of lab space can cost $25,000,000 - \$75,000,000 and then the university has to maintain it, and upgrade every 15-25 years. Wet-lab space rents for at least \$100 per square foot and this does not include the cost of fitting out the space with lab infrastructure. Either way the university has to pay for electricity, HVAC, water, security, and waste management. Note that the disposal of hazardous materials, reagents, and consumables adds another layer of operational costs.
+
+**Estimate: \$3,000,0000**
+
+### Research Instruments and Shared Core Facilities
+
+Research instruments and shared core facilities are vital for **experimental biology**, providing access to advanced technologies beyond individual lab budgets. These facilities house high-end equipment for imaging, genomics, and proteomics, including **microscopes, mass spectrometers, NMR spectrometers, flow cytometers, and sequencing platforms**. Core facilities—such as imaging, genomics, and proteomics cores—support specialized research but require substantial funding from institutional investment and indirect cost recovery.
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2x5 Image Table</title>
+  <style>
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: auto;
+      border: 1px solid #000;
+    }
+    td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 15px;
+      border: 1px solid #000;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <a title="Chainwit., CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Laminar_flow_cabinet_Microbiology_Department.jpg">
+          <img alt="Laminar flow cabinet Microbiology Department" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Laminar_flow_cabinet_Microbiology_Department.jpg/512px-Laminar_flow_cabinet_Microbiology_Department.jpg?20201019122946">
+        </a>
+      </td>
+      <td>
+        <a title="real name: Nadina Wiórkiewicz
+pl.wiki: Nadine90
+commons: Nadine90, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cell_culture_incubator.jpg">
+          <img alt="Cell culture incubator" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Cell_culture_incubator.jpg/256px-Cell_culture_incubator.jpg?20120313183041">
+        </a>
+      </td>
+      <td>
+        <a title="See page for author, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Olympus_Gemini_Inverted_Microscope_-_NCMIR.jpg">
+          <img alt="Olympus Gemini Inverted Microscope - NCMIR" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Olympus_Gemini_Inverted_Microscope_-_NCMIR.jpg/256px-Olympus_Gemini_Inverted_Microscope_-_NCMIR.jpg?20110421085253">
+        </a>
+      </td>
+      <td>
+        <a title="Cjp24, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Environmental_chamber-Freezer.jpg">
+          <img alt="Environmental chamber-Freezer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Environmental_chamber-Freezer.jpg/256px-Environmental_chamber-Freezer.jpg?20120216063740">
+        </a>
+      </td>
+      <td>
+        <a title="Scotted400, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Illumina_Hiseq_2000_sequencers,_BGI_Hong_Kong_sequencing_room.JPG">
+          <img alt="Illumina Hiseq 2000 sequencers, BGI Hong Kong sequencing room" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Illumina_Hiseq_2000_sequencers%2C_BGI_Hong_Kong_sequencing_room.JPG/512px-Illumina_Hiseq_2000_sequencers%2C_BGI_Hong_Kong_sequencing_room.JPG?20130811152808">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a title="real name: Matylda Sęk
+pl.wiki: Cygaretka
+commons: Cygaretka, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Liquid_nitrogen_tanks-01.jpg">
+          <img alt="Liquid nitrogen tanks-01" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Liquid_nitrogen_tanks-01.jpg/512px-Liquid_nitrogen_tanks-01.jpg?20110404171327">
+        </a>
+      </td>
+      <td>
+        <a title="real name: Nadina Wiórkiewicz
+pl.wiki: Nadine90
+commons: Nadine90, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:LTQ_OrbiTrap_XL-Thermo_Scientific_1.jpg">
+          <img alt="Thermo Scientific LTQ Orbitrap XL hybrid Fourier Transform Mass Spectrometer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/LTQ_OrbiTrap_XL-Thermo_Scientific_1.jpg/512px-LTQ_OrbiTrap_XL-Thermo_Scientific_1.jpg?20120313184726">
+        </a>
+      </td>
+      <td>
+        <a title="SiriusHT, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Bruker_600_Mhz_NMR_Spectrometer.jpg">
+          <img alt="Bruker 600 Mhz NMR Spectrometer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bruker_600_Mhz_NMR_Spectrometer.jpg/256px-Bruker_600_Mhz_NMR_Spectrometer.jpg?20201120201730">
+        </a>
+      </td>
+      <td>
+        <a title="Uploaded by Duk 08:45, 16 Feb 2005 (UTC), Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Clean_room.jpg">
+          <img alt="Sala limpa de um fabricante de semicondutores, com duas pessoas operando equipamentos." src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Clean_room.jpg/512px-Clean_room.jpg?20231017202513">
+        </a>
+      </td>
+      <td>
+        <a title="Whimchuck, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:BD_FACS_ARIA_II_NIN,_Hyderabad.jpg">
+          <img alt="BD FACS ARIA II NIN, Hyderabad" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/BD_FACS_ARIA_II_NIN%2C_Hyderabad.jpg/512px-BD_FACS_ARIA_II_NIN%2C_Hyderabad.jpg?20130911121328">
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+These high-end items are expensive and they need to be regularly upgraded.
+
+**Estimate: \$1,500,000**
+
+
+### Administrative Support
+
+When hiring, say, 40 postdoctoral fellows and 20 technicians—many of whom require immigration support—you need robust administrative assistance. 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Human_Resources_Section_%2840324610635%29.jpg/512px-Human_Resources_Section_%2840324610635%29.jpg?20180408221211" 
+     alt="Human Resources Section (40324610635)" 
+     title="OIST from Onna Village, Japan, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;" 
+     style="width:200px; float:right; margin: 0 20px 20px 0;" />
+This means close coordination with Human Resources, Finance, and Payroll for staffing and benefits, as well as with procurement for materials and equipment. You also need
+dedicated grants managers to handle everything from pre-award proposal preparation, budgeting, and compliance documentation to post-award financial tracking, reporting, and renewals. Their work, ensures that all government imposed regulatory requirements are met, allowing investigators to focus on their research.
+
+
+**Estimate: \$1,000,000**
+
+### Research Compliance
+
+Federal regulations, not universities, impose strict compliance requirements on research, requiring dedicated teams to ensure adherence. These teams include **compliance lawyers**, **IRB/IACUC administrators** for human and animal research, **export control officers** for international collaborations, and **conflict of interest officers** to manage disclosures. Labs handling hazardous materials require **biosafety officers**, while **data security specialists** ensure compliance with federal regulations.
+
+**Estimate: \$500,000**
+
+### Research computing 
+
+Current research is computationally complex. Supporting research computing for **20 NIH investigators** requires a team to manage **HPC, data storage, software support, and cybersecurity**. At a minimum, this includes an **HPC systems administrator** to oversee computational resources, a **data manager** to handle large-scale datasets and compliance, and a **scientific software specialist** for research software support.  
+<a title="Institute of Physics of the Czech Academy of Sciences, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:FZU_ComputingCentre_PJachimova_2.jpg"><img width="512" alt="FZU ComputingCentre PJachimova 2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/FZU_ComputingCentre_PJachimova_2.jpg/512px-FZU_ComputingCentre_PJachimova_2.jpg?20231117213247" style="width:200px; float:left; margin: 0 20px 20px 0;"></a>  
+With growing cybersecurity risks, a **research IT security officer** is crucial to protect sensitive data and ensure compliance with **HIPAA**. In general, apart from equipment, a dedicated staff is needed to maintain a secure and functional computing environment.
+
+**Estimate: \$1,000,000**
+
+### Animal Research Facility
+
+Supporting an **Animal Research Facility** for **20 NIH investigators** requires a dedicated team for ethical animal care, compliance, and operations. A **veterinarian (DVM)** oversees health, welfare, and regulatory adherence, while **veterinary technicians** provide daily care and treatment based on facility size.  
+<a title="Egor Ivlev, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Work_in_SPF_animal_facility.jpg"><img width="512" alt="Work in SPF animal facility" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Work_in_SPF_animal_facility.jpg/512px-Work_in_SPF_animal_facility.jpg?20151231200610" style="width:200px; float:right; margin: 0 20px 20px 0;"></a>  
+**Facility managers** oversee operations, biosecurity, and compliance with **NIH and AAALAC** standards. **Animal care technicians** handle feeding, cage maintenance, and behavior monitoring.
+
+**Estimate: \$500,000**
+
+### General Office Support 
+
+A well-functioning research environment relies on **general office support staff** to keep labs and offices running smoothly. **Custodial services** maintain cleanliness and biosafety, especially in **wet labs**. **IT support** ensures secure networks and resolves tech issues, while **procurement services** handle lab supplies and equipment in compliance with institutional and funding regulations. 
+
+**Estimate: \$500,000**
+
+### Extra cost for clinical research
+
+**Research hospitals** face higher costs due to strict **healthcare regulations**, requiring extensive compliance, **biobank maintenance**, and integration with **patient care**. They must support **clinical trials, EHR security, and specialized staff**, while also managing **higher legal and liability expenses**. These factors make clinical research up to **50% more expensive** than basic biological research.
+
+## Indirect costs keep research running—but They Aren’t Enough  
+
+The conservative estimates above amount to **$8,000,000** in annual costs, with even higher expenses for clinical research. However, with an **indirect cost rate of 50%**, the university receives only **$5,000,000** from **NIH**, leaving a **$3,000,000 shortfall** that must be covered through other institutional resources. Despite this funding gap, universities continue to invest in research infrastructure, recognizing its critical role in advancing scientific discovery.  
+
+If **indirect costs** are capped as proposed, universities may need to shift more expenses into **direct costs**, increasing administrative complexity and reducing research efficiency. This could also offset any intended savings from the cap. Additionally, institutions with limited financial resources may struggle to sustain biomedical research programs, potentially hindering future innovation and scientific progress.
