@@ -115,7 +115,7 @@ Each group will need 750 square feet of space. In addition to the dedicated grou
 
 So this adds up to 20,000 square feet of space. The university can either build space or rent. Building 20,000 square feet of lab space can cost $25,000,000 - \$75,000,000 and then the university has to maintain it, and upgrade every 15-25 years. Wet-lab space rents for at least \$100 per square foot and this does not include the cost of fitting out the space with lab infrastructure. Either way the university has to pay for electricity, HVAC, water, security, and waste management. Note that the disposal of hazardous materials, reagents, and consumables adds another layer of operational costs.
 
-**Estimate: \$3,000,0000**
+**Estimate: \$3,000,000**
 
 ### Research Instruments and Shared Core Facilities
 
